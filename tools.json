@@ -1,0 +1,3082 @@
+{
+  "segments": [
+    {
+      "name": "AI Tools Directory",
+      "slug": "directory",
+      "description": "The complete index of all AI tools.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z' /></svg>"
+    },
+    {
+      "name": "AI Blog",
+      "slug": "blog",
+      "description": "Insights, guides, and updates on AI.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25' /></svg>"
+    },
+    {
+      "name": "AI Prompt Library",
+      "slug": "prompt-library",
+      "description": "Best prompts for ChatGPT, Midjourney, etc.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z' /></svg>"
+    },
+    {
+      "name": "AI Models Comparison",
+      "slug": "models-comparison",
+      "description": "Compare top AI models and features.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0c1.1.128 1.907 1.077 1.907 2.185zM9.75 9h.008v.008H9.75V9zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm4.125 4.5h.008v.008h-.008V13.5zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z' /></svg>"
+    },
+    {
+      "name": "Free AI Tools",
+      "slug": "free",
+      "description": "100% free artificial intelligence tools.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0z' /></svg>"
+    },
+    {
+      "name": "No Login AI Tools",
+      "slug": "no-login",
+      "description": "Tools that don't require an account.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z' /></svg>"
+    },
+    {
+      "name": "AI Tools for Students",
+      "slug": "students",
+      "description": "Homework helpers and study aids.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5' /></svg>"
+    },
+    {
+      "name": "AI Tools for Developers",
+      "slug": "developers",
+      "description": "Code assistants and dev tools.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5' /></svg>"
+    },
+    {
+      "name": "AI Tools for Productivity",
+      "slug": "productivity",
+      "description": "Boost your daily efficiency.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z' /></svg>"
+    },
+    {
+      "name": "AI Tools for Content Creation",
+      "slug": "content-creation",
+      "description": "Generate articles, posts, and graphics.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125' /></svg>"
+    },
+    {
+      "name": "AI Tools for Coding",
+      "slug": "coding",
+      "description": "Write and debug code faster.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z' /></svg>"
+    },
+    {
+      "name": "AI Image Generators",
+      "slug": "image-generators",
+      "description": "Create stunning visuals from text.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z' /></svg>"
+    },
+    {
+      "name": "AI Video Generators",
+      "slug": "video-generators",
+      "description": "Edit and generate AI videos.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' d='M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z' /></svg>"
+    },
+    {
+      "name": "AI Audio Tools",
+      "slug": "audio-tools",
+      "description": "Voiceovers, music, and audio editing.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z' /></svg>"
+    },
+    {
+      "name": "AI Automation Tools",
+      "slug": "automation-tools",
+      "description": "Streamline repetitive workflows.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99' /></svg>"
+    },
+    {
+      "name": "AI Chrome Extensions",
+      "slug": "chrome-extensions",
+      "description": "AI right in your web browser.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418' /></svg>"
+    },
+    {
+      "name": "AI Resume Tools",
+      "slug": "resume-tools",
+      "description": "Optimize resumes and win interviews.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z' /></svg>"
+    },
+    {
+      "name": "AI Study Tools",
+      "slug": "study-tools",
+      "description": "Learn faster with AI assistance.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25' /></svg>"
+    },
+    {
+      "name": "AI Business Tools",
+      "slug": "business-tools",
+      "description": "Grow and optimize your enterprise.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z' /></svg>"
+    },
+    {
+      "name": "AI Marketing Tools",
+      "slug": "marketing-tools",
+      "description": "Maximize reach and conversions.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z' /><path stroke-linecap='round' stroke-linejoin='round' d='M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z' /></svg>"
+    },
+    {
+      "name": "AI Social Media Tools",
+      "slug": "social-media-tools",
+      "description": "Manage and grow online presence.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z' /></svg>"
+    },
+    {
+      "name": "AI Design Tools",
+      "slug": "design-tools",
+      "description": "UX/UI, graphic and web design.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M9.53 16.122a3 3 0 00-5.74 1.583 5.101 5.101 0 004.53 2.505c1.47 0 2.825-.56 3.86-1.49l.06-.057c.563-.51 1.09-1.055 1.57-1.64.48-.585.918-1.206 1.306-1.854C16.634 13.013 18 11.233 18 9.5a5.5 5.5 0 10-11 0c0 1.252.887 2.656 2.05 4.145.41.52.85 1.045 1.31 1.564zM10.5 7.5H12m0 0h1.5M12 7.5V6m0 1.5v1.5' /></svg>"
+    },
+    {
+      "name": "AI Writing Tools",
+      "slug": "writing-tools",
+      "description": "Copywriting and text generation.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10' /></svg>"
+    },
+    {
+      "name": "Beginner AI Guides",
+      "slug": "beginner-guides",
+      "description": "Start your journey into AI.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25' /></svg>"
+    },
+    {
+      "name": "AI Tutorials",
+      "slug": "tutorials",
+      "description": "Step-by-step technical guides.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5' /></svg>"
+    },
+    {
+      "name": "Made in India AI Tools",
+      "slug": "made-in-india",
+      "description": "Top tools developed in India.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M3 10.5h18M3 14.25h18m-18-7.5h18m-18-3h18' /></svg>"
+    },
+    {
+      "name": "AI Alternatives",
+      "slug": "alternatives",
+      "description": "Find alternatives to paid AI tools.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99' /></svg>"
+    },
+    {
+      "name": "AI Reviews",
+      "slug": "reviews",
+      "description": "In-depth testing and reviews.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z' /></svg>"
+    },
+    {
+      "name": "Agentic AI Tools",
+      "slug": "agentic-ai",
+      "description": "Autonomous agents that do the work.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M8 16V8M16 16V8M12 21A9 9 0 1012 3a9 9 0 000 18z' /></svg>"
+    },
+    {
+      "name": "AI for UPSC / SSC Prep",
+      "slug": "upsc-ssc-prep",
+      "description": "Best AI tools for UPSC, SSC and government exam preparation.",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25' /></svg>"
+    }
+  ],
+  "tools": [
+    {
+      "id": "1",
+      "name": "ChatGPT",
+      "slug": "chatgpt",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "ChatGPT by OpenAI is a highly versatile conversational AI model designed to assist users with writing, brainstorming, and complex problem solving across diverse scenarios.",
+      "websiteURL": "/go/chatgpt",
+      "tags": [
+        "AI Assistant",
+        "writing tools",
+        "AI",
+        "Students",
+        "Productivity",
+        "Content Creation",
+        "Business",
+        "Beginner",
+        "Tutorial",
+        "News"
+      ],
+      "logo": "/logos/chatgpt.svg"
+    },
+    {
+      "id": "2",
+      "name": "Perplexity",
+      "slug": "perplexity",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Perplexity is an AI-powered search engine answering queries precisely with cited sources, making it perfect for researchers, students, and professionals needing reliable information fast.",
+      "websiteURL": "/go/perplexity",
+      "tags": [
+        "Search Engine",
+        "research",
+        "AI",
+        "No Login",
+        "Students",
+        "Beginner",
+        "Tutorial",
+        "News"
+      ],
+      "logo": "/logos/perplexity.svg"
+    },
+    {
+      "id": "3",
+      "name": "Claude",
+      "slug": "claude",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Claude is a safe and highly capable AI assistant that excels at nuanced writing, deep analysis, and synthesizing large documents for maximum productivity.",
+      "websiteURL": "/go/claude",
+      "tags": [
+        "AI Assistant",
+        "writing tools",
+        "AI",
+        "Students",
+        "Productivity",
+        "Content Creation",
+        "Business"
+      ],
+      "logo": "/logos/claude.svg"
+    },
+    {
+      "id": "4",
+      "name": "Gemini",
+      "slug": "gemini",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Google's Gemini model provides powerful multimodal assistance, helping users creatively write, code, and analyze data by integrating seamlessly with the Google ecosystem.",
+      "websiteURL": "/go/gemini",
+      "tags": [
+        "AI Assistant",
+        "writing tools",
+        "AI",
+        "Productivity",
+        "Content Creation",
+        "Business"
+      ],
+      "logo": "/logos/gemini.svg"
+    },
+    {
+      "id": "5",
+      "name": "Midjourney",
+      "slug": "midjourney",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "Midjourney generates breathtaking, high-quality images from text descriptions, operating through Discord to serve artists, designers, and creatives with stunning visual inspiration.",
+      "websiteURL": "/go/midjourney",
+      "tags": [
+        "Image Generation",
+        "image generators",
+        "AI",
+        "Design"
+      ],
+      "logo": "/logos/midjourney.svg"
+    },
+    {
+      "id": "6",
+      "name": "Leonardo AI",
+      "slug": "leonardo-ai",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "Leonardo AI provides advanced control over image generation, empowering game developers and artists to create consistent, high-fidelity visual assets tailored to fine-tuned models.",
+      "websiteURL": "/go/leonardo-ai",
+      "tags": [
+        "Image Generation",
+        "image generators",
+        "AI",
+        "Content Creation",
+        "Design"
+      ],
+      "logo": "/logos/leonardoai.svg"
+    },
+    {
+      "id": "7",
+      "name": "Runway",
+      "slug": "runway",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Runway offers a suite of magical AI tools for video editing and generation, allowing creators to synthesize and edit video content with unprecedented ease.",
+      "websiteURL": "/go/runway",
+      "tags": [
+        "Video Editing",
+        "video generators",
+        "AI",
+        "Content Creation"
+      ],
+      "logo": "/logos/runway.svg"
+    },
+    {
+      "id": "8",
+      "name": "Pictory",
+      "slug": "pictory",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Pictory automatically creates high-engaging, short branded videos from long-form content, perfect for marketers and social media managers looking to maximize reach effortlessly.",
+      "websiteURL": "/go/pictory",
+      "tags": [
+        "Video Creation",
+        "video generators",
+        "AI",
+        "Content Creation",
+        "Marketing",
+        "Social Media"
+      ],
+      "logo": "/logos/pictory.svg"
+    },
+    {
+      "id": "9",
+      "name": "Synthesia",
+      "slug": "synthesia",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Synthesia generates professional videos featuring lifelike AI avatars from plain text, ideal for corporate training, marketing, and global communications without camera gear.",
+      "websiteURL": "/go/synthesia",
+      "tags": [
+        "AI Avatars",
+        "video generators",
+        "AI",
+        "Content Creation",
+        "Marketing"
+      ],
+      "logo": "/logos/synthesia.svg"
+    },
+    {
+      "id": "10",
+      "name": "Descript",
+      "slug": "descript",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "Descript revolutionizes audio and video editing by allowing you to edit media as easily as a text document, streamlining podcast and video production workflows.",
+      "websiteURL": "/go/descript",
+      "tags": [
+        "Audio Editing",
+        "audio tools",
+        "AI"
+      ],
+      "logo": "/logos/descript.svg"
+    },
+    {
+      "id": "11",
+      "name": "ElevenLabs",
+      "slug": "elevenlabs",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "ElevenLabs delivers incredibly realistic AI voice generation and text-to-speech capabilities, perfect for audiobooks, gaming, and content creators needing premium voiceovers.",
+      "websiteURL": "/go/elevenlabs",
+      "tags": [
+        "Text to Speech",
+        "audio tools",
+        "AI"
+      ],
+      "logo": "/logos/elevenlabs.svg"
+    },
+    {
+      "id": "12",
+      "name": "Murf AI",
+      "slug": "murf-ai",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "Murf AI provides studio-quality voiceovers from text, offering a wide range of natural-sounding voices suited for e-learning, corporate presentations, and marketing videos.",
+      "websiteURL": "/go/murf-ai",
+      "tags": [
+        "Voice Generator",
+        "audio tools",
+        "AI"
+      ],
+      "logo": "/logos/murfai.svg"
+    },
+    {
+      "id": "13",
+      "name": "Notion AI",
+      "slug": "notion-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Notion AI brings artificial intelligence directly into your workspace, helping teams summarize notes, draft documents, and brainstorm ideas without leaving their organizational hub.",
+      "websiteURL": "/go/notion-ai",
+      "tags": [
+        "Workspace",
+        "productivity",
+        "AI",
+        "Chrome Extension",
+        "Business"
+      ],
+      "logo": "/logos/notionai.svg"
+    },
+    {
+      "id": "14",
+      "name": "Copy.ai",
+      "slug": "copy-ai",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Copy.ai is an automated copywriting assistant that helps marketers and entrepreneurs quickly generate ad copy, blog outlines, and engaging social media posts.",
+      "websiteURL": "/go/copy-ai",
+      "tags": [
+        "Copywriting",
+        "writing tools",
+        "AI",
+        "Content Creation",
+        "Marketing",
+        "Social Media"
+      ],
+      "logo": "/logos/copyai.svg"
+    },
+    {
+      "id": "15",
+      "name": "Jasper",
+      "slug": "jasper",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Jasper is an enterprise-grade AI writing platform designed to help marketing teams scale content production while maintaining a consistent and engaging brand voice.",
+      "websiteURL": "/go/jasper",
+      "tags": [
+        "Copywriting",
+        "writing tools",
+        "AI",
+        "Content Creation",
+        "Business",
+        "Marketing",
+        "Social Media"
+      ],
+      "logo": "/logos/jasper.svg"
+    },
+    {
+      "id": "16",
+      "name": "Writesonic",
+      "slug": "writesonic",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Writesonic generates SEO-optimized articles, blogs, and ad copy rapidly, giving content creators and marketers an edge in high-volume, high-quality content production.",
+      "websiteURL": "/go/writesonic",
+      "tags": [
+        "Content Creation",
+        "writing tools",
+        "AI",
+        "Marketing",
+        "Social Media"
+      ],
+      "logo": "/logos/writesonic.svg"
+    },
+    {
+      "id": "17",
+      "name": "Grammarly",
+      "slug": "grammarly",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Grammarly uses advanced AI to review spelling, grammar, and tone in real-time, ensuring professionals and students communicate clearly and confidently everywhere they type.",
+      "websiteURL": "/go/grammarly",
+      "tags": [
+        "Grammar Check",
+        "writing tools",
+        "AI",
+        "Students",
+        "Chrome Extension"
+      ],
+      "logo": "/logos/grammarly.svg"
+    },
+    {
+      "id": "18",
+      "name": "QuillBot",
+      "slug": "quillbot",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "QuillBot is a powerful AI paraphrasing tool that helps writers refine their sentences, improve fluency, and overcome writer's block with intuitive rewriting suggestions.",
+      "websiteURL": "/go/quillbot",
+      "tags": [
+        "Paraphrasing",
+        "writing tools",
+        "AI",
+        "Students"
+      ],
+      "logo": "/logos/quillbot.svg"
+    },
+    {
+      "id": "19",
+      "name": "Tome AI",
+      "slug": "tome-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Tome AI allows users to generate visually stunning and highly engaging presentations from a simple text prompt, streamlining the storytelling process for professionals.",
+      "websiteURL": "/go/tome-ai",
+      "tags": [
+        "Presentations",
+        "productivity",
+        "AI",
+        "Business"
+      ],
+      "logo": "/logos/tomeai.svg"
+    },
+    {
+      "id": "20",
+      "name": "Gamma",
+      "slug": "gamma",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Gamma is an AI-powered medium for presenting ideas, instantly formatting text into beautiful slides, web pages, or documents for seamless professional communication.",
+      "websiteURL": "/go/gamma",
+      "tags": [
+        "Presentations",
+        "productivity",
+        "AI",
+        "Business"
+      ],
+      "logo": "/logos/gamma.svg"
+    },
+    {
+      "id": "21",
+      "name": "Durable AI",
+      "slug": "durable-ai",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Durable AI is an intelligent website builder that generates fully functional, professional business websites complete with copy and images in mere seconds.",
+      "websiteURL": "/go/durable-ai",
+      "tags": [
+        "Website Builder",
+        "design tools",
+        "AI",
+        "Business"
+      ],
+      "logo": "/logos/durableai.svg"
+    },
+    {
+      "id": "22",
+      "name": "Replit Ghostwriter",
+      "slug": "replit-ghostwriter",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Replit Ghostwriter is an integrated AI coding assistant that autocomplete code, explains logic, and helps developers build software faster right inside the browser.",
+      "websiteURL": "/go/replit-ghostwriter",
+      "tags": [
+        "Code Assistant",
+        "coding",
+        "AI",
+        "Developers"
+      ],
+      "logo": "/logos/replitghostwriter.svg"
+    },
+    {
+      "id": "23",
+      "name": "GitHub Copilot",
+      "slug": "github-copilot",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "GitHub Copilot functions as your AI pair programmer, analyzing context to suggest entire lines or blocks of code, dramatically accelerating the software development lifecycle.",
+      "websiteURL": "/go/github-copilot",
+      "tags": [
+        "Code Assistant",
+        "coding",
+        "AI",
+        "Developers"
+      ],
+      "logo": "/logos/githubcopilot.svg"
+    },
+    {
+      "id": "24",
+      "name": "Codeium",
+      "slug": "codeium",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Codeium is a powerful, free AI code completion tool supporting numerous languages and IDEs, helping developers write code faster and with fewer tedious errors.",
+      "websiteURL": "/go/codeium",
+      "tags": [
+        "Code Assistant",
+        "coding",
+        "AI",
+        "Developers"
+      ],
+      "logo": "/logos/codeium.svg"
+    },
+    {
+      "id": "25",
+      "name": "Blackbox AI",
+      "slug": "blackbox-ai",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Blackbox AI helps developers quickly find the best code snippets to build faster, turning natural language questions directly into functional code solutions.",
+      "websiteURL": "/go/blackbox-ai",
+      "tags": [
+        "Code Search",
+        "coding",
+        "AI",
+        "No Login",
+        "Developers"
+      ],
+      "logo": "/logos/blackboxai.svg"
+    },
+    {
+      "id": "26",
+      "name": "Phind",
+      "slug": "phind",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Phind is an AI search engine optimized specifically for developers, providing detailed, code-centric answers and explanations to complex programming and technical questions.",
+      "websiteURL": "/go/phind",
+      "tags": [
+        "Developer Search",
+        "coding",
+        "AI",
+        "No Login",
+        "Developers"
+      ],
+      "logo": "/logos/phind.svg"
+    },
+    {
+      "id": "27",
+      "name": "Zapier AI",
+      "slug": "zapier-ai",
+      "category": "automation-tools",
+      "freeTier": "Freemium",
+      "description": "Zapier AI empowers users to build complex automation workflows across thousands of apps using simple natural language instructions, bypassing the need for manual setup.",
+      "websiteURL": "/go/zapier-ai",
+      "tags": [
+        "Workflow Automation",
+        "automation tools",
+        "AI",
+        "Agent"
+      ],
+      "logo": "/logos/zapierai.svg"
+    },
+    {
+      "id": "28",
+      "name": "Make AI",
+      "slug": "make-ai",
+      "category": "automation-tools",
+      "freeTier": "Freemium",
+      "description": "Make AI accelerates the creation of visual workflows, helping businesses automate their processes by connecting apps intuitively without writing a single line of code.",
+      "websiteURL": "/go/make-ai",
+      "tags": [
+        "Workflow Automation",
+        "automation tools",
+        "AI",
+        "Agent"
+      ],
+      "logo": "/logos/makeai.svg"
+    },
+    {
+      "id": "29",
+      "name": "Bardeen",
+      "slug": "bardeen",
+      "category": "automation-tools",
+      "freeTier": "Freemium",
+      "description": "Bardeen brings AI automation directly to your browser, allowing professionals to scrape data, build workflows, and automate repetitive web tasks efficiently.",
+      "websiteURL": "/go/bardeen",
+      "tags": [
+        "Browser Automation",
+        "automation tools",
+        "AI",
+        "Chrome Extension",
+        "Agent"
+      ],
+      "logo": "/logos/bardeen.svg"
+    },
+    {
+      "id": "30",
+      "name": "Taskade AI",
+      "slug": "taskade-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Taskade AI acts as a collaborative workspace that uses artificial intelligence to outline tasks, build mind maps, and manage projects for highly productive teams.",
+      "websiteURL": "/go/taskade-ai",
+      "tags": [
+        "Task Management",
+        "productivity",
+        "AI",
+        "Business"
+      ],
+      "logo": "/logos/taskadeai.svg"
+    },
+    {
+      "id": "31",
+      "name": "HuggingChat",
+      "slug": "huggingchat",
+      "category": "writing-tools",
+      "freeTier": "Free",
+      "description": "HuggingChat is a fully open-source alternative to ChatGPT, providing an accessible and completely free conversational interface for top open-source large language models.",
+      "websiteURL": "https://huggingface.co/chat/",
+      "tags": [
+        "Open Source",
+        "AI Assistant",
+        "writing tools",
+        "No Login"
+      ],
+      "logo": "/logos/huggingface.svg"
+    },
+    {
+      "id": "32",
+      "name": "LM Studio",
+      "slug": "lm-studio",
+      "category": "productivity",
+      "freeTier": "Free",
+      "description": "LM Studio allows you to easily discover, download, and run local large language models (LLMs) on your own machine completely for free, offline.",
+      "websiteURL": "https://lmstudio.ai/",
+      "tags": [
+        "Local LLM",
+        "offline AI",
+        "free AI",
+        "Open Source"
+      ],
+      "logo": "/logos/lmstudio.svg"
+    },
+    {
+      "id": "33",
+      "name": "CapCut",
+      "slug": "capcut",
+      "category": "video-generators",
+      "freeTier": "Free",
+      "description": "CapCut offers a massively popular, fully free suite of AI-powered video editing tools including background removal, auto-captions, and video upscaling.",
+      "websiteURL": "https://www.capcut.com/",
+      "tags": [
+        "Video Editing",
+        "free editor",
+        "AI"
+      ],
+      "logo": "/logos/capcut.svg"
+    },
+    {
+      "id": "34",
+      "name": "Google AI Studio",
+      "slug": "google-ai-studio",
+      "category": "coding",
+      "freeTier": "Free",
+      "description": "Google AI Studio provides generous free access to Gemini Pro and Gemini Flash models for developers to prototype and build generative AI applications quickly.",
+      "websiteURL": "https://aistudio.google.com/",
+      "tags": [
+        "Google AI",
+        "Developer Tools",
+        "Gemini",
+        "Developers"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "35",
+      "name": "NotebookLM",
+      "slug": "notebooklm",
+      "category": "productivity",
+      "freeTier": "Free",
+      "description": "NotebookLM is a free experimental product from Google Labs that uses your documents as sources for its AI to answer questions, summarize, and generate podcast-like audio.",
+      "websiteURL": "https://notebooklm.google.com/",
+      "tags": [
+        "Google AI",
+        "Note Taking",
+        "Research",
+        "Students"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "36",
+      "name": "Kickresume AI",
+      "slug": "kickresume-ai",
+      "category": "resume-tools",
+      "freeTier": "Freemium",
+      "description": "Kickresume's AI resume builder creates a beautifully formatted and highly optimized resume or cover letter in seconds using OpenAI technology.",
+      "websiteURL": "https://www.kickresume.com/",
+      "tags": [
+        "Resume Builder",
+        "resume tools",
+        "AI",
+        "CV"
+      ],
+      "logo": "/logos/kickresume.svg"
+    },
+    {
+      "id": "37",
+      "name": "Krutrim",
+      "slug": "krutrim",
+      "category": "made-in-india",
+      "freeTier": "Free",
+      "description": "Krutrim is India's first fully built AI assistant, supporting multiple Indian languages and providing localized, culturally relevant responses for users and developers.",
+      "websiteURL": "https://chat.krutrim.com/",
+      "tags": [
+        "Made in India",
+        "Multilingual",
+        "AI Assistant",
+        "Indian"
+      ],
+      "logo": "/logos/huggingface.svg"
+    },
+    {
+      "id": "38",
+      "name": "Canva AI",
+      "slug": "canva-ai",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Canva Magic Studio brings AI to your design workflow with magic write, text-to-image, and auto-presentations.",
+      "websiteURL": "https://canva.com",
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Social Media",
+        "Marketing",
+        "Beginner",
+        "Productivity",
+        "Business",
+        "Free AI",
+        "Students",
+        "Content Creation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "39",
+      "name": "Figma AI",
+      "slug": "figma-ai",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Figma introduces AI to generate UI layouts, wireframes, and design systems instantly.",
+      "websiteURL": "https://figma.com",
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Productivity",
+        "Developers",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "40",
+      "name": "GitHub Copilot Workspace",
+      "slug": "github-copilot-workspace",
+      "category": "coding",
+      "freeTier": "Paid",
+      "description": "AI-native developer environment for planning, coding, and testing in the browser.",
+      "websiteURL": "https://github.com/features/copilot",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Productivity",
+        "Agent",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "41",
+      "name": "Cursor AI",
+      "slug": "cursor-ai",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "The AI-first code editor designed for pair programming with advanced large language models.",
+      "websiteURL": "https://cursor.sh",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Productivity",
+        "Open Source",
+        "Alternative"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "42",
+      "name": "Vercel v0",
+      "slug": "vercel-v0",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Generate UI components and React code from simple text prompts using Vercel v0.",
+      "websiteURL": "https://v0.dev",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Design",
+        "UI/UX",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "43",
+      "name": "AutoGPT",
+      "slug": "autogpt",
+      "category": "agentic-ai",
+      "freeTier": "Free",
+      "description": "An experimental open-source application showcasing the capabilities of the GPT-4 language model as an autonomous agent.",
+      "websiteURL": "https://agpt.co",
+      "tags": [
+        "Agent",
+        "Autonomous",
+        "Open Source",
+        "Developers",
+        "Coding",
+        "Free AI",
+        "No Login"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "44",
+      "name": "BabyAGI",
+      "slug": "babyagi",
+      "category": "agentic-ai",
+      "freeTier": "Free",
+      "description": "An AI-powered task management system that creates, prioritizes, and executes tasks using OpenAI and vector databases.",
+      "websiteURL": "https://github.com/yoheinakajima/babyagi",
+      "tags": [
+        "Agent",
+        "Autonomous",
+        "Open Source",
+        "Developers",
+        "Task Management"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "45",
+      "name": "HeyGen",
+      "slug": "heygen",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Create AI-generated videos with real-life avatars and incredibly natural voiceovers for marketing and training.",
+      "websiteURL": "https://heygen.com",
+      "tags": [
+        "Video Generators",
+        "Marketing",
+        "Social Media",
+        "Business",
+        "Content Creation",
+        "AI Avatars"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "46",
+      "name": "Opus Clip",
+      "slug": "opus-clip",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "AI generative video repurposing tool that turns long videos into viral short clips with captions.",
+      "websiteURL": "https://opus.pro",
+      "tags": [
+        "Video Generators",
+        "Social Media",
+        "Marketing",
+        "Content Creation",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "47",
+      "name": "ElevenLabs Text-to-Speech",
+      "slug": "elevenlabs-text-to-speech",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "The most realistic and versatile AI speech software for creators and publishers.",
+      "websiteURL": "https://elevenlabs.io",
+      "tags": [
+        "Audio Tools",
+        "Voice Generator",
+        "Content Creation",
+        "Marketing",
+        "Social Media"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "48",
+      "name": "Suno AI",
+      "slug": "suno-ai",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "Make a song about anything. Suno generates complete tracks with vocals and instrumentation from text prompts.",
+      "websiteURL": "https://suno.com",
+      "tags": [
+        "Audio Tools",
+        "Music Generation",
+        "Content Creation",
+        "Social Media",
+        "Design"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "49",
+      "name": "Udio",
+      "slug": "udio",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "Udio is an AI music generator that produces extremely lifelike and emotional musical tracks across any genre.",
+      "websiteURL": "https://udio.com",
+      "tags": [
+        "Audio Tools",
+        "Music Generation",
+        "Content Creation",
+        "No Login"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "50",
+      "name": "Midjourney v6",
+      "slug": "midjourney-v6",
+      "category": "image-generators",
+      "freeTier": "Paid",
+      "description": "State-of-the-art AI image generator offering photorealistic, cinematic, and artistic generations via Discord.",
+      "websiteURL": "https://midjourney.com",
+      "tags": [
+        "Image Generators",
+        "Design",
+        "Content Creation",
+        "Marketing",
+        "Social Media",
+        "Review"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "51",
+      "name": "DALL-E 3",
+      "slug": "dall-e-3",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "OpenAI’s premier image generation model integrated directly into ChatGPT for nuanced text-to-image creation.",
+      "websiteURL": "https://openai.com/dall-e-3",
+      "tags": [
+        "Image Generators",
+        "Design",
+        "Content Creation",
+        "Students",
+        "Beginner",
+        "Tutorial"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "52",
+      "name": "Stable Diffusion 3",
+      "slug": "stable-diffusion-3",
+      "category": "image-generators",
+      "freeTier": "Free",
+      "description": "The most capable open-source text-to-image model developed by Stability AI.",
+      "websiteURL": "https://stability.ai",
+      "tags": [
+        "Image Generators",
+        "Design",
+        "Open Source",
+        "Free AI",
+        "Developers",
+        "Alternative"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "53",
+      "name": "Fireflies.ai",
+      "slug": "fireflies-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "AI voice assistant that helps record, transcribe, search, and analyze voice conversations.",
+      "websiteURL": "https://fireflies.ai",
+      "tags": [
+        "Productivity",
+        "Business",
+        "Students",
+        "Study",
+        "Task Management"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "54",
+      "name": "Otter.ai",
+      "slug": "otter-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Otter generates highly accurate meeting notes, automated summaries, and action items in real time.",
+      "websiteURL": "https://otter.ai",
+      "tags": [
+        "Productivity",
+        "Business",
+        "Students",
+        "Study",
+        "Chrome Extension"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "55",
+      "name": "Beautiful.ai",
+      "slug": "beautiful-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Expert deck designer AI that automatically formats and designs stunning presentations as you type.",
+      "websiteURL": "https://beautiful.ai",
+      "tags": [
+        "Productivity",
+        "Presentations",
+        "Business",
+        "Marketing",
+        "Design",
+        "Students"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "56",
+      "name": "Miro AI",
+      "slug": "miro-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Miro Assist generates sticky notes, maps processes, and summarizes whiteboards using AI.",
+      "websiteURL": "https://miro.com",
+      "tags": [
+        "Productivity",
+        "Business",
+        "Workspace",
+        "Design",
+        "UI/UX"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "57",
+      "name": "Fotor AI",
+      "slug": "fotor-ai",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "An all-in-one AI photo editor and design tool that makes graphic creation accessible to everyone.",
+      "websiteURL": "https://fotor.com",
+      "tags": [
+        "Design",
+        "Image Generators",
+        "Social Media",
+        "Marketing",
+        "Beginner"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "58",
+      "name": "Photoroom",
+      "slug": "photoroom",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Instantly remove backgrounds and create stunning product photography photos with AI.",
+      "websiteURL": "https://photoroom.com",
+      "tags": [
+        "Design",
+        "Social Media",
+        "Marketing",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "59",
+      "name": "Rytr",
+      "slug": "rytr",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "An AI writing assistant that helps you create high-quality content, in just a few seconds, at a fraction of the cost!",
+      "websiteURL": "https://rytr.me",
+      "tags": [
+        "Writing",
+        "Content Creation",
+        "Marketing",
+        "Social Media",
+        "Business",
+        "Students"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "60",
+      "name": "Sudowrite",
+      "slug": "sudowrite",
+      "category": "writing-tools",
+      "freeTier": "Paid",
+      "description": "The AI writing partner you always wanted. Specifically designed for fiction writers and authors.",
+      "websiteURL": "https://sudowrite.com",
+      "tags": [
+        "Writing",
+        "Content Creation",
+        "Alternative"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "61",
+      "name": "Anyword",
+      "slug": "anyword",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Anyword is an AI writing tool designed to generate highly converting marketing and sales copy.",
+      "websiteURL": "https://anyword.com",
+      "tags": [
+        "Writing",
+        "Marketing",
+        "Business",
+        "Social Media",
+        "Content Creation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "62",
+      "name": "DeepL",
+      "slug": "deepl",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "The world's most accurate AI translator, capturing nuance and intent across dozens of languages.",
+      "websiteURL": "https://deepl.com",
+      "tags": [
+        "Productivity",
+        "Writing Tools",
+        "Study",
+        "Students",
+        "Business",
+        "Chrome Extension"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "63",
+      "name": "Claude 3 Opus",
+      "slug": "claude-3-opus",
+      "category": "writing-tools",
+      "freeTier": "Paid",
+      "description": "Anthropic’s most intelligent model, capable of handling complex analysis, long-form writing, and coding tasks.",
+      "websiteURL": "https://anthropic.com",
+      "tags": [
+        "Writing",
+        "Coding",
+        "Developers",
+        "Productivity",
+        "Review"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "64",
+      "name": "Gemini 1.5 Pro",
+      "slug": "gemini-1-5-pro",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Google’s next-gen AI with a massive context window capable of analyzing large books or hours of video.",
+      "websiteURL": "https://gemini.google.com",
+      "tags": [
+        "Productivity",
+        "Writing",
+        "Study",
+        "Students",
+        "Developers",
+        "Business",
+        "News"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "65",
+      "name": "Poe",
+      "slug": "poe",
+      "category": "productivity",
+      "freeTier": "Free",
+      "description": "Poe lets you ask questions, get instant answers, and have back-and-forth conversations with multiple AI bots like GPT-4 and Claude 3.",
+      "websiteURL": "https://poe.com",
+      "tags": [
+        "Productivity",
+        "No Login",
+        "Free AI",
+        "Students",
+        "Alternative",
+        "Beginner"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "66",
+      "name": "You.com",
+      "slug": "you-com",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "A private search engine summarizing web results using LLMs with a focus on privacy and intent.",
+      "websiteURL": "https://you.com",
+      "tags": [
+        "Search Engine",
+        "Research",
+        "Students",
+        "Productivity",
+        "Alternative",
+        "News"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "67",
+      "name": "Luma AI (Dream Machine)",
+      "slug": "luma-ai-dream-machine",
+      "category": "video-generators",
+      "freeTier": "Free",
+      "description": "Luma Dream Machine is a next-generation AI video model that creates high-quality, realistic videos from text and images.",
+      "websiteURL": "https://lumalabs.ai",
+      "tags": [
+        "Video Generators",
+        "Content Creation",
+        "Social Media",
+        "Design",
+        "Free AI"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "68",
+      "name": "Kling AI",
+      "slug": "kling-ai",
+      "category": "video-generators",
+      "freeTier": "Free",
+      "description": "Kuaishou’s video generation model capable of producing highly dynamic and realistic clips up to 2 minutes long.",
+      "websiteURL": "https://klingai.com",
+      "tags": [
+        "Video Generators",
+        "Social Media",
+        "Content Creation",
+        "Alternative"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "69",
+      "name": "Sora",
+      "slug": "sora",
+      "category": "video-generators",
+      "freeTier": "Paid",
+      "description": "OpenAI’s groundbreaking text-to-video model capable of generating up to 1 minute of high-fidelity video.",
+      "websiteURL": "https://openai.com/sora",
+      "tags": [
+        "Video Generators",
+        "Design",
+        "News",
+        "Review",
+        "Content Creation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "70",
+      "name": "Devin",
+      "slug": "devin",
+      "category": "agentic-ai",
+      "freeTier": "Paid",
+      "description": "The first fully autonomous AI software engineer developed by Cognition Labs.",
+      "websiteURL": "https://cognition.ai/devin",
+      "tags": [
+        "Agent",
+        "Autonomous",
+        "Developers",
+        "Coding",
+        "News",
+        "Review"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "71",
+      "name": "CodeRabbit",
+      "slug": "coderabbit",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "AI-driven code reviews directly in your pull requests, saving engineering teams hours of manual review.",
+      "websiteURL": "https://coderabbit.ai",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Business",
+        "Agent"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "72",
+      "name": "Baidu ERNIE",
+      "slug": "baidu-ernie",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "China’s leading large language model and AI chatbot developed by Baidu.",
+      "websiteURL": "https://yiyan.baidu.com",
+      "tags": [
+        "Alternative",
+        "Review",
+        "News",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "73",
+      "name": "Mistral Le Chat",
+      "slug": "mistral-le-chat",
+      "category": "productivity",
+      "freeTier": "Free",
+      "description": "Mistral’s free conversational interface for interacting with their powerful, open-weight European models.",
+      "websiteURL": "https://chat.mistral.ai",
+      "tags": [
+        "Free AI",
+        "Alternative",
+        "Open Source",
+        "Writing",
+        "Developers"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "74",
+      "name": "Llama 3",
+      "slug": "llama-3",
+      "category": "coding",
+      "freeTier": "Free",
+      "description": "Meta’s highly capable, fully open-source LLM available for downloading or testing via Groq.",
+      "websiteURL": "https://llama.meta.com",
+      "tags": [
+        "Open Source",
+        "Free AI",
+        "Developers",
+        "Alternative",
+        "News",
+        "Review"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "75",
+      "name": "Groq",
+      "slug": "groq",
+      "category": "productivity",
+      "freeTier": "Free",
+      "description": "The fastest LPU inference engine providing lightning-fast responses from open-source models like Llama 3 and Mixtral.",
+      "websiteURL": "https://groq.com",
+      "tags": [
+        "Productivity",
+        "Developers",
+        "Free AI",
+        "No Login",
+        "Alternative"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "76",
+      "name": "Hugging Face Spaces",
+      "slug": "hugging-face-spaces",
+      "category": "coding",
+      "freeTier": "Free",
+      "description": "Discover, test, and host the latest machine learning applications and AI models built by the community.",
+      "websiteURL": "https://huggingface.co/spaces",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Open Source",
+        "Free AI",
+        "Tutorial"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "77",
+      "name": "Vidyut AI",
+      "slug": "vidyut-ai",
+      "category": "made-in-india",
+      "freeTier": "Freemium",
+      "description": "Indian AI platform offering vernacular language support and robust API solutions for businesses.",
+      "websiteURL": "https://vidyut.io",
+      "tags": [
+        "Made in India",
+        "Indian",
+        "Business",
+        "Developers"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "78",
+      "name": "Sarvam AI",
+      "slug": "sarvam-ai",
+      "category": "made-in-india",
+      "freeTier": "Freemium",
+      "description": "Building full-stack generative AI solutions tailor-made for Indian languages and enterprise use cases.",
+      "websiteURL": "https://sarvam.ai",
+      "tags": [
+        "Made in India",
+        "Indian",
+        "Developers",
+        "Business",
+        "Audio Tools"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "79",
+      "name": "Bhashini AI",
+      "slug": "bhashini-ai",
+      "category": "made-in-india",
+      "freeTier": "Free",
+      "description": "National language translation mission bridging the language barrier in India using open-source AI.",
+      "websiteURL": "https://bhashini.gov.in",
+      "tags": [
+        "Made in India",
+        "Indian",
+        "Free AI",
+        "Open Source",
+        "Audio Tools",
+        "Translation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "80",
+      "name": "Revoicer",
+      "slug": "revoicer",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "AI voice generator creating highly emotive, human-sounding voices for sales videos and e-learning.",
+      "websiteURL": "https://revoicer.com",
+      "tags": [
+        "Audio Tools",
+        "Voice Generator",
+        "Marketing",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "81",
+      "name": "Zenhub AI",
+      "slug": "zenhub-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "AI-assisted agile project management that categorizes issues and predicts sprint completion.",
+      "websiteURL": "https://zenhub.com",
+      "tags": [
+        "Productivity",
+        "Task Management",
+        "Developers",
+        "Business",
+        "Agent"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "82",
+      "name": "ClickUp Brain",
+      "slug": "clickup-brain",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "ClickUp connects all your enterprise knowledge, tasks, and documents with AI neural networks.",
+      "websiteURL": "https://clickup.com",
+      "tags": [
+        "Productivity",
+        "Task Management",
+        "Business",
+        "Workspace"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "83",
+      "name": "Coze",
+      "slug": "coze",
+      "category": "agentic-ai",
+      "freeTier": "Free",
+      "description": "Next-generation AI bot building platform from ByteDance to create custom agents fast without coding.",
+      "websiteURL": "https://coze.com",
+      "tags": [
+        "Agent",
+        "Autonomous",
+        "Developers",
+        "Beginner",
+        "Free AI"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "84",
+      "name": "Guidde",
+      "slug": "guidde",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Magically create video documentation, how-to guides, and tutorials with AI in seconds via Chrome Extension.",
+      "websiteURL": "https://guidde.com",
+      "tags": [
+        "Productivity",
+        "Tutorial",
+        "Guide",
+        "Chrome Extension",
+        "Students",
+        "Content Creation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "85",
+      "name": "Scribe",
+      "slug": "scribe",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Scribe automatically generates step-by-step guides by capturing your browser clicks and keystrokes.",
+      "websiteURL": "https://scribehow.com",
+      "tags": [
+        "Productivity",
+        "Tutorial",
+        "Guide",
+        "Chrome Extension",
+        "Business",
+        "Students"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "86",
+      "name": "Zety AI",
+      "slug": "zety-ai",
+      "category": "resume-tools",
+      "freeTier": "Freemium",
+      "description": "Smart AI resume builder suggesting powerful phrases and checking your CV against recruiter standards.",
+      "websiteURL": "https://zety.com",
+      "tags": [
+        "Resume Tools",
+        "CV",
+        "Students",
+        "Beginner"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "87",
+      "name": "Enhancv AI",
+      "slug": "enhancv-ai",
+      "category": "resume-tools",
+      "freeTier": "Freemium",
+      "description": "Modern resumes tailored by AI to match specific job descriptions seamlessly.",
+      "websiteURL": "https://enhancv.com",
+      "tags": [
+        "Resume Tools",
+        "CV",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "88",
+      "name": "ResumA.I.",
+      "slug": "resuma-i",
+      "category": "resume-tools",
+      "freeTier": "Freemium",
+      "description": "Instantly write your resume bullet points and cover letters with AI intelligence.",
+      "websiteURL": "https://resumai.com",
+      "tags": [
+        "Resume Tools",
+        "CV",
+        "Writing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "89",
+      "name": "Octopus.do",
+      "slug": "octopus-do",
+      "category": "design-tools",
+      "freeTier": "Free",
+      "description": "Fast visual sitemap builder featuring AI structure generation for UI/UX planners.",
+      "websiteURL": "https://octopus.do",
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Productivity",
+        "Free AI"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "90",
+      "name": "Relume Library",
+      "slug": "relume-library",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Relume AI generates comprehensive site maps and wireframes in seconds, exporting directly to Figma or Webflow.",
+      "websiteURL": "https://relume.io",
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Developers",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "91",
+      "name": "Looka",
+      "slug": "looka",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "AI-powered logo maker and brand identity generator for entrepreneurs starting a new business.",
+      "websiteURL": "https://looka.com",
+      "tags": [
+        "Design",
+        "Marketing",
+        "Business",
+        "Beginner"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "92",
+      "name": "Surfer SEO",
+      "slug": "surfer-seo",
+      "category": "marketing-tools",
+      "freeTier": "Paid",
+      "description": "Surfer uses AI to research, write, and optimize SEO articles that rank beautifully on Google.",
+      "websiteURL": "https://surferseo.com",
+      "tags": [
+        "Marketing",
+        "Writing",
+        "Business",
+        "Content Creation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "93",
+      "name": "HubSpot Content Assistant",
+      "slug": "hubspot-content-assistant",
+      "category": "marketing-tools",
+      "freeTier": "Freemium",
+      "description": "HubSpot’s AI tools help marketers generate blog ideas, draft emails, and create social sequences seamlessly.",
+      "websiteURL": "https://hubspot.com/artificial-intelligence",
+      "tags": [
+        "Marketing",
+        "Social Media",
+        "Business",
+        "Writing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "94",
+      "name": "Hootsuite OwlyWriter",
+      "slug": "hootsuite-owlywriter",
+      "category": "social-media-tools",
+      "freeTier": "Paid",
+      "description": "OwlyWriter AI instantly generates winning social media captions and post ideas based on past performance.",
+      "websiteURL": "https://hootsuite.com",
+      "tags": [
+        "Social Media",
+        "Marketing",
+        "Content Creation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "95",
+      "name": "Buffer AI",
+      "slug": "buffer-ai",
+      "category": "social-media-tools",
+      "freeTier": "Freemium",
+      "description": "Buffer’s AI assistant repurposes your long-form content into punchy social media posts in one click.",
+      "websiteURL": "https://buffer.com",
+      "tags": [
+        "Social Media",
+        "Marketing",
+        "Content Creation",
+        "Beginner"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "96",
+      "name": "HARPA AI",
+      "slug": "harpa-ai",
+      "category": "chrome-extensions",
+      "freeTier": "Freemium",
+      "description": "Hybrid AI Agent for Chrome that monitors web pages, scrapes data, and tracks prices via a highly customizable sidebar.",
+      "websiteURL": "https://harpa.ai",
+      "tags": [
+        "Chrome Extension",
+        "Agent",
+        "Productivity",
+        "Research"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "97",
+      "name": "Monica",
+      "slug": "monica",
+      "category": "chrome-extensions",
+      "freeTier": "Freemium",
+      "description": "Your AI copilot on Chrome, powered by GPT-4 and Claude 3, answering questions alongside any web page you visit.",
+      "websiteURL": "https://monica.im",
+      "tags": [
+        "Chrome Extension",
+        "Productivity",
+        "Writing Tools",
+        "Reading"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "98",
+      "name": "BypassGPT",
+      "slug": "bypassgpt",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Advanced AI humanizer that rewrites AI-generated text to bypass detection tools seamlessly.",
+      "websiteURL": "https://bypassgpt.ai",
+      "tags": [
+        "Writing",
+        "Students",
+        "Content Creation",
+        "Alternative"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "99",
+      "name": "SciSpace (Typeset.io)",
+      "slug": "scispace-typeset-io",
+      "category": "study-tools",
+      "freeTier": "Freemium",
+      "description": "An AI copilot for researchers to understand, analyze, and cite academic papers easily.",
+      "websiteURL": "https://typeset.io",
+      "tags": [
+        "Study",
+        "Students",
+        "Research",
+        "Productivity",
+        "Beginner"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "100",
+      "name": "Consensus",
+      "slug": "consensus",
+      "category": "study-tools",
+      "freeTier": "Freemium",
+      "description": "An AI search engine that extracts findings directly from peer-reviewed scientific studies.",
+      "websiteURL": "https://consensus.app",
+      "tags": [
+        "Study",
+        "Students",
+        "Research",
+        "Search Engine",
+        "Review"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "101",
+      "name": "ChatPDF",
+      "slug": "chatpdf",
+      "category": "study-tools",
+      "freeTier": "Free",
+      "description": "Interact with any PDF document via AI. Extracts insights, summarizes chapters, and answers queries instantly.",
+      "websiteURL": "https://chatpdf.com",
+      "tags": [
+        "Study",
+        "Students",
+        "Productivity",
+        "Free AI",
+        "No Login"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "102",
+      "name": "DeepLearning.AI",
+      "slug": "deeplearning-ai",
+      "category": "beginner-guides",
+      "freeTier": "Free",
+      "description": "Offers the best free tutorials and short courses for beginners wanting to build gen-AI applications.",
+      "websiteURL": "https://deeplearning.ai",
+      "tags": [
+        "Beginner",
+        "Tutorial",
+        "Guide",
+        "Students",
+        "News"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "103",
+      "name": "Coursera AI Courses",
+      "slug": "coursera-ai-courses",
+      "category": "tutorials",
+      "freeTier": "Freemium",
+      "description": "Explore top technical tutorials and guided projects on machine learning, data science, and AI from top universities.",
+      "websiteURL": "https://coursera.org",
+      "tags": [
+        "Tutorial",
+        "Students",
+        "Study",
+        "Beginner"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "104",
+      "name": "The Rundown AI",
+      "slug": "the-rundown-ai",
+      "category": "news",
+      "freeTier": "Free",
+      "description": "Get the latest AI news, insights, and developments delivered directly to your inbox every morning.",
+      "websiteURL": "https://therundown.ai",
+      "tags": [
+        "News",
+        "Review",
+        "Beginner",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "105",
+      "name": "TLDR AI",
+      "slug": "tldr-ai",
+      "category": "news",
+      "freeTier": "Free",
+      "description": "A daily newsletter covering the most important AI industry news, machine learning research, and tech updates in 5 minutes.",
+      "websiteURL": "https://tldr.tech/ai",
+      "tags": [
+        "News",
+        "Developer",
+        "Business",
+        "Review"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "google-gemini",
+      "name": "Google Gemini",
+      "slug": "google-gemini",
+      "category": "ai-assistant",
+      "freeTier": "Freemium",
+      "description": "Google's most capable AI model, offering text, image, and code generation with deep ecosystem integration.",
+      "websiteURL": "https://gemini.google.com/",
+      "tags": [
+        "AI Assistant",
+        "writing tools",
+        "AI",
+        "free AI",
+        "Beginner"
+      ],
+      "logo": "🤖"
+    },
+    {
+      "id": "notebook-lm",
+      "name": "Google NotebookLM",
+      "slug": "notebook-lm",
+      "category": "study-tools",
+      "freeTier": "Free",
+      "description": "An AI-powered personalized notebook that helps you understand complex documents, synthesize notes, and generate study guides.",
+      "websiteURL": "https://notebooklm.google.com/",
+      "tags": [
+        "Study Tools",
+        "Productivity",
+        "Students",
+        "AI Assistant"
+      ],
+      "logo": "📓"
+    },
+    {
+      "id": "google-mediapipe",
+      "name": "Google MediaPipe",
+      "slug": "google-mediapipe",
+      "category": "developer-tools",
+      "freeTier": "Free",
+      "description": "Cross-platform, customizable machine learning solutions for live and streaming media. Ideal for adding vision and audio AI.",
+      "websiteURL": "https://developers.google.com/mediapipe",
+      "tags": [
+        "Developers",
+        "Open Source",
+        "free AI"
+      ],
+      "logo": "🔧"
+    },
+    {
+      "id": "microsoft-copilot",
+      "name": "Microsoft Copilot",
+      "slug": "microsoft-copilot",
+      "category": "ai-assistant",
+      "freeTier": "Freemium",
+      "description": "Your everyday AI companion powered by GPT-4 and DALL-E 3, seamlessly integrated into the Microsoft Edge and Windows ecosystem.",
+      "websiteURL": "https://copilot.microsoft.com/",
+      "tags": [
+        "AI Assistant",
+        "writing tools",
+        "free AI",
+        "Beginner"
+      ],
+      "logo": "🤖"
+    },
+    {
+      "id": "microsoft-designer",
+      "name": "Microsoft Designer",
+      "slug": "microsoft-designer",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "A graphic design app that helps you create professional quality social media posts, invitations, and graphics using DALL-E 3.",
+      "websiteURL": "https://designer.microsoft.com/",
+      "tags": [
+        "Design Tools",
+        "Image Generators",
+        "Content Creation",
+        "free AI"
+      ],
+      "logo": "🎨"
+    },
+    {
+      "id": "microsoft-math-solver",
+      "name": "Microsoft Math Solver",
+      "slug": "microsoft-math-solver",
+      "category": "study-tools",
+      "freeTier": "Free",
+      "description": "Get step-by-step solutions to your math problems, from arithmetic to calculus, using this free AI educational tool.",
+      "websiteURL": "https://mathsolver.microsoft.com/",
+      "tags": [
+        "Study Tools",
+        "Students",
+        "free AI",
+        "Beginner"
+      ],
+      "logo": "✖️"
+    },
+    {
+      "id": "meta-llama-3",
+      "name": "Meta Llama 3",
+      "slug": "meta-llama-3",
+      "category": "models-comparison",
+      "freeTier": "Free",
+      "description": "Meta's state-of-the-art open source large language model, offering powerful capabilities for developers to build locally.",
+      "websiteURL": "https://llama.meta.com/",
+      "tags": [
+        "Open Source",
+        "Local LLM",
+        "Developers",
+        "free AI"
+      ],
+      "logo": "🦙"
+    },
+    {
+      "id": "meta-ai",
+      "name": "Meta AI",
+      "slug": "meta-ai",
+      "category": "ai-assistant",
+      "freeTier": "Free",
+      "description": "A leading AI assistant available across WhatsApp, Instagram, and Facebook, generating text, images, and finding information.",
+      "websiteURL": "https://www.meta.ai/",
+      "tags": [
+        "AI Assistant",
+        "free AI",
+        "Social Media",
+        "Beginner"
+      ],
+      "logo": "🌐"
+    },
+    {
+      "id": "meta-audiocraft",
+      "name": "Meta AudioCraft",
+      "slug": "meta-audiocraft",
+      "category": "audio-tools",
+      "freeTier": "Free",
+      "description": "An open-source library for deep learning research on audio generation, allowing you to create high-quality music and sounds from text.",
+      "websiteURL": "https://audiocraft.metademolab.com/",
+      "tags": [
+        "Audio Tools",
+        "Open Source",
+        "Music",
+        "Developers"
+      ],
+      "logo": "🎵"
+    },
+    {
+      "id": "amazon-q",
+      "name": "Amazon Q",
+      "slug": "amazon-q",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "A generative AI-powered assistant designed specifically for businesses and developers to code, build, and optimize on AWS.",
+      "websiteURL": "https://aws.amazon.com/q/",
+      "tags": [
+        "Developers",
+        "Business",
+        "Code Assistant",
+        "Productivity"
+      ],
+      "logo": "☁️"
+    },
+    {
+      "id": "amazon-codewhisperer",
+      "name": "Amazon CodeWhisperer",
+      "slug": "amazon-codewhisperer",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "An AI coding companion that generates whole line and full function code suggestions in your IDE to help you get more done faster.",
+      "websiteURL": "https://aws.amazon.com/codewhisperer/",
+      "tags": [
+        "Code Assistant",
+        "Developers",
+        "free AI"
+      ],
+      "logo": "👩‍💻"
+    },
+    {
+      "id": "aws-bedrock",
+      "name": "AWS Bedrock",
+      "slug": "aws-bedrock",
+      "category": "models-comparison",
+      "freeTier": "Freemium",
+      "description": "A fully managed service offering a choice of high-performing foundation models from leading AI companies via a single API.",
+      "websiteURL": "https://aws.amazon.com/bedrock/",
+      "tags": [
+        "Models Comparison",
+        "Developers",
+        "Business",
+        "API"
+      ],
+      "logo": "🏗️"
+    },
+    {
+      "id": "x-grok",
+      "name": "Grok by xAI",
+      "slug": "x-grok",
+      "category": "ai-assistant",
+      "freeTier": "Freemium",
+      "description": "An AI modeled after the Hitchhiker's Guide to the Galaxy, designed to answer almost anything and even suggest what questions to ask, with real-time X data.",
+      "websiteURL": "https://grok.x.ai/",
+      "tags": [
+        "AI Assistant",
+        "Social Media",
+        "News",
+        "Beginner"
+      ],
+      "logo": "✖️"
+    },
+    {
+      "id": "106",
+      "name": "Adobe Firefly",
+      "slug": "adobe-firefly",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Adobe Firefly is a generative AI design suite for creating images, text effects, and edits integrated into Adobe workflows.",
+      "websiteURL": "https://firefly.adobe.com",
+      "tags": [
+        "Design",
+        "Image Generators",
+        "Content Creation",
+        "Marketing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "107",
+      "name": "Airtable AI",
+      "slug": "airtable-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Airtable AI helps teams automate summaries, categorization, and workflow actions directly inside collaborative databases.",
+      "websiteURL": "https://www.airtable.com/ai",
+      "tags": [
+        "Productivity",
+        "Business",
+        "Automation",
+        "No Code"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "108",
+      "name": "Akool",
+      "slug": "akool",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Akool provides AI video generation, talking avatars, and face-swap production tools for marketing and training content.",
+      "websiteURL": "https://akool.com",
+      "tags": [
+        "Video Generators",
+        "Marketing",
+        "Content Creation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "109",
+      "name": "Alteryx AiDIN",
+      "slug": "alteryx-aidin",
+      "category": "business-tools",
+      "freeTier": "Paid",
+      "description": "AiDIN brings generative AI into analytics pipelines for enterprise teams to accelerate reporting and decision workflows.",
+      "websiteURL": "https://www.alteryx.com/products/aidin",
+      "tags": [
+        "Business",
+        "Analytics",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "110",
+      "name": "AssemblyAI",
+      "slug": "assemblyai",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "AssemblyAI offers speech-to-text and audio intelligence APIs for developers building transcription and voice applications.",
+      "websiteURL": "https://www.assemblyai.com",
+      "tags": [
+        "Developers",
+        "API",
+        "Audio Tools",
+        "Coding"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "111",
+      "name": "AskCodi",
+      "slug": "askcodi",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "AskCodi is an AI coding assistant for generating snippets, tests, and technical documentation across popular programming languages.",
+      "websiteURL": "https://www.askcodi.com",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "112",
+      "name": "Bing Image Creator",
+      "slug": "bing-image-creator",
+      "category": "image-generators",
+      "freeTier": "Free",
+      "description": "Bing Image Creator generates images from text prompts with quick iterations for social, blog, and creative use cases.",
+      "websiteURL": "https://www.bing.com/images/create",
+      "tags": [
+        "Image Generators",
+        "Free AI",
+        "Content Creation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "113",
+      "name": "Bolt.new",
+      "slug": "bolt-new",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Bolt.new helps developers generate and run full-stack web applications from natural-language instructions in the browser.",
+      "websiteURL": "https://bolt.new",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Productivity",
+        "Agent"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "114",
+      "name": "Browserbase",
+      "slug": "browserbase",
+      "category": "automation-tools",
+      "freeTier": "Freemium",
+      "description": "Browserbase provides cloud browser infrastructure for AI agents and automated workflows requiring real web interaction.",
+      "websiteURL": "https://www.browserbase.com",
+      "tags": [
+        "Automation Tools",
+        "Developers",
+        "Agentic AI"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "115",
+      "name": "Character AI",
+      "slug": "character-ai",
+      "category": "content-creation",
+      "freeTier": "Freemium",
+      "description": "Character AI enables conversational experiences with custom personas for entertainment, roleplay, and audience engagement.",
+      "websiteURL": "https://character.ai",
+      "tags": [
+        "Content Creation",
+        "AI Assistant",
+        "Social Media"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "116",
+      "name": "Clipdrop",
+      "slug": "clipdrop",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Clipdrop offers AI image editing tools like background removal, relighting, upscaling, and object cleanup for creators.",
+      "websiteURL": "https://clipdrop.co",
+      "tags": [
+        "Design",
+        "Image Generators",
+        "Marketing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "117",
+      "name": "Cognosys",
+      "slug": "cognosys",
+      "category": "agentic-ai",
+      "freeTier": "Freemium",
+      "description": "Cognosys automates multi-step research and execution tasks using agent-style workflows for business productivity.",
+      "websiteURL": "https://www.cognosys.ai",
+      "tags": [
+        "Agent",
+        "Productivity",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "118",
+      "name": "Colossyan",
+      "slug": "colossyan",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Colossyan generates AI avatar videos for learning, onboarding, and internal communication with multilingual voice support.",
+      "websiteURL": "https://www.colossyan.com",
+      "tags": [
+        "Video Generators",
+        "Business",
+        "Training"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "119",
+      "name": "Compose AI",
+      "slug": "compose-ai",
+      "category": "chrome-extensions",
+      "freeTier": "Freemium",
+      "description": "Compose AI is a browser writing assistant that autocompletes emails, documents, and messages to save drafting time.",
+      "websiteURL": "https://www.compose.ai",
+      "tags": [
+        "Chrome Extension",
+        "Writing",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "120",
+      "name": "Dify",
+      "slug": "dify",
+      "category": "developers",
+      "freeTier": "Free",
+      "description": "Dify is an open-source platform for building AI applications and agent workflows with visual orchestration and APIs.",
+      "websiteURL": "https://dify.ai",
+      "tags": [
+        "Open Source",
+        "Developers",
+        "Agent",
+        "Free AI"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "121",
+      "name": "Elicit",
+      "slug": "elicit",
+      "category": "study-tools",
+      "freeTier": "Freemium",
+      "description": "Elicit helps researchers discover papers, summarize findings, and extract evidence for faster academic workflows.",
+      "websiteURL": "https://elicit.com",
+      "tags": [
+        "Study",
+        "Research",
+        "Students"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "122",
+      "name": "Frase",
+      "slug": "frase",
+      "category": "marketing-tools",
+      "freeTier": "Paid",
+      "description": "Frase helps content teams plan, optimize, and generate SEO-focused articles using competitive SERP insights.",
+      "websiteURL": "https://www.frase.io",
+      "tags": [
+        "Marketing",
+        "Writing",
+        "SEO"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "123",
+      "name": "Glean",
+      "slug": "glean",
+      "category": "business-tools",
+      "freeTier": "Paid",
+      "description": "Glean is an enterprise AI assistant that surfaces company knowledge across apps for faster internal search and answers.",
+      "websiteURL": "https://www.glean.com",
+      "tags": [
+        "Business",
+        "Productivity",
+        "AI Assistant"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "124",
+      "name": "Glasp AI",
+      "slug": "glasp-ai",
+      "category": "productivity",
+      "freeTier": "Free",
+      "description": "Glasp AI turns highlights and saved knowledge into summaries and reusable insights for learning and research.",
+      "websiteURL": "https://glasp.co",
+      "tags": [
+        "Productivity",
+        "Study",
+        "Free AI"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "125",
+      "name": "Granola",
+      "slug": "granola",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Granola creates AI meeting notes and action items from conversations without heavy manual post-call documentation.",
+      "websiteURL": "https://granola.ai",
+      "tags": [
+        "Productivity",
+        "Business",
+        "Automation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "126",
+      "name": "Harvey AI",
+      "slug": "harvey-ai",
+      "category": "business-tools",
+      "freeTier": "Paid",
+      "description": "Harvey AI provides legal-focused AI workflows for drafting, research, and analysis in professional service environments.",
+      "websiteURL": "https://www.harvey.ai",
+      "tags": [
+        "Business",
+        "Legal",
+        "Writing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "127",
+      "name": "Ideogram",
+      "slug": "ideogram",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "Ideogram generates text-rich images and design assets optimized for posters, branding, and visual social content.",
+      "websiteURL": "https://ideogram.ai",
+      "tags": [
+        "Image Generators",
+        "Design",
+        "Marketing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "128",
+      "name": "InVideo AI",
+      "slug": "invideo-ai",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "InVideo AI turns prompts into publish-ready videos with scenes, voiceovers, and editing controls for creators.",
+      "websiteURL": "https://invideo.io/ai",
+      "tags": [
+        "Video Generators",
+        "Content Creation",
+        "Social Media"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "129",
+      "name": "Jan AI",
+      "slug": "jan-ai",
+      "category": "developers",
+      "freeTier": "Free",
+      "description": "Jan AI is an open-source desktop assistant for running local models and private AI workflows on your machine.",
+      "websiteURL": "https://jan.ai",
+      "tags": [
+        "Open Source",
+        "Developers",
+        "Free AI",
+        "No Login"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "130",
+      "name": "Kapwing AI",
+      "slug": "kapwing-ai",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Kapwing AI simplifies video editing with subtitles, script tools, and generative workflows for social media teams.",
+      "websiteURL": "https://www.kapwing.com/ai",
+      "tags": [
+        "Video Generators",
+        "Social Media",
+        "Marketing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "131",
+      "name": "Khanmigo",
+      "slug": "khanmigo",
+      "category": "study-tools",
+      "freeTier": "Freemium",
+      "description": "Khanmigo is an AI tutor by Khan Academy that supports personalized learning for students and classroom practice.",
+      "websiteURL": "https://www.khanacademy.org/khan-labs",
+      "tags": [
+        "Study",
+        "Students",
+        "Beginner"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "132",
+      "name": "Krisp AI",
+      "slug": "krisp-ai",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "Krisp AI removes meeting noise, improves call clarity, and generates transcripts and notes for remote teams.",
+      "websiteURL": "https://krisp.ai",
+      "tags": [
+        "Audio Tools",
+        "Productivity",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "133",
+      "name": "LangSmith",
+      "slug": "langsmith",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "LangSmith helps teams debug, evaluate, and monitor LLM applications with tracing and quality metrics.",
+      "websiteURL": "https://www.langchain.com/langsmith",
+      "tags": [
+        "Developers",
+        "Coding",
+        "LLM Ops"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "134",
+      "name": "Liner",
+      "slug": "liner",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Liner is an AI research assistant that summarizes web results and speeds up knowledge discovery workflows.",
+      "websiteURL": "https://getliner.com",
+      "tags": [
+        "Productivity",
+        "Research",
+        "Students"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "135",
+      "name": "Lovable",
+      "slug": "lovable",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Lovable turns product ideas into functional web apps with AI-generated frontend and backend scaffolding.",
+      "websiteURL": "https://lovable.dev",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "136",
+      "name": "Manychat AI",
+      "slug": "manychat-ai",
+      "category": "automation-tools",
+      "freeTier": "Freemium",
+      "description": "Manychat AI powers automated messaging for Instagram, WhatsApp, and Facebook to streamline lead workflows.",
+      "websiteURL": "https://manychat.com",
+      "tags": [
+        "Automation Tools",
+        "Marketing",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "137",
+      "name": "Merlin AI",
+      "slug": "merlin-ai",
+      "category": "chrome-extensions",
+      "freeTier": "Freemium",
+      "description": "Merlin AI is a browser assistant for summarizing pages, drafting replies, and generating content in context.",
+      "websiteURL": "https://www.getmerlin.in",
+      "tags": [
+        "Chrome Extension",
+        "Productivity",
+        "Writing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "138",
+      "name": "MiniMax Hailuo AI",
+      "slug": "minimax-hailuo-ai",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "MiniMax Hailuo AI focuses on generative video creation with cinematic motion and high-detail scene outputs.",
+      "websiteURL": "https://hailuoai.video",
+      "tags": [
+        "Video Generators",
+        "Content Creation",
+        "Design"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "139",
+      "name": "OpenRouter",
+      "slug": "openrouter",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "OpenRouter gives developers unified API access to multiple LLM providers with routing and usage controls.",
+      "websiteURL": "https://openrouter.ai",
+      "tags": [
+        "Developers",
+        "API",
+        "Coding"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "140",
+      "name": "OtterPilot",
+      "slug": "otterpilot",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "OtterPilot captures meeting transcripts, summaries, and action points automatically for team collaboration.",
+      "websiteURL": "https://otter.ai",
+      "tags": [
+        "Productivity",
+        "Business",
+        "Automation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "141",
+      "name": "Pieces for Developers",
+      "slug": "pieces-for-developers",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Pieces helps developers capture, reuse, and search code snippets with AI context for faster implementation.",
+      "websiteURL": "https://pieces.app",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "142",
+      "name": "Pika",
+      "slug": "pika",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Pika creates short AI videos from prompts and images with controls for motion, style, and scene transitions.",
+      "websiteURL": "https://pika.art",
+      "tags": [
+        "Video Generators",
+        "Content Creation",
+        "Social Media"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "143",
+      "name": "Playground AI",
+      "slug": "playground-ai",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "Playground AI offers fast image generation and editing for designers producing marketing and creative assets.",
+      "websiteURL": "https://playground.com",
+      "tags": [
+        "Image Generators",
+        "Design",
+        "Marketing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "144",
+      "name": "Poe by Quora",
+      "slug": "poe-by-quora",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Poe aggregates multiple AI models into one interface for faster comparison, prompting, and daily assistant use.",
+      "websiteURL": "https://poe.com",
+      "tags": [
+        "Productivity",
+        "AI Assistant",
+        "Students"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "145",
+      "name": "PromptLayer",
+      "slug": "promptlayer",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "PromptLayer tracks prompts, versions, and LLM usage to improve reliability across production AI applications.",
+      "websiteURL": "https://www.promptlayer.com",
+      "tags": [
+        "Developers",
+        "LLM Ops",
+        "Coding"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "146",
+      "name": "Recraft",
+      "slug": "recraft",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Recraft generates vector-style visuals, illustrations, and branding assets for product and marketing teams.",
+      "websiteURL": "https://www.recraft.ai",
+      "tags": [
+        "Design",
+        "Image Generators",
+        "Marketing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "147",
+      "name": "Relay.app",
+      "slug": "relay-app",
+      "category": "automation-tools",
+      "freeTier": "Freemium",
+      "description": "Relay.app automates business workflows with AI-assisted steps and human-in-the-loop approvals when needed.",
+      "websiteURL": "https://www.relay.app",
+      "tags": [
+        "Automation Tools",
+        "Business",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "148",
+      "name": "Remove.bg",
+      "slug": "remove-bg",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Remove.bg instantly removes image backgrounds and speeds up asset preparation for ecommerce and media teams.",
+      "websiteURL": "https://www.remove.bg",
+      "tags": [
+        "Design",
+        "Image Generators",
+        "Marketing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "149",
+      "name": "Replicate",
+      "slug": "replicate",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "Replicate lets developers run and deploy machine learning models via API with clear usage-based pricing.",
+      "websiteURL": "https://replicate.com",
+      "tags": [
+        "Developers",
+        "API",
+        "Coding"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "150",
+      "name": "Replit Agent",
+      "slug": "replit-agent",
+      "category": "agentic-ai",
+      "freeTier": "Freemium",
+      "description": "Replit Agent helps users plan, generate, and iterate software projects with autonomous coding assistance.",
+      "websiteURL": "https://replit.com",
+      "tags": [
+        "Agent",
+        "Coding",
+        "Developers"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "151",
+      "name": "RunPod",
+      "slug": "runpod",
+      "category": "developers",
+      "freeTier": "Paid",
+      "description": "RunPod offers GPU cloud infrastructure for inference and training workloads used in advanced AI projects.",
+      "websiteURL": "https://www.runpod.io",
+      "tags": [
+        "Developers",
+        "Infrastructure",
+        "Coding"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "152",
+      "name": "Semrush ContentShake AI",
+      "slug": "semrush-contentshake-ai",
+      "category": "marketing-tools",
+      "freeTier": "Freemium",
+      "description": "ContentShake AI helps marketers generate SEO article drafts aligned with keyword and ranking opportunities.",
+      "websiteURL": "https://www.semrush.com/contentshake/",
+      "tags": [
+        "Marketing",
+        "SEO",
+        "Writing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "153",
+      "name": "Speechify",
+      "slug": "speechify",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "Speechify converts text into natural voice narration for productivity, studying, and accessibility workflows.",
+      "websiteURL": "https://speechify.com",
+      "tags": [
+        "Audio Tools",
+        "Study",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "154",
+      "name": "Submagic",
+      "slug": "submagic",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Submagic automatically adds dynamic captions and edits to short-form videos for stronger social performance.",
+      "websiteURL": "https://www.submagic.co",
+      "tags": [
+        "Video Generators",
+        "Social Media",
+        "Marketing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "155",
+      "name": "Superhuman AI",
+      "slug": "superhuman-ai",
+      "category": "productivity",
+      "freeTier": "Paid",
+      "description": "Superhuman AI accelerates email workflows with smart drafting, triage, and follow-up recommendations.",
+      "websiteURL": "https://superhuman.com",
+      "tags": [
+        "Productivity",
+        "Business",
+        "Writing"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "156",
+      "name": "Tavily",
+      "slug": "tavily",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "Tavily delivers search APIs optimized for AI agents needing reliable, current web context in applications.",
+      "websiteURL": "https://tavily.com",
+      "tags": [
+        "Developers",
+        "API",
+        "Agent"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "157",
+      "name": "Typeface",
+      "slug": "typeface",
+      "category": "marketing-tools",
+      "freeTier": "Paid",
+      "description": "Typeface helps brands generate on-brand marketing content with controlled voice, style, and campaign workflows.",
+      "websiteURL": "https://www.typeface.ai",
+      "tags": [
+        "Marketing",
+        "Business",
+        "Content Creation"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "158",
+      "name": "Uizard",
+      "slug": "uizard",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Uizard converts text and screenshots into UI mockups and wireframes for fast design iteration.",
+      "websiteURL": "https://uizard.io",
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "159",
+      "name": "Unstructured",
+      "slug": "unstructured",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "Unstructured transforms complex documents into model-ready data for RAG systems and enterprise AI pipelines.",
+      "websiteURL": "https://unstructured.io",
+      "tags": [
+        "Developers",
+        "Data",
+        "Coding"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "160",
+      "name": "VEED AI",
+      "slug": "veed-ai",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "VEED AI simplifies online video editing with subtitles, voiceovers, and script-based generation features.",
+      "websiteURL": "https://www.veed.io/ai",
+      "tags": [
+        "Video Generators",
+        "Content Creation",
+        "Social Media"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "161",
+      "name": "Vizard",
+      "slug": "vizard",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Vizard repurposes long-form recordings into short clips with AI scene detection and captions.",
+      "websiteURL": "https://vizard.ai",
+      "tags": [
+        "Video Generators",
+        "Marketing",
+        "Social Media"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "162",
+      "name": "Voiceflow",
+      "slug": "voiceflow",
+      "category": "automation-tools",
+      "freeTier": "Freemium",
+      "description": "Voiceflow helps teams design, test, and ship AI assistants and chat workflows without heavy coding overhead.",
+      "websiteURL": "https://www.voiceflow.com",
+      "tags": [
+        "Automation Tools",
+        "Business",
+        "Agent"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "163",
+      "name": "Windsurf",
+      "slug": "windsurf",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Windsurf is an AI-powered development environment focused on assisted coding, refactoring, and faster shipping.",
+      "websiteURL": "https://windsurf.com",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "164",
+      "name": "Wordtune",
+      "slug": "wordtune",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Wordtune improves tone, clarity, and rewriting speed for emails, documents, and professional writing.",
+      "websiteURL": "https://www.wordtune.com",
+      "tags": [
+        "Writing",
+        "Productivity",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "165",
+      "name": "Zencoder",
+      "slug": "zencoder",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Zencoder offers AI-assisted coding and review workflows to help engineering teams move from prompt to production.",
+      "websiteURL": "https://zencoder.ai",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Productivity"
+      ],
+      "logo": "/logos/google.svg"
+    },
+    {
+      "id": "166",
+      "name": "n8n AI Agent Builder",
+      "slug": "n8n-ai-agent-builder",
+      "category": "automation-tools",
+      "freeTier": "Freemium",
+      "description": "n8n AI Agent Builder enables custom workflow automations that combine APIs, tools, and LLM-driven logic.",
+      "websiteURL": "https://n8n.io",
+      "tags": [
+        "Automation Tools",
+        "Agent",
+        "Business"
+      ],
+      "logo": "/logos/google.svg"
+    }
+  ]
+}

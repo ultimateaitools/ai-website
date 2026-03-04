@@ -1,0 +1,91 @@
+import React from 'react';
+import { getData, getSegments, getToolsByCategory } from '@/lib/data';
+import ToolCard from '@/components/ToolCard';
+import { Metadata } from 'next';
+import AdSlot from '@/components/AdSlot';
+
+interface Props {
+    params: { slug: string };
+}
+
+export async function generateStaticParams() {
+    const segments = getSegments();
+    const { tools } = getData();
+    const allSlugs = new Set<string>([
+        ...segments.map((segment) => segment.slug),
+        ...tools.map((tool) => tool.category),
+    ]);
+
+    return Array.from(allSlugs).map((slug) => ({ slug }));
+}
+
+function formatSlugTitle(slug: string): string {
+    return slug
+        .split('-')
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(' ');
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const segments = getSegments();
+    const segment = segments.find(s => s.slug === params.slug);
+    const categoryName = segment?.name || formatSlugTitle(params.slug);
+    const title = `${categoryName} | UltimateAITools`;
+    const description = `Find top AI tools in the ${categoryName} category on UltimateAITools, including free, freemium, and paid options.`;
+
+    return {
+        title,
+        description,
+        alternates: {
+            canonical: `https://ultimateaitools.online/category/${params.slug}`,
+        },
+        openGraph: {
+            title,
+            description,
+            url: `https://ultimateaitools.online/category/${params.slug}`,
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+        },
+    };
+}
+
+export default function CategoryPage({ params }: Props) {
+    const segments = getSegments();
+    const segment = segments.find(s => s.slug === params.slug);
+    const tools = getToolsByCategory(params.slug);
+    const categoryName = segment?.name || formatSlugTitle(params.slug);
+
+    if (!segment && tools.length === 0) {
+        return <div className="p-20 text-center text-gray-500 font-medium">Category not found</div>;
+    }
+
+    return (
+        <div className="max-w-7xl mx-auto px-4 py-16">
+            <div className="mb-12 border-b border-surface-border pb-8">
+                <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">{categoryName}</h1>
+                <p className="text-lg text-gray-400">
+                    Discover handpicked tools specifically selected for {categoryName.toLowerCase()}.
+                </p>
+            </div>
+
+            {tools.length > 0 ? (
+                <>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        {tools.map(tool => (
+                            <ToolCard key={tool.id} tool={tool} />
+                        ))}
+                    </div>
+                    <AdSlot adSlot="1000000009" format="horizontal" />
+                </>
+            ) : (
+                <div className="bg-surface-hover border border-surface-border rounded-xl p-10 text-center">
+                    <p className="text-gray-500 font-medium">No tools found in this category yet. Check back soon!</p>
+                </div>
+            )}
+        </div>
+    );
+}
