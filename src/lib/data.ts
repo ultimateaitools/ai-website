@@ -196,7 +196,17 @@ export function getPromptsData(): PromptsDataStore {
 export function getBlogsData(): BlogDataStore {
     const filePath = path.join(process.cwd(), 'blog.json');
     const fileContents = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(fileContents) as BlogDataStore;
+    const data = JSON.parse(fileContents) as BlogDataStore;
+
+    data.blogs = [...data.blogs].sort((a, b) => {
+        const dateDiff = new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime();
+        if (dateDiff !== 0) {
+            return dateDiff;
+        }
+        return Number(b.id) - Number(a.id);
+    });
+
+    return data;
 }
 
 export function getModelsData(): ModelsDataStore {

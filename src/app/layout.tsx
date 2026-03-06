@@ -5,8 +5,10 @@ import "./globals.css";
 import React from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingShareBar from "@/components/FloatingShareBar";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: 'swap' });
+const gaMeasurementId = "G-1X8T9144E9";
 
 export const metadata: Metadata = {
   title: "Ultimate Free AI Tools Directory",
@@ -52,6 +54,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             crossOrigin="anonymous"
           />
         ) : null}
+        <Script
+          id="gtag-src"
+          async
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gaMeasurementId}');
+          `}
+        </Script>
+        <FloatingShareBar />
         <Header />
         <main className="flex-1 bg-surface-main">{children}</main>
         <Footer />

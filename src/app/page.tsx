@@ -97,7 +97,6 @@ export default function Home() {
               Get Free Prompts
             </Link>
           </div>
-
           {/* Intelligent Search Input */}
           <HeroSearch />
         </div>
@@ -139,10 +138,15 @@ export default function Home() {
             <Link key={segment.slug} href={segment.slug === 'directory' ? '/ai-tools' : segment.slug === 'prompt-library' ? '/prompts' : segment.slug === 'blog' ? '/blog' : segment.slug === 'models-comparison' ? '/models' : segment.slug === 'news' ? '/blog' : `/category/${segment.slug}`} className="block group h-full">
               <div className="saas-card p-6 h-full flex flex-col items-start relative overflow-hidden transition-all duration-300 hover:border-primary-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:-translate-y-1">
 
-                {/* Watermark First Letter */}
-                <div className="absolute -bottom-6 -right-2 text-[140px] leading-none font-black text-white/[0.03] group-hover:text-primary-500/[0.08] transition-all select-none z-0 pointer-events-none transform group-hover:scale-110 duration-500">
-                  {segment.name.charAt(0).toUpperCase()}
-                </div>
+                {/* Watermark Category SVG */}
+                <div
+                  className="absolute -bottom-3 -right-3 text-white/[0.04] group-hover:text-primary-500/[0.12] transition-all select-none z-0 pointer-events-none transform group-hover:scale-110 duration-500 [&_svg]:w-28 [&_svg]:h-28 [&_svg]:stroke-[1.25] [&_svg]:opacity-100"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      segment.icon ||
+                      '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>',
+                  }}
+                />
 
                 <div className="relative z-10 flex flex-col h-full w-full">
                   <div className="w-12 h-12 rounded-xl bg-primary-900/30 text-primary-400 flex items-center justify-center mb-5 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300 shadow-sm"

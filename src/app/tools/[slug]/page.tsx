@@ -94,7 +94,6 @@ export default function ToolDetailPage({ params }: Props) {
                         </div>
                     </div>
                 </div>
-
                 <div className="prose prose-primary max-w-none">
                     <h2 className="text-2xl font-bold text-foreground border-b pb-2 mb-4">About {tool.name}</h2>
                     <p className="text-lg text-gray-300 leading-relaxed mb-8">{tool.description}</p>
