@@ -183,7 +183,7 @@ export default function BlogDetailPage({ params }: Props) {
                             <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Browse AI Tools Directory &rarr;
                             </Link>
-                            <Link href="/prompts" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 View Prompt Library &rarr;
                             </Link>
                             <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">

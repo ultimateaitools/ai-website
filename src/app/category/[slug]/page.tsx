@@ -1,22 +1,16 @@
 import React from 'react';
-import { getData, getSegments, getToolsByCategory } from '@/lib/data';
+import { getBrowsableCategorySlugs, getSegments, getToolsByCategory } from '@/lib/data';
 import ToolCard from '@/components/ToolCard';
 import { Metadata } from 'next';
 import AdSlot from '@/components/AdSlot';
+import Link from 'next/link';
 
 interface Props {
     params: { slug: string };
 }
 
 export async function generateStaticParams() {
-    const segments = getSegments();
-    const { tools } = getData();
-    const allSlugs = new Set<string>([
-        ...segments.map((segment) => segment.slug),
-        ...tools.map((tool) => tool.category),
-    ]);
-
-    return Array.from(allSlugs).map((slug) => ({ slug }));
+    return getBrowsableCategorySlugs().map((slug) => ({ slug }));
 }
 
 function formatSlugTitle(slug: string): string {
@@ -86,6 +80,27 @@ export default function CategoryPage({ params }: Props) {
                     <p className="text-gray-500 font-medium">No tools found in this category yet. Check back soon!</p>
                 </div>
             )}
+
+            <section className="mt-16 rounded-2xl border border-surface-border bg-surface-card p-8">
+                <h2 className="text-2xl font-bold text-foreground mb-3">Related Pages for {categoryName}</h2>
+                <p className="text-gray-400 mb-6">
+                    Explore supporting resources beyond this category listing to compare options and find implementation help.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                    <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        Browse all AI tools &rarr;
+                    </Link>
+                    <Link href={`/prompts/category/${params.slug}`} className="text-primary-400 hover:text-primary-300 font-semibold">
+                        View matching prompts &rarr;
+                    </Link>
+                    <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        Read AI blog guides &rarr;
+                    </Link>
+                    <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        Compare AI models &rarr;
+                    </Link>
+                </div>
+            </section>
         </div>
     );
 }

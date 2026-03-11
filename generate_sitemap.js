@@ -8,6 +8,7 @@ const staticPages = [
     '/about',
     '/ai-tools',
     '/prompts',
+    '/prompts/category',
     '/blog',
     '/models',
     '/sitemap',
@@ -87,7 +88,7 @@ function generateSitemap() {
         if (Array.isArray(toolsData.segments)) {
             toolsData.segments.forEach(segment => {
                 if (!segment?.slug) return;
-                if (segment.slug === 'directory' || segment.slug === 'prompt-library' || segment.slug === 'blog' || segment.slug === 'models-comparison') return;
+                if (segment.slug === 'directory' || segment.slug === 'prompt-library' || segment.slug === 'blog' || segment.slug === 'models-comparison' || segment.slug === 'news') return;
                 addUrl(`/category/${segment.slug}`, toolsLastmod);
             });
         }

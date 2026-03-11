@@ -200,6 +200,27 @@ export default function AIToolsDirectoryView({ allToolsSorted, currentPage, tota
           AI tools are software applications that use artificial intelligence to automate tasks such as writing, coding, image generation, video editing and research. This directory includes both free and paid AI tools listed alphabetically for easier comparison.
         </p>
       </section>
+
+      <section className="mt-12 rounded-2xl border border-surface-border bg-surface-card p-8">
+        <h2 className="text-2xl font-bold text-foreground mb-3">Helpful Internal Resources</h2>
+        <p className="text-gray-400 mb-6">
+          Use these pages to compare tools, find prompts, and move deeper into specific workflows.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
+            Browse prompt categories &rarr;
+          </Link>
+          <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+            Read AI blog guides &rarr;
+          </Link>
+          <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+            Compare AI models &rarr;
+          </Link>
+          <Link href="/sitemap" className="text-primary-400 hover:text-primary-300 font-semibold">
+            Open site sitemap &rarr;
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

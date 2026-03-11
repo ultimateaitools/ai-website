@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getPromptCategories, getPromptsByCategory } from '@/lib/data';
+import { getPromptCategories, getPromptsByCategory, getToolCategorySlugForPromptCategory } from '@/lib/data';
 import AdSlot from '@/components/AdSlot';
 
 type Props = {
@@ -43,13 +43,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function PromptCategoryPage({ params }: Props) {
-    const category = getPromptCategories().find((item) => item.slug === params.slug);
+    const allCategories = getPromptCategories();
+    const category = allCategories.find((item) => item.slug === params.slug);
 
     if (!category) {
         notFound();
     }
 
     const prompts = getPromptsByCategory(category.slug);
+    const relatedCategories = allCategories.filter((item) => item.slug !== category.slug).slice(0, 4);
+    const relatedToolCategorySlug = getToolCategorySlugForPromptCategory(category.slug);
 
     return (
         <div className="bg-surface-card">
@@ -102,6 +105,53 @@ export default function PromptCategoryPage({ params }: Props) {
                         </div>
                     ))}
                 </div>
+
+                <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div className="rounded-2xl border border-surface-border bg-surface-hover p-6">
+                        <h2 className="text-2xl font-bold text-foreground mb-3">Keep Exploring AI Resources</h2>
+                        <p className="text-gray-400 mb-5">
+                            Move from prompts to tools, model research, and practical guides to build a stronger workflow.
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                Browse all prompt categories &rarr;
+                            </Link>
+                            <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                Explore AI tools directory &rarr;
+                            </Link>
+                            {relatedToolCategorySlug ? (
+                                <Link href={`/category/${relatedToolCategorySlug}`} className="text-primary-400 hover:text-primary-300 font-semibold">
+                                    View related {category.name.toLowerCase()} tools &rarr;
+                                </Link>
+                            ) : (
+                                <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                    Compare AI models &rarr;
+                                </Link>
+                            )}
+                            <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                Read AI blog guides &rarr;
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="rounded-2xl border border-surface-border bg-surface-hover p-6">
+                        <h2 className="text-2xl font-bold text-foreground mb-3">More Prompt Categories</h2>
+                        <p className="text-gray-400 mb-5">
+                            Jump into adjacent categories and discover more copy-paste prompt templates.
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            {relatedCategories.map((item) => (
+                                <Link
+                                    key={item.slug}
+                                    href={`/prompts/category/${item.slug}`}
+                                    className="rounded-xl border border-surface-border px-4 py-3 text-gray-300 hover:text-primary-300 hover:border-primary-500/40 transition-colors"
+                                >
+                                    {item.name} ({item.promptCount})
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     );

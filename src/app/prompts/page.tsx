@@ -72,6 +72,27 @@ export default function PromptsDirectoryPage() {
                         </div>
                     ))}
                 </div>
+
+                <section className="mt-16 rounded-2xl border border-surface-border bg-surface-hover p-8">
+                    <h2 className="text-2xl font-bold text-foreground mb-3">Use Prompts With the Rest of the Site</h2>
+                    <p className="text-gray-400 mb-6 max-w-3xl">
+                        Start with a category, then pair those prompts with the right AI tools, model comparisons, and implementation guides.
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                        <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            Browse AI tools directory &rarr;
+                        </Link>
+                        <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            Compare AI models &rarr;
+                        </Link>
+                        <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            Read practical AI guides &rarr;
+                        </Link>
+                        <Link href="/sitemap" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            Open full site sitemap &rarr;
+                        </Link>
+                    </div>
+                </section>
             </main>
         </div>
     );

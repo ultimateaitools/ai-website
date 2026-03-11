@@ -150,6 +150,27 @@ export default function ModelDetailPage({ params }: Props) {
                     ))}
                 </div>
             </div>
+
+            <div className="mt-12 rounded-2xl border border-surface-border bg-surface-card p-8">
+                <h2 className="text-2xl font-bold text-foreground mb-3">Continue Research</h2>
+                <p className="text-gray-400 mb-6">
+                    Use related pages to move from model comparison into tools, prompts, and implementation guides.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                    <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        Compare all AI models &rarr;
+                    </Link>
+                    <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        Browse AI tools directory &rarr;
+                    </Link>
+                    <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        Explore prompt categories &rarr;
+                    </Link>
+                    <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        Read AI blog guides &rarr;
+                    </Link>
+                </div>
+            </div>
         </article>
     );
 }

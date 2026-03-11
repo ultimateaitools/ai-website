@@ -96,6 +96,27 @@ export default function ModelsComparisonPage() {
                         </tbody>
                     </table>
                 </div>
+
+                <section className="rounded-2xl border border-surface-border bg-surface-hover p-8">
+                    <h2 className="text-2xl font-bold text-foreground mb-3">Explore Related AI Resources</h2>
+                    <p className="text-gray-400 mb-6">
+                        Compare models first, then move into tools, prompts, and tutorials that fit your workflow.
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                        <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            Browse AI tools directory &rarr;
+                        </Link>
+                        <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            Open prompt categories &rarr;
+                        </Link>
+                        <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            Read AI blog guides &rarr;
+                        </Link>
+                        <Link href="/sitemap" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            View full sitemap &rarr;
+                        </Link>
+                    </div>
+                </section>
             </main>
         </div>
     );

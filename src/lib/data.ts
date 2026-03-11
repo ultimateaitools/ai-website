@@ -94,6 +94,14 @@ export interface PromptCategorySummary {
     promptCount: number;
 }
 
+const EXCLUDED_CATEGORY_PAGE_SLUGS = new Set([
+    'directory',
+    'blog',
+    'prompt-library',
+    'models-comparison',
+    'news',
+]);
+
 interface BlogDataStore {
     blogs: Blog[];
 }
@@ -217,6 +225,17 @@ const PROMPT_CATEGORY_NAMES: Record<string, string> = {
     'upsc-ssc-prep': 'UPSC / SSC Prep',
 };
 
+const PROMPT_TO_TOOL_CATEGORY_MAP: Record<string, string> = {
+    marketing: 'marketing-tools',
+    'social-media': 'social-media-tools',
+    business: 'business-tools',
+    productivity: 'productivity',
+    coding: 'developers',
+    study: 'study-tools',
+    'image-generation': 'image-generators',
+    'upsc-ssc-prep': 'upsc-ssc-prep',
+};
+
 function formatPromptCategoryName(slug: string): string {
     if (PROMPT_CATEGORY_NAMES[slug]) {
         return PROMPT_CATEGORY_NAMES[slug];
@@ -249,6 +268,30 @@ export function getPromptCategories(): PromptCategorySummary[] {
 export function getPromptsByCategory(slug: string): Prompt[] {
     const { prompts } = getPromptsData();
     return prompts.filter((prompt) => prompt.category === slug);
+}
+
+export function getBrowsableCategorySlugs(): string[] {
+    const segments = getSegments()
+        .map((segment) => segment.slug)
+        .filter((slug) => !EXCLUDED_CATEGORY_PAGE_SLUGS.has(slug));
+    const { tools } = getData();
+    const toolCategories = tools
+        .map((tool) => tool.category)
+        .filter((slug) => !EXCLUDED_CATEGORY_PAGE_SLUGS.has(slug));
+
+    return Array.from(new Set([...segments, ...toolCategories])).filter(
+        (slug) => getToolsByCategory(slug).length > 0
+    );
+}
+
+export function getToolCategorySlugForPromptCategory(slug: string): string | null {
+    const mappedSlug = PROMPT_TO_TOOL_CATEGORY_MAP[slug];
+
+    if (!mappedSlug) {
+        return null;
+    }
+
+    return getToolsByCategory(mappedSlug).length > 0 ? mappedSlug : null;
 }
 
 export function getBlogsData(): BlogDataStore {

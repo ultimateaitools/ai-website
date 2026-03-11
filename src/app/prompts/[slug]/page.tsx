@@ -1,7 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getPromptsData } from '@/lib/data';
+import { getPromptCategories, getPromptsData, getToolCategorySlugForPromptCategory } from '@/lib/data';
 import Link from 'next/link';
 import { promptContentData } from '@/lib/promptContentData';
 import AdSlot from '@/components/AdSlot';
@@ -67,6 +67,8 @@ export default function PromptDetailPage({ params }: Props) {
         ]
     };
     const relatedPrompts = prompts.filter(p => p.category === prompt.category && p.slug !== prompt.slug).slice(0, 4);
+    const relatedCategories = getPromptCategories().filter((item) => item.slug !== prompt.category).slice(0, 3);
+    const relatedToolCategorySlug = getToolCategorySlugForPromptCategory(prompt.category);
     const promptSchema = {
         '@context': 'https://schema.org',
         '@type': 'CreativeWork',
@@ -150,6 +152,33 @@ export default function PromptDetailPage({ params }: Props) {
 
                     <AdSlot adSlot="1000000005" format="horizontal" />
 
+                    <div className="mb-10 p-6 bg-surface-hover border border-surface-border rounded-2xl">
+                        <h2 className="text-2xl font-bold text-foreground mb-3">Related AI Resources</h2>
+                        <p className="text-gray-300 mb-4">
+                            Pair this prompt with supporting pages across the site to get better output and compare alternatives.
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 not-prose">
+                            <Link href={`/prompts/category/${prompt.category}`} className="text-primary-400 hover:text-primary-300 font-semibold">
+                                More {prompt.category.replace('-', ' ')} prompts &rarr;
+                            </Link>
+                            <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                Browse AI tools directory &rarr;
+                            </Link>
+                            {relatedToolCategorySlug ? (
+                                <Link href={`/category/${relatedToolCategorySlug}`} className="text-primary-400 hover:text-primary-300 font-semibold">
+                                    Explore {prompt.category.replace('-', ' ')} tools &rarr;
+                                </Link>
+                            ) : (
+                                <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                    Read AI workflow guides &rarr;
+                                </Link>
+                            )}
+                            <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                Compare AI models &rarr;
+                            </Link>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -169,6 +198,21 @@ export default function PromptDetailPage({ params }: Props) {
                 ) : (
                     <p className="text-gray-500">No related prompts found in this category.</p>
                 )}
+            </div>
+
+            <div className="mt-12">
+                <h2 className="text-2xl font-bold text-foreground mb-6">Explore More Categories</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    {relatedCategories.map((category) => (
+                        <Link
+                            key={category.slug}
+                            href={`/prompts/category/${category.slug}`}
+                            className="rounded-2xl border border-surface-border bg-surface-card p-5 text-gray-300 hover:text-primary-300 hover:border-primary-500/40 transition-colors"
+                        >
+                            {category.name} ({category.promptCount})
+                        </Link>
+                    ))}
+                </div>
             </div>
         </article>
     );
