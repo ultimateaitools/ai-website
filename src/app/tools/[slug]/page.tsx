@@ -61,6 +61,7 @@ export default function ToolDetailPage({ params }: Props) {
     };
 
     const relatedTools = tools.filter(t => t.category === tool.category && t.slug !== tool.slug).slice(0, 4);
+    const isFreeTool = tool.freeTier.toLowerCase() === 'free';
 
     const schemaMarkup = {
         "@context": "https://schema.org",
@@ -68,11 +69,7 @@ export default function ToolDetailPage({ params }: Props) {
         "name": tool.name,
         "operatingSystem": "Web",
         "applicationCategory": "BusinessApplication",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
+        "isAccessibleForFree": isFreeTool,
         "description": tool.description,
         "url": `https://ultimateaitools.online/tools/${tool.slug}`
     };
@@ -155,6 +152,27 @@ export default function ToolDetailPage({ params }: Props) {
                         <a href={`/category/${tool.category}`} className="text-primary-600 font-bold hover:text-primary-700 transition-colors">
                             Explore more tools in {tool.category.replace('-', ' ')} &rarr;
                         </a>
+                    </div>
+
+                    <div className="mb-10 p-6 bg-surface-hover border border-surface-border rounded-2xl">
+                        <h3 className="text-lg font-bold text-foreground mb-2">Related Guides and Resources</h3>
+                        <p className="text-gray-300 mb-4">
+                            Learn how to use {tool.name} better with practical tutorials, prompts, and model comparisons.
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <Link href={`/category/${tool.category}`} className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+                                More {tool.category.replace('-', ' ')} tools &rarr;
+                            </Link>
+                            <Link href="/blog" className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+                                Read AI Blog Guides &rarr;
+                            </Link>
+                            <Link href="/prompts" className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+                                Try Prompt Library &rarr;
+                            </Link>
+                            <Link href="/models" className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+                                Compare AI Models &rarr;
+                            </Link>
+                        </div>
                     </div>
 
                     <div className="bg-surface-hover p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 border border-surface-border">

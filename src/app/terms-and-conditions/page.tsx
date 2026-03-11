@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Terms and Conditions – UltimateAITools',
+    title: 'Terms and Conditions - UltimateAITools',
     description: 'Read the Terms and Conditions of UltimateAITools.online before using our platform.',
     alternates: {
         canonical: 'https://ultimateaitools.online/terms-and-conditions',

@@ -3599,6 +3599,56 @@
       "promptText": "You are a Creative Director.\n\nTask:\nCreate a decision matrix for creative design that helps designers and creators generate high-quality visual assets with consistency.\n\nProject Context:\n- Business/Project: [Describe your project or brand]\n- Audience: [Who is the target audience]\n- Current Stage: [Beginner / Growth / Advanced]\n- Constraints: [Time, budget, compliance, tools]\n- Priority Goal: [Primary business or academic outcome]\n\nInstructions:\n1) Ask up to 5 clarifying questions if information is missing.\n2) Build the output using practical, real-world steps.\n3) Include assumptions clearly if any input is missing.\n4) Provide both quick-win actions and long-term strategy.\n5) Keep advice specific, measurable, and implementation-focused.\n\nModel Compatibility Notes:\n- ChatGPT: Favor concise sections and actionable bullets.\n- Gemini: Include references to docs/workspace integration when relevant.\n- Claude: Add deeper reasoning and edge-case handling.\n- Grok: Keep language direct and practical with clear tradeoffs.\n\nOutput Format:\nA) Executive Summary (5-7 lines)\nB) Structured Decision Matrix (numbered steps)\nC) Common Pitfalls and How to Avoid Them\nD) KPI/Success Metrics to Track\nE) 7-Day Action Plan\n\nQuality Checklist:\n- No generic fluff\n- No unverifiable claims\n- Clear, safe, and policy-compliant wording\n- Ready to use without major rewriting",
       "outputType": "Decision Matrix",
       "bestFor": "Designers And Creators"
+    },
+    {
+      "id": "361",
+      "title": "UPSC / SSC Prep - Personalized Study Plan Builder",
+      "slug": "upsc-ssc-prep-study-plan-builder",
+      "category": "upsc-ssc-prep",
+      "description": "Create a realistic UPSC or SSC study plan based on exam date, weak subjects, available hours, and current preparation level.",
+      "promptText": "You are an expert UPSC and SSC exam mentor.\n\nTask:\nBuild a realistic study plan for a student preparing for UPSC or SSC.\n\nStudent Context:\n- Exam: [UPSC Prelims / UPSC Mains / SSC CGL / SSC CHSL / Other]\n- Exam Date or Attempt Month: [Enter date]\n- Daily Study Hours Available: [Enter hours]\n- Current Level: [Beginner / Intermediate / Repeat Aspirant]\n- Strong Subjects: [List]\n- Weak Subjects: [List]\n- Optional Subject if UPSC: [Enter optional]\n- Biggest Problem Right Now: [Consistency / Revision / Time management / Low mock score / Backlog]\n\nInstructions:\n1) First identify the student's biggest preparation bottleneck.\n2) Create a weekly and monthly study plan that is realistic, not idealistic.\n3) Split the plan into concept building, revision, test practice, and current affairs.\n4) Include buffer slots for backlog recovery.\n5) Suggest what to stop doing if the current strategy is wasting time.\n6) Use simple language and make the output student-friendly.\n\nOutput Format:\nA) Quick diagnosis of the student's problem\nB) 30-day study plan table\nC) Daily timetable recommendation\nD) Revision strategy\nE) Mock test strategy\nF) Mistakes to avoid\nG) 7-day reset plan if the student is off track\n\nImportant:\n- Do not give generic motivation lines\n- Keep the plan practical for Indian competitive exams\n- Prioritize retention and revision over unrealistic coverage",
+      "outputType": "Study Plan",
+      "bestFor": "UPSC And SSC Aspirants"
+    },
+    {
+      "id": "362",
+      "title": "UPSC / SSC Prep - Current Affairs Simplifier",
+      "slug": "upsc-ssc-prep-current-affairs-simplifier",
+      "category": "upsc-ssc-prep",
+      "description": "Turn long current affairs articles into exam-focused notes, probable questions, and revision bullets for UPSC and SSC students.",
+      "promptText": "You are a current affairs mentor for UPSC and SSC aspirants.\n\nTask:\nConvert the input article, newspaper note, or issue summary into exam-focused current affairs notes.\n\nInput Source:\n[Paste article, editorial, note, or topic here]\n\nInstructions:\n1) Explain the topic in very simple language first.\n2) Extract only exam-relevant facts, context, and implications.\n3) Separate the output for UPSC relevance and SSC relevance where needed.\n4) Add probable prelims-style MCQs or fact-based questions.\n5) Add 3 to 5 mains/interview discussion angles if the topic suits UPSC.\n6) End with a short revision sheet that can be reviewed in 2 minutes.\n\nOutput Format:\nA) Topic in simple words\nB) Why this matters for exams\nC) Key facts and background\nD) UPSC focus points\nE) SSC focus points\nF) Probable MCQs with answers\nG) 2-minute revision notes\n\nImportant:\n- Avoid unnecessary jargon\n- Keep points crisp and easy to revise\n- Focus on what a serious exam aspirant should actually remember",
+      "outputType": "Current Affairs Notes",
+      "bestFor": "UPSC And SSC Aspirants"
+    },
+    {
+      "id": "363",
+      "title": "UPSC / SSC Prep - Mock Test Error Analyzer",
+      "slug": "upsc-ssc-prep-mock-test-error-analyzer",
+      "category": "upsc-ssc-prep",
+      "description": "Analyze mock test mistakes, identify weak patterns, and create a correction strategy so students improve scores faster.",
+      "promptText": "You are an exam performance analyst for UPSC and SSC students.\n\nTask:\nAnalyze the student's mock test performance and identify the fastest route to score improvement.\n\nStudent Input:\n- Exam: [UPSC / SSC]\n- Mock Score: [Enter score]\n- Sections Performed Poorly In: [List]\n- Error Types: [Conceptual mistakes / Silly mistakes / Time pressure / Guessing / Revision gap]\n- Number of Questions Attempted: [Enter]\n- Accuracy Level: [Enter estimated percentage]\n- Student Notes on What Went Wrong: [Paste notes]\n\nInstructions:\n1) Diagnose the top 3 reasons behind the low score.\n2) Separate knowledge-gap problems from exam-strategy problems.\n3) Suggest a correction plan for the next 14 days.\n4) Recommend how many mocks, revisions, and topic drills the student should do.\n5) Add an error log template the student can reuse after every mock.\n6) Keep the recommendations realistic and score-focused.\n\nOutput Format:\nA) Score diagnosis summary\nB) Top mistake patterns\nC) Topic-wise correction plan\nD) 14-day recovery strategy\nE) Mock analysis template\nF) Accuracy improvement tips\nG) What to stop doing immediately\n\nImportant:\n- No generic advice like 'study harder'\n- Prioritize score improvement and retention",
+      "outputType": "Performance Analysis",
+      "bestFor": "UPSC And SSC Aspirants"
+    },
+    {
+      "id": "364",
+      "title": "UPSC / SSC Prep - Fast Revision Notes Generator",
+      "slug": "upsc-ssc-prep-fast-revision-notes-generator",
+      "category": "upsc-ssc-prep",
+      "description": "Generate short, high-retention revision notes from long chapters or class notes for faster recall before exams.",
+      "promptText": "You are a revision specialist for Indian competitive exams.\n\nTask:\nConvert the student's long chapter, class note, or raw study material into ultra-fast revision notes.\n\nInput Material:\n[Paste chapter notes, topic explanation, or class notes here]\n\nInstructions:\n1) Compress the content without losing exam-relevant meaning.\n2) Highlight definitions, dates, formulas, keywords, and recurring concepts.\n3) Use bullets and mini-headings for fast scanning.\n4) Add memory triggers or mnemonics if helpful.\n5) Make the notes suitable for last-day revision.\n6) If the topic is factual, add a rapid-fire recall section.\n\nOutput Format:\nA) One-paragraph summary\nB) Core revision bullets\nC) Must-remember facts or concepts\nD) Common traps or confusions\nE) Rapid-fire self-test questions\nF) 60-second last-minute recap\n\nImportant:\n- Keep the notes compact and exam-oriented\n- Make the structure easy to revise on mobile or print",
+      "outputType": "Revision Notes",
+      "bestFor": "UPSC And SSC Aspirants"
+    },
+    {
+      "id": "365",
+      "title": "UPSC / SSC Prep - Answer Writing and Explanation Coach",
+      "slug": "upsc-ssc-prep-answer-writing-coach",
+      "category": "upsc-ssc-prep",
+      "description": "Help students improve answer structure, clarity, and scoring approach for descriptive questions and analytical explanations.",
+      "promptText": "You are a UPSC and competitive exam answer-writing coach.\n\nTask:\nEvaluate and improve a student's answer or help draft a better answer from scratch.\n\nInput:\n- Exam: [UPSC Mains / Other descriptive exam / Explain concept for SSC interview stage]\n- Question: [Paste the question]\n- Student's Draft Answer: [Paste answer or leave blank]\n- Word Limit: [Enter limit]\n- Student's Problem: [Lack of structure / Weak introduction / Poor conclusion / Less content / Low clarity]\n\nInstructions:\n1) If a student answer is given, first critique it honestly but constructively.\n2) Show what is missing in structure, content, and presentation.\n3) Rewrite the answer in a more scoring format.\n4) Use intro-body-conclusion structure where relevant.\n5) Suggest value additions such as examples, committee references, diagrams, or keywords if useful.\n6) Keep the answer within word limit.\n\nOutput Format:\nA) Quick evaluation of the student's draft\nB) Major weaknesses\nC) Improved answer version\nD) Structure framework the student should reuse\nE) 5 rules for better answer writing next time\n\nImportant:\n- Be exam-focused, not academic-theory heavy\n- Prioritize clarity, structure, and marks-oriented writing",
+      "outputType": "Answer Writing Guide",
+      "bestFor": "UPSC And SSC Aspirants"
     }
   ]
 }

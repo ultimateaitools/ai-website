@@ -3077,6 +3077,22 @@
         "Business"
       ],
       "logo": "/logos/google.svg"
+    },
+    {
+      "id": "167",
+      "name": "Manus AI",
+      "slug": "manus-ai",
+      "category": "agentic-ai",
+      "freeTier": "Paid",
+      "description": "Manus AI is a general AI agent built for multi-step task execution, combining research, planning, and browser-based actions in one workflow.",
+      "websiteURL": "https://manus.im",
+      "tags": [
+        "Agent",
+        "Productivity",
+        "Automation Tools",
+        "Business"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
     }
   ]
 }

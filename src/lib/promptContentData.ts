@@ -1,4 +1,69 @@
 export const promptContentData: Record<string, { description: string, whatItDoes: string[], whenToUse: string[] }> = {
+  "upsc-ssc-prep-study-plan-builder": {
+    description: "Use this exam-focused AI prompt to create a realistic UPSC or SSC study plan based on time left, weak areas, daily hours, and current preparation stage.",
+    whatItDoes: [
+      "This prompt diagnoses a student's real bottleneck before creating a timetable, which makes the plan more realistic than generic weekly schedules copied from toppers.",
+      "It organizes preparation into concept learning, revision, tests, and backlog control so students can improve consistency without burning out.",
+      "The structure is useful for both UPSC and SSC aspirants because it balances syllabus coverage with revision and score improvement."
+    ],
+    whenToUse: [
+      "Use it when a student feels lost, has too many pending topics, or cannot decide what to study each day.",
+      "It is especially useful at the start of a preparation cycle or after a poor mock score when the current routine clearly is not working.",
+      "It also works well when a student wants a 30-day reset plan before prelims, mains, or a major SSC phase."
+    ]
+  },
+  "upsc-ssc-prep-current-affairs-simplifier": {
+    description: "Use this prompt to convert newspaper articles and current affairs topics into crisp UPSC and SSC notes, probable questions, and revision-ready bullets.",
+    whatItDoes: [
+      "The prompt turns long and confusing current affairs input into simple exam-oriented notes with separate relevance for UPSC and SSC where needed.",
+      "It reduces overload by extracting only what a student should remember, revise, and test again later.",
+      "It also generates likely MCQs and discussion angles so current affairs become usable for revision instead of passive reading."
+    ],
+    whenToUse: [
+      "Use it after reading editorials, PIB summaries, monthly magazines, or coaching notes that feel too long to revise properly.",
+      "It is ideal when a student understands the issue but cannot identify what is actually exam-relevant.",
+      "It also helps build quick revision material during the final weeks before the exam."
+    ]
+  },
+  "upsc-ssc-prep-mock-test-error-analyzer": {
+    description: "Use this prompt to break down poor mock test performance, identify error patterns, and build a 14-day correction plan that improves scores.",
+    whatItDoes: [
+      "The prompt separates conceptual weakness from strategy mistakes such as low accuracy, poor time management, and random guessing.",
+      "It converts mock test frustration into a concrete recovery plan with revision, practice, and error tracking steps.",
+      "This helps students stop repeating the same mistakes and focus on the few changes that improve marks fastest."
+    ],
+    whenToUse: [
+      "Use it immediately after a mock test when the student wants to know why the score dropped and what to fix next.",
+      "It is useful when repeated mocks show no score improvement despite many study hours.",
+      "It also works well for aspirants who need a disciplined post-test review process instead of emotional guesswork."
+    ]
+  },
+  "upsc-ssc-prep-fast-revision-notes-generator": {
+    description: "Use this prompt to convert long study material into compact revision notes that are easier to retain and revise before the exam.",
+    whatItDoes: [
+      "This prompt compresses large chapters into short, high-retention notes without losing the points most likely to matter in an exam.",
+      "It highlights facts, formulas, keywords, and traps so the student can revise faster and recall more under pressure.",
+      "The output is structured for quick scanning, making it suitable for mobile revision, printed sheets, and final-day review."
+    ],
+    whenToUse: [
+      "Use it when class notes or textbook chapters have become too long to revise repeatedly.",
+      "It is especially useful during revision phase when a student needs fast recall, not another long explanation.",
+      "It also helps build topic-wise short notes for history, polity, geography, science, and SSC factual sections."
+    ]
+  },
+  "upsc-ssc-prep-answer-writing-coach": {
+    description: "Use this prompt to review or rewrite descriptive answers in a more scoring format with better structure, clarity, and exam relevance.",
+    whatItDoes: [
+      "The prompt critiques weak answers and shows the student exactly where structure, examples, and conclusion quality need improvement.",
+      "It rewrites the answer in a more marks-oriented format so students can compare their draft with a stronger version.",
+      "This helps aspirants build repeatable answer-writing habits instead of depending on vague advice such as writing more or reading more."
+    ],
+    whenToUse: [
+      "Use it for UPSC mains practice, descriptive answer drills, or any exam stage where structured explanation matters.",
+      "It is useful when the student knows the content but cannot present it in a scoring way.",
+      "It also works after evaluation feedback when a student needs to understand how to improve the next answer."
+    ]
+  },
   "seo-blog-post-generator": {
     description: "Use this free, expertly crafted AI prompt to generate high-quality blog post rapidly. This command provides perfect framing so ChatGPT or similar models output exactly what content writers need without endless back-and-forth iteration.",
     whatItDoes: [

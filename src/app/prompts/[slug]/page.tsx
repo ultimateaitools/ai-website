@@ -84,6 +84,11 @@ export default function PromptDetailPage({ params }: Props) {
 
                 {/* Header */}
                 <div className="mb-10 text-center">
+                    <div className="mb-6">
+                        <Link href={`/prompts/category/${prompt.category}`} className="inline-flex items-center text-sm font-semibold text-primary-400 hover:text-primary-300 transition-colors">
+                            &larr; Back to {prompt.category.replace('-', ' ')} prompts
+                        </Link>
+                    </div>
                     <span className="inline-block px-4 py-1.5 bg-primary-100 text-black font-bold text-sm rounded-full tracking-widest uppercase mb-6">
                         {prompt.category.replace('-', ' ')}
                     </span>

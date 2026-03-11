@@ -27,18 +27,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     return {
         title: `${blog.title} - AI Guide & Tutorial`,
-        description: `Learn about ${blog.topic} with practical tools, workflows, use cases, and implementation examples.`,
+        description: blog.shortDescription,
         openGraph: {
             title: `${blog.title} - AI Guide & Tutorial`,
-            description: `Learn about ${blog.topic} with practical tools, workflows, use cases, and implementation examples.`,
+            description: blog.shortDescription,
             url: `https://ultimateaitools.online/blog/${blog.slug}`,
             type: 'article',
             publishedTime: blog.publishDate,
+            images: blog.imageUrl ? [{ url: `https://ultimateaitools.online${blog.imageUrl}`, alt: blog.imageAlt || blog.title }] : undefined,
         },
         twitter: {
             card: 'summary_large_image',
             title: `${blog.title} - AI Guide & Tutorial`,
-            description: `Learn about ${blog.topic} with practical tools, workflows, use cases, and implementation examples.`,
+            description: blog.shortDescription,
         },
         alternates: {
             canonical: `https://ultimateaitools.online/blog/${blog.slug}`,
@@ -168,6 +169,27 @@ export default function BlogDetailPage({ params }: Props) {
                     <section id="conclusion" className="mb-12 border-t border-surface-border pt-10">
                         <h2 className="text-2xl font-bold text-foreground mb-6 font-sans">Conclusion</h2>
                         <p className="text-gray-300 whitespace-pre-line">{blog.content.conclusion}</p>
+                    </section>
+
+                    <section className="mb-12 p-6 bg-surface-hover border border-surface-border rounded-2xl">
+                        <h2 className="text-2xl font-bold text-foreground mb-4 font-sans">Continue Learning</h2>
+                        <p className="text-gray-300 mb-4">
+                            Explore related resources to go deeper on this topic and discover practical tools.
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 not-prose">
+                            <Link href={`/category/${blog.category}`} className="text-primary-400 hover:text-primary-300 font-semibold">
+                                Explore {blog.category.replace('-', ' ')} tools &rarr;
+                            </Link>
+                            <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                Browse AI Tools Directory &rarr;
+                            </Link>
+                            <Link href="/prompts" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                View Prompt Library &rarr;
+                            </Link>
+                            <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                Compare AI Models &rarr;
+                            </Link>
+                        </div>
                     </section>
 
                 </div>

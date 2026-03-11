@@ -52,17 +52,15 @@ export default function ModelDetailPage({ params }: Props) {
         notFound();
     }
 
+    const isFreeModel = model.freeTier.toLowerCase().includes('free');
+
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
         name: model.name,
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'All',
-        offers: {
-            '@type': 'Offer',
-            price: '0.00',
-            priceCurrency: 'USD',
-        },
+        isAccessibleForFree: isFreeModel,
         description: model.overview,
         softwareVersion: "2026 Edition",
         author: {

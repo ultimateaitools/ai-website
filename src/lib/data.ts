@@ -87,6 +87,13 @@ interface PromptsDataStore {
     prompts: Prompt[];
 }
 
+export interface PromptCategorySummary {
+    slug: string;
+    name: string;
+    description: string;
+    promptCount: number;
+}
+
 interface BlogDataStore {
     blogs: Blog[];
 }
@@ -191,6 +198,57 @@ export function getPromptsData(): PromptsDataStore {
     const filePath = path.join(process.cwd(), 'prompts.json');
     const fileContents = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(fileContents) as PromptsDataStore;
+}
+
+const PROMPT_CATEGORY_DESCRIPTIONS: Record<string, string> = {
+    marketing: 'SEO, content, ads, funnels, email, and growth prompts for marketers and creators.',
+    'social-media': 'Prompts for social posts, hooks, content calendars, captions, and engagement workflows.',
+    business: 'Business prompts for operations, strategy, sales, reporting, and decision-making tasks.',
+    productivity: 'Prompts that speed up daily work, planning, organization, summaries, and execution.',
+    coding: 'Developer prompts for debugging, planning, refactoring, code generation, and technical workflows.',
+    study: 'Study prompts for revision, notes, explanations, practice questions, and learning support.',
+    'image-generation': 'Prompt templates for AI image direction, concept generation, style control, and creative briefs.',
+    'upsc-ssc-prep': 'Exam-prep prompts for UPSC and SSC aspirants covering study plans, revision, mock analysis, and answer writing.',
+};
+
+const PROMPT_CATEGORY_NAMES: Record<string, string> = {
+    'social-media': 'Social Media',
+    'image-generation': 'Image Generation',
+    'upsc-ssc-prep': 'UPSC / SSC Prep',
+};
+
+function formatPromptCategoryName(slug: string): string {
+    if (PROMPT_CATEGORY_NAMES[slug]) {
+        return PROMPT_CATEGORY_NAMES[slug];
+    }
+
+    return slug
+        .split('-')
+        .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(' ');
+}
+
+export function getPromptCategories(): PromptCategorySummary[] {
+    const { prompts } = getPromptsData();
+    const counts = new Map<string, number>();
+
+    prompts.forEach((prompt) => {
+        counts.set(prompt.category, (counts.get(prompt.category) || 0) + 1);
+    });
+
+    return Array.from(counts.entries())
+        .map(([slug, promptCount]) => ({
+            slug,
+            name: formatPromptCategoryName(slug),
+            description: PROMPT_CATEGORY_DESCRIPTIONS[slug] || `Browse AI prompts for ${formatPromptCategoryName(slug).toLowerCase()} workflows.`,
+            promptCount,
+        }))
+        .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getPromptsByCategory(slug: string): Prompt[] {
+    const { prompts } = getPromptsData();
+    return prompts.filter((prompt) => prompt.category === slug);
 }
 
 export function getBlogsData(): BlogDataStore {

@@ -1,22 +1,22 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getPromptsData } from '@/lib/data';
+import { getPromptCategories } from '@/lib/data';
 import AdSlot from '@/components/AdSlot';
 
 export const metadata: Metadata = {
-    title: 'AI Prompt Library - 360+ High-Quality Prompts | ChatGPT, Gemini, Claude, Grok',
-    description: 'Explore 360+ high-quality AI prompts for ChatGPT, Gemini, Claude, and Grok across marketing, coding, study, business, and productivity workflows.',
+    title: 'AI Prompt Categories | Browse Prompt Library by Use Case',
+    description: 'Browse the AI prompt library by category. Explore prompt collections for marketing, business, coding, study, productivity, social media, and image generation.',
     openGraph: {
-        title: 'AI Prompt Library - 360+ High-Quality Prompts | ChatGPT, Gemini, Claude, Grok',
-        description: 'Explore 360+ high-quality AI prompts for ChatGPT, Gemini, Claude, and Grok across marketing, coding, study, business, and productivity workflows.',
+        title: 'AI Prompt Categories | Browse Prompt Library by Use Case',
+        description: 'Explore AI prompt collections by category and open the exact prompt set you need.',
         url: 'https://ultimateaitools.online/prompts',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'AI Prompt Library - 360+ High-Quality Prompts',
-        description: 'Copy-paste prompt templates for ChatGPT, Gemini, Claude, and Grok.',
+        title: 'AI Prompt Categories',
+        description: 'Open category-wise prompt collections for ChatGPT, Gemini, Claude, and Grok.',
     },
     alternates: {
         canonical: 'https://ultimateaitools.online/prompts',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 };
 
 export default function PromptsDirectoryPage() {
-    const { prompts } = getPromptsData();
+    const categories = getPromptCategories();
 
     return (
         <div className="bg-surface-card">
@@ -34,10 +34,10 @@ export default function PromptsDirectoryPage() {
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                     <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl mb-6">
-                        AI Prompt Library: 360+ High-Quality Prompts
+                        AI Prompt Library by Category
                     </h1>
                     <p className="mt-6 max-w-2xl mx-auto text-xl text-gray-400 leading-relaxed font-medium">
-                        Copy-paste prompt templates designed for ChatGPT, Gemini, Claude, and Grok. Built for real workflows in content, coding, study, business, and growth.
+                        Choose a workflow category first, then explore prompt templates built for that exact use case.
                     </p>
                 </div>
             </header>
@@ -45,25 +45,28 @@ export default function PromptsDirectoryPage() {
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <AdSlot adSlot="1000000004" format="horizontal" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {prompts.map(prompt => (
-                        <div key={prompt.id} className="saas-card p-6 flex flex-col h-full group">
-                            <div className="mb-4">
+                    {categories.map(category => (
+                        <div key={category.slug} className="saas-card p-6 flex flex-col h-full group">
+                            <div className="mb-4 flex items-center justify-between gap-3">
                                 <span className="inline-block px-3 py-1 bg-primary-900/50 text-primary-300 font-semibold text-xs rounded-full tracking-wider uppercase border border-primary-800/50">
-                                    {prompt.category.replace('-', ' ')}
+                                    {category.name}
+                                </span>
+                                <span className="text-xs text-gray-400 font-semibold">
+                                    {category.promptCount} prompts
                                 </span>
                             </div>
                             <h2 className="text-2xl font-bold text-foreground group-hover:text-primary-400 transition-colors mb-3 line-clamp-2">
-                                {prompt.title}
+                                {category.name} Prompts
                             </h2>
                             <p className="text-gray-400 line-clamp-3 mb-6 leading-relaxed flex-grow">
-                                {prompt.description}
+                                {category.description}
                             </p>
                             <div className="mt-auto space-y-3">
                                 <Link
-                                    href={`/prompts/${prompt.slug}`}
+                                    href={`/prompts/category/${category.slug}`}
                                     className="block w-full text-center py-3 rounded-lg bg-surface-hover text-gray-300 hover:bg-surface-border border border-surface-border transition-colors font-bold text-sm"
                                 >
-                                    View Prompt Details
+                                    Explore Category
                                 </Link>
                             </div>
                         </div>
