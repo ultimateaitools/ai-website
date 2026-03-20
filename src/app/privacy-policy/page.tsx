@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Privacy Policy – UltimateAITools',
     description: 'Read the Privacy Policy of UltimateAITools.online to understand how we collect, use and protect your personal information.',
     alternates: {
-        canonical: 'https://ultimateaitools.online/privacy-policy',
+        canonical: 'https://ultimateaitools.online/privacy-policy/',
     }
 };
 

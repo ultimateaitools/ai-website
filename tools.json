@@ -3093,6 +3093,265 @@
         "Business"
       ],
       "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "168",
+      "name": "Cursor",
+      "slug": "cursor",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Cursor is an AI-powered code editor that helps you write, refactor, and understand code faster with chat, autocomplete, and repo-aware assistance.",
+      "websiteURL": "https://www.cursor.com",
+      "tags": [
+        "Coding",
+        "Developers",
+        "Productivity"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "169",
+      "name": "Suno",
+      "slug": "suno",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "Suno generates songs from simple text prompts, helping creators produce vocals, instrumentals, and full tracks for content and demos.",
+      "websiteURL": "https://suno.com",
+      "tags": [
+        "Audio Tools",
+        "Content Creation",
+        "Music"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "170",
+      "name": "Luma Dream Machine",
+      "slug": "luma-dream-machine",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Luma Dream Machine turns text and images into high-quality short videos with coherent motion for ads, social clips, and storyboards.",
+      "websiteURL": "https://lumalabs.ai/dream-machine",
+      "tags": [
+        "Video Generators",
+        "Content Creation",
+        "Marketing"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "171",
+      "name": "Krea AI",
+      "slug": "krea-ai",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "Krea AI helps you generate and enhance images with style control and creative tooling for designers, marketers, and creators.",
+      "websiteURL": "https://www.krea.ai",
+      "tags": [
+        "Image Generators",
+        "Design",
+        "Content Creation"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "172",
+      "name": "Hugging Face",
+      "slug": "hugging-face",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "Hugging Face provides open-source models, datasets, and tools to build, deploy, and evaluate AI applications and workflows.",
+      "websiteURL": "https://huggingface.co",
+      "tags": [
+        "Developers",
+        "Open Source",
+        "Models"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "173",
+      "name": "LangChain",
+      "slug": "langchain",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "LangChain is a framework for building LLM applications with chains, tools, agents, memory, and integrations for production workflows.",
+      "websiteURL": "https://www.langchain.com",
+      "tags": [
+        "Developers",
+        "Coding",
+        "Automation Tools"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "174",
+      "name": "LlamaIndex",
+      "slug": "llamaindex",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "LlamaIndex helps you build RAG and agent workflows by connecting LLMs to your data sources with indexing, retrieval, and evaluation utilities.",
+      "websiteURL": "https://www.llamaindex.ai",
+      "tags": [
+        "Developers",
+        "Data",
+        "RAG"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "175",
+      "name": "Pinecone",
+      "slug": "pinecone",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "Pinecone is a vector database for semantic search and RAG, designed to store embeddings and retrieve relevant context at low latency.",
+      "websiteURL": "https://www.pinecone.io",
+      "tags": [
+        "Developers",
+        "Data",
+        "Vector Database"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "176",
+      "name": "Weaviate",
+      "slug": "weaviate",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "Weaviate is an open-source vector database for semantic search, hybrid retrieval, and RAG applications with flexible deployment options.",
+      "websiteURL": "https://weaviate.io",
+      "tags": [
+        "Developers",
+        "Open Source",
+        "Vector Database"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "177",
+      "name": "Cohere",
+      "slug": "cohere",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "Cohere provides LLM APIs for generation, embeddings, and reranking to power search, assistants, and enterprise AI applications.",
+      "websiteURL": "https://cohere.com",
+      "tags": [
+        "Developers",
+        "Models",
+        "Embeddings"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "178",
+      "name": "Mistral",
+      "slug": "mistral",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "Mistral offers high-performance open and commercial LLMs plus APIs to build assistants, RAG, and enterprise AI workflows.",
+      "websiteURL": "https://mistral.ai",
+      "tags": [
+        "Developers",
+        "Models",
+        "Open Source"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "179",
+      "name": "Modal",
+      "slug": "modal",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "Modal runs Python workloads on the cloud for AI inference and data pipelines, with fast scaling for notebooks, APIs, and batch jobs.",
+      "websiteURL": "https://modal.com",
+      "tags": [
+        "Developers",
+        "Automation Tools",
+        "Data"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "180",
+      "name": "Cursor AI",
+      "slug": "cursor-ai",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Cursor is an AI-first code editor that helps you build software faster, featuring native integrations with Claude 3.5 Sonnet and GPT-4o.",
+      "websiteURL": "https://cursor.com",
+      "tags": [
+        "Code Editor",
+        "coding",
+        "AI",
+        "Developers"
+      ],
+      "logo": "/logos/cursor.svg"
+    },
+    {
+      "id": "181",
+      "name": "Bolt.new",
+      "slug": "bolt-new",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Bolt.new by StackBlitz is an AI-driven, browser-based full-stack web development environment that lets you scaffold, run, and edit entire apps.",
+      "websiteURL": "https://bolt.new",
+      "tags": [
+        "Web Builder",
+        "coding",
+        "AI",
+        "Developers"
+      ],
+      "logo": "/logos/bolt.svg"
+    },
+    {
+      "id": "182",
+      "name": "v0 by Vercel",
+      "slug": "v0-vercel",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "v0 is an AI coding assistant by Vercel that instantly generates React UI components and layouts from simple text descriptions.",
+      "websiteURL": "https://v0.dev",
+      "tags": [
+        "UI Generator",
+        "design-tools",
+        "AI",
+        "Developers"
+      ],
+      "logo": "/logos/vercel.svg"
+    },
+    {
+      "id": "183",
+      "name": "Lovable",
+      "slug": "lovable",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Lovable is an AI full-stack engineer tool that instantly generates production-ready applications, turning ideas into working code in seconds.",
+      "websiteURL": "https://lovable.dev",
+      "tags": [
+        "App Builder",
+        "coding",
+        "AI",
+        "Developers"
+      ],
+      "logo": "/logos/lovable.svg"
+    },
+    {
+      "id": "184",
+      "name": "Sora",
+      "slug": "sora",
+      "category": "video-generators",
+      "freeTier": "Paid",
+      "description": "Sora by OpenAI is the latest breakthrough AI model capable of generating highly realistic and imaginative 60-second scenes from text instructions.",
+      "websiteURL": "https://openai.com/sora",
+      "tags": [
+        "Video Generation",
+        "video generators",
+        "AI"
+      ],
+      "logo": "/logos/openai.svg"
     }
   ]
 }

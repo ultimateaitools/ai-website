@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: `${model.name} AI Model - Features, Performance & Pricing`,
             description: `Explore ${model.name} including features, capabilities, use cases and pricing comparison with other AI models.`,
-            url: `https://ultimateaitools.online/models/${model.slug}`,
+            url: `https://ultimateaitools.online/models/${model.slug}/`,
             type: 'article',
         },
         twitter: {
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: `Explore ${model.name} including features, capabilities, use cases and pricing comparison with other AI models.`,
         },
         alternates: {
-            canonical: `https://ultimateaitools.online/models/${model.slug}`,
+            canonical: `https://ultimateaitools.online/models/${model.slug}/`,
         },
     };
 }

@@ -21,6 +21,13 @@ const staticPages = [
 const toolsPerPage = 24;
 const todayLastmod = new Date().toISOString().split('T')[0];
 
+function withTrailingSlash(urlPath) {
+    if (!urlPath || urlPath === '/') return '/';
+    if (urlPath.endsWith('/')) return urlPath;
+    if (/\.[a-z0-9]+$/i.test(urlPath)) return urlPath;
+    return `${urlPath}/`;
+}
+
 function toLastmod(dateLike) {
     const date = new Date(dateLike);
     if (Number.isNaN(date.getTime())) {
@@ -47,8 +54,9 @@ function generateSitemap() {
 
     // Function to add a URL to the XML
     const addUrl = (urlPath, lastmod = todayLastmod) => {
+        const normalizedPath = withTrailingSlash(urlPath);
         xml += `  <url>\n`;
-        xml += `    <loc>${domain}${urlPath}</loc>\n`;
+        xml += `    <loc>${domain}${normalizedPath}</loc>\n`;
         xml += `    <lastmod>${lastmod}</lastmod>\n`;
         xml += `    <changefreq>weekly</changefreq>\n`;
         xml += `    <priority>0.8</priority>\n`;

@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: `${prompt.title} - Free AI Prompt Template`,
             description: `Use this high-quality AI prompt to generate ${prompt.outputType.toLowerCase()} with ChatGPT, Claude, Gemini, Grok, and similar models.`,
-            url: `https://ultimateaitools.online/prompts/${prompt.slug}`,
+            url: `https://ultimateaitools.online/prompts/${prompt.slug}/`,
             type: 'article',
         },
         twitter: {
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: `Use this high-quality AI prompt to generate ${prompt.outputType.toLowerCase()} with ChatGPT, Claude, Gemini, Grok, and similar models.`,
         },
         alternates: {
-            canonical: `https://ultimateaitools.online/prompts/${prompt.slug}`,
+            canonical: `https://ultimateaitools.online/prompts/${prompt.slug}/`,
         }
     };
 }
@@ -76,7 +76,7 @@ export default function PromptDetailPage({ params }: Props) {
         description: prompt.description,
         keywords: [prompt.category, prompt.outputType, prompt.bestFor],
         text: prompt.promptText,
-        url: `https://ultimateaitools.online/prompts/${prompt.slug}`,
+        url: `https://ultimateaitools.online/prompts/${prompt.slug}/`,
     };
 
     return (

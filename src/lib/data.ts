@@ -217,12 +217,14 @@ const PROMPT_CATEGORY_DESCRIPTIONS: Record<string, string> = {
     study: 'Study prompts for revision, notes, explanations, practice questions, and learning support.',
     'image-generation': 'Prompt templates for AI image direction, concept generation, style control, and creative briefs.',
     'upsc-ssc-prep': 'Exam-prep prompts for UPSC and SSC aspirants covering study plans, revision, mock analysis, and answer writing.',
+    'ipl-2026': 'Top-trending IPL 2026 AI prompts to generate viral social media threads, Dream11 fantasy cricket predictions, and marketing strategies for maximum reach.',
 };
 
 const PROMPT_CATEGORY_NAMES: Record<string, string> = {
     'social-media': 'Social Media',
     'image-generation': 'Image Generation',
     'upsc-ssc-prep': 'UPSC / SSC Prep',
+    'ipl-2026': 'IPL 2026',
 };
 
 const PROMPT_TO_TOOL_CATEGORY_MAP: Record<string, string> = {
@@ -234,6 +236,7 @@ const PROMPT_TO_TOOL_CATEGORY_MAP: Record<string, string> = {
     study: 'study-tools',
     'image-generation': 'image-generators',
     'upsc-ssc-prep': 'upsc-ssc-prep',
+    'ipl-2026': 'social-media-tools',
 };
 
 function formatPromptCategoryName(slug: string): string {

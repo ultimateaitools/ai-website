@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'HTML Sitemap | UltimateAITools',
         description: 'Access all major pages and categories on UltimateAITools.',
-        url: 'https://ultimateaitools.online/sitemap',
+        url: 'https://ultimateaitools.online/sitemap/',
         type: 'website',
     },
     alternates: {
-        canonical: 'https://ultimateaitools.online/sitemap',
+        canonical: 'https://ultimateaitools.online/sitemap/',
     }
 };
 

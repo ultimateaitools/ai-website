@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: `${blog.title} - AI Guide & Tutorial`,
             description: blog.shortDescription,
-            url: `https://ultimateaitools.online/blog/${blog.slug}`,
+            url: `https://ultimateaitools.online/blog/${blog.slug}/`,
             type: 'article',
             publishedTime: blog.publishDate,
             images: blog.imageUrl ? [{ url: `https://ultimateaitools.online${blog.imageUrl}`, alt: blog.imageAlt || blog.title }] : undefined,
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: blog.shortDescription,
         },
         alternates: {
-            canonical: `https://ultimateaitools.online/blog/${blog.slug}`,
+            canonical: `https://ultimateaitools.online/blog/${blog.slug}/`,
         }
     };
 }

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Best AI Models Comparison 2026 - GPT vs Claude vs Gemini',
         description: 'Compare top AI models with features, pricing, use cases, and performance benchmarks.',
-        url: 'https://ultimateaitools.online/models',
+        url: 'https://ultimateaitools.online/models/',
         type: 'website',
     },
     twitter: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         description: 'Compare GPT, Claude, Gemini, Grok and more in one place.',
     },
     alternates: {
-        canonical: 'https://ultimateaitools.online/models',
+        canonical: 'https://ultimateaitools.online/models/',
     }
 };
 

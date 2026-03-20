@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'AI Tools Directory A-Z (Free + Paid) | UltimateAITools',
         description: 'Complete alphabetical list of AI tools including free and paid options across major use cases.',
-        url: 'https://ultimateaitools.online/ai-tools',
+        url: 'https://ultimateaitools.online/ai-tools/',
         siteName: 'UltimateAITools',
         locale: 'en_US',
         type: 'website',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         description: 'Browse all AI tools alphabetically, including both free and paid platforms.',
     },
     alternates: {
-        canonical: 'https://ultimateaitools.online/ai-tools'
+        canonical: 'https://ultimateaitools.online/ai-tools/'
     },
 };
 

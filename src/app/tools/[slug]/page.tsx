@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: `${tool.name} AI Tool - Features, Pricing & Free Tier`,
             description: `Discover how ${tool.name} works for ${tool.category.replace('-', ' ')}. Explore features, use cases and free access options.`,
-            url: `https://ultimateaitools.online/tools/${tool.slug}`,
+            url: `https://ultimateaitools.online/tools/${tool.slug}/`,
             type: 'article',
         },
         twitter: {
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: `Discover how ${tool.name} works for ${tool.category.replace('-', ' ')}.`,
         },
         alternates: {
-            canonical: `https://ultimateaitools.online/tools/${tool.slug}`,
+            canonical: `https://ultimateaitools.online/tools/${tool.slug}/`,
         },
     };
 }
@@ -71,7 +71,7 @@ export default function ToolDetailPage({ params }: Props) {
         "applicationCategory": "BusinessApplication",
         "isAccessibleForFree": isFreeTool,
         "description": tool.description,
-        "url": `https://ultimateaitools.online/tools/${tool.slug}`
+        "url": `https://ultimateaitools.online/tools/${tool.slug}/`
     };
 
     return (

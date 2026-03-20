@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description: 'Find the best AI tools, prompts, and AI guides for real workflows.',
   },
   alternates: {
-    canonical: 'https://ultimateaitools.online',
+    canonical: 'https://ultimateaitools.online/',
   },
 };
 

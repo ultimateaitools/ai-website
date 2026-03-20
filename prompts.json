@@ -1,6 +1,356 @@
 {
   "prompts": [
     {
+      "title": "IPL 2026 - Match Winner Predictor AI",
+      "slug": "ipl-2026-match-winner-predictor",
+      "category": "ipl-2026",
+      "description": "Predict the winning team of an IPL 2026 match using head-to-head stats, current form, and pitch analysis.",
+      "promptText": "You are a specialized Cricket Prediction AI. Predict the winner of the upcoming IPL 2026 match between [Team A] and [Team B] at [Stadium Name]. Consider their historical head-to-head record, recent 5-match form, pitch conditions (batting-friendly, spin track, etc.), and key player injuries. Provide a percentage win probability for each team and a detailed justification for your final prediction.",
+      "outputType": "Prediction Analysis",
+      "bestFor": "Cricket Analysts & Fans",
+      "id": "371"
+    },
+    {
+      "title": "IPL 2026 - Toss Prediction & Decision Matrix",
+      "slug": "ipl-2026-toss-prediction-decision",
+      "category": "ipl-2026",
+      "description": "Analyze venue data to predict who will win the toss and whether they should choose to bat or bowl first.",
+      "promptText": "You are an IPL Strategy Expert. Analyze the pitch conditions, weather forecast (e.g., dew factor), and historical toss-win data at [Stadium Name] for the game between [Team A] and [Team B]. Predict the toss outcome probability and recommend whether the toss-winning captain should elect to bat or bowl first. Explain the strategic advantage of this decision based on stadium stats from recent seasons.",
+      "outputType": "Toss Strategy",
+      "bestFor": "Fantasy Players & Strategists",
+      "id": "372"
+    },
+    {
+      "title": "IPL 2026 - Man of the Match (MoM) Forecaster",
+      "slug": "ipl-2026-mom-forecaster",
+      "category": "ipl-2026",
+      "description": "Identify the top candidates to win the Man of the Match award based on matchups and ground dimensions.",
+      "promptText": "You are a Predictive Cricket Engine. Who are the top 3 most likely candidates to win the 'Player of the Match' (MoM) award in the IPL 2026 match between [Team A] and [Team B]? Base your analysis on player matchups against the opposition's bowling/batting, their historical performance at this venue, and current momentum. Give reasoning for each player selected.",
+      "outputType": "Player Forecast",
+      "bestFor": "Dream11/Fantasy Users",
+      "id": "373"
+    },
+    {
+      "title": "IPL 2026 - Orange Cap Contender Analysis",
+      "slug": "ipl-2026-orange-cap-analysis",
+      "category": "ipl-2026",
+      "description": "Evaluate the chances of a specific batsman winning the IPL 2026 Orange Cap for most runs.",
+      "promptText": "Assess [Player Name]'s probability of winning the Orange Cap in IPL 2026. Review his projected batting position, consistency, strike rate, and performance against spin and pace. Compare him against two other top contenders. Highlight his strengths and potential vulnerabilities over a 14-match league stage.",
+      "outputType": "Player Analysis",
+      "bestFor": "Cricket Bloggers",
+      "id": "374"
+    },
+    {
+      "title": "IPL 2026 - Purple Cap Contender Analysis",
+      "slug": "ipl-2026-purple-cap-analysis",
+      "category": "ipl-2026",
+      "description": "Evaluate the chances of a specific bowler winning the IPL 2026 Purple Cap for most wickets.",
+      "promptText": "Analyze [Player Name]'s chances of securing the Purple Cap in IPL 2026. Break down his effectiveness in the powerplay and death overs, economy rate under pressure, and the types of pitches his home stadium offers. Provide a verdict on whether he is a primary contender or an outside bet.",
+      "outputType": "Player Analysis",
+      "bestFor": "Fantasy Managers",
+      "id": "375"
+    },
+    {
+      "title": "IPL 2026 - Total Sixes Prediction",
+      "slug": "ipl-2026-total-sixes-prediction",
+      "category": "ipl-2026",
+      "description": "Calculate the estimated number of sixes in a specific IPL match.",
+      "promptText": "Estimate the total number of sixes that will be hit in the IPL 2026 match between [Team A] and [Team B] at [Stadium Name]. Factor in the boundary dimensions of the venue, the historical average sixes per match at this ground, and the six-hitting prowess of the key batsmen lined up to play. Give a defined range (e.g., 14-18 sixes).",
+      "outputType": "Stat Prediction",
+      "bestFor": "Statisticians",
+      "id": "376"
+    },
+    {
+      "title": "IPL 2026 - Powerplay Score Predictor",
+      "slug": "ipl-2026-powerplay-score-predictor",
+      "category": "ipl-2026",
+      "description": "Predict the team score at the end of the first 6 overs (Powerplay) taking into account opening batters and pace attacks.",
+      "promptText": "Predict the Powerplay score (first 6 overs) for [Team Name] against [Opposition Team]. Analyze the form and strike rate of [Team Name]'s opening batsmen versus the new-ball swing/seam capabilities of the opposition's opening bowlers. State the expected score range and the likelihood of losing early wickets.",
+      "outputType": "Score Prediction",
+      "bestFor": "Live Match Viewers",
+      "id": "377"
+    },
+    {
+      "title": "IPL 2026 - Death Overs Strategy Breakdown",
+      "slug": "ipl-2026-death-overs-strategy",
+      "category": "ipl-2026",
+      "description": "Formulate the optimal death-bowling and power-hitting strategy for overs 16-20.",
+      "promptText": "You are a T20 Coach. Device a tactical masterplan for the death overs (16-20) for [Bowling Team] defending a target against [Batting Team]. Identify which bowlers should bowl which overs, what fields to set for prime finishers like [Batsman Name], and whether to rely on wide yorkers, slower bouncers, or attacking the stumps.",
+      "outputType": "Tactical Masterplan",
+      "bestFor": "Cricket Strategists",
+      "id": "378"
+    },
+    {
+      "title": "IPL 2026 - Playing XI Optimizer",
+      "slug": "ipl-2026-playing-xi-optimizer",
+      "category": "ipl-2026",
+      "description": "Determine the best possible Playing XI for an IPL franchise based on squad constraints.",
+      "promptText": "You are the Head Coach of [IPL Team]. Based on your complete IPL 2026 squad, construct your strongest Playing XI. Ensure you adhere to the 4 overseas player limit. State clearly who your Captain, Wicketkeeper, and 5 primary bowling options are. Also, designate 2 players specifically as 'Impact Player' substitutes.",
+      "outputType": "Team Selection",
+      "bestFor": "Team Managers",
+      "id": "379"
+    },
+    {
+      "title": "IPL 2026 - Pitch Report & Conditions AI",
+      "slug": "ipl-2026-pitch-report",
+      "category": "ipl-2026",
+      "description": "Generate a comprehensive pitch report to help understand playing conditions before the toss.",
+      "promptText": "Generate an in-depth pitch and weather report for [Stadium Name] ahead of the IPL 2026 match. Outline the expected pace, bounce, and turn on the track. How will the pitch behave in the first innings vs second innings? Highlight the dew factor and how it should influence the captain's decision at the toss.",
+      "outputType": "Pitch Analysis",
+      "bestFor": "Commentators & Analysts",
+      "id": "380"
+    },
+    {
+      "title": "IPL 2026 - Impact Player Substitution Prediction",
+      "slug": "ipl-2026-impact-player-prediction",
+      "category": "ipl-2026",
+      "description": "Strategize when and who to deploy as the Impact Player during a match.",
+      "promptText": "Identify the ideal 'Impact Player' strategy for [Team Name] when batting first versus bowling first. Name 2 specific bench players who should be subbed in under different match scenarios (e.g., top-order collapse vs requiring extra bowling depth). Explain the timing and tactical reasoning behind making the switch.",
+      "outputType": "Tactical Strategy",
+      "bestFor": "Tactical Analysts",
+      "id": "381"
+    },
+    {
+      "title": "IPL 2026 - Ultimate Player Matchup Simulator",
+      "slug": "ipl-2026-player-matchup-simulator",
+      "category": "ipl-2026",
+      "description": "Analyze key individual battles like Jasprit Bumrah vs Virat Kohli.",
+      "promptText": "Analyze the highly anticipated head-to-head matchup between batsman [Batsman Name] and bowler [Bowler Name] for their upcoming IPL 2026 face-off. Provide past strike rates, dismissals, and dot ball percentages between the two. Predict who will win the battle this time and explain the technical reasons why.",
+      "outputType": "Matchup Analysis",
+      "bestFor": "Cricket Enthusiasts",
+      "id": "382"
+    },
+    {
+      "title": "IPL 2026 - Emerging Player Award Prediction",
+      "slug": "ipl-2026-emerging-player-prediction",
+      "category": "ipl-2026",
+      "description": "Predict which young uncapped player will have a breakout season in IPL 2026.",
+      "promptText": "Analyze the top 3 uncapped Indian players who are the front-runners to win the 'Emerging Player of the Tournament' in IPL 2026. Evaluate their domestic cricket form (Syed Mushtaq Ali Trophy), their role in their respective IPL franchises, and their temperament under pressure. Rank your number one pick.",
+      "outputType": "Player Forecast",
+      "bestFor": "Scouts & Analysts",
+      "id": "383"
+    },
+    {
+      "title": "IPL 2026 - Mid-Innings Score Predictor",
+      "slug": "ipl-2026-mid-innings-predictor",
+      "category": "ipl-2026",
+      "description": "Project the final first-innings total from the 10-over mark.",
+      "promptText": "It is the 10-over mark in the first innings, and [Team Name] is currently at [Current Score] for the loss of [Wickets] wickets. The batsmen at the crease are [Batsman 1] and [Batsman 2]. Using the run-rate trajectory, remaining batting depth, and opposition death bowlers, project the final 20-over score.",
+      "outputType": "Score Prediction",
+      "bestFor": "Live Betting Strategists",
+      "id": "384"
+    },
+    {
+      "title": "IPL 2026 - Fastest 50 / 100 Predictor",
+      "slug": "ipl-2026-fastest-50-predictor",
+      "category": "ipl-2026",
+      "description": "Identify players capable of scoring the fastest half-centuries and centuries in the tournament.",
+      "promptText": "Who are the top 3 batsmen most likely to score the fastest 50 or 100 in IPL 2026? Consider their historic strike rates, typical batting positions, and ability to clear the boundary against both pace and spin. Pick one specific player and predict the number of balls they will take to reach 50.",
+      "outputType": "Player Stat Prediction",
+      "bestFor": "Statisticians",
+      "id": "385"
+    },
+    {
+      "title": "IPL 2026 - Points Table Predictor",
+      "slug": "ipl-2026-points-table-predictor",
+      "category": "ipl-2026",
+      "description": "Forecast the final league standings for the IPL 2026 season.",
+      "promptText": "Based on the final squad lists post the IPL 2026 auction, predict the end-of-season points table standings (ranks 1 to 10). Detail the primary reason why the top 4 teams will qualify for the playoffs, and identify what key flaws will hold back the team you place in 10th position.",
+      "outputType": "Tournament Analysis",
+      "bestFor": "Sports Analysts",
+      "id": "386"
+    },
+    {
+      "title": "IPL 2026 - Underdog Team Analysis",
+      "slug": "ipl-2026-underdog-analysis",
+      "category": "ipl-2026",
+      "description": "Highlight a team expected to struggle but capable of causing major upsets.",
+      "promptText": "Identify the biggest 'Underdog' team of the IPL 2026 season. Elaborate on their hidden strengths, overlooked players, and strategic advantages that might allow them to cause major upsets against tournament favorites. How can they leverage their home ground advantage?",
+      "outputType": "Team Assessment",
+      "bestFor": "Cricket Columnists",
+      "id": "387"
+    },
+    {
+      "title": "IPL 2026 - Captaincy Decision Critique",
+      "slug": "ipl-2026-captaincy-critique",
+      "category": "ipl-2026",
+      "description": "Critique a captain's on-field decision making after a crucial match.",
+      "promptText": "Critique the captaincy of [Captain Name] in the recent IPL match against [Opposition Team]. Analyze 3 specific decisions: Bowling changes during the middle overs, field placements for the opposition's primary batter, and the batting order strategy. Did he make proactive winning moves or reactive mistakes?",
+      "outputType": "Leadership Analysis",
+      "bestFor": "Sports Journalists",
+      "id": "388"
+    },
+    {
+      "title": "IPL 2026 - Fair Play Award Prediction",
+      "slug": "ipl-2026-fair-play-prediction",
+      "category": "ipl-2026",
+      "description": "Predict which franchise will win the Fair Play Award.",
+      "promptText": "Predict the winner of the IPL 2026 Fair Play Award. Review the historical discipline records of the franchises, the on-field demeanor of their captains ([Captain 1], [Captain 2], etc.), and the coaching staff philosophies. Provide your ranking for the top 3 most disciplined teams.",
+      "outputType": "Award Prediction",
+      "bestFor": "Event Broadcasters",
+      "id": "389"
+    },
+    {
+      "title": "IPL 2026 - Fan Engagement Campaign Ideas",
+      "slug": "ipl-2026-fan-engagement-campaign",
+      "category": "ipl-2026",
+      "description": "Generate innovative marketing ideas to engage stadium and digital fans.",
+      "promptText": "You are a Sports Marketing Guru. Propose 5 highly innovative, digital-first fan engagement campaigns for an IPL 2026 franchise to run on Instagram, Twitter, and in-stadium. The campaigns should encourage fans to create UGC (User Generated Content) and interact live during the matches to boost overall brand loyalty.",
+      "outputType": "Marketing Campaign",
+      "bestFor": "Franchise Marketers",
+      "id": "390"
+    },
+    {
+      "title": "IPL 2026 - Post-Match Press Conference Script",
+      "slug": "ipl-2026-post-match-press",
+      "category": "ipl-2026",
+      "description": "Draft plausible Q&A for a losing/winning captain in the press conference.",
+      "promptText": "Draft a post-match press conference dialogue for [Captain Name] after an unexpected loss in an IPL 2026 match against [Opposition Team]. Create 3 tough questions from journalists regarding top-order failure, bowling at the death, and dew factor. Provide measured, diplomatic, yet insightful answers from the captain.",
+      "outputType": "PR & Scripting",
+      "bestFor": "PR Managers",
+      "id": "391"
+    },
+    {
+      "title": "IPL 2026 - Sponsor ROI Estimation",
+      "slug": "ipl-2026-sponsor-roi",
+      "category": "ipl-2026",
+      "description": "Evaluate the return on investment for an IPL main jersey sponsor.",
+      "promptText": "Act as a Sports Economics Expert. Calculate the qualitative and estimated quantitative ROI (Return on Investment) for [Brand Name] sponsoring the front jersey of [IPL Team] for the 2026 season. Consider metrics like brand visibility (screen time), digital impressions, media sentiment, and direct consumer engagement.",
+      "outputType": "Financial/Marketing Report",
+      "bestFor": "Brand Managers",
+      "id": "392"
+    },
+    {
+      "title": "IPL 2026 - Most Expensive Over Predictor",
+      "slug": "ipl-2026-expensive-over-predictor",
+      "category": "ipl-2026",
+      "description": "Predict who will bowl the most expensive over and who will hit it.",
+      "promptText": "Predict which bowler is at the highest risk of conceding the most expensive over in the match between [Team A] and [Team B]. Contrast this bowler's death-over economy rate with the strike rate of power hitters like [Batsman Name]. Estimate the maximum runs that could be scored in that specific over.",
+      "outputType": "Match Event Prediction",
+      "bestFor": "In-Play Analysts",
+      "id": "393"
+    },
+    {
+      "title": "IPL 2026 - Mega Auction Masterstroke Analysis",
+      "slug": "ipl-2026-mega-auction-masterstroke",
+      "category": "ipl-2026",
+      "description": "Analyze the smartest buy or retention from the recent auction.",
+      "promptText": "Evaluate the IPL 2026 Mega Auction and identify the ultimate 'Masterstroke Buy' by [Franchise Name]. Why is [Player Name] worth every penny of his auction price? Break down how he fills a crucial void in their squad, his versatility, and the value-for-money aspect compared to pricier alternatives.",
+      "outputType": "Auction Analysis",
+      "bestFor": "Sports Pundits",
+      "id": "394"
+    },
+    {
+      "title": "IPL 2026 - Umpiring/DRS Controversy Analyzer",
+      "slug": "ipl-2026-umpiring-controversy-analyzer",
+      "category": "ipl-2026",
+      "description": "Provide balanced analysis on a controversial umpiring decision or wide review.",
+      "promptText": "Act as a Cricket Law Expert. Analyze a hypothetical controversial DRS (Decision Review System) call involving a marginal wide or waist-high no-ball in the crucial final over between [Team A] and [Team B]. Explain the MCC Laws governing the decision, the role of ball-tracking technology, and provide a neutral verdict on whether the third umpire made the correct call.",
+      "outputType": "Rules & Law Analysis",
+      "bestFor": "Cricket Analysts",
+      "id": "395"
+    },
+    {
+      "title": "IPL 2026 - Weather Impact Forecaster",
+      "slug": "ipl-2026-weather-impact",
+      "category": "ipl-2026",
+      "description": "Calculate how rain and DLS method might impact an upcoming match.",
+      "promptText": "There is a 60% chance of rain during the evening match between [Team A] and [Team B] in IPL 2026. Explain how overcast conditions will assist the fast bowlers in the Powerplay. Furthermore, outline a strategic approach for the team batting second to stay ahead of the DLS (Duckworth-Lewis-Stern) par score at the 10-over mark.",
+      "outputType": "Match Strategy",
+      "bestFor": "Technical Strategists",
+      "id": "396"
+    },
+    {
+      "title": "IPL 2026 - Best Fielding Effort Prediction",
+      "slug": "ipl-2026-best-fielding-prediction",
+      "category": "ipl-2026",
+      "description": "Identify the players most likely to change the game with a run out or spectacular catch.",
+      "promptText": "Who are the top 3 fielders in the IPL 2026 match between [Team A] and [Team B] capable of producing a game-changing run out or a spectacular boundary-line catch? Discuss their fielding positions (e.g., backward point, long-on) and how their athleticism translates to run-saving value.",
+      "outputType": "Fielding Analysis",
+      "bestFor": "Analytics Teams",
+      "id": "397"
+    },
+    {
+      "title": "IPL 2026 - Local vs Overseas Player Balance",
+      "slug": "ipl-2026-local-overseas-balance",
+      "category": "ipl-2026",
+      "description": "Critique a franchise's dependency on overseas players vs Indian talent.",
+      "promptText": "Analyze the squad composition of [Team Name] for IPL 2026. Rate their reliance on the 4 overseas players versus their Indian domestic core. Are they too top-heavy with foreign batters, leaving the Indian bowlers exposed? Provide recommendations on how to balance their Playing XI to win the championship.",
+      "outputType": "Squad Evaluation",
+      "bestFor": "Team Analysts",
+      "id": "398"
+    },
+    {
+      "title": "IPL 2026 - Injury Replacement Scout",
+      "slug": "ipl-2026-injury-replacement",
+      "category": "ipl-2026",
+      "description": "Suggest an ideal replacement player for a franchise suffering from mid-season injuries.",
+      "promptText": "Assume [Star Player Name] from [Team Name] has suffered an injury and is ruled out of IPL 2026 midway through the season. Scout and suggest 3 high-quality, unsold players from the auction pool who can serve as an ideal like-for-like replacement. Detail the stats and recent form of your top choice.",
+      "outputType": "Scouting Report",
+      "bestFor": "Franchise Scouts",
+      "id": "399"
+    },
+    {
+      "title": "IPL 2026 - Match Turning Point Identifier",
+      "slug": "ipl-2026-match-turning-point",
+      "category": "ipl-2026",
+      "description": "Use AI to pinpoint the exact over or wicket that changed the match outcome.",
+      "promptText": "Review the thrilling IPL 2026 match between [Team A] and [Team B]. Identify the single most crucial 'Turning Point' of the game. Was it a dropped catch, a 20-run over, or a brilliant tactical bowling change? Provide a timeline analysis of how the Win Probability shifted dramatically after this specific event.",
+      "outputType": "Post-Match Analysis",
+      "bestFor": "Broadcasters",
+      "id": "400"
+    },
+    {
+      "id": "366",
+      "title": "IPL 2026 - Fantasy Cricket AI Strategy",
+      "slug": "ipl-2026-fantasy-cricket-ai",
+      "category": "ipl-2026",
+      "description": "An advanced prompt to generate the best fantasy cricket team predictions and player statistics for IPL 2026 matches.",
+      "promptText": "You are an expert Cricket Analyst and Data Scientist specialized in T20 leagues. Your task is to analyze the upcoming IPL 2026 match between [Team A] and [Team B]. Consider the pitch conditions at [Stadium Name], weather forecasts, head-to-head records, and current forms of the key players. Provide a top-tier Dream11/Fantasy team featuring 11 players, classifying them into Captain, Vice-Captain, Batsmen, Bowlers, All-rounders, and Wicketkeepers. Clearly explain the rationale behind your top 3 picks.",
+      "outputType": "Fantasy Team Prediction",
+      "bestFor": "Cricket Fans & Fantasy Players"
+    },
+    {
+      "id": "367",
+      "title": "IPL 2026 - Viral Twitter/X Thread Generator",
+      "slug": "ipl-2026-twitter-thread",
+      "category": "ipl-2026",
+      "description": "Generate a highly engaging, viral multi-tweet thread reviewing the highlights and turning points of an IPL 2026 match.",
+      "promptText": "You are a seasoned Sports Social Media Manager. Write a highly engaging, 5-part Twitter/X thread about the most thrilling moments from the recent IPL 2026 match: [Match Details]. Include emojis, popular relevant hashtags (like #IPL2026 #TATAIPL), and end the thread with a thought-provoking question to maximize replies and fan engagement. Ensure the tone is passionate, punchy, and highly shareable.",
+      "outputType": "Social Media Thread",
+      "bestFor": "Social Media Managers & Sports Bloggers"
+    },
+    {
+      "id": "368",
+      "title": "IPL 2026 - YouTube Post-Match Analysis Script",
+      "slug": "ipl-2026-youtube-script",
+      "category": "ipl-2026",
+      "description": "A detailed YouTube video script for reviewing and analyzing IPL 2026 matches, designed to keep viewers hooked.",
+      "promptText": "You are a professional Cricket Commentator and YouTube Content Creator. Produce a compelling 5-minute video script analyzing the IPL 2026 match between [Team 1] and [Team 2]. Break down the script into: 1. A catchy 15-second hook summarizing the biggest shock/highlight, 2. Intro & Context, 3. The Turning Point (key over or wicket), 4. Top Performer of the Match, and 5. Outro asking for viewer predictions in the comments. Suggest B-roll footage and on-screen text for each section.",
+      "outputType": "YouTube Script",
+      "bestFor": "Content Creators"
+    },
+    {
+      "id": "369",
+      "title": "IPL 2026 - Brand Sponsorship Pitch Deck",
+      "slug": "ipl-2026-sponsorship-pitch",
+      "category": "ipl-2026",
+      "description": "Generate a persuasive email pitch or presentation outline to secure brand sponsorships for IPL 2026 campaigns.",
+      "promptText": "You are a Sports Marketing Executive. Your goal is to draft a persuasive email pitch and a slide-by-slide presentation outline targeting [Target Brand/Company] to sponsor your sports content platform during the IPL 2026 season. Highlight the massive projected viewership, engagement metrics, demographic alignment, and unique activation ideas tailored to their brand positioning. Ensure the tone is professional, data-driven, and highly convincing.",
+      "outputType": "Marketing Pitch",
+      "bestFor": "Marketing Executives"
+    },
+    {
+      "id": "370",
+      "title": "IPL 2026 - Team SWOT Analysis",
+      "slug": "ipl-2026-team-swot-analysis",
+      "category": "ipl-2026",
+      "description": "Perform a deep-dive SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) for any IPL 2026 franchise after the mega auction.",
+      "promptText": "You are a Cricket Strategist. Conduct a detailed SWOT analysis for [IPL Team Name] ahead of the IPL 2026 season. Base your analysis on their recent auction strategy, retained core players, coaching staff, and historical performances. Break down their top-order batting, death bowling, spin options, and bench strength. Conclude with a predicted finish position on the points table.",
+      "outputType": "SWOT Report",
+      "bestFor": "Analysts & Bloggers"
+    },
+    {
       "id": "1",
       "title": "SEO Content - Strategy Blueprint Generator",
       "slug": "seo-content-strategy-blueprint",

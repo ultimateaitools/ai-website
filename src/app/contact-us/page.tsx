@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Contact Us - UltimateAITools',
         description: 'Get in touch with UltimateAITools for support, listing requests, and feedback.',
-        url: 'https://ultimateaitools.online/contact-us',
+        url: 'https://ultimateaitools.online/contact-us/',
         type: 'website',
     },
     twitter: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         description: 'Support and listing inquiry contact page.',
     },
     alternates: {
-        canonical: 'https://ultimateaitools.online/contact-us',
+        canonical: 'https://ultimateaitools.online/contact-us/',
     }
 };
 

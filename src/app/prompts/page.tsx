@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'AI Prompt Categories | Browse Prompt Library by Use Case',
         description: 'Explore AI prompt collections by category and open the exact prompt set you need.',
-        url: 'https://ultimateaitools.online/prompts',
+        url: 'https://ultimateaitools.online/prompts/',
         type: 'website',
     },
     twitter: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         description: 'Open category-wise prompt collections for ChatGPT, Gemini, Claude, and Grok.',
     },
     alternates: {
-        canonical: 'https://ultimateaitools.online/prompts',
+        canonical: 'https://ultimateaitools.online/prompts/',
     }
 };
 

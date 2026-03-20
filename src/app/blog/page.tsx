@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'AI Blog - High-Intent Guides, Tutorials & AI Workflows',
     description: 'Read practical AI guides on prompts, tools, automation, SEO, coding, productivity, and business workflows.',
     alternates: {
-        canonical: 'https://ultimateaitools.online/blog',
+        canonical: 'https://ultimateaitools.online/blog/',
     }
 };
 

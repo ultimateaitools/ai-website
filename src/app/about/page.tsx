@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'About UltimateAITools - Editorial Mission and Quality Standards',
         description: 'Understand how UltimateAITools reviews and curates AI tools and educational resources.',
-        url: 'https://ultimateaitools.online/about',
+        url: 'https://ultimateaitools.online/about/',
         type: 'website',
     },
     twitter: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         description: 'Our mission and quality standards for AI tools and content.',
     },
     alternates: {
-        canonical: 'https://ultimateaitools.online/about',
+        canonical: 'https://ultimateaitools.online/about/',
     }
 };
 

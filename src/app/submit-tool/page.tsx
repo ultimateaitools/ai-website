@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Submit Your AI Tool – Get Listed on UltimateAITools',
     description: 'Submit your AI tool to UltimateAITools.online and get discovered by thousands of users worldwide. Free AI tools listing directory for 2026.',
     alternates: {
-        canonical: 'https://ultimateaitools.online/submit-tool',
+        canonical: 'https://ultimateaitools.online/submit-tool/',
     }
 };
 

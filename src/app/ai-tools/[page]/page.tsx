@@ -34,11 +34,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `AI Tools Directory A-Z - Page ${pageNumber} | UltimateAITools`,
       description: `Browse page ${pageNumber} of the complete A-Z AI tools directory covering free and paid tools across major categories.`,
-      url: `https://ultimateaitools.online/ai-tools/${pageNumber}`,
+      url: `https://ultimateaitools.online/ai-tools/${pageNumber}/`,
       type: 'website',
     },
     alternates: {
-      canonical: `https://ultimateaitools.online/ai-tools/${pageNumber}`,
+      canonical: `https://ultimateaitools.online/ai-tools/${pageNumber}/`,
     },
   };
 }

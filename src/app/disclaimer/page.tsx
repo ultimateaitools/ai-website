@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Disclaimer – UltimateAITools',
     description: 'Read the Disclaimer of UltimateAITools.online to understand limitations of liability and affiliate disclosures.',
     alternates: {
-        canonical: 'https://ultimateaitools.online/disclaimer',
+        canonical: 'https://ultimateaitools.online/disclaimer/',
     }
 };
 
