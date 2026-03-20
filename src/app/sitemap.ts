@@ -13,6 +13,9 @@ const BASE_URL = 'https://ultimateaitools.online';
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapUrls: MetadataRoute.Sitemap = [];
   
+  // Helper to ensure trailing slash
+  const urlWithSlash = (path: string) => `${BASE_URL}${path}${path.endsWith('/') ? '' : '/'}`;
+  
   // Static Routes
   const staticRoutes = [
     '',
@@ -33,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   staticRoutes.forEach(route => {
     sitemapUrls.push({
-      url: `${BASE_URL}${route}`,
+      url: urlWithSlash(route),
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: route === '' ? 1.0 : 0.8,
@@ -44,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const { tools } = getData();
   tools.forEach(tool => {
     sitemapUrls.push({
-      url: `${BASE_URL}/tools/${tool.slug}`,
+      url: urlWithSlash(`/tools/${tool.slug}`),
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
@@ -55,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const segments = getSegments();
   segments.forEach(segment => {
     sitemapUrls.push({
-      url: `${BASE_URL}/category/${segment.slug}`,
+      url: urlWithSlash(`/category/${segment.slug}`),
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
@@ -66,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const { prompts } = getPromptsData();
   prompts.forEach(prompt => {
     sitemapUrls.push({
-      url: `${BASE_URL}/prompts/${prompt.slug}`,
+      url: urlWithSlash(`/prompts/${prompt.slug}`),
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
@@ -77,7 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const promptCategories = getPromptCategories();
   promptCategories.forEach(category => {
     sitemapUrls.push({
-      url: `${BASE_URL}/prompts/category/${category.slug}`,
+      url: urlWithSlash(`/prompts/category/${category.slug}`),
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
@@ -96,7 +99,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
 
     sitemapUrls.push({
-      url: `${BASE_URL}/blog/${blog.slug}`,
+      url: urlWithSlash(`/blog/${blog.slug}`),
       lastModified: blogDate,
       changeFrequency: 'monthly',
       priority: 0.6,
@@ -107,7 +110,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const { models } = getModelsData();
   models.forEach(model => {
     sitemapUrls.push({
-      url: `${BASE_URL}/models/${model.slug}`,
+      url: urlWithSlash(`/models/${model.slug}`),
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.6,
