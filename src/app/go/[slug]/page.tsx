@@ -1,16 +1,12 @@
 import { Metadata } from 'next';
-import { redirect, notFound } from 'next/navigation';
-import { getData } from '@/lib/data';
+import { notFound } from 'next/navigation';
 
 type Props = {
     params: { slug: string };
 };
 
 export function generateStaticParams() {
-    const { tools } = getData();
-    return tools.map((tool) => ({
-        slug: tool.slug,
-    }));
+    return Object.keys(externalUrls).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -60,8 +56,29 @@ export default function GoRedirectPage({ params }: Props) {
     const url = externalUrls[params.slug];
 
     if (url) {
-        redirect(url);
-    } else {
-        notFound();
+        return (
+            <div className="max-w-2xl mx-auto px-4 py-24 text-center">
+                <script
+                    // Use a plain script tag so static export works without Next's redirect() helper.
+                    dangerouslySetInnerHTML={{
+                        __html: `window.location.replace(${JSON.stringify(url)});`,
+                    }}
+                />
+                <h1 className="text-2xl font-bold text-foreground mb-3">Redirecting…</h1>
+                <p className="text-gray-400 mb-6">If you are not redirected automatically, use the link below.</p>
+                <a
+                    href={url}
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-full bg-primary-600 px-6 py-3 font-semibold text-white hover:bg-primary-700 transition-colors"
+                >
+                    Continue to the tool site
+                </a>
+                <noscript>
+                    <p className="text-gray-400 mt-4">JavaScript is required to auto‑redirect.</p>
+                </noscript>
+            </div>
+        );
     }
+
+    notFound();
 }
