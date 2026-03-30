@@ -3999,6 +3999,126 @@
       "promptText": "You are a UPSC and competitive exam answer-writing coach.\n\nTask:\nEvaluate and improve a student's answer or help draft a better answer from scratch.\n\nInput:\n- Exam: [UPSC Mains / Other descriptive exam / Explain concept for SSC interview stage]\n- Question: [Paste the question]\n- Student's Draft Answer: [Paste answer or leave blank]\n- Word Limit: [Enter limit]\n- Student's Problem: [Lack of structure / Weak introduction / Poor conclusion / Less content / Low clarity]\n\nInstructions:\n1) If a student answer is given, first critique it honestly but constructively.\n2) Show what is missing in structure, content, and presentation.\n3) Rewrite the answer in a more scoring format.\n4) Use intro-body-conclusion structure where relevant.\n5) Suggest value additions such as examples, committee references, diagrams, or keywords if useful.\n6) Keep the answer within word limit.\n\nOutput Format:\nA) Quick evaluation of the student's draft\nB) Major weaknesses\nC) Improved answer version\nD) Structure framework the student should reuse\nE) 5 rules for better answer writing next time\n\nImportant:\n- Be exam-focused, not academic-theory heavy\n- Prioritize clarity, structure, and marks-oriented writing",
       "outputType": "Answer Writing Guide",
       "bestFor": "UPSC And SSC Aspirants"
+    },
+    {
+      "id": "401",
+      "title": "Turn a Brain Dump Into a Clear Week Plan",
+      "slug": "brain-dump-to-week-plan-prompt",
+      "category": "productivity",
+      "description": "Paste messy thoughts and get a realistic weekly plan with priorities, time blocks, and what to drop.",
+      "promptText": "You are a calm productivity coach. I will paste a messy brain dump of everything on my mind about work and life.\n\nYour job:\n1) Reflect back what you heard in 3 short sentences.\n2) Pull out the 3 outcomes that matter most this week — not ten.\n3) Turn those into a day-by-day plan with time blocks that fit someone who only has about [X] focused hours per day.\n4) Name 2 things I should defer or say no to, with kind wording I can reuse.\n5) End with a 5-minute morning checklist.\n\nRules: sound human, avoid corporate buzzwords, do not shame me for having too much on the list.\n\nHere is my brain dump:\n[PASTE HERE]",
+      "outputType": "Weekly Plan",
+      "bestFor": "Busy Professionals And Students"
+    },
+    {
+      "id": "402",
+      "title": "Explain This Concept Like a Friend Over Chai",
+      "slug": "explain-like-friend-chai-prompt",
+      "category": "study",
+      "description": "Break down any tough topic in simple Hinglish-friendly English with examples from everyday life.",
+      "promptText": "I am trying to understand this topic for real, not just memorise it:\n[TOPIC OR PARAGRAPH]\n\nExplain it like you are my friend sitting over chai:\n- Start with a one-line analogy.\n- Use simple words; if you use a technical term, define it immediately.\n- Give 2 everyday examples (home, money, phone apps, sports — normal life).\n- Then give a slightly more precise version in 5 bullet points.\n- Finish with 3 questions I should be able to answer if I truly understood.\n\nDo not write like a textbook. Sound like a person.",
+      "outputType": "Plain-Language Explanation",
+      "bestFor": "Students And Curious Beginners"
+    },
+    {
+      "id": "403",
+      "title": "First Draft Email That Sounds Like Me, Not a Robot",
+      "slug": "human-sounding-email-draft-prompt",
+      "category": "business",
+      "description": "Turn bullet points into a warm, direct email — polite but not stiff.",
+      "promptText": "Help me write an email.\n\nContext:\n- My relationship with the reader: [colleague / client / teacher / landlord]\n- Tone I want: [warm / firm / apologetic / excited]\n- Rough bullet points of what I need to say:\n[PASTE BULLETS]\n\nWrite:\n1) A subject line that is specific.\n2) A body under 180 words unless I truly need more.\n3) No fake enthusiasm, no 'I hope this email finds you well' unless it fits.\n4) One clear ask at the end.\n5) Optional PS line if it helps soften bad news.\n\nIf something is missing for a polite email, ask me one short question first, then give your best draft anyway with brackets for missing details.",
+      "outputType": "Email Draft",
+      "bestFor": "Anyone Who Hates Writing Mail"
+    },
+    {
+      "id": "404",
+      "title": "Debug My Thinking on a Hard Decision",
+      "slug": "decision-debugging-prompt",
+      "category": "business",
+      "description": "Walk through a personal or career decision with pros, risks, and blind spots — without pretending to be your lawyer.",
+      "promptText": "I am stuck on this decision:\n[DESCRIBE IN YOUR OWN WORDS]\n\nYou are not allowed to decide for me. Instead:\n1) Summarise the choice in neutral language.\n2) List the best case, worst case, and most likely case for each serious option.\n3) Point out 3 cognitive biases I might be under (sunk cost, fear of regret, social pressure, etc.) in plain language.\n4) Suggest 5 factual questions I should answer before choosing — things I could google, ask a person, or measure.\n5) Offer a simple 7-day experiment I can run to get real-world data before I commit.\n\nKeep the tone kind and direct. Say once that you are not a lawyer, doctor, or financial adviser.",
+      "outputType": "Decision Journal",
+      "bestFor": "Founders, Job Seekers, And Adults"
+    },
+    {
+      "id": "405",
+      "title": "Turn Meeting Chaos Into Notes People Actually Read",
+      "slug": "meeting-notes-that-get-read-prompt",
+      "category": "productivity",
+      "description": "From rough notes or a transcript summary, produce decisions, owners, and next steps.",
+      "promptText": "Here are messy notes from a meeting (or a rough transcript summary):\n[PASTE]\n\nProduce:\n1) **TL;DR** in 2 lines.\n2) **Decisions made** — who decided what.\n3) **Open questions** that still need an owner.\n4) **Action items** in a table: Task | Owner | Due date if known | Dependency.\n5) **Risks or tensions** we politely ignored — name them without drama.\n6) A short Slack-style message I can post in the team channel.\n\nUse clear headings. If names are missing, write OWNER TBD in caps.",
+      "outputType": "Meeting Summary",
+      "bestFor": "Team Leads And PMs"
+    },
+    {
+      "id": "406",
+      "title": "Instagram Caption From One Photo Idea",
+      "slug": "instagram-caption-from-photo-idea-prompt",
+      "category": "social-media",
+      "description": "Describe your shot; get caption options, hashtags, and a soft CTA that does not feel salesy.",
+      "promptText": "I post on Instagram for: [personal brand / small business / hobby page].\nThe photo or reel is about: [DESCRIBE THE VISUAL AND MOOD].\nMy audience mostly cares about: [WHAT THEY WANT].\n\nGive me:\n1) 5 caption options from very short to medium length.\n2) 12–18 hashtags split into broad + niche (no banned spam tricks).\n3) One optional line that gently invites comments or DMs without sounding desperate.\n4) One line I should NOT use because it sounds like generic AI fluff.\n\nWrite like a human who knows the niche, not like a press release.",
+      "outputType": "Social Captions",
+      "bestFor": "Creators And Small Shops"
+    },
+    {
+      "id": "407",
+      "title": "Code Review Buddy Before I Open a PR",
+      "slug": "friendly-code-review-before-pr-prompt",
+      "category": "coding",
+      "description": "Paste a diff or snippet; get readability, edge cases, and security smells explained simply.",
+      "promptText": "Language or framework: [e.g. TypeScript / React / Python]\nWhat this code is supposed to do in one sentence: [GOAL]\n\nCode or diff:\n[PASTE]\n\nReview like a senior who likes teaching:\n1) Does it match the goal? If not, where it drifts.\n2) Readability: naming, structure, anything confusing.\n3) Edge cases: nulls, empty lists, slow inputs, race conditions if relevant.\n4) Security or privacy smells if any (even mild ones).\n5) 3 concrete refactors, ordered by impact.\n6) If you are guessing, label guesses clearly.\n\nDo not rewrite the whole file unless I ask — keep feedback scannable.",
+      "outputType": "Code Review",
+      "bestFor": "Developers And Bootcamp Grads"
+    },
+    {
+      "id": "408",
+      "title": "Landing Page Hero Copy From a Shaky First Draft",
+      "slug": "landing-page-hero-humanize-prompt",
+      "category": "marketing",
+      "description": "Improve headline, subhead, and CTA for a product page while keeping your voice.",
+      "promptText": "Product or service in one line: [WHAT YOU SELL]\nAudience: [WHO BUYS]\nMain pain: [WHAT HURTS]\nProof you have (even small): [TESTIMONIAL, METRIC, LOGO, OR NONE YET]\n\nMy ugly first draft:\n[PASTE]\n\nRewrite:\n1) 10 headline options — mix bold, plain, and playful.\n2) Pick your top 3 and explain why in one line each.\n3) A subhead that explains the how, not just hype.\n4) Primary CTA + secondary CTA (example: Start free / Book a 15-min call).\n5) A short 'below the fold' section outline: 3 bullets of what to promise next.\n\nAvoid fake statistics. If we have no numbers, say that honestly.",
+      "outputType": "Landing Copy",
+      "bestFor": "Indie Hackers And Marketers"
+    },
+    {
+      "id": "409",
+      "title": "Midjourney / Image Prompt for a Consistent Character",
+      "slug": "consistent-character-image-prompt",
+      "category": "image-generation",
+      "description": "Describe a character once; get a reusable prompt pattern for the same look across scenes.",
+      "promptText": "I want to generate images of the same character across multiple scenes.\n\nCharacter basics:\n- Age range, body type, skin tone: [FILL]\n- Face details: [HAIR, EYES, DISTINCTIVE MARKS]\n- Default outfit: [CLOTHES, COLOURS, ACCESSORIES]\n- Art style I want: [e.g. comic ink, soft 3D, watercolour]\n\nGive me:\n1) A **master description block** I can paste at the start of every prompt.\n2) 5 scene ideas (action, setting, camera angle) that fit the style.\n3) Negative prompt suggestions to reduce face drift.\n4) Short tips if I am using a tool that supports seeds or reference images — without naming a single product as mandatory.\n\nKeep wording vivid but not creepy.",
+      "outputType": "Image Brief",
+      "bestFor": "Artists And Storytellers"
+    },
+    {
+      "id": "410",
+      "title": "Practice Interview Answers Without Memorising a Script",
+      "slug": "interview-practice-natural-prompt",
+      "category": "study",
+      "description": "Coaching for behavioural questions — bullet talking points, not a robotic paragraph to memorise.",
+      "promptText": "I am preparing for interviews. Role type: [e.g. junior frontend / MBA / campus placement].\nQuestion I expect: [PASTE QUESTION]\nMy real experience (rough notes): [PASTE]\n\nHelp me:\n1) Pull 4 true stories or facts from my notes that fit the question.\n2) For each, give a **STAR-style skeleton** in bullets only — Situation, Task, Action, Result — no fancy words.\n3) Suggest one honest weakness or risk I should be ready to admit.\n4) Give 2 follow-up questions a sharp interviewer might ask.\n5) A 45-second spoken answer outline I can practise out loud — conversational, not memorised essay.\n\nIf my notes are too thin, tell me what detail to add and offer a placeholder example in brackets.",
+      "outputType": "Interview Prep",
+      "bestFor": "Job Seekers And Students"
+    },
+    {
+      "id": "411",
+      "title": "Weekly Family / Household Sync in 15 Minutes",
+      "slug": "household-weekly-sync-prompt",
+      "category": "productivity",
+      "description": "Turn a list of chores, bills, and events into a fair, realistic family plan.",
+      "promptText": "Our household has: [WHO LIVES TOGETHER].\nThis week’s constraints: [WORK HOURS, KIDS, TRAVEL, HEALTH].\nRough list of everything we mentioned in a fight or chat:\n[PASTE LIST]\n\nCreate:\n1) A calm opening line we can use to start the meeting without blame.\n2) **Must-do this week** vs **nice-to-have** — be ruthless.\n3) A fair split of tasks with time estimates — flag anything unrealistic.\n4) One shared calendar block suggestion for a 15-minute sync.\n5) A closing line that thanks people for specific things.\n\nSound warm and practical. No therapy jargon unless I asked for it.",
+      "outputType": "Home Planning",
+      "bestFor": "Families And Roommates"
+    },
+    {
+      "id": "412",
+      "title": "YouTube Shorts Hook + Script From a Single Idea",
+      "slug": "youtube-shorts-hook-script-prompt",
+      "category": "marketing",
+      "description": "One idea in, hooks, beat-by-beat script, and on-screen text suggestions out.",
+      "promptText": "Channel niche: [FILL]\nThis short is about: [ONE SENTENCE IDEA]\nMy speaking style: [calm / hyper / sarcastic / teacher mode]\nTarget length: [30s / 45s / 60s]\n\nDeliver:\n1) 8 hook lines for the first 1–2 seconds — mix curiosity and bold claims, no clickbait lies.\n2) A beat-by-beat script with approximate seconds per beat.\n3) On-screen text suggestions for key words.\n4) One pattern-interrupt idea (sound, cut, prop) that fits the niche.\n5) A simple description + 5 keyword tags for upload.\n\nWrite how people actually talk, including short sentences.",
+      "outputType": "Short Video Script",
+      "bestFor": "YouTubers And Educators"
     }
   ]
 }

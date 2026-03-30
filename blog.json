@@ -1,6 +1,186 @@
 {
   "blogs": [
     {
+      "id": "37",
+      "title": "Your Phone Can Run Serious AI Now — Here Is What Actually Changes Day to Day",
+      "slug": "on-device-ai-phones-march-2026",
+      "category": "agentic-ai",
+      "topic": "On-device AI",
+      "publishDate": "2026-03-30",
+      "author": "Editorial Desk",
+      "readingTime": "6 min read",
+      "shortDescription": "Smaller, faster models and better chips mean AI is moving off the cloud and onto your handset. We explain what that means in plain language — privacy, speed, and limits.",
+      "imageAlt": "Person using a smartphone with subtle AI interface glow",
+      "content": {
+        "intro": "For years, the honest answer to “why does this feel slow?” was simple: your request had to travel to a data centre, wait in a queue, and come back. In 2026, that story is finally splitting in two. On one side you still have the huge frontier models in the cloud. On the other, you have genuinely useful assistants that can run on a phone or laptop without sending every sentence you type to a stranger’s server.\n\nThat shift is not magic. It is a mix of smaller models that punch above their weight, hardware that finally has headroom, and apps that stop treating “AI” as a chat bubble and start treating it as a feature baked into notes, photos, keyboards, and meetings.\n\nIf you are a normal user — not a researcher — the practical question is simple: what do you gain, what do you give up, and where should you still insist on the cloud? This article is written in everyday language on purpose, because the trend matters more than the jargon.",
+        "whatYouWillLearn": "By the end of this piece you will have a clear picture of:\n\n1) Why on-device AI suddenly feels “good enough” for real tasks.\n2) Where privacy really improves — and where marketing still oversells it.\n3) Which jobs still need a big online model (translation quality, deep research, long documents).\n4) How to choose settings so you are not leaking more than you intend.\n5) A simple rule of thumb for when to stay local and when to go cloud.",
+        "bestTools": "You do not need a shopping list of fifty logos. A practical 2026 stack looks like this:\n\n- **A strong default chat app** on your phone that clearly labels “on-device” versus “cloud” modes.\n- **A note-taking or docs tool** that offers offline summarisation for meeting notes you would rather not upload.\n- **A photo or gallery assistant** that can search faces, scenes, and text in images locally when the OS supports it.\n- **A coding or writing assistant on desktop** that can run a mid-size model when you are on a flight or a patchy connection.\n\nPick tools that say in plain English what leaves the device. If the policy is vague, assume the widest sharing.",
+        "useCases": "Here is how people are actually using this in real life:\n\n- **Commuting and travel:** Drafting emails and cleaning up rough notes without tethering to hotel Wi‑Fi.\n- **Sensitive work:** Lawyers, clinicians, and HR folks reducing how much raw text hits external APIs — not a perfect shield, but a real reduction in exposure.\n- **Parents and schools:** Kids practising language or maths with a tutor-style model that does not need an account on a third-party site for every question.\n- **Creators in the field:** Tagging footage, transcribing rough voice memos, and generating shot lists before anything is uploaded to the cloud.",
+        "conclusion": "On-device AI will not replace the massive models that power frontier research or Hollywood-grade video. It was never supposed to. It will replace the silly situation where your grocery list had to ping another continent.\n\nTreat local AI as a speed-and-privacy layer, not a religion. Use cloud models when the task needs depth, fresh web facts, or heavy reasoning — and use on-device models when the task is personal, repetitive, or offline. That simple split will save you time and awkward surprises."
+      },
+      "imageUrl": "/img/for-all.webp"
+    },
+    {
+      "id": "38",
+      "title": "AI and Jobs in 2026: Less Hollywood, More Spreadsheet",
+      "slug": "ai-jobs-reality-check-march-2026",
+      "category": "productivity",
+      "topic": "Future of work",
+      "publishDate": "2026-03-29",
+      "author": "Team UltimateAITools",
+      "readingTime": "7 min read",
+      "shortDescription": "Skip the doom and the hype. Here is a grounded look at how AI is changing hiring, daily tasks, and the skills that still matter.",
+      "imageAlt": "Diverse professionals collaborating with laptops in a modern office",
+      "content": {
+        "intro": "Open any headline feed and you will see two opposite stories, both wrong in their own way. Either robots will steal every job by Tuesday, or AI is a toy that will quietly disappear. The truth in early 2026 is messier and, honestly, more boring: most offices are not firing half the staff. They are absorbing the same headcount into higher output — more variants, more reports, more slides, more code branches — while a smaller number of roles get squeezed hard.\n\nIf you are planning a career, the useful question is not “will AI replace me?” It is “which parts of my job are now a commodity, and which parts still need judgement, taste, and accountability?”\n\nThis piece stays in human language because those judgements are human problems first and technology problems second.",
+        "whatYouWillLearn": "You will walk away with:\n\n1) A simple framework for splitting your work into “commodity tasks” and “judgement tasks”.\n2) Why employers still pay for reliability, not raw speed.\n3) Where entry-level hiring really is shifting — and where it is not.\n4) Skills that compound in an AI-heavy workplace (brief writing, review, verification).\n5) A weekly habit that keeps you employable without chasing every new model drop.",
+        "bestTools": "None of these tools replace thinking, but they make the pattern obvious:\n\n- **A good writing or coding copilot** to blast through first drafts — paired with a checklist you actually use.\n- **A meeting recorder you trust** with clear retention rules, so summaries do not become gossip engines.\n- **A lightweight CRM or task system** where agents can propose actions but humans approve sends.\n- **A model-agnostic playground** (several exist) so you are not locked to one vendor’s story about the future.",
+        "useCases": "Real patterns we see again and again:\n\n- **Marketing teams** producing ten variants of an email instead of one — then an experienced editor killing eight of them.\n- **Junior analysts** spending less time on formatting and more time on “is this source trustworthy?”\n- **Customer support** handling higher volume with drafts suggested in real time — escalations still go to humans when money or safety is on the line.\n- **Small business owners** using AI for bookkeeping prep and scheduling, not for signing contracts without reading them.",
+        "conclusion": "The job market is not a single lever labelled “AI”. It is thousands of small levers: regulation, interest rates, industry cycles, and plain old manager habits. AI is one more pressure on commodity work — and one more amplifier for people who already communicate clearly and own outcomes.\n\nIf you only do one thing, make it this: spend thirty minutes a week reviewing work you shipped and asking which parts a machine could have done. Then move your energy up one layer — framing problems, checking facts, talking to customers, making trade-offs. That layer is still stubbornly human."
+      },
+      "imageUrl": "/img/for-all.webp"
+    },
+    {
+      "id": "39",
+      "title": "Voice AI Finally Stopped Sounding Like a Call Centre From 2009",
+      "slug": "voice-ai-usable-2026",
+      "category": "audio-tools",
+      "topic": "Voice AI",
+      "publishDate": "2026-03-28",
+      "author": "Editorial Desk",
+      "readingTime": "5 min read",
+      "shortDescription": "Natural pauses, better emotion, and tighter integrations mean voice assistants are worth another look. We break down what improved — and what still annoys users.",
+      "imageAlt": "Microphone and sound wave visual suggesting voice technology",
+      "content": {
+        "intro": "For a long time, “talk to your computer” was a party trick. The transcription was fine for short commands, but anything longer turned into comic misunderstandings and robotic replies. In the last stretch leading into 2026, three things moved at once: speech recognition got stubbornly accurate in noisy rooms, synthesis stopped scraping your ears, and products stopped pretending voice is only for setting timers.\n\nYou still should not trust a voice bot with your banking password. But you can reasonably dictate a rough strategy memo while walking, have the draft land in your notes app, and spend ten minutes tightening it at a keyboard.\n\nThat is not science fiction; it is a workflow shift worth adopting if your hands are often busy or your typing speed is a bottleneck.",
+        "whatYouWillLearn": "This article covers:\n\n1) What changed under the hood in plain terms (data, models, and product design).\n2) When voice beats typing — and when it is still slower.\n3) Privacy habits: mute buttons, wake words, and cloud vs local transcription.\n4) Accessibility wins that help everyone, not only power users.\n5) A few concrete routines you can try for a week without buying new hardware.",
+        "bestTools": "Look for tools that respect context:\n\n- **Os-level dictation** that works offline for sensitive notes.\n- **Meeting assistants** that label speakers and separate action items from chatter — if your workplace allows them.\n- **Creative tools** where you can hum a melody or describe a scene aloud and get a structured starting point.\n- **Language-learning apps** that grade pronunciation without embarrassing you in front of a classroom.",
+        "useCases": "Patterns that stuck:\n\n- **Field workers** filing incident descriptions hands-free.\n- **Drivers** capturing ideas safely with voice-only capture that does not need staring at a screen.\n- **Editors** doing “spoken outlines” that the AI turns into hierarchical bullets.\n- **Older adults** finally using assistants for reminders and calls when touch interfaces felt fiddly.",
+        "conclusion": "Voice is a modality, not a religion. It shines when your eyes and hands are busy, when ideas arrive faster than you can type, or when speaking feels more natural than tapping. It still struggles with dense code, precise numbers, and anything you would not say aloud in a coffee shop.\n\nTurn the mic on for capture; turn the keyboard on for precision. Switching between them without guilt is the whole trick."
+      },
+      "imageUrl": "/img/for-all.webp"
+    },
+    {
+      "id": "40",
+      "title": "Open Weights vs Closed Models: A Builder’s Guide Without the Flame War",
+      "slug": "open-vs-closed-models-builders-2026",
+      "category": "developer-tools",
+      "topic": "AI engineering",
+      "publishDate": "2026-03-27",
+      "author": "AI Workflow Lab",
+      "readingTime": "6 min read",
+      "shortDescription": "If you ship products with AI, you eventually choose between hosted APIs and models you can run yourself. Here is how to think about cost, safety, and maintenance.",
+      "imageAlt": "Developer workspace with code on screen and abstract network graphic",
+      "content": {
+        "intro": "Every technical thread on this topic turns into politics in minutes. That is a shame, because underneath the slogans is a boring engineering decision: who carries the risk when something goes wrong, who pays the bill at scale, and how fast you can move when regulators or customers change their mind.\n\nClosed hosted models are easy to start and hard to predict financially at huge scale. Open-weight models you host yourself flip that — more control, more operational burden, and a team that actually has to wake up if GPUs melt at 3 a.m.\n\nThis guide is for people who build things, not for people who argue on forums. We use plain language on purpose.",
+        "whatYouWillLearn": "You will get:\n\n1) A decision checklist: latency, data residency, fine-tuning, and compliance.\n2) Why “open” does not automatically mean “free” once you count engineering time.\n3) When a hybrid setup (small local model + big cloud fallback) is the adult choice.\n4) How to talk to non-technical stakeholders without drowning them in acronyms.\n5) Red flags in vendor contracts and model cards you should not ignore.",
+        "bestTools": "Typical 2026 builder stack pieces:\n\n- **A hosted API** from a major lab for the hardest 10 percent of queries.\n- **An inference host** or cloud GPU tier for models you fine-tune on private data.\n- **An evaluation harness** — even a spreadsheet of test prompts beats flying blind.\n- **Observability** for prompts, outputs, and cost per user so finance does not get surprises.",
+        "useCases": "Where teams landed last quarter:\n\n- **Fintech** keeping PII-heavy summarisation on infrastructure they audit.\n- **Media** using hosted models for creative drafts but local models for internal style guides.\n- **Healthcare pilots** (with lawyers in the room) splitting research assistance from diagnostic claims — the latter still firmly human.\n- **Startups** starting hosted, then moving the steady 80 percent of traffic to a cheaper self-hosted model once usage stabilises.",
+        "conclusion": "Pick the option that matches your risk budget, not your ideology. If you are two people in a garage, buy speed and sleep. If you are a regulated entity, own the stack where the law says you must — and rent the frontier where it is safe.\n\nRevisit the decision every quarter. The right answer in March might be wrong by September. That is normal; pretending otherwise is not."
+      },
+      "imageUrl": "/img/for-all.webp"
+    },
+    {
+      "id": "41",
+      "title": "Deepfakes, Scams, and Voice Clones: A Calm Guide to Not Panicking Online",
+      "slug": "deepfake-scam-awareness-march-2026",
+      "category": "study-tools",
+      "topic": "Digital literacy",
+      "publishDate": "2026-03-26",
+      "author": "Editorial Desk",
+      "readingTime": "6 min read",
+      "shortDescription": "Synthetic media keeps getting easier. Here is practical advice for families and teams — verify before you wire money or share secrets.",
+      "imageAlt": "Shield icon suggesting security and awareness",
+      "content": {
+        "intro": "The technology behind realistic fake video and cloned voices is not new; what changed is the price and the skill floor. A teenager with patience and a laptop can produce something that would have needed a studio five years ago. That does not mean the internet is doomed. It means our old habits — trusting a familiar face or voice on a single channel — need an upgrade.\n\nGood news: you do not need a cryptography degree. You need slower reflexes on money and secrets, and faster reflexes on double-checking through a second channel.\n\nThis article is written for relatives who ask you “is this WhatsApp voice note real?” as much as for security teams.",
+        "whatYouWillLearn": "We cover:\n\n1) The three scam shapes that keep repeating (urgent wire transfer, “help I am locked out”, fake live interviews).\n2) A five-minute family drill you can run at dinner.\n3) Why out-of-band verification beats any single “AI detector” website.\n4) Workplace policies that actually help instead of only covering legal backsides.\n5) What to teach kids without terrifying them.",
+        "bestTools": "Tools help, but culture matters more:\n\n- **Password managers and hardware keys** so “I forgot my login” social engineering hits a wall.\n- **Short internal phrases** teams use to confirm identity on sensitive calls — rotated occasionally.\n- **Banking alerts** and low default transfer limits for business accounts.\n- **Official reporting channels** for impersonation on major platforms — slow, but still worth using.",
+        "useCases": "Stories we wish were rarer:\n\n- **CFO impersonation** via cloned voice approving a payment — stopped when someone called back on a known number.\n- **Romance scams** using synthetic video on dating apps — flagged when the person refused a trivial live gesture.\n- **Job seekers** paying fake “equipment deposits” after realistic interviews — prevented when companies published a clear hiring URL.\n- **Elder fraud** where “grandchild in jail” loops used to be phone-only and now sometimes add synthetic voice — caught when families had a shared codeword.",
+        "conclusion": "Paralysis helps nobody. The goal is not to trust nothing; it is to trust the right things twice when stakes are high. Money, passwords, and intimate photos stay behind a second check — always.\n\nIf you remember one line: **urgency is the weapon**. Scammers manufacture panic. Calm verification wins."
+      },
+      "imageUrl": "/img/for-all.webp"
+    },
+    {
+      "id": "42",
+      "title": "Using AI for School Without Cheating Yourself Out of an Education",
+      "slug": "ai-study-integrity-students-2026",
+      "category": "study-tools",
+      "topic": "Students",
+      "publishDate": "2026-03-25",
+      "author": "Team UltimateAITools",
+      "readingTime": "6 min read",
+      "shortDescription": "Students are not going to stop using AI. Here is how to use it to learn faster — while still passing exams that lock the room and take your phone away.",
+      "imageAlt": "Student studying with laptop and notebook",
+      "content": {
+        "intro": "Let us be blunt: telling students “just do not use AI” works about as well as telling water not to be wet. The tools are on every phone. The useful conversation is how to use them so you actually understand the material — because the exam hall, the interview, and the first job still reward humans who can think under pressure without autocomplete.\n\nThink of AI as a brutally fast but sometimes overconfident tutor. It can explain a concept ten ways, generate practice questions, and spot gaps in your notes. It can also hand you a polished essay that teaches you nothing if you paste it and submit.\n\nThis guide is for students and parents who want a practical middle path.",
+        "whatYouWillLearn": "You will learn:\n\n1) A “traffic light” system: green uses, yellow uses, red uses for academic integrity.\n2) How to turn AI into a Socratic tutor instead of an answer key.\n3) Why rewriting AI output in your own words is not enough if you skip understanding.\n4) How to prepare for closed-book tests in an open-book world.\n5) When to ignore AI completely — yes, those moments exist.",
+        "bestTools": "Keep the stack boring:\n\n- **Your course’s official LMS** for deadlines and rubrics — read them before asking any bot.\n- **Flashcard or spaced-repetition apps** where AI helps generate cards but you still grade yourself honestly.\n- **Math and coding environments** where you solve first, then compare to an explanation.\n- **Citation-friendly search** when facts matter; hallucinations love history essays.",
+        "useCases": "Healthy patterns:\n\n- **“Explain like I am twelve, then like I am preparing for an exam.”**\n- **Mock oral exams** with voice mode while walking.\n- **Error logs** where you paste wrong answers and ask for patterns, not just fixes.\n- **Time-boxed** sessions: twenty minutes struggle, then ten minutes AI hint — not zero minutes struggle.",
+        "conclusion": "Your degree is not a trophy for fastest prompt. It is proof you can stick with confusion long enough to understand. AI can shorten that confusion — or remove the growth entirely. Choose deliberately.\n\nIf you feel nervous submitting something, that is data. Run it past the syllabus, a classmate, or a teacher during office hours. The awkward conversation now beats the awkward transcript later."
+      },
+      "imageUrl": "/img/for-all.webp"
+    },
+    {
+      "id": "43",
+      "title": "A Small-Business AI Stack That Actually Ships Work (Under ₹20k a Month)",
+      "slug": "small-business-ai-stack-affordable-2026",
+      "category": "productivity",
+      "topic": "SMB",
+      "publishDate": "2026-03-24",
+      "author": "Editorial Desk",
+      "readingTime": "7 min read",
+      "shortDescription": "Forget enterprise contracts. Here is how lean teams use AI for support, content, and ops without buying fifty subscriptions.",
+      "imageAlt": "Small business owner at counter with tablet",
+      "content": {
+        "intro": "Big vendors love to sell “AI transformation” with a price tag that could fund a wedding. Most small businesses do not need transformation; they need fewer dropped leads, cleaner books, and social posts that go out on time. The good news is that a handful of well-chosen tools, plus a boring process doc, gets you most of the way there.\n\nThis article uses Indian rupees as a rough budget anchor, but the logic travels: cap spend, rotate trials ruthlessly, and tie every subscription to a metric you can name.\n\nWe are not endorsing specific brands as “the only answer” — your niche matters — but we will talk categories honestly.",
+        "whatYouWillLearn": "You will get:\n\n1) A minimum viable AI stack: customer messages, marketing drafts, and internal docs.\n2) How to avoid paying for five tools that all do the same summarisation.\n3) When free tiers are enough — and when they cost you more in time.\n4) Simple governance: who owns the passwords, who approves customer-facing sends.\n5) A thirty-day rollout plan that will not wreck your week.",
+        "bestTools": "Think roles, not hype:\n\n- **Inbox and CRM helper** for first-pass replies and follow-up reminders.\n- **Content assistant** for captions, product blurbs, and newsletter skeletons — human final pass mandatory.\n- **Spreadsheet or bookkeeping helper** for categorisation, not for filing taxes without an accountant in the loop.\n- **Internal wiki or doc tool** with search that understands “where did we save the vendor contract?”",
+        "useCases": "SMB wins we see repeatedly:\n\n- **Boutique e-commerce** generating ten product descriptions, keeping three after a human trims fluff.\n- **Clinics and salons** templating appointment reminders in local languages.\n- **Real estate agents** summarising long email threads for clients who only read the last paragraph.\n- **Cafés** rotating weekly specials posts without hiring a full-time marketer.",
+        "conclusion": "Start with one painful workflow — usually either “we answer DMs too slowly” or “we never post” — and automate only that until it is stable. Then add a second. SMBs die of too many half-implemented tools, not of missing the latest model drop.\n\nIf your stack fits on one page and everyone knows who pays the bill, you are already ahead of half the competition."
+      },
+      "imageUrl": "/img/for-all.webp"
+    },
+    {
+      "id": "44",
+      "title": "Everyone Talks About RAG; Here Is What Serious Teams Do After the Basics",
+      "slug": "beyond-basic-rag-2026",
+      "category": "developer-tools",
+      "topic": "RAG",
+      "publishDate": "2026-03-23",
+      "author": "AI Workflow Lab",
+      "readingTime": "6 min read",
+      "shortDescription": "Retrieval-augmented generation is table stakes. We explain the next problems — evaluation, freshness, and permissions — in language your PM can follow.",
+      "imageAlt": "Abstract data retrieval and document connections",
+      "content": {
+        "intro": "Two years ago, showing a slide that said “we use RAG” could win a room. In 2026, that slide gets yawns. Dumping PDFs into a vector database and praying is the “hello world” of enterprise AI. The interesting problems start when answers are wrong but sound confident, when documents contradict each other, and when half the files are things nobody should see.\n\nThis piece is for mixed teams — engineers, product, legal — who need a shared picture of what “good” looks like after the prototype demo.",
+        "whatYouWillLearn": "We walk through:\n\n1) Why retrieval quality beats model size for most internal Q&A.\n2) Evaluation: golden questions, human review loops, and regression tests — explained simply.\n3) Freshness: connecting live systems, not only static uploads.\n4) Permissions: the difference between “search” and “answer” when access control matters.\n5) When to stop adding documents and fix the underlying data instead.",
+        "bestTools": "Mature stacks usually include:\n\n- **Hybrid search** (keyword plus semantic) so exact phrases still hit.\n- **Rerankers** to push the best chunks to the model.\n- **Citation in the UI** so users can click through to sources.\n- **Logging with redaction** so debugging does not become a privacy incident.\n- **A boring ticketing path** for “the bot said something wrong” — because it will.",
+        "useCases": "After-basic-RAG problems:\n\n- **HR policies** that changed last month but the old PDF is still cached.\n- **Engineering wikis** where three teams wrote three different definitions of “done”.\n- **Sales enablement** where reps need answers tied to deal stage, not generic marketing copy.\n- **Support bots** that must not leak another customer’s ticket numbers — permissions are not optional.",
+        "conclusion": "RAG was never the finish line; it was a doorway. The maturity of your system shows up in how you handle wrong answers, who can see what, and how fast you update when reality changes.\n\nIf executives only see a glowing demo, schedule a second meeting with ugly examples. That meeting saves you from a quiet production disaster in Q3."
+      },
+      "imageUrl": "/img/for-all.webp"
+    },
+    {
+      "id": "45",
+      "title": "AI Rules Keep Changing: What Normal Users Should Actually Watch For",
+      "slug": "ai-regulation-practical-user-guide-2026",
+      "category": "models-comparison",
+      "topic": "Policy",
+      "publishDate": "2026-03-22",
+      "author": "Editorial Desk",
+      "readingTime": "5 min read",
+      "shortDescription": "Laws and platform policies shift faster than blog archives. Here is a calm, non-lawyer guide to staying safe and informed as a user or small creator.",
+      "imageAlt": "Gavel and digital globe suggesting policy and technology",
+      "content": {
+        "intro": "We are not your lawyers, and this is not legal advice. It is a map of the terrain: different regions are asking who is liable when a model spits out something harmful, how personal data may be used for training, and what creators must label when media is synthetic. The details change; the themes repeat.\n\nIf you only use AI to write emails, you still care — terms of service affect what companies can do with your prompts. If you publish videos, you care twice — platforms are experimenting with labels, strikes, and appeals processes that are imperfect but real.\n\nWe will keep this readable and skip acronyms where possible.",
+        "whatYouWillLearn": "You will understand:\n\n1) Why “where the company is based” and “where you live” can both matter.\n2) How to read a privacy policy for the three lines that actually affect you.\n3) What labelling expectations mean for artists and influencers.\n4) Why kids’ accounts deserve stricter defaults — and what parents can toggle.\n5) Where to follow trustworthy summaries without drowning in legalese.",
+        "bestTools": "Practical habits beat panic:\n\n- **Official changelogs** from tools you rely on — skim monthly.\n- **RSS or curated newsletters** from reputable tech journalism — not random YouTube titles.\n- **Account dashboards** where you can opt out of training where offered.\n- **Simple disclosure templates** for creators when you use heavy editing or generation.",
+        "useCases": "Situations that trip people:\n\n- **Freelancers** assuming client NDAs cover AI sub-processors — often they do not; ask.\n- **Schools** banning tools district-wide while kids use personal phones — alignment talks needed.\n- **Small brands** using celebrity likeness prompts — fast way to attract takedowns or worse.\n- **Nonprofits** handling vulnerable populations — extra care on data retention settings.",
+        "conclusion": "Regulation is a lagging indicator; harm and hype are leading ones. You do not need to read every bill. You do need a habit: when a tool becomes important to your work, spend fifteen minutes on its terms and your local basics once a quarter.\n\nStay curious, stay slow on risk, and when money or reputation is on the line, spend real money on real lawyers. Everything else is just a friendly blog — including this one."
+      },
+      "imageUrl": "/img/for-all.webp"
+    },
+    {
       "id": "34",
       "title": "AGI Timeline Shift: What the Latest 2026 AI Models Are Truly Capable Of",
       "slug": "agi-timeline-shift-2026-models",

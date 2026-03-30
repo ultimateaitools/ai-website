@@ -453,5 +453,161 @@ export const promptContentData: Record<string, { description: string, whatItDoes
       "Most professionals specializing in coding utilize this exact phrasing to instruct large language models accurately, ensuring the final deliverable speaks clearly directly to their target audience.",
       "Additionally, it is the perfect starting point when you need to establish a rapid prototype or a sturdy first draft to iterate upon with your team."
     ]
+  },
+  "brain-dump-to-week-plan-prompt": {
+    description: "Turn a messy list of worries and tasks into a realistic week plan with priorities, time blocks, and gentle pushback on overload.",
+    whatItDoes: [
+      "Mirrors what you said so you feel heard before anything gets organised.",
+      "Forces a small set of real priorities instead of pretending you can do twenty big things.",
+      "Suggests deferrals and a tiny morning routine so the plan survives real life."
+    ],
+    whenToUse: [
+      "Sunday evening or Monday morning when your head feels full.",
+      "After a stressful week when everything feels equally urgent.",
+      "When you keep rewriting the same to-do list without finishing anything."
+    ]
+  },
+  "explain-like-friend-chai-prompt": {
+    description: "Learn a hard topic through simple language, everyday examples, and self-check questions — not textbook fog.",
+    whatItDoes: [
+      "Opens with an analogy so the idea lands emotionally first.",
+      "Defines jargon on the spot so you never pretend you understood a buzzword.",
+      "Ends with questions that prove whether you actually got it."
+    ],
+    whenToUse: [
+      "New subjects where the class notes feel too dense.",
+      "Explaining something to family or friends later.",
+      "Before an exam when you need intuition, not only memorisation."
+    ]
+  },
+  "human-sounding-email-draft-prompt": {
+    description: "Convert bullet points into a clear email that sounds like a person, with one obvious ask at the end.",
+    whatItDoes: [
+      "Matches the relationship and tone you picked instead of generic corporate polish.",
+      "Keeps the body short so busy readers actually finish it.",
+      "Flags missing details with brackets instead of inventing facts."
+    ],
+    whenToUse: [
+      "Hard conversations: money, deadlines, apologies.",
+      "Cold outreach when you have real bullets but no time to polish.",
+      "Any mail you have been avoiding because it feels awkward."
+    ]
+  },
+  "decision-debugging-prompt": {
+    description: "Stress-test a life or career choice with scenarios, biases, and small experiments — without fake certainty.",
+    whatItDoes: [
+      "Separates best, worst, and likely outcomes so panic has less room.",
+      "Names biases in normal words so they are easier to notice.",
+      "Suggests cheap tests before big irreversible moves."
+    ],
+    whenToUse: [
+      "Job offers, moves, breakups, or founder pivots.",
+      "When friends disagree and you only hear slogans from both sides.",
+      "When you already know the answer but want an honest second pass."
+    ]
+  },
+  "meeting-notes-that-get-read-prompt": {
+    description: "Shape raw meeting scribbles into decisions, owners, and Slack-ready updates people can scan in thirty seconds.",
+    whatItDoes: [
+      "Pulls real decisions out of circular discussion.",
+      "Makes action items impossible to hide inside paragraphs.",
+      "Surfaces ignored risks without starting a fight in the doc."
+    ],
+    whenToUse: [
+      "After workshops, sprint planning, or customer calls.",
+      "When half the team missed the meeting but still has to execute.",
+      "When your notes are bullets on a phone and need to become official."
+    ]
+  },
+  "instagram-caption-from-photo-idea-prompt": {
+    description: "Go from a visual idea to caption options, hashtags, and a natural CTA for your niche.",
+    whatItDoes: [
+      "Gives several caption lengths so you can match the vibe of the post.",
+      "Splits hashtags into broad and niche without spammy tricks.",
+      "Calls out one line that would sound like obvious AI filler."
+    ],
+    whenToUse: [
+      "Small business owners posting themselves.",
+      "Creators batching a week of content.",
+      "When you have the shot but stare at the caption box for ten minutes."
+    ]
+  },
+  "friendly-code-review-before-pr-prompt": {
+    description: "Get a humane pre-PR review: readability, edge cases, and security smells without ego bruising.",
+    whatItDoes: [
+      "Checks whether the code matches the goal you stated.",
+      "Orders refactors by impact so you fix the scary stuff first.",
+      "Labels guesses so you do not treat speculation as fact."
+    ],
+    whenToUse: [
+      "Before opening a PR on unfamiliar code.",
+      "When you are solo and miss a second pair of eyes.",
+      "After a hackathon spike that needs hardening."
+    ]
+  },
+  "landing-page-hero-humanize-prompt": {
+    description: "Improve hero headline, subhead, and CTAs from a rough draft while staying honest about missing proof.",
+    whatItDoes: [
+      "Generates many headlines so you can pick what actually fits your voice.",
+      "Separates hype from the concrete 'how it works' line.",
+      "Forces honest handling when you do not have metrics yet."
+    ],
+    whenToUse: [
+      "Launching a new offer or landing page.",
+      "When your current hero sounds like every other SaaS site.",
+      "Before paying for ads on copy you have not stress-tested."
+    ]
+  },
+  "consistent-character-image-prompt": {
+    description: "Lock a character description you can reuse across scenes so generated art stays recognisable.",
+    whatItDoes: [
+      "Builds a master description block to paste every time.",
+      "Suggests varied scenes without breaking the look.",
+      "Adds negative hints to reduce face drift."
+    ],
+    whenToUse: [
+      "Comics, storyboards, or serial social content.",
+      "When every new render invents a new face.",
+      "Teaching students how to brief image models clearly."
+    ]
+  },
+  "interview-practice-natural-prompt": {
+    description: "Prepare behavioural answers as bullet STAR skeletons and a short spoken outline — not a stiff essay to memorise.",
+    whatItDoes: [
+      "Mines your real stories instead of inventing achievements.",
+      "Keeps answers speakable in under a minute.",
+      "Surfaces follow-up questions interviewers actually ask."
+    ],
+    whenToUse: [
+      "Campus placement and internship seasons.",
+      "Switching careers where your old titles do not explain your skills.",
+      "Night-before practice when you want confidence, not panic cramming."
+    ]
+  },
+  "household-weekly-sync-prompt": {
+    description: "Turn a pile of household tasks into a fair plan and a calm way to talk about it.",
+    whatItDoes: [
+      "Separates must-do from nice-to-have so the week is survivable.",
+      "Splits labour with time estimates so resentment has less fuel.",
+      "Offers gentle language for starting and ending the conversation."
+    ],
+    whenToUse: [
+      "Roommates arguing about chores.",
+      "Parents juggling kids and work shifts.",
+      "After a move or schedule change when old habits broke."
+    ]
+  },
+  "youtube-shorts-hook-script-prompt": {
+    description: "From one idea, get hooks, a timed short script, and upload text that still sounds like you talking.",
+    whatItDoes: [
+      "Front-loads curiosity without lying to the viewer.",
+      "Maps seconds so pacing feels natural on mobile.",
+      "Suggests one sensory or edit trick to break the pattern."
+    ],
+    whenToUse: [
+      "Educators condensing a lesson into under a minute.",
+      "Indie channels testing daily shorts.",
+      "When you have the insight but freeze on the first line."
+    ]
   }
 };

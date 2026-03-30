@@ -3352,6 +3352,126 @@
         "AI"
       ],
       "logo": "/logos/openai.svg"
+    },
+    {
+      "id": "185",
+      "name": "DeepSeek",
+      "slug": "deepseek",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "DeepSeek offers fast reasoning and chat models with competitive coding and math performance, popular with builders who want strong results without always reaching for the biggest US-only APIs.",
+      "websiteURL": "https://www.deepseek.com",
+      "tags": [
+        "Developers",
+        "Chat",
+        "Reasoning"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "186",
+      "name": "Kimi (Moonshot AI)",
+      "slug": "kimi-moonshot",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Kimi is Moonshot AI’s assistant built for long documents and patient follow-up questions, useful when you need to work through PDFs, specs, or research packs in one thread.",
+      "websiteURL": "https://www.kimi.com",
+      "tags": [
+        "Research",
+        "Long context",
+        "Writing"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "187",
+      "name": "Warp",
+      "slug": "warp-terminal",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Warp is a modern terminal with AI built in so you can explain errors, suggest commands, and refactor shell workflows without leaving the command line.",
+      "websiteURL": "https://www.warp.dev",
+      "tags": [
+        "Developers",
+        "Terminal",
+        "Automation"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "188",
+      "name": "Claude Code",
+      "slug": "claude-code",
+      "category": "coding",
+      "freeTier": "Paid",
+      "description": "Claude Code is Anthropic’s agentic coding experience that works from your repo: it plans changes, edits files, and runs checks so you ship features with less manual file hopping.",
+      "websiteURL": "https://www.anthropic.com/claude-code",
+      "tags": [
+        "Developers",
+        "Agents",
+        "IDE"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "189",
+      "name": "Trae",
+      "slug": "trae-ide",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Trae is an AI-native IDE aimed at builders who want inline generation, refactors, and project-aware assistance in a single environment.",
+      "websiteURL": "https://www.trae.ai",
+      "tags": [
+        "Developers",
+        "IDE",
+        "Coding"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "190",
+      "name": "Fal",
+      "slug": "fal-ai",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "Fal provides fast inference APIs for image, video, and audio models so teams can ship generative features in production without running their own GPU fleet.",
+      "websiteURL": "https://fal.ai",
+      "tags": [
+        "Developers",
+        "API",
+        "Media"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "191",
+      "name": "n8n",
+      "slug": "n8n",
+      "category": "automation-tools",
+      "freeTier": "Freemium",
+      "description": "n8n is a fair-code workflow automation tool: connect apps, APIs, and AI steps in visual flows, with a strong self-host option for teams that want control over data.",
+      "websiteURL": "https://n8n.io",
+      "tags": [
+        "Automation",
+        "Integrations",
+        "Self-host"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "192",
+      "name": "tl;dv",
+      "slug": "tldv",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "tl;dv records and transcribes meetings, then turns them into searchable notes and highlights so you can catch up without rewatching an hour of video.",
+      "websiteURL": "https://tldv.io",
+      "tags": [
+        "Meetings",
+        "Notes",
+        "Teams"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
     }
   ]
 }

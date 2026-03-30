@@ -332,5 +332,85 @@ export const toolContentData: Record<string, { whatIs: string[], features: strin
         features: ["AI mind map generation", "Real-time team collaboration", "Task outlining and breakdown", "Integrated video chat", "Workflow template creation"],
         bestFor: ["Remote teams", "Product managers", "Creative agencies", "Startup teams"],
         useCases: ["Outline massive product launches", "Brainstorming weekly sprint goals", "Converting meeting notes to action items", "Managing remote collaborative structures", "Executing sprint retrospectives visually"]
+    },
+    deepseek: {
+        whatIs: [
+            "DeepSeek is a family of chat and reasoning models that became popular with developers who want strong coding and math answers without always defaulting to the same few Western APIs.",
+            "You can use it like any other assistant: paste errors, ask for plans, or walk through proofs — the difference is how aggressively it optimises for logical steps.",
+            "It is a good fit when you want a second opinion on technical work or a cheaper high-volume workflow for drafts you still review yourself."
+        ],
+        features: ["Strong coding-oriented answers", "Reasoning-style responses for harder questions", "Web and API access depending on plan", "Competitive latency for long threads", "Useful for bilingual technical chat"],
+        bestFor: ["Developers", "Students in STEM", "Solo builders watching budget", "Analysts testing many prompt variants"],
+        useCases: ["Debugging and refactor suggestions", "Turning specs into implementation checklists", "Explaining algorithms in plain language", "Drafting SQL or scripts you verify before production", "Pairing with your main IDE assistant"]
+    },
+    "kimi-moonshot": {
+        whatIs: [
+            "Kimi, from Moonshot AI, is built around long conversations and large documents — think contracts, PDFs, and messy research packs in one thread.",
+            "Instead of constantly re-uploading context, you keep feeding material and ask layered follow-ups as your understanding grows.",
+            "It feels closest to a research partner that does not rush you to finish in five messages."
+        ],
+        features: ["Long-context document chat", "Patient follow-up Q&A", "Strong summarisation of dense files", "Helpful for multi-file comparison", "Good for turning notes into outlines"],
+        bestFor: ["Researchers", "Consultants", "Lawyers reviewing public docs", "Students with long reading lists", "PMs digesting specs"],
+        useCases: ["Summarising 100-page PDFs", "Extracting obligations from vendor terms you still verify legally", "Building literature review outlines", "Comparing two proposals side by side", "Turning meeting exports into timelines"]
+    },
+    "warp-terminal": {
+        whatIs: [
+            "Warp is a terminal app that bakes AI into the command line so you spend less time copying errors into a browser tab.",
+            "It suggests commands, explains failures, and helps refactor shell workflows while staying inside the environment you already use for deploys.",
+            "If you live in SSH and git, it removes a lot of context switching."
+        ],
+        features: ["AI command suggestions", "Error explanation inline", "Blocks and history that behave like modern docs", "Team sharing options on higher tiers", "Cross-shell quality-of-life features"],
+        bestFor: ["Backend developers", "DevOps engineers", "Data scientists on remote servers", "Students learning the CLI"],
+        useCases: ["Fixing cryptic build failures", "Generating safe one-off scripts you still read", "Documenting repeatable terminal workflows", "Onboarding juniors with guided commands", "Speeding up git and docker muscle memory"]
+    },
+    "claude-code": {
+        whatIs: [
+            "Claude Code is Anthropic’s agentic coding flow: it works from your repository, proposes multi-file changes, and runs checks so you are not hand-editing everything line by line.",
+            "You stay in charge of merges and reviews; the tool is built for shipping features and refactors faster, not for silent autopilot on production.",
+            "It shines on codebases where context across folders matters more than a single snippet."
+        ],
+        features: ["Repo-aware edits", "Test and lint integration depending on setup", "Iterative plans you can accept or reject", "Strong reasoning on tricky bugs", "Works alongside your normal git habits"],
+        bestFor: ["Professional developers", "Tech leads on active products", "Teams with review culture already in place"],
+        useCases: ["Large refactors with mechanical changes", "Adding tests after a behaviour change", "Migrating patterns across modules", "Exploring unfamiliar legacy code with guided edits", "Preparing PR-sized chunks for human review"]
+    },
+    "trae-ide": {
+        whatIs: [
+            "Trae markets itself as an AI-native IDE: generation, chat, and refactors live next to your files instead of in a separate web tab.",
+            "It targets developers who want inline help similar to other AI editors but with its own take on project awareness and UX.",
+            "Worth a spin if you are shopping for an alternative to your current AI-augmented setup."
+        ],
+        features: ["Inline AI assistance", "Project-aware suggestions", "Refactor and scaffold commands", "Integrated terminal patterns depending on release", "Freemium entry for experiments"],
+        bestFor: ["Full-stack developers", "Frontend-heavy teams", "Bootcamp grads who want guard-railed help"],
+        useCases: ["Scaffolding components quickly", "Renaming flows across small projects", "Learning a new framework with guided snippets", "Prototyping UI before hardening types", "Pair programming when your human pair is offline"]
+    },
+    "fal-ai": {
+        whatIs: [
+            "Fal is an inference platform for creative models — image, video, and audio — aimed at teams shipping features, not only playing in a playground.",
+            "You pick a model, hit an API, and pay for compute without maintaining GPU servers yourself.",
+            "It sits in the same neighbourhood as other hosted media APIs but pushes on low-latency paths for product builders."
+        ],
+        features: ["Many generative endpoints behind one billing account", "Speed-focused hosting for media models", "Workflow-friendly for app backends", "Trials and tiers for side projects", "Docs oriented to developers"],
+        bestFor: ["Product engineers", "Indie hackers adding AI media", "Agencies prototyping client demos", "Researchers needing quick A/B visuals"],
+        useCases: ["User-generated avatar pipelines", "Marketing batch asset generation you moderate", "Storyboard stills for video teams", "Game prototype art you later replace", "Internal tools for thumbnail experiments"]
+    },
+    n8n: {
+        whatIs: [
+            "n8n is a workflow tool that connects apps, APIs, and AI steps with a visual graph — popular with teams that want self-hosting or fair-code flexibility.",
+            "You can branch logic, handle errors, and call HTTP endpoints so AI becomes one node in a larger automation, not the whole story.",
+            "It is a serious alternative when you outgrow tiny zaps but do not want to write everything in raw code."
+        ],
+        features: ["Visual flow builder", "Large integration library", "Self-host option for data control", "Code nodes when you need escape hatches", "Scheduling and webhooks built in"],
+        bestFor: ["Ops teams", "Marketers wiring CRMs", "Developers glueing legacy systems", "Startups with privacy-sensitive data"],
+        useCases: ["Lead routing from forms to Slack", "Nightly sync between spreadsheets and databases", "AI summarisation after a webhook fires", "Invoice reminders with human approval steps", "Backup jobs with alerts on failure"]
+    },
+    tldv: {
+        whatIs: [
+            "tl;dv records and transcribes calls, then helps you search what was actually said instead of relying on memory or messy notes.",
+            "It is aimed at remote teams where meetings spawn tasks — you want highlights without rewatching the whole recording.",
+            "Think of it as insurance against 'wait, what did they agree to?' moments."
+        ],
+        features: ["Automatic transcription", "Search inside past meetings", "Highlight and clip style workflows", "Integrations with common calendars", "Team libraries with permission controls"],
+        bestFor: ["Sales teams", "Customer success", "Recruiters", "Managers with packed calendars", "Students in online classes who have consent to record"],
+        useCases: ["Sharing customer call snippets with product", "Pulling exact quotes for proposals", "Onboarding replays for missed sessions", "Compliance-friendly note taking where policy allows", "Turning verbal decisions into ticket descriptions"]
     }
 };
