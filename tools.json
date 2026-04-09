@@ -3472,6 +3472,126 @@
         "Teams"
       ],
       "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "193",
+      "name": "PostSyncer",
+      "slug": "postsyncer",
+      "category": "social-media-tools",
+      "freeTier": "Freemium",
+      "description": "PostSyncer is a social media scheduler that manages multiple platforms and includes AI content creation for text, images, and videos.",
+      "websiteURL": "https://postsyncer.com",
+      "tags": [
+        "Social Media",
+        "Scheduling",
+        "AI Content"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "194",
+      "name": "Livedocs",
+      "slug": "livedocs",
+      "category": "business-tools",
+      "freeTier": "Freemium",
+      "description": "Livedocs is a general data agent that connects to your data sources and turns questions into analysis, dashboards, and answers.",
+      "websiteURL": "https://livedocs.com",
+      "tags": [
+        "Analytics",
+        "Data",
+        "Agents"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "195",
+      "name": "Atlas.new",
+      "slug": "atlas-new",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "Atlas.new is an AI agent for maps and spatial data that helps teams build maps and run spatial analysis quickly.",
+      "websiteURL": "https://atlas.new",
+      "tags": [
+        "Maps",
+        "Spatial Data",
+        "AI Agent"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "196",
+      "name": "SEORCE",
+      "slug": "seorce",
+      "category": "marketing-tools",
+      "freeTier": "Paid",
+      "description": "SEORCE monitors how your brand shows up across AI search engines and Google AI, helping teams track AI visibility alongside SEO.",
+      "websiteURL": "https://seorce.com",
+      "tags": [
+        "SEO",
+        "AI Search",
+        "Visibility"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "197",
+      "name": "Viktor",
+      "slug": "viktor",
+      "category": "agentic-ai",
+      "freeTier": "Freemium",
+      "description": "Viktor is an AI coworker that connects to business tools and can produce outputs like reports, dashboards, code, and campaigns.",
+      "websiteURL": "https://getviktor.com",
+      "tags": [
+        "AI Coworker",
+        "Automation",
+        "Teams"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "198",
+      "name": "Scaloom AI",
+      "slug": "scaloom-ai",
+      "category": "marketing-tools",
+      "freeTier": "Paid",
+      "description": "Scaloom AI is a Reddit marketing tool that warms up accounts, discovers subreddits, drafts content, and supports safe auto-replies with approval.",
+      "websiteURL": "https://scaloom.com",
+      "tags": [
+        "Reddit",
+        "Marketing",
+        "Automation"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "199",
+      "name": "2-b.ai",
+      "slug": "2-b-ai",
+      "category": "chrome-extensions",
+      "freeTier": "Freemium",
+      "description": "2-b.ai is a zero-setup AI to-do list built into your browser that turns web context into tasks and can sync with Google Calendar.",
+      "websiteURL": "https://2-b.ai",
+      "tags": [
+        "To-Do",
+        "Browser",
+        "Productivity"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "200",
+      "name": "Elser AI",
+      "slug": "elser-ai",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Elser AI is an anime creation platform with AI image, video, sound effect, and character generation for script-to-video workflows.",
+      "websiteURL": "https://www.elser.ai",
+      "tags": [
+        "Anime",
+        "Video",
+        "Creative"
+      ],
+      "logo": "/logos/ultimate-ai-tools-logo.png"
     }
   ]
 }

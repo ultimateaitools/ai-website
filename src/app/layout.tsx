@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Ultimate Free AI Tools Directory",
   description: "Discover the best free AI tools for productivity, coding, writing, automation, design and research.",
   metadataBase: new URL("https://ultimateaitools.online"),
+  verification: {
+    google: "googleeafdb91cb69b51ee.html",
+  },
   robots: {
     index: true,
     follow: true,
