@@ -6,6 +6,113 @@ import Link from 'next/link';
 import Image from 'next/image';
 import AdSlot from '@/components/AdSlot';
 
+// Tool name → slug map (longest names first to avoid partial matches)
+const TOOL_LINK_MAP: [string, string][] = [
+    ['GitHub Copilot Workspace', 'github-copilot-workspace'],
+    ['ElevenLabs Text-to-Speech', 'elevenlabs-text-to-speech'],
+    ['HubSpot Content Assistant', 'hubspot-content-assistant'],
+    ['Freepik AI Image Generator', 'freepik-ai-image-generator'],
+    ['Semrush ContentShake AI', 'semrush-contentshake-ai'],
+    ['Stable Video Diffusion', 'stable-video-diffusion'],
+    ['Google NotebookLM', 'notebook-lm'],
+    ['NotebookLM', 'notebook-lm'],
+    ['Amazon CodeWhisperer', 'amazon-codewhisperer'],
+    ['Microsoft Copilot', 'microsoft-copilot'],
+    ['Microsoft Designer', 'microsoft-designer'],
+    ['Stable Diffusion', 'stable-diffusion-3'],
+    ['Adobe Firefly', 'adobe-firefly'],
+    ['Adobe Express', 'adobe-express-ai'],
+    ['GitHub Copilot', 'github-copilot'],
+    ['Google AI Studio', 'google-ai-studio'],
+    ['Google Gemini', 'google-gemini'],
+    ['Intercom Fin', 'intercom-fin-ai'],
+    ['Hugging Face', 'hugging-face'],
+    ['Midjourney', 'midjourney-v6'],
+    ['Character AI', 'character-ai'],
+    ['Replit Agent', 'replit-agent'],
+    ['Replit', 'replit-ghostwriter'],
+    ['Claude 3 Opus', 'claude-3-opus'],
+    ['Perplexity', 'perplexity'],
+    ['ElevenLabs', 'elevenlabs-text-to-speech'],
+    ['Playground AI', 'playground-ai'],
+    ['Copy.ai', 'copy-ai'],
+    ['Murf AI', 'murf-ai'],
+    ['Suno AI', 'suno-ai'],
+    ['Krea AI', 'krea-ai'],
+    ['Meta AI', 'meta-ai'],
+    ['Jan AI', 'jan-ai'],
+    ['Miro AI', 'miro-ai'],
+    ['ChatGPT', 'chatgpt'],
+    ['Claude', 'claude'],
+    ['Gemini', 'gemini'],
+    ['Jasper', 'jasper'],
+    ['Runway', 'runway'],
+    ['Cursor', 'cursor'],
+    ['CapCut', 'capcut'],
+    ['Pictory', 'pictory'],
+    ['HeyGen', 'heygen'],
+    ['Descript', 'descript'],
+    ['Synthesia', 'synthesia'],
+    ['AutoGPT', 'autogpt'],
+    ['Taplio', 'taplio'],
+    ['Monica', 'monica'],
+    ['ChatPDF', 'chatpdf'],
+    ['Bardeen', 'bardeen'],
+    ['Tabnine', 'tabnine'],
+    ['Codeium', 'codeium'],
+    ['Lovable', 'lovable'],
+    ['Mistral', 'mistral'],
+    ['Gamma', 'gamma'],
+    ['Sora', 'sora'],
+    ['Pika', 'pika'],
+    ['Rytr', 'rytr'],
+    ['DeepL', 'deepl'],
+    ['Grammarly', 'grammarly'],
+    ['Canva', 'canva'],
+    ['Notion', 'notion'],
+    ['Zapier', 'zapier'],
+    ['Otter', 'otter-ai'],
+    ['Surfer SEO', 'surfer-seo'],
+    ['Fireflies', 'fireflies-ai'],
+    ['Loom', 'loom-ai'],
+    ['n8n', 'n8n'],
+    ['Phind', 'phind'],
+    ['Groq', 'groq'],
+    ['Poe', 'poe'],
+    ['Cohere', 'cohere'],
+    ['Elicit', 'elicit'],
+    ['Frase', 'frase'],
+    ['Anyword', 'anyword'],
+    ['NeuronWriter', 'neuronwriter'],
+    ['Synthesia', 'synthesia'],
+    ['Devin', 'devin'],
+    ['VEED', 'veed-ai'],
+    ['Vizard', 'vizard'],
+];
+
+// Renders a text block with tool names auto-linked (first occurrence only per block)
+function renderWithToolLinks(text: string): string {
+    if (!text) return '';
+    let result = text;
+    const linked = new Set<string>();
+
+    for (const [name, slug] of TOOL_LINK_MAP) {
+        if (linked.has(slug)) continue;
+        // Word-boundary safe: match tool name not inside an existing <a> tag
+        const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`(?<!<[^>]*)\\b(${escaped})\\b`, 'g');
+        if (regex.test(result)) {
+            result = result.replace(
+                new RegExp(`(?<!href=["'][^"']*)\\b(${escaped})\\b`, ''),
+                `<a href="/tools/${slug}/" class="text-primary-400 hover:text-primary-300 underline underline-offset-2 font-medium" target="_self">$1</a>`
+            );
+            linked.add(slug);
+        }
+    }
+    // Preserve newlines
+    return result.replace(/\n/g, '<br />');
+}
+
 type Props = {
     params: { slug: string };
 };
@@ -228,31 +335,34 @@ export default function BlogDetailPage({ params }: Props) {
                 <div className="prose prose-invert prose-lg prose-primary max-w-none flex-grow text-gray-300 leading-relaxed font-sans">
 
                     <section id="intro" className="mb-12">
-                        <p className="text-xl leading-relaxed text-gray-400 font-medium whitespace-pre-line">
-                            {blog.content.intro}
-                        </p>
+                        <p className="text-xl leading-relaxed text-gray-400 font-medium"
+                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.intro) }} />
                     </section>
 
                     <section id="what-you-will-learn" className="mb-12">
                         <h2 className="text-3xl font-bold text-foreground mb-6 font-sans">What You Will Learn</h2>
-                        <p className="text-gray-300 whitespace-pre-line">{blog.content.whatYouWillLearn}</p>
+                        <p className="text-gray-300"
+                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.whatYouWillLearn) }} />
                     </section>
 
                     <section id="best-tools" className="mb-12 p-8 bg-surface-hover rounded-3xl border border-surface-border">
                         <h2 className="text-3xl font-bold text-foreground mb-6 font-sans mt-0">Best Tools for This Task</h2>
-                        <p className="text-gray-300 whitespace-pre-line">{blog.content.bestTools}</p>
+                        <p className="text-gray-300"
+                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.bestTools) }} />
                     </section>
 
                     <AdSlot adSlot="1000000003" format="horizontal" />
 
                     <section id="use-cases" className="mb-12">
                         <h2 className="text-3xl font-bold text-foreground mb-6 font-sans">Real World Use Cases</h2>
-                        <p className="text-gray-300 whitespace-pre-line">{blog.content.useCases}</p>
+                        <p className="text-gray-300"
+                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.useCases) }} />
                     </section>
 
                     <section id="conclusion" className="mb-12 border-t border-surface-border pt-10">
                         <h2 className="text-2xl font-bold text-foreground mb-6 font-sans">Conclusion</h2>
-                        <p className="text-gray-300 whitespace-pre-line">{blog.content.conclusion}</p>
+                        <p className="text-gray-300"
+                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.conclusion) }} />
                     </section>
 
                     {faqs.length > 0 && (
