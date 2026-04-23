@@ -43,7 +43,7 @@ const blogCategoryKeywords: Record<string, string[]> = {
     'content-creation': ['ai content creation', 'ai content tools', 'content ai 2026'],
 };
 
-function makeSeoTitle(title: string, category: string): string {
+function makeSeoTitle(title: string): string {
     // Target: under 60 chars
     const MAX = 58;
     if (title.length <= MAX) return title;
@@ -68,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: 'Blog Not Found' };
     }
 
-    const seoTitle = makeSeoTitle(blog.title, blog.category);
+    const seoTitle = makeSeoTitle(blog.title);
     const seoDesc = makeSeoDesc(blog.shortDescription);
     const categoryKws = blogCategoryKeywords[blog.category] || ['ai tools', 'ai guide', 'ai tutorial 2026'];
     const topicKws = blog.topic ? [blog.topic.toLowerCase(), `${blog.topic.toLowerCase()} 2026`] : [];
