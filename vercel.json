@@ -1,0 +1,20 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": true,
+  "headers": [
+    {
+      "source": "/googleeafdb91cb69b51ee.html",
+      "headers": [
+        { "key": "Content-Type", "value": "text/html; charset=utf-8" },
+        { "key": "X-Robots-Tag", "value": "noindex" }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/googleeafdb91cb69b51ee.html/",
+      "destination": "/googleeafdb91cb69b51ee.html",
+      "permanent": false
+    }
+  ]
+}
