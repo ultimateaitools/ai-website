@@ -134,9 +134,32 @@ export default function BlogDetailPage({ params }: Props) {
         },
     };
 
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ultimateaitools.online/' },
+            { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://ultimateaitools.online/blog/' },
+            { '@type': 'ListItem', position: 3, name: blog.title, item: `https://ultimateaitools.online/blog/${blog.slug}/` },
+        ],
+    };
+
+    const faqs: { q: string; a: string }[] = (blog as { faqs?: { q: string; a: string }[] }).faqs || [];
+    const faqSchema = faqs.length > 0 ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map(faq => ({
+            '@type': 'Question',
+            name: faq.q,
+            acceptedAnswer: { '@type': 'Answer', text: faq.a },
+        })),
+    } : null;
+
     return (
         <article className="bg-surface-card">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
             {/* Header / Hero */}
             <header className="bg-surface-hover border-b border-surface-border py-16 md:py-24">
@@ -196,6 +219,7 @@ export default function BlogDetailPage({ params }: Props) {
                             <a href="#best-tools" className="block hover:text-primary-600 transition-colors">Best Tools for This Task</a>
                             <a href="#use-cases" className="block hover:text-primary-600 transition-colors">Real World Use Cases</a>
                             <a href="#conclusion" className="block hover:text-primary-600 transition-colors">Conclusion</a>
+                            {faqs.length > 0 && <a href="#faq" className="block hover:text-primary-600 transition-colors">FAQ</a>}
                         </nav>
                     </div>
                 </aside>
@@ -230,6 +254,25 @@ export default function BlogDetailPage({ params }: Props) {
                         <h2 className="text-2xl font-bold text-foreground mb-6 font-sans">Conclusion</h2>
                         <p className="text-gray-300 whitespace-pre-line">{blog.content.conclusion}</p>
                     </section>
+
+                    {faqs.length > 0 && (
+                        <section id="faq" className="mb-12">
+                            <h2 className="text-2xl font-bold text-foreground mb-6 font-sans">Frequently Asked Questions</h2>
+                            <div className="space-y-4 not-prose">
+                                {faqs.map((faq, i) => (
+                                    <details key={i} className="group border border-surface-border rounded-xl bg-surface-hover overflow-hidden">
+                                        <summary className="flex items-center justify-between gap-4 cursor-pointer px-6 py-4 font-semibold text-foreground hover:text-primary-400 transition-colors list-none">
+                                            <span>{faq.q}</span>
+                                            <span className="text-primary-400 text-xl flex-shrink-0 group-open:rotate-45 transition-transform">+</span>
+                                        </summary>
+                                        <div className="px-6 pb-5 text-gray-300 leading-relaxed border-t border-surface-border pt-4">
+                                            {faq.a}
+                                        </div>
+                                    </details>
+                                ))}
+                            </div>
+                        </section>
+                    )}
 
                     <section className="mb-12 p-6 bg-surface-hover border border-surface-border rounded-2xl">
                         <h2 className="text-2xl font-bold text-foreground mb-4 font-sans">Continue Learning</h2>

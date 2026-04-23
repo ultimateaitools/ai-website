@@ -45,11 +45,34 @@ export default function Home() {
     '@type': 'WebSite',
     name: 'UltimateAITools',
     url: 'https://ultimateaitools.online',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://ultimateaitools.online/ai-tools/?q={search_term_string}',
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
+  const orgSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'UltimateAITools',
+    url: 'https://ultimateaitools.online',
+    logo: 'https://ultimateaitools.online/logo.png',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'ultimateaitools50@gmail.com',
+      contactType: 'customer support',
+    },
+    sameAs: [],
   };
 
   return (
     <div className="flex flex-col items-center">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       {/* Premium Minimal Hero Section */}
       <section className="relative w-full bg-background pt-10 pb-20 md:pt-14 md:pb-28 flex flex-col items-center justify-center text-center px-4 overflow-hidden border-b border-surface-border">
 

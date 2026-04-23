@@ -66,6 +66,16 @@ export default function CategoryPage({ params }: Props) {
         return <div className="p-20 text-center text-gray-500 font-medium">Category not found</div>;
     }
 
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ultimateaitools.online/' },
+            { '@type': 'ListItem', position: 2, name: 'AI Tools', item: 'https://ultimateaitools.online/ai-tools/' },
+            { '@type': 'ListItem', position: 3, name: categoryName, item: `https://ultimateaitools.online/category/${params.slug}/` },
+        ],
+    };
+
     const categorySchema = {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
@@ -86,6 +96,7 @@ export default function CategoryPage({ params }: Props) {
     return (
         <div className="max-w-7xl mx-auto px-4 py-16">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(categorySchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <div className="mb-12 border-b border-surface-border pb-8">
                 <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">{categoryName}</h1>
                 <p className="text-lg text-gray-400">

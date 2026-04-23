@@ -93,9 +93,21 @@ export default function ToolDetailPage({ params }: Props) {
         "url": `https://ultimateaitools.online/tools/${tool.slug}/`
     };
 
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ultimateaitools.online/" },
+            { "@type": "ListItem", "position": 2, "name": "AI Tools", "item": "https://ultimateaitools.online/ai-tools/" },
+            { "@type": "ListItem", "position": 3, "name": tool.category.replace(/-/g, ' '), "item": `https://ultimateaitools.online/category/${tool.category}/` },
+            { "@type": "ListItem", "position": 4, "name": tool.name, "item": `https://ultimateaitools.online/tools/${tool.slug}/` },
+        ]
+    };
+
     return (
         <article className="max-w-4xl mx-auto px-4 py-16">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
             <div className="bg-surface-card border border-surface-border rounded-3xl p-8 md:p-12 shadow-sm mb-12">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-8">
