@@ -4119,6 +4119,336 @@
       "promptText": "Channel niche: [FILL]\nThis short is about: [ONE SENTENCE IDEA]\nMy speaking style: [calm / hyper / sarcastic / teacher mode]\nTarget length: [30s / 45s / 60s]\n\nDeliver:\n1) 8 hook lines for the first 1–2 seconds — mix curiosity and bold claims, no clickbait lies.\n2) A beat-by-beat script with approximate seconds per beat.\n3) On-screen text suggestions for key words.\n4) One pattern-interrupt idea (sound, cut, prop) that fits the niche.\n5) A simple description + 5 keyword tags for upload.\n\nWrite how people actually talk, including short sentences.",
       "outputType": "Short Video Script",
       "bestFor": "YouTubers And Educators"
+    },
+    {
+      "id": "413",
+      "title": "Business Plan Generator for Startup",
+      "slug": "business-plan-generator-for-startup",
+      "category": "business",
+      "description": "Generate a full startup business plan with market analysis, revenue model, and go-to-market strategy.",
+      "promptText": "You are an experienced startup advisor and business strategist. Create a detailed business plan for the following startup:\n\nBusiness Idea: [DESCRIBE YOUR IDEA]\nTarget Market: [WHO ARE YOUR CUSTOMERS]\nLocation/Market: [CITY/COUNTRY]\nAvailable Budget: [YOUR BUDGET]\n\nProvide:\n1. Executive Summary (150 words)\n2. Problem & Solution\n3. Target Market Analysis with TAM/SAM/SOM\n4. Revenue Model (3 streams minimum)\n5. Go-To-Market Strategy (first 90 days)\n6. Competitive Analysis (3 competitors)\n7. Financial Projections (Year 1-3)\n8. Key Risks and Mitigation Strategies\n9. Team Requirements\n\nFormat professionally. Use real numbers and percentages.",
+      "outputType": "Business Plan",
+      "bestFor": "Entrepreneurs & Startup Founders"
+    },
+    {
+      "id": "414",
+      "title": "Cold Email Outreach Sequence (5-Part)",
+      "slug": "cold-email-outreach-sequence-5-part",
+      "category": "business",
+      "description": "Write a 5-email cold outreach sequence that gets responses and closes deals.",
+      "promptText": "You are a B2B sales expert with a 40% reply rate on cold emails. Write a 5-part cold email sequence for:\n\nProduct/Service: [WHAT YOU SELL]\nTarget Prospect: [JOB TITLE AND COMPANY TYPE]\nMain Value Proposition: [WHAT PROBLEM YOU SOLVE]\nDesired CTA: [WHAT ACTION YOU WANT]\n\nFor each email provide:\n- Subject line (A/B test 2 options)\n- Email body (under 120 words)\n- Send timing (e.g. Day 1, Day 4, Day 8)\n- Follow-up logic\n\nEmail 1: Pattern interrupt opener\nEmail 2: Social proof + case study\nEmail 3: Different angle / pain point\nEmail 4: Break-up email with value bomb\nEmail 5: Final reply request\n\nNo fluff. Every word must earn its place.",
+      "outputType": "Email Sequence",
+      "bestFor": "Sales Teams & B2B Founders"
+    },
+    {
+      "id": "415",
+      "title": "SOP (Standard Operating Procedure) Writer",
+      "slug": "sop-standard-operating-procedure-writer",
+      "category": "business",
+      "description": "Create detailed SOPs for any business process that can be handed off to a team member.",
+      "promptText": "You are an operations manager who writes crystal-clear SOPs. Create a detailed SOP for:\n\nProcess Name: [PROCESS TO DOCUMENT]\nDepartment/Team: [WHO WILL USE THIS]\nTools Used: [LIST TOOLS/SOFTWARE]\nFrequency: [HOW OFTEN THIS HAPPENS]\n\nSOP Format:\n1. Purpose (why this process exists)\n2. Scope (who does this, when)\n3. Prerequisites (what needs to be ready)\n4. Step-by-Step Instructions (numbered, with screenshots notes)\n5. Decision Points (if-then scenarios)\n6. Quality Checks (how to verify success)\n7. Troubleshooting (common issues)\n8. Owner and Review Date\n\nWrite for someone doing this for the first time. No assumed knowledge.",
+      "outputType": "SOP Document",
+      "bestFor": "Operations Managers & Business Owners"
+    },
+    {
+      "id": "416",
+      "title": "Investor Pitch Deck Script",
+      "slug": "investor-pitch-deck-script",
+      "category": "business",
+      "description": "Write a compelling 10-slide investor pitch script that gets meetings.",
+      "promptText": "You are a pitch coach who has helped raise $500M+. Write a compelling investor pitch script for:\n\nCompany: [COMPANY NAME]\nIndustry: [INDUSTRY]\nStage: [Pre-seed / Seed / Series A]\nAsk: [$AMOUNT you are raising]\nUse of Funds: [WHAT FUNDS WILL BE USED FOR]\nTraction: [CURRENT METRICS / REVENUE]\n\nWrite scripts for 10 slides:\n1. Problem (the burning pain)\n2. Solution (your unique approach)\n3. Market Size (TAM/SAM/SOM with sources)\n4. Product (key features and demo flow)\n5. Business Model (how you make money)\n6. Traction (metrics, growth, social proof)\n7. Competition (honest positioning)\n8. Go-To-Market (customer acquisition)\n9. Team (why you will win)\n10. Ask & Use of Funds\n\nInclude speaker notes, transitions, and 3 strong hook questions.",
+      "outputType": "Pitch Script",
+      "bestFor": "Startup Founders & Entrepreneurs"
+    },
+    {
+      "id": "417",
+      "title": "Competitive Analysis Framework",
+      "slug": "competitive-analysis-framework",
+      "category": "business",
+      "description": "Deep dive into 3 competitors and find your winning market position.",
+      "promptText": "You are a strategic analyst. Conduct a thorough competitive analysis for:\n\nMy Business: [YOUR BUSINESS]\nCompetitor 1: [NAME]\nCompetitor 2: [NAME]\nCompetitor 3: [NAME]\nOur Price Point: [YOUR PRICING]\n\nFor each competitor analyze:\n1. Product/Service strengths and weaknesses\n2. Pricing model and tiers\n3. Target customer segment\n4. Marketing channels they use\n5. Customer sentiment (common complaints)\n6. Estimated market share\n\nThen provide:\n- 3 market gaps we can own\n- Our competitive moat strategy\n- Features to prioritize to win\n- Positioning statement that differentiates us\n- Battle card (how to win when compared)\n\nUse tables for comparison. Be specific and actionable.",
+      "outputType": "Competitive Analysis",
+      "bestFor": "Business Strategists & Founders"
+    },
+    {
+      "id": "418",
+      "title": "Meeting Agenda & Minutes Template",
+      "slug": "meeting-agenda-minutes-template",
+      "category": "business",
+      "description": "Create professional meeting agendas with clear action items and minutes.",
+      "promptText": "You are an executive assistant who runs flawless meetings. Create a meeting framework for:\n\nMeeting Type: [e.g. weekly team sync / strategy review / client call]\nAttendees: [LIST ROLES]\nDuration: [LENGTH]\nMain Objective: [WHAT MUST BE DECIDED/ACHIEVED]\nKey Issues to Resolve: [LIST 2-3]\n\nCreate:\n1. Pre-meeting agenda (email to send)\n2. Meeting structure with time blocks\n3. Discussion questions for each agenda item\n4. Decision log template\n5. Action item tracker (owner, due date, priority)\n6. Follow-up email draft\n\nMake the agenda tight. Every minute should have purpose.",
+      "outputType": "Meeting Framework",
+      "bestFor": "Managers & Executive Assistants"
+    },
+    {
+      "id": "419",
+      "title": "Code Review & Bug Finder",
+      "slug": "code-review-bug-finder",
+      "category": "coding",
+      "description": "AI reviews your code, finds bugs, and suggests improvements with best practices.",
+      "promptText": "You are a senior software engineer with 10+ years of experience. Review the following code:\n\nLanguage/Framework: [LANGUAGE]\nCode Purpose: [WHAT THIS CODE DOES]\nKnown Issues (if any): [DESCRIBE OR WRITE \"NONE\"]\n\n```\n[PASTE YOUR CODE HERE]\n```\n\nProvide a full code review covering:\n1. Bug Analysis (list all bugs with line numbers)\n2. Security vulnerabilities\n3. Performance issues\n4. Code smell and anti-patterns\n5. Readability improvements\n6. Missing edge cases\n7. Test cases to add\n8. Refactored version of the most critical section\n\nPrioritize findings as Critical / High / Medium / Low. Be direct.",
+      "outputType": "Code Review Report",
+      "bestFor": "Developers & Engineering Teams"
+    },
+    {
+      "id": "420",
+      "title": "API Documentation Generator",
+      "slug": "api-documentation-generator",
+      "category": "coding",
+      "description": "Generate complete API documentation with endpoints, parameters, and examples.",
+      "promptText": "You are a technical writer specializing in developer documentation. Generate complete API documentation for:\n\nAPI Name: [API NAME]\nBase URL: [BASE URL]\nAuthentication Method: [Bearer token / API key / OAuth]\nAPI Purpose: [WHAT THE API DOES]\n\nFor each endpoint I provide below, generate:\n```\n[PASTE YOUR ENDPOINT CODE OR DESCRIPTION]\n```\n\nDocumentation format per endpoint:\n1. Endpoint URL and HTTP method\n2. Description (2 sentences)\n3. Request parameters table (name, type, required, description)\n4. Request body schema (JSON)\n5. Response body schema (JSON)\n6. Success example (200 response)\n7. Error examples (400, 401, 404, 500)\n8. Code snippet in Python and JavaScript\n\nMake it as clear as Stripe's documentation.",
+      "outputType": "API Documentation",
+      "bestFor": "Backend Developers & Technical Writers"
+    },
+    {
+      "id": "421",
+      "title": "System Design Interview Solution",
+      "slug": "system-design-interview-solution",
+      "category": "coding",
+      "description": "Walk through a complete system design solution for any technical interview question.",
+      "promptText": "You are a principal engineer at a top tech company. Help me design the following system:\n\nSystem to Design: [e.g. Design Twitter / Uber / WhatsApp]\nScale Requirements: [e.g. 100M daily users]\nKey Features: [LIST 3-5 CORE FEATURES]\nExpected Interview Level: [Junior / Senior / Staff]\n\nProvide a complete system design covering:\n1. Requirements Clarification (functional + non-functional)\n2. Capacity Estimation (storage, bandwidth, QPS)\n3. High-Level Architecture Diagram (describe in text)\n4. Data Models and Schema\n5. API Design (key endpoints)\n6. Component Deep Dive (pick 2 critical components)\n7. Scalability Strategies (caching, sharding, CDN)\n8. Handling Edge Cases\n9. Trade-offs and Alternatives\n\nFormat as if you are whiteboarding in an interview. Clear and structured.",
+      "outputType": "System Design Solution",
+      "bestFor": "Software Engineers & Interview Candidates"
+    },
+    {
+      "id": "422",
+      "title": "SQL Query Optimizer",
+      "slug": "sql-query-optimizer",
+      "category": "coding",
+      "description": "Optimize slow SQL queries with explanations and indexing recommendations.",
+      "promptText": "You are a database performance expert. Optimize the following SQL query:\n\nDatabase: [MySQL / PostgreSQL / SQLite / SQL Server]\nTable Size: [APPROXIMATE ROWS]\nCurrent Query Execution Time: [e.g. 3.2 seconds]\nCurrent Query:\n```sql\n[PASTE YOUR SQL QUERY]\n```\nTable Schemas (if relevant):\n```\n[PASTE TABLE STRUCTURE]\n```\n\nProvide:\n1. Analysis of why the query is slow (explain plan)\n2. Optimized query version\n3. Index recommendations (which columns, why)\n4. Query execution time estimate after optimization\n5. Alternative approaches (CTEs, window functions, etc.)\n6. Database-specific tips for your DB type\n7. Monitoring queries to prevent future slowdowns\n\nShow before/after comparison clearly.",
+      "outputType": "Optimized SQL + Analysis",
+      "bestFor": "Backend Developers & Data Engineers"
+    },
+    {
+      "id": "423",
+      "title": "Regex Pattern Builder",
+      "slug": "regex-pattern-builder",
+      "category": "coding",
+      "description": "Generate, explain, and test regex patterns for any data validation or extraction task.",
+      "promptText": "You are a regex expert. Help me with the following regex task:\n\nTask Type: [validation / extraction / replacement / splitting]\nInput Language/Context: [JavaScript / Python / PHP / etc.]\nData to Match: [DESCRIBE WHAT YOU WANT TO MATCH]\nExample Inputs (include edge cases):\n- Valid: [EXAMPLES]\n- Invalid: [EXAMPLES]\n\nProvide:\n1. The complete regex pattern\n2. Plain English explanation of every part of the pattern\n3. Test cases table (input → match/no match)\n4. Code snippet in your language to use the regex\n5. Common edge cases handled\n6. Alternative simpler regex (if available)\n7. Performance notes for large text inputs\n\nAlso mention: what does this regex NOT handle (limitations)?",
+      "outputType": "Regex Pattern + Code",
+      "bestFor": "Developers & Data Engineers"
+    },
+    {
+      "id": "424",
+      "title": "Photorealistic Product Photo Prompt",
+      "slug": "photorealistic-product-photo-prompt",
+      "category": "image-generation",
+      "description": "Create studio-quality product photography prompts for any item.",
+      "promptText": "Generate a detailed AI image prompt for photorealistic product photography.\n\nProduct: [DESCRIBE YOUR PRODUCT]\nBrand Aesthetic: [LUXURY / MINIMAL / BOLD / NATURAL / TECH]\nBackground Style: [STUDIO / LIFESTYLE / OUTDOOR / ABSTRACT]\nLighting Preference: [SOFT / DRAMATIC / NATURAL / NEON]\nColor Palette: [MAIN COLORS]\nInspiration Brands (optional): [APPLE / NIKE / etc.]\n\nGenerate 5 image prompts, each formatted for Midjourney/FLUX:\n\nPrompt 1 (Studio clean):\nPrompt 2 (Lifestyle in use):\nPrompt 3 (Detail/macro shot):\nPrompt 4 (Dramatic cinematic):\nPrompt 5 (Minimal flat lay):\n\nFor each include: --ar ratio, --style, --v 6.1, quality modifiers. Also suggest negative prompts to avoid.",
+      "outputType": "Image Prompts (5 variations)",
+      "bestFor": "eCommerce Sellers & Product Designers"
+    },
+    {
+      "id": "425",
+      "title": "Character Art & Portrait Prompt",
+      "slug": "character-art-portrait-prompt",
+      "category": "image-generation",
+      "description": "Design detailed character prompts for portraits, game characters, and digital art.",
+      "promptText": "You are a professional concept artist. Create detailed character art prompts for:\n\nCharacter Type: [HERO / VILLAIN / NPC / PORTRAIT / FANTASY / SCI-FI]\nGender & Age: [DESCRIBE]\nPersonality / Vibe: [E.G. MYSTERIOUS, NOBLE, FIERCE]\nSetting/Era: [MEDIEVAL / CYBERPUNK / MODERN / FANTASY]\nKey Visual Elements: [HAIR, EYES, CLOTHING, WEAPONS, ACCESSORIES]\nArt Style: [REALISTIC / ANIME / PAINTERLY / COMIC / PIXAR]\n\nGenerate 4 character prompts:\n1. Full body portrait\n2. Close-up face/bust shot\n3. Action pose\n4. Iconic silhouette style\n\nInclude: lighting description, color grading, camera angle, mood. Format for Midjourney with --ar, --style, and --chaos parameters. Include negative prompts.",
+      "outputType": "Character Art Prompts (4 styles)",
+      "bestFor": "Game Designers & Digital Artists"
+    },
+    {
+      "id": "426",
+      "title": "AI Logo Design Prompt Generator",
+      "slug": "ai-logo-design-prompt-generator",
+      "category": "image-generation",
+      "description": "Create professional logo design prompts for any brand or business.",
+      "promptText": "You are a branding expert and logo designer. Create AI image prompts to generate logo concepts for:\n\nBusiness Name: [NAME]\nIndustry: [INDUSTRY]\nTarget Audience: [WHO ARE YOUR CUSTOMERS]\nBrand Values (pick 3): [e.g. Trust, Innovation, Sustainability]\nCompetitors: [LIST 2-3 COMPETITOR BRANDS]\nPreferred Style: [MINIMALIST / GEOMETRIC / WORDMARK / MASCOT / VINTAGE / TECH]\nColors to Include: [OR WRITE \"SUGGEST BEST\"]\n\nGenerate 5 logo design prompts:\n1. Minimalist icon + wordmark\n2. Geometric abstract mark\n3. Mascot/character concept\n4. Vintage/classic style\n5. Bold modern tech style\n\nFor each: describe the symbol, typography direction, color use, and Midjourney prompt string. Note: add \"vector, flat design, white background, professional logo\" to each.",
+      "outputType": "Logo Design Prompts (5 concepts)",
+      "bestFor": "Brand Designers & Entrepreneurs"
+    },
+    {
+      "id": "427",
+      "title": "Social Media Banner & Thumbnail Prompt",
+      "slug": "social-media-banner-thumbnail-prompt",
+      "category": "image-generation",
+      "description": "Design eye-catching social media visuals and YouTube thumbnails with AI.",
+      "promptText": "Create AI image prompts for high-engagement social media visuals.\n\nPlatform: [YOUTUBE / INSTAGRAM / TWITTER / LINKEDIN / FACEBOOK]\nContent Topic: [WHAT THE POST IS ABOUT]\nEmotion to Trigger: [CURIOSITY / SHOCK / EXCITEMENT / TRUST]\nText Overlay Needed: [YES - write text here / NO]\nBrand Colors: [YOUR COLORS]\nStyle Reference: [MrBeast / Nas Daily / GaryVee / Corporate / Educational]\n\nGenerate 3 visual prompts:\n1. Human reaction shot (face-focused)\n2. Concept visualization (abstract idea made visual)\n3. Before/after or comparison style\n\nFor YouTube thumbnails: include face expression direction, background, text placement area, color contrast tips. Format for DALL-E 3 and Midjourney separately.",
+      "outputType": "Visual Prompts (3 styles)",
+      "bestFor": "Content Creators & YouTubers"
+    },
+    {
+      "id": "428",
+      "title": "Interior Design & Room Makeover Prompt",
+      "slug": "interior-design-room-makeover-prompt",
+      "category": "image-generation",
+      "description": "Visualize room redesigns and interior design concepts using AI image generation.",
+      "promptText": "Create detailed AI image prompts to visualize interior design concepts.\n\nRoom Type: [BEDROOM / LIVING ROOM / KITCHEN / OFFICE / BATHROOM]\nDesign Style: [MODERN / SCANDINAVIAN / JAPANDI / INDUSTRIAL / BOHEMIAN / LUXURY]\nRoom Size: [SMALL / MEDIUM / LARGE]\nKey Furniture to Include: [LIST MAIN PIECES]\nColor Palette: [DOMINANT COLORS]\nLighting Preference: [NATURAL / WARM ARTIFICIAL / COOL MINIMALIST]\nBudget Feel: [BUDGET / MID-RANGE / LUXURY]\n\nGenerate 4 room visualization prompts:\n1. Wide angle full room view\n2. Feature wall or focal point\n3. Cozy corner detail shot\n4. Evening/night ambiance version\n\nInclude: camera angle (eye level/bird's eye), time of day, material textures, and atmosphere. Format for Midjourney with --ar 16:9.",
+      "outputType": "Interior Design Prompts (4 views)",
+      "bestFor": "Interior Designers & Homeowners"
+    },
+    {
+      "id": "429",
+      "title": "Facebook & Google Ad Copy Generator",
+      "slug": "facebook-google-ad-copy-generator",
+      "category": "marketing",
+      "description": "Write high-converting ad copy for Facebook, Google, and Instagram campaigns.",
+      "promptText": "You are a performance marketing expert with $10M+ in ad spend managed. Write ad copy for:\n\nProduct/Service: [WHAT YOU ARE SELLING]\nTarget Audience: [AGE, INTERESTS, JOB]\nMain Benefit: [#1 RESULT YOUR PRODUCT DELIVERS]\nPrice Point: [YOUR PRICE]\nOffer/CTA: [DISCOUNT / FREE TRIAL / DEMO / SHOP NOW]\nTone: [URGENCY / EMPATHY / BOLD / PROFESSIONAL]\n\nWrite the following variations:\n\nFacebook/Instagram Ads (3 versions):\n- Primary text (125 chars)\n- Headline (40 chars)\n- Description (30 chars)\n- CTA button text\n\nGoogle Search Ads (2 versions):\n- Headline 1, 2, 3 (30 chars each)\n- Description 1, 2 (90 chars each)\n\nAlso provide: Target interest groups to test, 3 A/B test hypotheses, and which version to test first.",
+      "outputType": "Ad Copy Variations",
+      "bestFor": "Digital Marketers & eCommerce Brands"
+    },
+    {
+      "id": "430",
+      "title": "SEO Blog Post Outline with Keywords",
+      "slug": "seo-blog-post-outline-with-keywords",
+      "category": "marketing",
+      "description": "Create a data-driven SEO blog outline with primary and LSI keywords.",
+      "promptText": "You are an SEO content strategist. Create a comprehensive SEO blog post outline for:\n\nTarget Keyword: [YOUR MAIN KEYWORD]\nContent Type: [GUIDE / COMPARISON / TUTORIAL / LISTICLE / REVIEW]\nTarget Audience: [WHO IS SEARCHING THIS]\nSearch Intent: [INFORMATIONAL / COMMERCIAL / TRANSACTIONAL]\nWord Count Target: [1500 / 2500 / 4000 words]\nCompetitors to Beat (optional): [PASTE COMPETITOR URLS]\n\nProvide:\n1. SEO Title (under 60 chars with keyword)\n2. Meta Description (under 160 chars)\n3. 5 LSI/secondary keywords to include\n4. Full H1-H3 outline structure\n5. Word count per section\n6. Internal link suggestions\n7. FAQ section questions (8 questions Google shows)\n8. Schema markup type to use\n9. Featured snippet optimization tip\n\nMake the outline beat the top 3 results for depth and value.",
+      "outputType": "SEO Content Outline",
+      "bestFor": "Content Marketers & SEO Specialists"
+    },
+    {
+      "id": "431",
+      "title": "Email Newsletter Campaign (5 Issues)",
+      "slug": "email-newsletter-campaign-5-issues",
+      "category": "marketing",
+      "description": "Plan and write a 5-issue email newsletter campaign with subject lines and content.",
+      "promptText": "You are an email marketing specialist with 45%+ open rates. Plan a 5-issue email newsletter for:\n\nBusiness/Brand: [YOUR BRAND]\nNiche/Topic: [WHAT YOUR NEWSLETTER IS ABOUT]\nSubscriber Type: [WHO WILL READ THIS]\nNewsletter Goal: [DRIVE SALES / EDUCATE / BUILD COMMUNITY / LAUNCH PRODUCT]\nEmail Frequency: [WEEKLY / BIWEEKLY]\n\nFor each of 5 issues provide:\n- Issue number and theme\n- Subject line (3 A/B test variants)\n- Preview text\n- Email structure (sections with word counts)\n- Key story or insight to share\n- CTA and link\n- P.S. line (often most read)\n\nAlso create: A welcome email for new subscribers, and an automated sequence trigger if someone clicks a link.",
+      "outputType": "Email Newsletter Campaign",
+      "bestFor": "Email Marketers & Content Creators"
+    },
+    {
+      "id": "432",
+      "title": "Brand Voice & Messaging Guide",
+      "slug": "brand-voice-messaging-guide",
+      "category": "marketing",
+      "description": "Define your brand voice, tone, and messaging framework for consistent communication.",
+      "promptText": "You are a brand strategist who has worked with Fortune 500 companies. Build a brand voice guide for:\n\nBrand Name: [BRAND]\nIndustry: [INDUSTRY]\nTarget Customer: [DESCRIBE IDEAL CUSTOMER]\nBrand Personality (pick 3): [BOLD / FRIENDLY / EXPERT / PLAYFUL / TRUSTWORTHY / INNOVATIVE]\nBrand Promise: [WHAT YOU GUARANTEE]\nCompetitors We Sound Different From: [NAME 2-3]\n\nCreate a complete brand voice guide:\n1. Brand personality traits (3 adjectives + what they mean)\n2. Voice vs. Tone distinction\n3. How we sound in each context:\n   - Social media posts\n   - Email subject lines\n   - Website headlines\n   - Customer support replies\n   - Error messages\n4. Words we use vs. words we avoid\n5. 10 example before/after rewrites\n6. Messaging hierarchy (tagline → pillar messages → proof points)\n\nMake it usable by any team member writing content.",
+      "outputType": "Brand Voice Guide",
+      "bestFor": "Brand Managers & Marketing Teams"
+    },
+    {
+      "id": "433",
+      "title": "Product Launch Checklist & Go-To-Market Plan",
+      "slug": "product-launch-checklist-go-to-market-plan",
+      "category": "marketing",
+      "description": "Create a complete product launch strategy with week-by-week execution plan.",
+      "promptText": "You are a product marketing manager. Create a complete go-to-market plan for:\n\nProduct: [PRODUCT NAME AND DESCRIPTION]\nLaunch Date: [TARGET DATE]\nTarget Market: [CUSTOMER SEGMENT]\nPricing: [PRICING MODEL]\nLaunch Channels: [SOCIAL / EMAIL / PR / PAID / PRODUCT HUNT]\nTeam Size: [HOW MANY PEOPLE]\nBudget: [APPROXIMATE BUDGET]\n\nCreate:\n1. 4-week pre-launch checklist (week by week)\n2. Launch day hour-by-hour schedule\n3. 2-week post-launch follow-up plan\n4. Press release template\n5. Product Hunt launch page copy\n6. Social media announcement posts (5 platforms)\n7. Launch email sequence (3 emails: teaser, launch, follow-up)\n8. Success metrics to track (10 KPIs)\n\nFlag any bottlenecks or risks to handle early.",
+      "outputType": "Go-To-Market Plan",
+      "bestFor": "Product Managers & Startup Founders"
+    },
+    {
+      "id": "434",
+      "title": "Weekly Planning & Prioritization System",
+      "slug": "weekly-planning-prioritization-system",
+      "category": "productivity",
+      "description": "Create a personalized weekly plan that maximizes output and protects deep work.",
+      "promptText": "You are a productivity coach who works with high-performing executives. Help me plan my week.\n\nRole/Job: [YOUR JOB TITLE]\nTop 3 Goals This Week: [GOALS]\nMust-Do Tasks (non-negotiable): [LIST]\nOptional Tasks: [LIST]\nFixed Commitments (meetings, routines): [TIMES]\nDeep Work Hours Available: [HOW MANY HOURS]\nEnergy Peaks: [MORNING / AFTERNOON / EVENING]\n\nCreate:\n1. Monday-Sunday time-blocked schedule (in a table)\n2. Task priority matrix (urgent/important quadrants)\n3. 3 MITs (Most Important Tasks) for each day\n4. Buffer blocks for unexpected work\n5. End-of-day shutdown routine (10-min)\n6. Weekly review template (Friday 30-min)\n7. 3 things to say NO to this week\n\nOptimize for outcomes, not busyness. Every block must justify its existence.",
+      "outputType": "Weekly Plan & Schedule",
+      "bestFor": "Professionals & Knowledge Workers"
+    },
+    {
+      "id": "435",
+      "title": "Personal Productivity Audit",
+      "slug": "personal-productivity-audit",
+      "category": "productivity",
+      "description": "Diagnose your productivity problems and get a custom improvement plan.",
+      "promptText": "You are a performance coach. Conduct a complete productivity audit for me.\n\nCurrent Situation:\n- Daily work hours: [HOURS]\n- Main distractions: [LIST YOUR TOP 3]\n- Tools I currently use: [LIST]\n- Biggest time wasters: [DESCRIBE]\n- Energy levels during day: [WHEN DO YOU FEEL PRODUCTIVE]\n- Goals I am failing to hit: [LIST]\n- Current stress level (1-10): [NUMBER]\n\nAnalyze my situation and provide:\n1. Root cause analysis of my productivity problems\n2. Custom morning routine (30 min max)\n3. Deep work protocol tailored to my energy\n4. 5 specific habits to drop immediately\n5. 5 replacement habits to adopt (with implementation intentions)\n6. Tool stack recommendation (what to add, what to cut)\n7. 30-day improvement plan with measurable milestones\n8. How to track progress without obsessing over metrics\n\nBe direct. Point out what is clearly not working.",
+      "outputType": "Productivity Audit Report",
+      "bestFor": "Professionals & Entrepreneurs"
+    },
+    {
+      "id": "436",
+      "title": "AI Delegation Guide: Tasks to Automate This Week",
+      "slug": "ai-delegation-guide-tasks-to-automate-this-week",
+      "category": "productivity",
+      "description": "Identify which tasks to delegate to AI and create automation workflows.",
+      "promptText": "You are an AI integration consultant. Help me identify automation opportunities in my workflow.\n\nMy Role: [JOB TITLE]\nDaily Repetitive Tasks: [LIST ALL TASKS YOU DO DAILY]\nWeekly Tasks: [LIST WEEKLY TASKS]\nTools I Have Access To: [APPS / SOFTWARE]\nAI Tools I Am Already Using: [LIST OR WRITE \"NONE\"]\nTime Available to Set Up Automation: [HOURS PER WEEK]\n\nProvide:\n1. Task Classification Table:\n   - Automate fully with AI (list tasks)\n   - Augment with AI assistance (list tasks)\n   - Keep human-only (list tasks + why)\n\n2. For top 5 automation opportunities:\n   - Exact tool/workflow to use\n   - Step-by-step setup guide\n   - Time saved estimate per week\n   - Prompt template if AI writing is involved\n\n3. Quick wins (set up in under 30 min each)\n4. 90-day automation roadmap\n\nQuantify time saved wherever possible.",
+      "outputType": "Automation Roadmap",
+      "bestFor": "Professionals & Busy Entrepreneurs"
+    },
+    {
+      "id": "437",
+      "title": "Daily Standup & Progress Report Generator",
+      "slug": "daily-standup-progress-report-generator",
+      "category": "productivity",
+      "description": "Write professional standup updates and progress reports in seconds.",
+      "promptText": "You are a communications expert. Help me write a professional progress update.\n\nUpdate Type: [DAILY STANDUP / WEEKLY REPORT / CLIENT UPDATE / EXEC SUMMARY]\nAudience: [YOUR MANAGER / TEAM / CLIENT / CEO]\nWork Completed: [LIST WHAT YOU DID]\nWork in Progress: [WHAT YOU ARE WORKING ON]\nBlockers/Issues: [ANY PROBLEMS OR WRITE \"NONE\"]\nNext Steps: [WHAT YOU PLAN TO DO NEXT]\nKey Metrics (optional): [ANY NUMBERS TO INCLUDE]\n\nWrite:\n1. Short format (Slack message, under 100 words)\n2. Medium format (email, 200-300 words)\n3. Long format (formal report, 500 words with sections)\n\nAlso provide: 3 subject line options for the email version. Format each version appropriately for its channel.",
+      "outputType": "Progress Report (3 formats)",
+      "bestFor": "Professionals & Remote Workers"
+    },
+    {
+      "id": "438",
+      "title": "Instagram Reel Script + Hook Formula",
+      "slug": "instagram-reel-script-hook-formula",
+      "category": "social-media",
+      "description": "Write viral Instagram Reel scripts with attention-grabbing hooks.",
+      "promptText": "You are a viral content creator with 500K+ Instagram followers. Write a Reel script for:\n\nNiche: [YOUR NICHE]\nReel Topic: [SPECIFIC TOPIC]\nTarget Audience: [WHO YOU WANT TO ATTRACT]\nDesired Outcome: [FOLLOWS / SALES / WEBSITE CLICKS / BRAND AWARENESS]\nReel Length: [15s / 30s / 60s / 90s]\nStyle: [TALKING HEAD / B-ROLL MONTAGE / TEXT ON SCREEN / TUTORIAL]\n\nDeliver:\n1. 5 hook options (first 2 seconds — pattern interrupt style)\n2. Full script with:\n   - Hook (0-3s)\n   - Setup problem/promise (3-10s)\n   - Core value delivery (10-45s)\n   - CTA with urgency (last 5s)\n3. Caption (150 words max, SEO-friendly)\n4. 30 hashtags (mix of small/medium/large)\n5. On-screen text moments\n6. Trending audio suggestion category\n\nWrite how real people talk, not like a textbook.",
+      "outputType": "Reel Script + Caption",
+      "bestFor": "Instagram Creators & Brand Accounts"
+    },
+    {
+      "id": "439",
+      "title": "LinkedIn Thought Leadership Post",
+      "slug": "linkedin-thought-leadership-post",
+      "category": "social-media",
+      "description": "Write viral LinkedIn posts that build authority and attract your ideal audience.",
+      "promptText": "You are a LinkedIn ghostwriter who writes for 7-figure founders. Write a LinkedIn post for:\n\nAuthor's Background: [YOUR ROLE AND EXPERIENCE]\nPost Topic: [THE LESSON, STORY, OR INSIGHT]\nKey Message: [WHAT YOU WANT READERS TO FEEL OR DO]\nTone: [VULNERABLE / AUTHORITATIVE / CONTRARIAN / MOTIVATIONAL / DATA-DRIVEN]\nTarget Audience: [WHO FOLLOWS YOU]\nCTA Goal: [COMMENTS / FOLLOWS / DM REQUESTS / WEBSITE VISITS]\n\nWrite 3 post variations:\n\nVersion 1: Personal story format (hook → story → lesson)\nVersion 2: Contrarian take (challenge a common belief)\nVersion 3: Tactical listicle (5-7 specific tips)\n\nFor each:\n- Opening hook (first 2 lines before \"see more\")\n- Full post body\n- Closing CTA question\n- 5 relevant hashtags\n\nNo corporate speak. Write like a human who has earned the right to teach this.",
+      "outputType": "LinkedIn Posts (3 styles)",
+      "bestFor": "Founders, Executives & Personal Brands"
+    },
+    {
+      "id": "440",
+      "title": "Twitter/X Thread Writer",
+      "slug": "twitter-x-thread-writer",
+      "category": "social-media",
+      "description": "Write high-engagement Twitter threads on any topic with viral hooks.",
+      "promptText": "You are a Twitter growth expert with threads that regularly get 1M+ impressions. Write a Twitter thread for:\n\nThread Topic: [YOUR TOPIC]\nTarget Audience: [WHO SHOULD SEE THIS]\nThread Goal: [FOLLOWERS / RETWEETS / LINK CLICKS]\nYour Expertise/Angle: [WHAT MAKES YOUR TAKE UNIQUE]\nThread Length: [10 / 15 / 20 tweets]\nTone: [DATA-HEAVY / STORY-DRIVEN / CONTRARIAN / HOW-TO]\n\nWrite the full thread:\nTweet 1: Viral hook (bold claim or surprise stat)\nTweets 2-N: Value delivery (each tweet must make reader want the next)\nFinal tweet: CTA + follow ask\n\nRules for each tweet:\n- Under 280 characters\n- End with a natural cliffhanger or transition\n- Use numbers, line breaks, and bold words sparingly\n- No \"🧵 Thread:\" as first word — hooks only\n\nAlso suggest: Best time to post, retweet bait question to add.",
+      "outputType": "Twitter Thread",
+      "bestFor": "Creators & Personal Brand Builders"
+    },
+    {
+      "id": "441",
+      "title": "Social Media Content Calendar (30 Days)",
+      "slug": "social-media-content-calendar-30-days",
+      "category": "social-media",
+      "description": "Create a full 30-day social media content plan with post ideas and themes.",
+      "promptText": "You are a social media strategist. Build a 30-day content calendar for:\n\nBrand/Creator: [NAME]\nNiche: [YOUR NICHE]\nPlatforms: [INSTAGRAM / LINKEDIN / TWITTER / TIKTOK]\nPosting Frequency: [e.g. 1x/day Instagram, 3x/week LinkedIn]\nContent Pillars (3): [e.g. Educational, Inspirational, Promotional]\nUpcoming Events/Launches: [ANY KEY DATES]\nCurrent Following Size: [APPROXIMATE]\nTop Goal: [GROWTH / ENGAGEMENT / SALES / AWARENESS]\n\nCreate a content calendar table with:\n- Date\n- Platform\n- Content Type (Reel / Carousel / Static / Story / Thread)\n- Topic/Idea\n- Content Pillar\n- Hook Line\n- CTA\n\nAlso provide:\n- 5 evergreen post ideas that work any week\n- 3 content formats to A/B test\n- When to post on each platform (best times)\n- Monthly theme to tie content together",
+      "outputType": "30-Day Content Calendar",
+      "bestFor": "Social Media Managers & Creators"
+    },
+    {
+      "id": "442",
+      "title": "Concept Explainer for Any Subject",
+      "slug": "concept-explainer-for-any-subject",
+      "category": "study",
+      "description": "Get any complex academic concept explained simply with examples and analogies.",
+      "promptText": "You are a world-class teacher who can explain anything to anyone. Help me understand:\n\nConcept: [WHAT YOU WANT TO LEARN]\nSubject/Field: [MATHEMATICS / PHYSICS / HISTORY / ECONOMICS / CS / etc.]\nMy Current Level: [BEGINNER / INTERMEDIATE / ADVANCED]\nMy Background: [WHAT I ALREADY KNOW ABOUT THIS TOPIC]\nLearning Goal: [WHY I NEED TO UNDERSTAND THIS]\n\nExplain this concept in 5 layers:\n\n1. Simple (explain to a 10-year-old with a story)\n2. Analogy (connect to everyday life)\n3. Technical (accurate definition with terminology)\n4. Visual (describe how to draw or visualize this)\n5. Applied (3 real-world examples where this matters)\n\nThen provide:\n- 5 common misconceptions about this topic\n- 5 exam-style questions to test my understanding\n- 3 resources to go deeper\n- Mnemonic or memory trick to remember the key idea\n\nDo not skip depth. Go beyond what Wikipedia says.",
+      "outputType": "Study Explanation",
+      "bestFor": "Students & Lifelong Learners"
+    },
+    {
+      "id": "443",
+      "title": "Exam Preparation Study Plan",
+      "slug": "exam-preparation-study-plan",
+      "category": "study",
+      "description": "Create a structured exam study plan with daily schedules and revision strategy.",
+      "promptText": "You are an academic coach who helps students top their exams. Create a study plan for:\n\nExam/Subject: [EXAM NAME e.g. JEE Main / UPSC Prelims / IELTS / SAT / CA Foundation]\nExam Date: [DATE]\nToday's Date: [TODAY'S DATE]\nChapters/Topics to Cover: [LIST OR WRITE \"FULL SYLLABUS\"]\nCurrent Preparation Level (1-10): [NUMBER]\nAvailable Study Hours Per Day: [HOURS]\nWeak Topics: [LIST]\nStrong Topics: [LIST]\n\nCreate:\n1. Day-by-day study schedule (in a table) till exam date\n2. Daily time blocks (morning/afternoon/evening with topics)\n3. Revision strategy (what to revise and when)\n4. Mock test schedule\n5. Last 7 days before exam plan\n6. Day before exam strategy\n7. What NOT to study the week before\n8. Stress management tips specific to this exam\n\nBe realistic about time. Prioritize high-weightage topics.",
+      "outputType": "Study Schedule & Plan",
+      "bestFor": "Students & Exam Aspirants"
+    },
+    {
+      "id": "444",
+      "title": "Research Paper & Essay Writer",
+      "slug": "research-paper-essay-writer",
+      "category": "study",
+      "description": "Write well-structured academic essays and research papers with proper format.",
+      "promptText": "You are an academic writing expert. Help me write a research paper or essay:\n\nTopic: [YOUR ESSAY/PAPER TOPIC]\nType: [RESEARCH PAPER / ARGUMENTATIVE ESSAY / ANALYTICAL ESSAY / LITERATURE REVIEW]\nWord Count: [REQUIRED LENGTH]\nCitation Style: [APA / MLA / CHICAGO / HARVARD]\nAcademic Level: [HIGH SCHOOL / UNDERGRADUATE / GRADUATE / PHD]\nThesis/Argument: [YOUR MAIN ARGUMENT OR WRITE \"HELP ME DEVELOP ONE\"]\nKey Sources (if any): [LIST OR WRITE \"SUGGEST RELEVANT SOURCES\"]\n\nCreate:\n1. Thesis statement (strong, debatable, specific)\n2. Full outline (with section titles and bullet points)\n3. Introduction paragraph with hook\n4. Body paragraphs (topic sentence + evidence structure)\n5. Counterargument and rebuttal section\n6. Conclusion with broader implications\n7. Reference list (generate 8 relevant academic sources)\n8. Abstract (150 words)\n\nEnsure: logical flow, strong transitions, and no vague claims.",
+      "outputType": "Academic Essay + Outline",
+      "bestFor": "Students & Researchers"
+    },
+    {
+      "id": "445",
+      "title": "Flashcard Generator for Quick Revision",
+      "slug": "flashcard-generator-for-quick-revision",
+      "category": "study",
+      "description": "Convert any notes or textbook content into revision flashcards.",
+      "promptText": "You are a memory and learning expert using spaced repetition principles. Convert the following material into revision flashcards:\n\nSubject: [SUBJECT NAME]\nTopic: [SPECIFIC TOPIC]\nContent to Convert:\n```\n[PASTE YOUR NOTES OR TEXTBOOK CONTENT HERE]\n```\n\nCreate 20 flashcards following these rules:\n1. Front: A single clear question (concise)\n2. Back: Answer + 1 example or analogy\n3. Include: definitions, formulas, dates, concepts\n4. Mix question types: what, why, how, compare, calculate\n\nAlso create:\n- 5 \"connect the concepts\" cards (linking 2 related ideas)\n- 3 diagram/visual description cards\n- Mnemonic devices for the 3 hardest concepts\n- Suggested spaced repetition schedule (Day 1, 3, 7, 14, 30)\n\nFormat: Q: [question] | A: [answer]",
+      "outputType": "Flashcard Set (20 cards)",
+      "bestFor": "Students & Competitive Exam Aspirants"
     }
   ]
 }

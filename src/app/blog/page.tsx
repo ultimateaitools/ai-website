@@ -6,11 +6,34 @@ import { getBlogsData } from '@/lib/data';
 import AdSlot from '@/components/AdSlot';
 
 export const metadata: Metadata = {
-    title: 'AI Blog - High-Intent Guides, Tutorials & AI Workflows',
-    description: 'Read practical AI guides on prompts, tools, automation, SEO, coding, productivity, and business workflows.',
+    title: 'AI Blog - Practical Guides, Tutorials & Workflows | UltimateAITools',
+    description: 'Read practical AI guides on prompts, tools, automation, SEO, coding, productivity, and business workflows. Updated weekly with new tutorials.',
+    keywords: [
+        'ai blog',
+        'ai tutorials',
+        'ai guides 2026',
+        'ai workflow guides',
+        'chatgpt tutorials',
+        'ai automation guides',
+        'ai productivity tips',
+        'free ai learning resources',
+    ],
+    openGraph: {
+        title: 'AI Blog - Practical Guides, Tutorials & Workflows | UltimateAITools',
+        description: 'In-depth AI tutorials, workflow guides, and tool comparisons. Learn how to use AI tools for real productivity gains.',
+        url: 'https://ultimateaitools.online/blog/',
+        siteName: 'UltimateAITools',
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'AI Blog - Guides, Tutorials & Workflows',
+        description: 'Practical AI guides on prompts, automation, coding, SEO and productivity. New content every week.',
+    },
     alternates: {
         canonical: 'https://ultimateaitools.online/blog/',
-    }
+    },
 };
 
 export default function BlogDirectoryPage() {

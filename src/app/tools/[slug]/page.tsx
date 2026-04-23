@@ -25,19 +25,38 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: 'Tool Not Found' };
     }
 
+    const catName = tool.category.replace(/-/g, ' ');
+    const isFree = tool.freeTier.toLowerCase() === 'free';
+    const tierLabel = isFree ? 'Free' : tool.freeTier;
+    const seoTitle = `${tool.name} - ${tierLabel} AI Tool for ${catName.replace(/\b\w/g, c => c.toUpperCase())} 2026`;
+    const seoDesc = `${tool.description.slice(0, 130)}`.trim() + (tool.description.length > 130 ? '...' : '');
+    const keywords = [
+        `${tool.name.toLowerCase()}`,
+        `${tool.name.toLowerCase()} review`,
+        `${tool.name.toLowerCase()} free`,
+        `best ai tools for ${catName}`,
+        `${catName} ai tool`,
+        `${tool.freeTier.toLowerCase()} ai ${catName} tool`,
+        'ai tools 2026',
+        'ultimate ai tools',
+    ];
+
     return {
-        title: `${tool.name} AI Tool - Features, Pricing & Free Tier`,
-        description: `Discover how ${tool.name} works for ${tool.category.replace('-', ' ')}. Explore features, use cases and free access options.`,
+        title: seoTitle,
+        description: seoDesc,
+        keywords,
         openGraph: {
-            title: `${tool.name} AI Tool - Features, Pricing & Free Tier`,
-            description: `Discover how ${tool.name} works for ${tool.category.replace('-', ' ')}. Explore features, use cases and free access options.`,
+            title: seoTitle,
+            description: seoDesc,
             url: `https://ultimateaitools.online/tools/${tool.slug}/`,
+            siteName: 'UltimateAITools',
+            locale: 'en_US',
             type: 'article',
         },
         twitter: {
             card: 'summary_large_image',
-            title: `${tool.name} AI Tool - Features, Pricing & Free Tier`,
-            description: `Discover how ${tool.name} works for ${tool.category.replace('-', ' ')}.`,
+            title: seoTitle,
+            description: seoDesc,
         },
         alternates: {
             canonical: `https://ultimateaitools.online/tools/${tool.slug}/`,

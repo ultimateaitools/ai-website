@@ -24,12 +24,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const segments = getSegments();
     const segment = segments.find(s => s.slug === params.slug);
     const categoryName = segment?.name || formatSlugTitle(params.slug);
-    const title = `${categoryName} | UltimateAITools`;
-    const description = `Find top AI tools in the ${categoryName} category on UltimateAITools, including free, freemium, and paid options.`;
+    const title = `Best ${categoryName} AI Tools (Free + Paid) 2026 | UltimateAITools`;
+    const description = `Discover the best ${categoryName} AI tools including free and paid options. Handpicked ${categoryName.toLowerCase()} tools for professionals, students and developers.`;
 
     return {
         title,
         description,
+        keywords: [
+            `${categoryName.toLowerCase()} ai tools`,
+            `best ${categoryName.toLowerCase()} ai`,
+            `free ${categoryName.toLowerCase()} ai tools`,
+            `ai tools for ${categoryName.toLowerCase()}`,
+            `${categoryName.toLowerCase()} artificial intelligence`,
+        ],
         alternates: {
             canonical: `https://ultimateaitools.online/category/${params.slug}/`,
         },
@@ -37,6 +44,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             title,
             description,
             url: `https://ultimateaitools.online/category/${params.slug}/`,
+            siteName: 'UltimateAITools',
+            locale: 'en_US',
             type: 'website',
         },
         twitter: {
@@ -57,8 +66,26 @@ export default function CategoryPage({ params }: Props) {
         return <div className="p-20 text-center text-gray-500 font-medium">Category not found</div>;
     }
 
+    const categorySchema = {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: `${categoryName} AI Tools`,
+        description: `Best ${categoryName} AI tools including free and paid options.`,
+        url: `https://ultimateaitools.online/category/${params.slug}/`,
+        numberOfItems: tools.length,
+        hasPart: tools.slice(0, 10).map(tool => ({
+            '@type': 'SoftwareApplication',
+            name: tool.name,
+            description: tool.description,
+            url: `https://ultimateaitools.online/tools/${tool.slug}/`,
+            applicationCategory: 'BusinessApplication',
+            isAccessibleForFree: tool.freeTier?.toLowerCase() === 'free',
+        })),
+    };
+
     return (
         <div className="max-w-7xl mx-auto px-4 py-16">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(categorySchema) }} />
             <div className="mb-12 border-b border-surface-border pb-8">
                 <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">{categoryName}</h1>
                 <p className="text-lg text-gray-400">

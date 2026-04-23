@@ -3592,6 +3592,1037 @@
         "Creative"
       ],
       "logo": "/logos/ultimate-ai-tools-logo.png"
+    },
+    {
+      "id": "201",
+      "name": "Haiper AI",
+      "slug": "haiper-ai",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Haiper AI is a fast video generation model that turns text prompts and images into cinematic short videos in seconds, backed by Google DeepMind veterans.",
+      "websiteURL": "https://haiper.ai",
+      "tags": [
+        "Video Generation",
+        "video-generators",
+        "AI",
+        "Content Creation",
+        "Viral Content"
+      ],
+      "logo": "/logos/haiper-ai.svg"
+    },
+    {
+      "id": "202",
+      "name": "Pixverse",
+      "slug": "pixverse",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Pixverse is an AI video generator that creates high-quality, realistic video clips from text and images, ideal for content creators and marketers.",
+      "websiteURL": "https://pixverse.ai",
+      "tags": [
+        "Video Generation",
+        "video-generators",
+        "AI",
+        "Content Creation",
+        "Social Media"
+      ],
+      "logo": "/logos/pixverse.svg"
+    },
+    {
+      "id": "203",
+      "name": "Pika 2.0",
+      "slug": "pika-2-0",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Pika 2.0 by Pika Labs is a powerful AI video generator supporting text-to-video and image-to-video with impressive motion quality and creative control.",
+      "websiteURL": "https://pika.art",
+      "tags": [
+        "Video Generation",
+        "video-generators",
+        "AI",
+        "Content Creation",
+        "Creators"
+      ],
+      "logo": "/logos/pika-2-0.svg"
+    },
+    {
+      "id": "204",
+      "name": "Stable Video Diffusion",
+      "slug": "stable-video-diffusion",
+      "category": "video-generators",
+      "freeTier": "Free",
+      "description": "Stable Video Diffusion by Stability AI converts still images into smooth short video clips using open-source diffusion models.",
+      "websiteURL": "https://stability.ai/stable-video",
+      "tags": [
+        "Video Generation",
+        "video-generators",
+        "AI",
+        "Open Source",
+        "Developers"
+      ],
+      "logo": "/logos/stable-video-diffusion.svg"
+    },
+    {
+      "id": "205",
+      "name": "Genmo AI",
+      "slug": "genmo-ai",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Genmo AI creates videos, 3D scenes, and motion graphics from text prompts, giving creators and artists a fast generative video workflow.",
+      "websiteURL": "https://genmo.ai",
+      "tags": [
+        "Video Generation",
+        "video-generators",
+        "AI",
+        "3D",
+        "Content Creation"
+      ],
+      "logo": "/logos/genmo-ai.svg"
+    },
+    {
+      "id": "206",
+      "name": "Flux AI",
+      "slug": "flux-ai",
+      "category": "image-generators",
+      "freeTier": "Free",
+      "description": "Flux by Black Forest Labs is an open-weight image generation model that rivals Midjourney in quality, offering photorealistic and artistic outputs.",
+      "websiteURL": "https://blackforestlabs.ai",
+      "tags": [
+        "Image Generation",
+        "image-generators",
+        "AI",
+        "Open Source",
+        "Photorealistic"
+      ],
+      "logo": "/logos/flux-ai.svg"
+    },
+    {
+      "id": "207",
+      "name": "Stability AI",
+      "slug": "stability-ai",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "Stability AI is the company behind Stable Diffusion — offering open-source and API-based image generation models for developers and creators worldwide.",
+      "websiteURL": "https://stability.ai",
+      "tags": [
+        "Image Generation",
+        "image-generators",
+        "AI",
+        "Open Source",
+        "Developers"
+      ],
+      "logo": "/logos/stability-ai.svg"
+    },
+    {
+      "id": "208",
+      "name": "Freepik AI Image Generator",
+      "slug": "freepik-ai-image-generator",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "Freepik AI Image Generator lets you create royalty-free AI images using Flux and Stable Diffusion models directly inside the Freepik platform.",
+      "websiteURL": "https://freepik.com/ai/image-generator",
+      "tags": [
+        "Image Generation",
+        "image-generators",
+        "AI",
+        "Design",
+        "Royalty Free"
+      ],
+      "logo": "/logos/freepik-ai-image-generator.svg"
+    },
+    {
+      "id": "209",
+      "name": "Stockimg.ai",
+      "slug": "stockimg-ai",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "Stockimg.ai generates stock photos, logos, book covers, posters, and social media visuals using AI — with category-specific generation templates.",
+      "websiteURL": "https://stockimg.ai",
+      "tags": [
+        "Image Generation",
+        "image-generators",
+        "AI",
+        "Stock Photos",
+        "Design"
+      ],
+      "logo": "/logos/stockimg-ai.svg"
+    },
+    {
+      "id": "210",
+      "name": "PhotoAI",
+      "slug": "photoai",
+      "category": "image-generators",
+      "freeTier": "Paid",
+      "description": "PhotoAI trains a personal AI model on your photos and generates professional headshots, model shots, and creative portraits instantly.",
+      "websiteURL": "https://photoai.com",
+      "tags": [
+        "Image Generation",
+        "image-generators",
+        "AI",
+        "Headshots",
+        "Portrait"
+      ],
+      "logo": "/logos/photoai.svg"
+    },
+    {
+      "id": "211",
+      "name": "Krea AI Realtime",
+      "slug": "krea-ai-realtime",
+      "category": "image-generators",
+      "freeTier": "Freemium",
+      "description": "Krea AI offers real-time AI image generation and enhancement with live editing canvas — perfect for rapid visual prototyping and concept art.",
+      "websiteURL": "https://krea.ai",
+      "tags": [
+        "Image Generation",
+        "image-generators",
+        "AI",
+        "Real-time",
+        "Design"
+      ],
+      "logo": "/logos/krea-ai-realtime.svg"
+    },
+    {
+      "id": "212",
+      "name": "Tabnine",
+      "slug": "tabnine",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Tabnine is an AI code completion tool that works inside your IDE, offering private on-device code suggestions trained on your own codebase.",
+      "websiteURL": "https://tabnine.com",
+      "tags": [
+        "Coding",
+        "coding",
+        "AI",
+        "Developers",
+        "IDE",
+        "Autocomplete"
+      ],
+      "logo": "/logos/tabnine.svg"
+    },
+    {
+      "id": "213",
+      "name": "JetBrains AI Assistant",
+      "slug": "jetbrains-ai-assistant",
+      "category": "coding",
+      "freeTier": "Paid",
+      "description": "JetBrains AI Assistant is built into JetBrains IDEs (IntelliJ, PyCharm, WebStorm) offering AI code completion, refactoring suggestions, and documentation generation.",
+      "websiteURL": "https://jetbrains.com/ai",
+      "tags": [
+        "Coding",
+        "coding",
+        "AI",
+        "Developers",
+        "IDE",
+        "JetBrains"
+      ],
+      "logo": "/logos/jetbrains-ai-assistant.svg"
+    },
+    {
+      "id": "214",
+      "name": "Zed Editor",
+      "slug": "zed-editor",
+      "category": "coding",
+      "freeTier": "Free",
+      "description": "Zed is a high-performance AI-native code editor built in Rust with inline AI completions, pair programming features, and blazing fast rendering.",
+      "websiteURL": "https://zed.dev",
+      "tags": [
+        "Coding",
+        "coding",
+        "AI",
+        "Developers",
+        "Code Editor",
+        "Open Source"
+      ],
+      "logo": "/logos/zed-editor.svg"
+    },
+    {
+      "id": "215",
+      "name": "Qodo (CodiumAI)",
+      "slug": "qodo-codiumai",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Qodo (formerly CodiumAI) automatically generates unit tests, docstrings and code reviews using AI — ensuring code quality and test coverage.",
+      "websiteURL": "https://qodo.ai",
+      "tags": [
+        "Coding",
+        "coding",
+        "AI",
+        "Developers",
+        "Testing",
+        "Code Quality"
+      ],
+      "logo": "/logos/qodo-codiumai.svg"
+    },
+    {
+      "id": "216",
+      "name": "Sourcegraph Cody",
+      "slug": "sourcegraph-cody",
+      "category": "coding",
+      "freeTier": "Freemium",
+      "description": "Sourcegraph Cody is an AI coding assistant with full codebase context awareness — answering questions about large repos and generating accurate code changes.",
+      "websiteURL": "https://sourcegraph.com/cody",
+      "tags": [
+        "Coding",
+        "coding",
+        "AI",
+        "Developers",
+        "Codebase",
+        "Enterprise"
+      ],
+      "logo": "/logos/sourcegraph-cody.svg"
+    },
+    {
+      "id": "217",
+      "name": "Continue.dev",
+      "slug": "continue-dev",
+      "category": "coding",
+      "freeTier": "Free",
+      "description": "Continue is an open-source AI coding assistant for VS Code and JetBrains that lets you use any LLM (GPT-4, Claude, Ollama) as your coding copilot.",
+      "websiteURL": "https://continue.dev",
+      "tags": [
+        "Coding",
+        "coding",
+        "AI",
+        "Developers",
+        "Open Source",
+        "VS Code"
+      ],
+      "logo": "/logos/continue-dev.svg"
+    },
+    {
+      "id": "218",
+      "name": "Lex.page",
+      "slug": "lex-page",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Lex is an AI-powered word processor that helps writers overcome writer's block with smart suggestions, completions, and real-time feedback as you type.",
+      "websiteURL": "https://lex.page",
+      "tags": [
+        "Writing",
+        "writing-tools",
+        "AI",
+        "Content Creation",
+        "Productivity"
+      ],
+      "logo": "/logos/lex-page.svg"
+    },
+    {
+      "id": "219",
+      "name": "Hemingway Editor AI",
+      "slug": "hemingway-editor-ai",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Hemingway Editor AI helps make your writing bold and clear — highlighting complex sentences, passive voice, and readability issues with AI-powered suggestions.",
+      "websiteURL": "https://hemingwayapp.com",
+      "tags": [
+        "Writing",
+        "writing-tools",
+        "AI",
+        "Editing",
+        "Readability"
+      ],
+      "logo": "/logos/hemingway-editor-ai.svg"
+    },
+    {
+      "id": "220",
+      "name": "Longshot AI",
+      "slug": "longshot-ai",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Longshot AI generates long-form SEO content including blog posts, landing pages, and articles with built-in fact-checking and keyword targeting.",
+      "websiteURL": "https://longshot.ai",
+      "tags": [
+        "Writing",
+        "writing-tools",
+        "AI",
+        "SEO",
+        "Content Creation",
+        "Blogging"
+      ],
+      "logo": "/logos/longshot-ai.svg"
+    },
+    {
+      "id": "221",
+      "name": "Perplexity Pages",
+      "slug": "perplexity-pages",
+      "category": "writing-tools",
+      "freeTier": "Freemium",
+      "description": "Perplexity Pages lets you generate beautifully formatted, research-backed long-form articles with citations using AI — perfect for reports and guides.",
+      "websiteURL": "https://perplexity.ai/pages",
+      "tags": [
+        "Writing",
+        "writing-tools",
+        "AI",
+        "Research",
+        "Content Creation",
+        "Citations"
+      ],
+      "logo": "/logos/perplexity-pages.svg"
+    },
+    {
+      "id": "222",
+      "name": "Scalenut",
+      "slug": "scalenut",
+      "category": "marketing-tools",
+      "freeTier": "Paid",
+      "description": "Scalenut is an AI-powered SEO content platform that researches keywords, creates content briefs, and writes long-form SEO articles optimized to rank.",
+      "websiteURL": "https://scalenut.com",
+      "tags": [
+        "SEO",
+        "marketing-tools",
+        "AI",
+        "Content Marketing",
+        "Blogging"
+      ],
+      "logo": "/logos/scalenut.svg"
+    },
+    {
+      "id": "223",
+      "name": "Clearscope",
+      "slug": "clearscope",
+      "category": "marketing-tools",
+      "freeTier": "Paid",
+      "description": "Clearscope is an AI content optimization platform that analyzes top-ranking pages and gives writers a content grade with keyword recommendations.",
+      "websiteURL": "https://clearscope.io",
+      "tags": [
+        "SEO",
+        "marketing-tools",
+        "AI",
+        "Content Optimization",
+        "Keyword Research"
+      ],
+      "logo": "/logos/clearscope.svg"
+    },
+    {
+      "id": "224",
+      "name": "NeuronWriter",
+      "slug": "neuronwriter",
+      "category": "marketing-tools",
+      "freeTier": "Paid",
+      "description": "NeuronWriter is an AI-powered SEO writing tool with NLP-based content optimization, competitor analysis, and internal linking suggestions.",
+      "websiteURL": "https://neuronwriter.com",
+      "tags": [
+        "SEO",
+        "marketing-tools",
+        "AI",
+        "Content Optimization",
+        "NLP"
+      ],
+      "logo": "/logos/neuronwriter.svg"
+    },
+    {
+      "id": "225",
+      "name": "MarketMuse",
+      "slug": "marketmuse",
+      "category": "marketing-tools",
+      "freeTier": "Freemium",
+      "description": "MarketMuse uses AI to analyze your content strategy, identify topical authority gaps, and plan high-impact content that ranks for target keywords.",
+      "websiteURL": "https://marketmuse.com",
+      "tags": [
+        "SEO",
+        "marketing-tools",
+        "AI",
+        "Content Strategy",
+        "Topical Authority"
+      ],
+      "logo": "/logos/marketmuse.svg"
+    },
+    {
+      "id": "226",
+      "name": "Reclaim AI",
+      "slug": "reclaim-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Reclaim AI automatically schedules your tasks, meetings, and habits into your Google Calendar — protecting deep work blocks using intelligent AI time management.",
+      "websiteURL": "https://reclaim.ai",
+      "tags": [
+        "Productivity",
+        "productivity",
+        "AI",
+        "Calendar",
+        "Time Management",
+        "Scheduling"
+      ],
+      "logo": "/logos/reclaim-ai.svg"
+    },
+    {
+      "id": "227",
+      "name": "Motion AI",
+      "slug": "motion-ai",
+      "category": "productivity",
+      "freeTier": "Paid",
+      "description": "Motion AI is an AI-powered task and project management tool that automatically builds your daily schedule based on priorities and deadlines.",
+      "websiteURL": "https://usemotion.com",
+      "tags": [
+        "Productivity",
+        "productivity",
+        "AI",
+        "Task Management",
+        "Scheduling",
+        "Project Management"
+      ],
+      "logo": "/logos/motion-ai.svg"
+    },
+    {
+      "id": "228",
+      "name": "Mem.ai",
+      "slug": "mem-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Mem.ai is a self-organizing AI workspace that automatically surfaces relevant notes when you need them — no folders, no manual tagging required.",
+      "websiteURL": "https://mem.ai",
+      "tags": [
+        "Productivity",
+        "productivity",
+        "AI",
+        "Note Taking",
+        "Knowledge Management"
+      ],
+      "logo": "/logos/mem-ai.svg"
+    },
+    {
+      "id": "229",
+      "name": "Clockwise AI",
+      "slug": "clockwise-ai",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Clockwise AI optimizes team calendars by finding the best meeting times, protecting focus time, and resolving scheduling conflicts automatically.",
+      "websiteURL": "https://getclockwise.com",
+      "tags": [
+        "Productivity",
+        "productivity",
+        "AI",
+        "Calendar",
+        "Team",
+        "Focus Time"
+      ],
+      "logo": "/logos/clockwise-ai.svg"
+    },
+    {
+      "id": "230",
+      "name": "Podcastle AI",
+      "slug": "podcastle-ai",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "Podcastle AI is an all-in-one podcast creation platform with AI-powered recording, noise removal, transcription, and text-to-speech voice cloning.",
+      "websiteURL": "https://podcastle.ai",
+      "tags": [
+        "Audio",
+        "audio-tools",
+        "AI",
+        "Podcast",
+        "Voice",
+        "Content Creation"
+      ],
+      "logo": "/logos/podcastle-ai.svg"
+    },
+    {
+      "id": "231",
+      "name": "Resemble AI",
+      "slug": "resemble-ai",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "Resemble AI creates ultra-realistic AI voices from just a few minutes of audio, enabling voice cloning for content, apps, and dubbing projects.",
+      "websiteURL": "https://resemble.ai",
+      "tags": [
+        "Audio",
+        "audio-tools",
+        "AI",
+        "Voice Cloning",
+        "Text to Speech",
+        "Dubbing"
+      ],
+      "logo": "/logos/resemble-ai.svg"
+    },
+    {
+      "id": "232",
+      "name": "Deepgram",
+      "slug": "deepgram",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "Deepgram is an enterprise-grade AI speech recognition API with near-instant transcription, speaker diarization, and language detection for developers.",
+      "websiteURL": "https://deepgram.com",
+      "tags": [
+        "Audio",
+        "audio-tools",
+        "AI",
+        "Speech Recognition",
+        "API",
+        "Developers"
+      ],
+      "logo": "/logos/deepgram.svg"
+    },
+    {
+      "id": "233",
+      "name": "Soundraw",
+      "slug": "soundraw",
+      "category": "audio-tools",
+      "freeTier": "Paid",
+      "description": "Soundraw generates royalty-free AI music by selecting mood, genre, and length — creating custom tracks for videos, podcasts, and creative projects.",
+      "websiteURL": "https://soundraw.io",
+      "tags": [
+        "Audio",
+        "audio-tools",
+        "AI",
+        "Music Generation",
+        "Royalty Free",
+        "Content Creation"
+      ],
+      "logo": "/logos/soundraw.svg"
+    },
+    {
+      "id": "234",
+      "name": "AIVA AI",
+      "slug": "aiva-ai",
+      "category": "audio-tools",
+      "freeTier": "Freemium",
+      "description": "AIVA (Artificial Intelligence Virtual Artist) composes emotional soundtracks for games, films, and ads using AI trained on classical music theory.",
+      "websiteURL": "https://aiva.ai",
+      "tags": [
+        "Audio",
+        "audio-tools",
+        "AI",
+        "Music Composition",
+        "Soundtrack",
+        "Creative"
+      ],
+      "logo": "/logos/aiva-ai.svg"
+    },
+    {
+      "id": "235",
+      "name": "Tidio AI",
+      "slug": "tidio-ai",
+      "category": "business-tools",
+      "freeTier": "Freemium",
+      "description": "Tidio AI is a customer service platform with an AI chatbot (Lyro) that resolves up to 70% of customer queries automatically without human agents.",
+      "websiteURL": "https://tidio.com",
+      "tags": [
+        "Business",
+        "business-tools",
+        "AI",
+        "Customer Support",
+        "Chatbot",
+        "eCommerce"
+      ],
+      "logo": "/logos/tidio-ai.svg"
+    },
+    {
+      "id": "236",
+      "name": "Intercom Fin AI",
+      "slug": "intercom-fin-ai",
+      "category": "business-tools",
+      "freeTier": "Paid",
+      "description": "Intercom Fin is an AI customer support agent powered by GPT-4 that resolves complex support tickets instantly using your help center content.",
+      "websiteURL": "https://intercom.com/fin",
+      "tags": [
+        "Business",
+        "business-tools",
+        "AI",
+        "Customer Support",
+        "Automation",
+        "Enterprise"
+      ],
+      "logo": "/logos/intercom-fin-ai.svg"
+    },
+    {
+      "id": "237",
+      "name": "Salesforce Einstein AI",
+      "slug": "salesforce-einstein-ai",
+      "category": "business-tools",
+      "freeTier": "Paid",
+      "description": "Salesforce Einstein AI integrates AI into CRM workflows — predicting sales opportunities, auto-generating emails, and summarizing customer interactions.",
+      "websiteURL": "https://salesforce.com/ai",
+      "tags": [
+        "Business",
+        "business-tools",
+        "AI",
+        "CRM",
+        "Sales",
+        "Enterprise"
+      ],
+      "logo": "/logos/salesforce-einstein-ai.svg"
+    },
+    {
+      "id": "238",
+      "name": "Rows AI",
+      "slug": "rows-ai",
+      "category": "business-tools",
+      "freeTier": "Freemium",
+      "description": "Rows AI is a spreadsheet tool with built-in AI capabilities — letting you analyze data, write formulas, and generate charts using natural language prompts.",
+      "websiteURL": "https://rows.com",
+      "tags": [
+        "Business",
+        "business-tools",
+        "AI",
+        "Spreadsheet",
+        "Data Analysis",
+        "Productivity"
+      ],
+      "logo": "/logos/rows-ai.svg"
+    },
+    {
+      "id": "239",
+      "name": "Khroma AI",
+      "slug": "khroma-ai",
+      "category": "design-tools",
+      "freeTier": "Free",
+      "description": "Khroma AI learns your color preferences and generates infinite color palettes, combinations, and font pairings tailored to your personal taste.",
+      "websiteURL": "https://khroma.co",
+      "tags": [
+        "Design",
+        "design-tools",
+        "AI",
+        "Color Palette",
+        "Branding",
+        "Designers"
+      ],
+      "logo": "/logos/khroma-ai.svg"
+    },
+    {
+      "id": "240",
+      "name": "Vizcom AI",
+      "slug": "vizcom-ai",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Vizcom AI transforms hand-drawn sketches into photorealistic product renders using AI — built specifically for industrial designers and concept artists.",
+      "websiteURL": "https://vizcom.ai",
+      "tags": [
+        "Design",
+        "design-tools",
+        "AI",
+        "Product Design",
+        "Rendering",
+        "Industrial Design"
+      ],
+      "logo": "/logos/vizcom-ai.svg"
+    },
+    {
+      "id": "241",
+      "name": "Adobe Express AI",
+      "slug": "adobe-express-ai",
+      "category": "design-tools",
+      "freeTier": "Freemium",
+      "description": "Adobe Express with AI features lets you create branded social media graphics, PDFs, and web pages using generative AI — backed by Adobe Firefly.",
+      "websiteURL": "https://express.adobe.com",
+      "tags": [
+        "Design",
+        "design-tools",
+        "AI",
+        "Social Media",
+        "Adobe",
+        "Branding"
+      ],
+      "logo": "/logos/adobe-express-ai.svg"
+    },
+    {
+      "id": "242",
+      "name": "Galileo AI",
+      "slug": "galileo-ai",
+      "category": "design-tools",
+      "freeTier": "Free",
+      "description": "Galileo AI generates editable UI designs and Figma components from a text description in seconds — accelerating UX design workflow dramatically.",
+      "websiteURL": "https://usegalileo.ai",
+      "tags": [
+        "Design",
+        "design-tools",
+        "AI",
+        "UI Design",
+        "Figma",
+        "UX",
+        "Developers"
+      ],
+      "logo": "/logos/galileo-ai.svg"
+    },
+    {
+      "id": "243",
+      "name": "Sider AI",
+      "slug": "sider-ai",
+      "category": "chrome-extensions",
+      "freeTier": "Freemium",
+      "description": "Sider AI is a Chrome extension that adds ChatGPT, Claude, and Gemini to any webpage — letting you summarize, translate, rewrite, and explain content instantly.",
+      "websiteURL": "https://sider.ai",
+      "tags": [
+        "Chrome Extension",
+        "chrome-extensions",
+        "AI",
+        "Productivity",
+        "Browser",
+        "Summarization"
+      ],
+      "logo": "/logos/sider-ai.svg"
+    },
+    {
+      "id": "244",
+      "name": "MaxAI.me",
+      "slug": "maxai-me",
+      "category": "chrome-extensions",
+      "freeTier": "Freemium",
+      "description": "MaxAI.me is a Chrome extension with 1-click AI for writing emails, summarizing pages, translating content, and chatting with PDFs using multiple AI models.",
+      "websiteURL": "https://maxai.me",
+      "tags": [
+        "Chrome Extension",
+        "chrome-extensions",
+        "AI",
+        "Productivity",
+        "Email",
+        "Browser"
+      ],
+      "logo": "/logos/maxai-me.svg"
+    },
+    {
+      "id": "245",
+      "name": "Tango AI",
+      "slug": "tango-ai",
+      "category": "chrome-extensions",
+      "freeTier": "Freemium",
+      "description": "Tango AI auto-generates step-by-step how-to guides with screenshots as you click — perfect for SOPs, training docs, and product documentation.",
+      "websiteURL": "https://tango.us",
+      "tags": [
+        "Chrome Extension",
+        "chrome-extensions",
+        "AI",
+        "Documentation",
+        "Productivity",
+        "SOP"
+      ],
+      "logo": "/logos/tango-ai.svg"
+    },
+    {
+      "id": "246",
+      "name": "Together AI",
+      "slug": "together-ai",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "Together AI provides fast API access to 200+ open-source models (Llama, Mistral, FLUX) with GPU inference — ideal for building AI apps affordably.",
+      "websiteURL": "https://together.ai",
+      "tags": [
+        "Developer Tools",
+        "developers",
+        "AI",
+        "API",
+        "LLM",
+        "Inference",
+        "Open Source"
+      ],
+      "logo": "/logos/together-ai.svg"
+    },
+    {
+      "id": "247",
+      "name": "Qdrant",
+      "slug": "qdrant",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "Qdrant is a high-performance open-source vector database built for AI applications — enabling semantic search, RAG pipelines, and recommendation systems.",
+      "websiteURL": "https://qdrant.tech",
+      "tags": [
+        "Developer Tools",
+        "developers",
+        "AI",
+        "Vector Database",
+        "RAG",
+        "Open Source"
+      ],
+      "logo": "/logos/qdrant.svg"
+    },
+    {
+      "id": "248",
+      "name": "Arize AI",
+      "slug": "arize-ai",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "Arize AI is an ML observability platform for monitoring, evaluating, and troubleshooting LLM and ML model performance in production environments.",
+      "websiteURL": "https://arize.com",
+      "tags": [
+        "Developer Tools",
+        "developers",
+        "AI",
+        "ML Ops",
+        "Monitoring",
+        "LLM Evaluation"
+      ],
+      "logo": "/logos/arize-ai.svg"
+    },
+    {
+      "id": "249",
+      "name": "Weights & Biases",
+      "slug": "weights-biases",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "Weights & Biases (W&B) is the leading ML experiment tracking and model registry platform used by top AI research teams to log, compare, and deploy models.",
+      "websiteURL": "https://wandb.ai",
+      "tags": [
+        "Developer Tools",
+        "developers",
+        "AI",
+        "ML Training",
+        "Experiment Tracking",
+        "MLOps"
+      ],
+      "logo": "/logos/weights-biases.svg"
+    },
+    {
+      "id": "250",
+      "name": "Anyscale",
+      "slug": "anyscale",
+      "category": "developers",
+      "freeTier": "Freemium",
+      "description": "Anyscale is a scalable AI compute platform based on Ray — letting teams train, fine-tune, and serve LLMs at scale with managed infrastructure.",
+      "websiteURL": "https://anyscale.com",
+      "tags": [
+        "Developer Tools",
+        "developers",
+        "AI",
+        "ML Infrastructure",
+        "LLM",
+        "Scale"
+      ],
+      "logo": "/logos/anyscale.svg"
+    },
+    {
+      "id": "251",
+      "name": "Taplio",
+      "slug": "taplio",
+      "category": "social-media-tools",
+      "freeTier": "Paid",
+      "description": "Taplio is an AI LinkedIn growth tool that generates viral post ideas, writes content, schedules posts, and analyzes performance to grow your audience.",
+      "websiteURL": "https://taplio.com",
+      "tags": [
+        "Social Media",
+        "social-media-tools",
+        "AI",
+        "LinkedIn",
+        "Content Creation",
+        "Marketing"
+      ],
+      "logo": "/logos/taplio.svg"
+    },
+    {
+      "id": "252",
+      "name": "Tribescaler",
+      "slug": "tribescaler",
+      "category": "social-media-tools",
+      "freeTier": "Paid",
+      "description": "Tribescaler generates viral Twitter (X) thread hooks using AI — analyzing top-performing content patterns to maximize engagement and follower growth.",
+      "websiteURL": "https://tribescaler.com",
+      "tags": [
+        "Social Media",
+        "social-media-tools",
+        "AI",
+        "Twitter",
+        "Threads",
+        "Viral Content"
+      ],
+      "logo": "/logos/tribescaler.svg"
+    },
+    {
+      "id": "253",
+      "name": "Predis AI",
+      "slug": "predis-ai",
+      "category": "social-media-tools",
+      "freeTier": "Freemium",
+      "description": "Predis AI creates social media posts with images, captions, and hashtags in seconds — then schedules and publishes them across Instagram, LinkedIn, and more.",
+      "websiteURL": "https://predis.ai",
+      "tags": [
+        "Social Media",
+        "social-media-tools",
+        "AI",
+        "Instagram",
+        "Content Creation",
+        "Scheduling"
+      ],
+      "logo": "/logos/predis-ai.svg"
+    },
+    {
+      "id": "254",
+      "name": "Teal AI",
+      "slug": "teal-ai",
+      "category": "resume-tools",
+      "freeTier": "Freemium",
+      "description": "Teal AI is a job search platform with an AI resume builder that tailors your resume to each job description and tracks application status.",
+      "websiteURL": "https://tealhq.com",
+      "tags": [
+        "Resume",
+        "resume-tools",
+        "AI",
+        "Job Search",
+        "Career",
+        "Students"
+      ],
+      "logo": "/logos/teal-ai.svg"
+    },
+    {
+      "id": "255",
+      "name": "ResumeGenius AI",
+      "slug": "resumegenius-ai",
+      "category": "resume-tools",
+      "freeTier": "Freemium",
+      "description": "ResumeGenius AI generates professional resume bullet points and cover letters tailored to specific job titles and industries in seconds.",
+      "websiteURL": "https://resumegenius.com",
+      "tags": [
+        "Resume",
+        "resume-tools",
+        "AI",
+        "Job Search",
+        "Career",
+        "Cover Letter"
+      ],
+      "logo": "/logos/resumegenius-ai.svg"
+    },
+    {
+      "id": "256",
+      "name": "Quizgecko",
+      "slug": "quizgecko",
+      "category": "study-tools",
+      "freeTier": "Freemium",
+      "description": "Quizgecko AI instantly generates quizzes, flashcards, and study notes from any PDF, text, or URL — making studying faster and more effective.",
+      "websiteURL": "https://quizgecko.com",
+      "tags": [
+        "Study",
+        "study-tools",
+        "AI",
+        "Quizzes",
+        "Flashcards",
+        "Students",
+        "Education"
+      ],
+      "logo": "/logos/quizgecko.svg"
+    },
+    {
+      "id": "257",
+      "name": "Explain Like I'm 5",
+      "slug": "explain-like-i-m-5",
+      "category": "study-tools",
+      "freeTier": "Free",
+      "description": "ELI5 AI simplifies any complex concept using AI — explaining topics in plain language suitable for beginners, students, and curious learners.",
+      "websiteURL": "https://explainlikeimfive.io",
+      "tags": [
+        "Study",
+        "study-tools",
+        "AI",
+        "Learning",
+        "Students",
+        "Education",
+        "Simplification"
+      ],
+      "logo": "/logos/explain-like-i-m-5.svg"
+    },
+    {
+      "id": "258",
+      "name": "Mindgrasp AI",
+      "slug": "mindgrasp-ai",
+      "category": "study-tools",
+      "freeTier": "Paid",
+      "description": "Mindgrasp AI summarizes lectures, PDFs, and videos into notes, flashcards, and Q&A — helping students study smarter and retain more in less time.",
+      "websiteURL": "https://mindgrasp.ai",
+      "tags": [
+        "Study",
+        "study-tools",
+        "AI",
+        "Summarization",
+        "Flashcards",
+        "Students",
+        "Note Taking"
+      ],
+      "logo": "/logos/mindgrasp-ai.svg"
     }
   ]
 }

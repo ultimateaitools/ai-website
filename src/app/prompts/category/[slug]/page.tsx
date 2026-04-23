@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: `${category.name} AI Prompts | ${category.promptCount} Prompt Templates`,
             description: `Browse ${category.promptCount} AI prompts for ${category.name.toLowerCase()} workflows.`,
-            url: `https://ultimateaitools.online/prompts/category/${category.slug}`,
+            url: `https://ultimateaitools.online/prompts/category/${category.slug}/`,
             type: 'website',
         },
         twitter: {
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: `Category-wise prompt collection for ${category.name.toLowerCase()} workflows.`,
         },
         alternates: {
-            canonical: `https://ultimateaitools.online/prompts/category/${category.slug}`,
+            canonical: `https://ultimateaitools.online/prompts/category/${category.slug}/`,
         },
     };
 }

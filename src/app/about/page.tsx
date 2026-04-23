@@ -4,10 +4,18 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'About UltimateAITools - Editorial Mission and Quality Standards',
     description: 'Learn about UltimateAITools, our editorial process, and how we curate AI tools, prompts, and educational content for users in 2026.',
+    keywords: [
+        'about ultimateaitools',
+        'ai tools directory mission',
+        'ai tools editorial standards',
+        'free ai tools curation',
+    ],
     openGraph: {
         title: 'About UltimateAITools - Editorial Mission and Quality Standards',
         description: 'Understand how UltimateAITools reviews and curates AI tools and educational resources.',
         url: 'https://ultimateaitools.online/about/',
+        siteName: 'UltimateAITools',
+        locale: 'en_US',
         type: 'website',
     },
     twitter: {
@@ -17,7 +25,7 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: 'https://ultimateaitools.online/about/',
-    }
+    },
 };
 
 export default function About() {

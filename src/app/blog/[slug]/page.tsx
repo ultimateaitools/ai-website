@@ -17,6 +17,49 @@ export function generateStaticParams() {
     }));
 }
 
+// Category-based keywords for blog SEO
+const blogCategoryKeywords: Record<string, string[]> = {
+    'coding': ['ai coding tools', 'ai programming', 'code with ai', 'ai developer tools 2026'],
+    'writing-tools': ['ai writing tools', 'ai content writing', 'chatgpt writing', 'ai copywriting 2026'],
+    'image-generators': ['ai image generation', 'ai art generator', 'text to image ai', 'best ai image tools'],
+    'video-generators': ['ai video generator', 'text to video ai', 'ai video creation', 'ai video tools 2026'],
+    'audio-tools': ['ai audio tools', 'ai voice generator', 'ai music generation', 'text to speech ai'],
+    'automation-tools': ['ai automation', 'ai workflow automation', 'zapier ai', 'n8n ai automation'],
+    'productivity': ['ai productivity tools', 'ai for work', 'ai time management', 'productivity ai 2026'],
+    'marketing-tools': ['ai marketing tools', 'ai seo tools', 'ai content marketing', 'ai advertising 2026'],
+    'models-comparison': ['ai model comparison', 'best ai model 2026', 'gpt vs claude', 'ai models ranked'],
+    'agentic-ai': ['ai agents', 'autonomous ai', 'ai agent tools', 'agentic ai 2026'],
+    'business-tools': ['ai business tools', 'ai for business', 'enterprise ai', 'ai business automation'],
+    'social-media-tools': ['ai social media', 'ai content creator', 'social media ai tools', 'ai instagram'],
+    'chrome-extensions': ['ai chrome extensions', 'browser ai tools', 'chatgpt chrome extension'],
+    'resume-tools': ['ai resume builder', 'ai cv maker', 'resume ai tools', 'job search ai'],
+    'study-tools': ['ai study tools', 'ai for students', 'ai learning tools', 'study with ai'],
+    'developer-tools': ['ai developer tools', 'ai api tools', 'llm tools', 'ai for developers'],
+    'tutorials': ['ai tutorials', 'how to use ai', 'ai guide 2026', 'learn ai tools'],
+    'beginner-guides': ['ai for beginners', 'how to start with ai', 'ai beginner guide'],
+    'reviews': ['ai tool review', 'ai software review', 'best ai tools reviewed'],
+    'alternatives': ['ai tool alternatives', 'ai software comparison', 'best alternatives'],
+    'news': ['ai news 2026', 'latest ai updates', 'ai industry news'],
+    'content-creation': ['ai content creation', 'ai content tools', 'content ai 2026'],
+};
+
+function makeSeoTitle(title: string, category: string): string {
+    // Target: under 60 chars
+    const MAX = 58;
+    if (title.length <= MAX) return title;
+    // Try truncating at last space before limit
+    const cut = title.lastIndexOf(' ', MAX - 3);
+    return cut > 20 ? title.slice(0, cut) + '...' : title.slice(0, MAX - 3) + '...';
+}
+
+function makeSeoDesc(desc: string): string {
+    // Target: under 155 chars
+    const MAX = 155;
+    if (desc.length <= MAX) return desc;
+    const cut = desc.lastIndexOf(' ', MAX - 3);
+    return cut > 50 ? desc.slice(0, cut) + '...' : desc.slice(0, MAX - 3) + '...';
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { blogs } = getBlogsData();
     const blog = blogs.find((p) => p.slug === params.slug);
@@ -25,25 +68,42 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: 'Blog Not Found' };
     }
 
+    const seoTitle = makeSeoTitle(blog.title, blog.category);
+    const seoDesc = makeSeoDesc(blog.shortDescription);
+    const categoryKws = blogCategoryKeywords[blog.category] || ['ai tools', 'ai guide', 'ai tutorial 2026'];
+    const topicKws = blog.topic ? [blog.topic.toLowerCase(), `${blog.topic.toLowerCase()} 2026`] : [];
+    const keywords = [
+        ...topicKws,
+        ...categoryKws,
+        `${blog.category.replace(/-/g, ' ')} guide`,
+        'ultimateaitools',
+    ].slice(0, 10);
+
     return {
-        title: `${blog.title} - AI Guide & Tutorial`,
-        description: blog.shortDescription,
+        title: seoTitle,
+        description: seoDesc,
+        keywords,
         openGraph: {
-            title: `${blog.title} - AI Guide & Tutorial`,
-            description: blog.shortDescription,
+            title: seoTitle,
+            description: seoDesc,
             url: `https://ultimateaitools.online/blog/${blog.slug}/`,
+            siteName: 'UltimateAITools',
+            locale: 'en_US',
             type: 'article',
             publishedTime: blog.publishDate,
-            images: blog.imageUrl ? [{ url: `https://ultimateaitools.online${blog.imageUrl}`, alt: blog.imageAlt || blog.title }] : undefined,
+            authors: [blog.author],
+            images: blog.imageUrl
+                ? [{ url: `https://ultimateaitools.online${blog.imageUrl}`, alt: blog.imageAlt || blog.title, width: 1200, height: 630 }]
+                : undefined,
         },
         twitter: {
             card: 'summary_large_image',
-            title: `${blog.title} - AI Guide & Tutorial`,
-            description: blog.shortDescription,
+            title: seoTitle,
+            description: seoDesc,
         },
         alternates: {
             canonical: `https://ultimateaitools.online/blog/${blog.slug}/`,
-        }
+        },
     };
 }
 

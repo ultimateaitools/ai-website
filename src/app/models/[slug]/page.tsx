@@ -24,19 +24,37 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: 'Model Not Found' };
     }
 
+    const seoTitle = `${model.name} Review 2026 - Features, Pricing & Use Cases`;
+    const seoDesc = `Compare ${model.name} by ${model.developer}: capabilities, pricing, free tier, strengths and weaknesses vs other AI models in 2026.`;
+    const keywords = [
+        `${model.name.toLowerCase()}`,
+        `${model.name.toLowerCase()} review`,
+        `${model.name.toLowerCase()} vs gpt`,
+        `${model.name.toLowerCase()} pricing`,
+        `${model.name.toLowerCase()} free`,
+        `best ai model 2026`,
+        `${model.developer.toLowerCase()} ai model`,
+        'ai model comparison 2026',
+        'top ai models',
+        'ai language model review',
+    ];
+
     return {
-        title: `${model.name} AI Model - Features, Performance & Pricing`,
-        description: `Explore ${model.name} including features, capabilities, use cases and pricing comparison with other AI models.`,
+        title: seoTitle,
+        description: seoDesc,
+        keywords,
         openGraph: {
-            title: `${model.name} AI Model - Features, Performance & Pricing`,
-            description: `Explore ${model.name} including features, capabilities, use cases and pricing comparison with other AI models.`,
+            title: seoTitle,
+            description: seoDesc,
             url: `https://ultimateaitools.online/models/${model.slug}/`,
+            siteName: 'UltimateAITools',
+            locale: 'en_US',
             type: 'article',
         },
         twitter: {
             card: 'summary_large_image',
-            title: `${model.name} AI Model - Features, Performance & Pricing`,
-            description: `Explore ${model.name} including features, capabilities, use cases and pricing comparison with other AI models.`,
+            title: seoTitle,
+            description: seoDesc,
         },
         alternates: {
             canonical: `https://ultimateaitools.online/models/${model.slug}/`,

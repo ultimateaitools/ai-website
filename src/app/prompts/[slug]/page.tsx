@@ -17,6 +17,13 @@ export function generateStaticParams() {
     }));
 }
 
+function truncatePromptTitle(title: string): string {
+    const MAX = 55;
+    if (title.length <= MAX) return title;
+    const cut = title.lastIndexOf(' ', MAX - 3);
+    return cut > 15 ? title.slice(0, cut) + '...' : title.slice(0, MAX - 3) + '...';
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { prompts } = getPromptsData();
     const prompt = prompts.find((p) => p.slug === params.slug);
@@ -25,23 +32,42 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: 'Prompt Not Found' };
     }
 
+    const shortTitle = truncatePromptTitle(prompt.title);
+    const seoTitle = `${shortTitle} - Free AI Prompt`;
+    const seoDesc = `Free AI prompt template: ${prompt.description}`.slice(0, 155);
+    const catName = prompt.category.replace(/-/g, ' ');
+    const keywords = [
+        `${prompt.title.toLowerCase()} prompt`,
+        `free ai prompt for ${catName}`,
+        `chatgpt ${catName} prompt`,
+        `${catName} ai prompt template`,
+        `${prompt.outputType.toLowerCase()} ai prompt`,
+        `ai prompt ${catName} 2026`,
+        'free ai prompts',
+        'chatgpt prompts',
+        `${prompt.bestFor.toLowerCase()} ai prompt`,
+    ].slice(0, 9);
+
     return {
-        title: `${prompt.title} - Free AI Prompt Template`,
-        description: `Use this high-quality AI prompt to generate ${prompt.outputType.toLowerCase()} with ChatGPT, Claude, Gemini, Grok, and similar models.`,
+        title: seoTitle,
+        description: seoDesc,
+        keywords,
         openGraph: {
-            title: `${prompt.title} - Free AI Prompt Template`,
-            description: `Use this high-quality AI prompt to generate ${prompt.outputType.toLowerCase()} with ChatGPT, Claude, Gemini, Grok, and similar models.`,
+            title: seoTitle,
+            description: seoDesc,
             url: `https://ultimateaitools.online/prompts/${prompt.slug}/`,
+            siteName: 'UltimateAITools',
+            locale: 'en_US',
             type: 'article',
         },
         twitter: {
             card: 'summary_large_image',
-            title: `${prompt.title} - Free AI Prompt Template`,
-            description: `Use this high-quality AI prompt to generate ${prompt.outputType.toLowerCase()} with ChatGPT, Claude, Gemini, Grok, and similar models.`,
+            title: seoTitle,
+            description: seoDesc,
         },
         alternates: {
             canonical: `https://ultimateaitools.online/prompts/${prompt.slug}/`,
-        }
+        },
     };
 }
 

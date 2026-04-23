@@ -4,10 +4,17 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Contact Us - UltimateAITools',
     description: 'Contact UltimateAITools.online for AI tool listing inquiries, suggestions or general support.',
+    keywords: [
+        'contact ultimateaitools',
+        'ai tools listing inquiry',
+        'ai directory support',
+    ],
     openGraph: {
         title: 'Contact Us - UltimateAITools',
         description: 'Get in touch with UltimateAITools for support, listing requests, and feedback.',
         url: 'https://ultimateaitools.online/contact-us/',
+        siteName: 'UltimateAITools',
+        locale: 'en_US',
         type: 'website',
     },
     twitter: {
@@ -17,7 +24,7 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: 'https://ultimateaitools.online/contact-us/',
-    }
+    },
 };
 
 export default function ContactUsPage() {

@@ -2,11 +2,32 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Submit Your AI Tool – Get Listed on UltimateAITools',
+    title: 'Submit Your AI Tool – Get Listed on UltimateAITools for Free',
     description: 'Submit your AI tool to UltimateAITools.online and get discovered by thousands of users worldwide. Free AI tools listing directory for 2026.',
+    keywords: [
+        'submit ai tool',
+        'list ai tool free',
+        'ai tools directory listing',
+        'submit free ai tool',
+        'get ai tool listed',
+        'ai tool promotion',
+    ],
+    openGraph: {
+        title: 'Submit Your AI Tool – Get Listed on UltimateAITools for Free',
+        description: 'Get your AI tool discovered by thousands of users. Free listing on the UltimateAITools directory — submit today.',
+        url: 'https://ultimateaitools.online/submit-tool/',
+        siteName: 'UltimateAITools',
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Submit Your AI Tool for Free – UltimateAITools',
+        description: 'List your AI tool on UltimateAITools and reach a global audience of developers and professionals.',
+    },
     alternates: {
         canonical: 'https://ultimateaitools.online/submit-tool/',
-    }
+    },
 };
 
 export default function SubmitToolPage() {
