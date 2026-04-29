@@ -27,12 +27,12 @@ export default function Header() {
 
                     {/* Desktop Menu */}
                     <nav className="hidden md:flex space-x-8 items-center">
-                        <Link href="/ai-tools" className="text-gray-300 hover:text-primary-400 font-medium transition-colors">AI Tools</Link>
-                        <Link href="/blog" className="text-gray-300 hover:text-primary-400 font-medium transition-colors">Blog</Link>
-                        <Link href="/about" className="text-gray-300 hover:text-primary-400 font-medium transition-colors">About</Link>
-                        <Link href="/contact-us" className="text-gray-300 hover:text-primary-400 font-medium transition-colors">Contact</Link>
+                        <Link href="/ai-tools/" className="text-gray-300 hover:text-primary-400 font-medium transition-colors">AI Tools</Link>
+                        <Link href="/blog/" className="text-gray-300 hover:text-primary-400 font-medium transition-colors">Blog</Link>
+                        <Link href="/about/" className="text-gray-300 hover:text-primary-400 font-medium transition-colors">About</Link>
+                        <Link href="/contact-us/" className="text-gray-300 hover:text-primary-400 font-medium transition-colors">Contact</Link>
                         <Link
-                            href="/submit-tool"
+                            href="/submit-tool/"
                             className="bg-primary-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-primary-500 transition-colors shadow-sm"
                         >
                             Submit Tool
@@ -61,12 +61,12 @@ export default function Header() {
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-surface-card border-t border-surface-border">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <Link href="/ai-tools" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary-400 hover:bg-surface-hover">AI Tools</Link>
-                        <Link href="/blog" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary-400 hover:bg-surface-hover">Blog</Link>
-                        <Link href="/about" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary-400 hover:bg-surface-hover">About</Link>
-                        <Link href="/contact-us" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary-400 hover:bg-surface-hover">Contact</Link>
+                        <Link href="/ai-tools/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary-400 hover:bg-surface-hover">AI Tools</Link>
+                        <Link href="/blog/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary-400 hover:bg-surface-hover">Blog</Link>
+                        <Link href="/about/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary-400 hover:bg-surface-hover">About</Link>
+                        <Link href="/contact-us/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-primary-400 hover:bg-surface-hover">Contact</Link>
                         <Link
-                            href="/submit-tool"
+                            href="/submit-tool/"
                             className="block px-3 py-2 text-primary-400 font-bold hover:bg-surface-hover rounded-md"
                         >
                             Submit Tool

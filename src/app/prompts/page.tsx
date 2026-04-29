@@ -63,7 +63,7 @@ export default function PromptsDirectoryPage() {
                             </p>
                             <div className="mt-auto space-y-3">
                                 <Link
-                                    href={`/prompts/category/${category.slug}`}
+                                    href={`/prompts/category/${category.slug}/`}
                                     className="block w-full text-center py-3 rounded-lg bg-surface-hover text-gray-300 hover:bg-surface-border border border-surface-border transition-colors font-bold text-sm"
                                 >
                                     Explore Category
@@ -79,16 +79,16 @@ export default function PromptsDirectoryPage() {
                         Start with a category, then pair those prompts with the right AI tools, model comparisons, and implementation guides.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                        <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Browse AI tools directory &rarr;
                         </Link>
-                        <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/models/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Compare AI models &rarr;
                         </Link>
-                        <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Read practical AI guides &rarr;
                         </Link>
-                        <Link href="/sitemap" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/sitemap/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Open full site sitemap &rarr;
                         </Link>
                     </div>

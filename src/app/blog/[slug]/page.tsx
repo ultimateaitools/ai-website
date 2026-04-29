@@ -390,16 +390,16 @@ export default function BlogDetailPage({ params }: Props) {
                             Explore related resources to go deeper on this topic and discover practical tools.
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 not-prose">
-                            <Link href={`/category/${blog.category}`} className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href={`/category/${blog.category}/`} className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Explore {blog.category.replace('-', ' ')} tools &rarr;
                             </Link>
-                            <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Browse AI Tools Directory &rarr;
                             </Link>
-                            <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 View Prompt Library &rarr;
                             </Link>
-                            <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/models/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Compare AI Models &rarr;
                             </Link>
                         </div>
@@ -415,7 +415,7 @@ export default function BlogDetailPage({ params }: Props) {
                     {relatedBlogs.length > 0 ? (
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                             {relatedBlogs.map(related => (
-                                <Link key={related.id} href={`/blog/${related.slug}`} className="saas-card p-6 flex flex-col h-full group hover:-translate-y-1 transition-transform border-0 shadow-sm hover:shadow-md">
+                                <Link key={related.id} href={`/blog/${related.slug}/`} className="saas-card p-6 flex flex-col h-full group hover:-translate-y-1 transition-transform border-0 shadow-sm hover:shadow-md">
                                     <div className="mb-4">
                                         <span className="text-xs font-bold text-primary-600 uppercase tracking-wider">{related.category.replace('-', ' ')}</span>
                                     </div>

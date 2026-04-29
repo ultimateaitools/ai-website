@@ -96,7 +96,7 @@ export default function BlogDirectoryPage() {
 
                                 <div className="mt-auto flex justify-between items-center">
                                     <Link
-                                        href={`/blog/${blog.slug}`}
+                                        href={`/blog/${blog.slug}/`}
                                         className="text-primary-400 font-bold text-sm tracking-wide group-hover:text-primary-300 hover:bg-surface-hover px-4 py-2 rounded-lg transition-colors -ml-4"
                                     >
                                         Read More &rarr;
@@ -114,16 +114,16 @@ export default function BlogDirectoryPage() {
                         Move from guides into directories and category pages to apply what you read.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                        <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Browse AI tools directory &rarr;
                         </Link>
-                        <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Open prompt categories &rarr;
                         </Link>
-                        <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/models/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Compare AI models &rarr;
                         </Link>
-                        <Link href="/sitemap" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/sitemap/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             View full sitemap &rarr;
                         </Link>
                     </div>

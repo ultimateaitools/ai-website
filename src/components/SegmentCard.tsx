@@ -8,7 +8,7 @@ interface Props {
 
 export default function SegmentCard({ segment }: Props) {
     return (
-        <Link href={`/category/${segment.slug}`} className="block">
+        <Link href={`/category/${segment.slug}/`} className="block">
             <div className="glass-card p-5 group flex items-center justify-between hover:-translate-y-1 transition-transform duration-300">
                 <h4 className="font-medium text-gray-200 group-hover:text-neon-blue group-hover:text-glow transition-colors">
                     {segment.name}

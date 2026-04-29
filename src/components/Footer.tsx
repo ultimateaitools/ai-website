@@ -27,12 +27,12 @@ export default function Footer() {
                     <div>
                         <h3 className="text-base font-bold text-foreground mb-4 uppercase tracking-wider">Legal</h3>
                         <ul className="space-y-3 text-sm">
-                            <li><Link href="/privacy-policy" className="text-gray-400 hover:text-primary-400 transition-colors">Privacy Policy</Link></li>
-                            <li><Link href="/terms-and-conditions" className="text-gray-400 hover:text-primary-400 transition-colors">Terms and Conditions</Link></li>
-                            <li><Link href="/disclaimer" className="text-gray-400 hover:text-primary-400 transition-colors">Disclaimer</Link></li>
-                            <li><Link href="/about" className="text-gray-400 hover:text-primary-400 transition-colors">About Us</Link></li>
-                            <li><Link href="/contact-us" className="text-gray-400 hover:text-primary-400 transition-colors">Contact Us</Link></li>
-                            <li><Link href="/sitemap" className="text-gray-400 hover:text-primary-400 transition-colors">Sitemap</Link></li>
+                            <li><Link href="/privacy-policy/" className="text-gray-400 hover:text-primary-400 transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/terms-and-conditions/" className="text-gray-400 hover:text-primary-400 transition-colors">Terms and Conditions</Link></li>
+                            <li><Link href="/disclaimer/" className="text-gray-400 hover:text-primary-400 transition-colors">Disclaimer</Link></li>
+                            <li><Link href="/about/" className="text-gray-400 hover:text-primary-400 transition-colors">About Us</Link></li>
+                            <li><Link href="/contact-us/" className="text-gray-400 hover:text-primary-400 transition-colors">Contact Us</Link></li>
+                            <li><Link href="/sitemap/" className="text-gray-400 hover:text-primary-400 transition-colors">Sitemap</Link></li>
                         </ul>
                     </div>
 
@@ -40,9 +40,9 @@ export default function Footer() {
                     <div>
                         <h3 className="text-base font-bold text-foreground mb-4 uppercase tracking-wider">Popular Categories</h3>
                         <ul className="space-y-3 text-sm mb-6">
-                            <li><Link href="/category/writing-tools" className="text-gray-400 hover:text-primary-400 transition-colors">AI Writing Tools</Link></li>
-                            <li><Link href="/category/image-generators" className="text-gray-400 hover:text-primary-400 transition-colors">AI Image Generators</Link></li>
-                            <li><Link href="/category/coding" className="text-gray-400 hover:text-primary-400 transition-colors">AI Coding Assistants</Link></li>
+                            <li><Link href="/category/writing-tools/" className="text-gray-400 hover:text-primary-400 transition-colors">AI Writing Tools</Link></li>
+                            <li><Link href="/category/image-generators/" className="text-gray-400 hover:text-primary-400 transition-colors">AI Image Generators</Link></li>
+                            <li><Link href="/category/coding/" className="text-gray-400 hover:text-primary-400 transition-colors">AI Coding Assistants</Link></li>
                         </ul>
                     </div>
                 </div>

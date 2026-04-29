@@ -104,13 +104,13 @@ export default function Home() {
 
           {/* Premium Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mt-4">
-            <Link href="/ai-tools" className="w-full sm:w-auto group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-primary-600 rounded-full hover:bg-primary-700 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+            <Link href="/ai-tools/" className="w-full sm:w-auto group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-primary-600 rounded-full hover:bg-primary-700 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
               Browse Directory
               <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </Link>
-            <Link href="/prompts/category" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 font-bold text-foreground transition-all duration-200 bg-surface-card border border-surface-border rounded-full hover:bg-surface-hover hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-surface-border">
+            <Link href="/prompts/category/" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 font-bold text-foreground transition-all duration-200 bg-surface-card border border-surface-border rounded-full hover:bg-surface-hover hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-surface-border">
               Get Free Prompts
             </Link>
           </div>
@@ -186,11 +186,11 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">Latest AI Tools</h2>
             <p className="text-gray-400">Recently added AI tools you can explore right now.</p>
           </div>
-          <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold w-fit">View All Tools &rarr;</Link>
+          <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold w-fit">View All Tools &rarr;</Link>
         </div>
 
         {latestTool && (
-          <Link href={`/tools/${latestTool.slug}`} className="saas-card p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-5 group">
+          <Link href={`/tools/${latestTool.slug}/`} className="saas-card p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-5 group">
             <div className="w-14 h-14 rounded-xl bg-primary-900/30 text-primary-400 flex items-center justify-center font-bold text-2xl shrink-0">
               {latestTool.name.charAt(0)}
             </div>
@@ -220,7 +220,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-foreground mb-4">Are you working on an AI product?</h2>
         <p className="text-gray-400 mb-8 max-w-xl mx-auto">Submit your artificial intelligence tool to be featured on our directory and reach thousands of users looking for solutions like yours.</p>
         <Link
-          href="/submit-tool"
+          href="/submit-tool/"
           className="bg-primary-600 text-white px-8 py-4 rounded-full font-bold hover:bg-primary-700 transition-colors text-lg shadow-sm inline-block"
         >
           Submit Your Tool
@@ -234,12 +234,12 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-foreground mb-2">Latest Insights</h2>
             <p className="text-gray-400">Guides, tutorials, and news from the AI frontier.</p>
           </div>
-          <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold hidden sm:block">View All Posts &rarr;</Link>
+          <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold hidden sm:block">View All Posts &rarr;</Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogs.slice(0, 3).map((blog: Blog) => (
-            <Link href={`/blog/${blog.slug}`} key={blog.id} className="saas-card overflow-hidden group border-0 shadow-md flex flex-col h-full hover:-translate-y-1 transition-transform">
+            <Link href={`/blog/${blog.slug}/`} key={blog.id} className="saas-card overflow-hidden group border-0 shadow-md flex flex-col h-full hover:-translate-y-1 transition-transform">
               <div className="h-48 bg-surface-hover w-full overflow-hidden relative border-b border-surface-border">
                 {blog.imageUrl ? (
                   <Image

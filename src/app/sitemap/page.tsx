@@ -31,15 +31,15 @@ export default function Sitemap() {
                     <h2 className="text-xl font-semibold text-gray-200 mb-4 border-b border-surface-border pb-2">Main Pages</h2>
                     <ul className="space-y-2 text-primary-500">
                         <li><Link href="/" className="hover:text-primary-400">Homepage</Link></li>
-                        <li><Link href="/ai-tools" className="hover:text-primary-400">AI Tools Directory</Link></li>
-                        <li><Link href="/prompts" className="hover:text-primary-400">Prompt Categories</Link></li>
-                        <li><Link href="/blog" className="hover:text-primary-400">AI Blog</Link></li>
-                        <li><Link href="/models" className="hover:text-primary-400">AI Models Comparison</Link></li>
-                        <li><Link href="/about" className="hover:text-primary-400">About Us</Link></li>
-                        <li><Link href="/contact-us" className="hover:text-primary-400">Contact</Link></li>
-                        <li><Link href="/privacy-policy" className="hover:text-primary-400">Privacy Policy</Link></li>
-                        <li><Link href="/terms-and-conditions" className="hover:text-primary-400">Terms & Conditions</Link></li>
-                        <li><Link href="/disclaimer" className="hover:text-primary-400">Disclaimer</Link></li>
+                        <li><Link href="/ai-tools/" className="hover:text-primary-400">AI Tools Directory</Link></li>
+                        <li><Link href="/prompts/" className="hover:text-primary-400">Prompt Categories</Link></li>
+                        <li><Link href="/blog/" className="hover:text-primary-400">AI Blog</Link></li>
+                        <li><Link href="/models/" className="hover:text-primary-400">AI Models Comparison</Link></li>
+                        <li><Link href="/about/" className="hover:text-primary-400">About Us</Link></li>
+                        <li><Link href="/contact-us/" className="hover:text-primary-400">Contact</Link></li>
+                        <li><Link href="/privacy-policy/" className="hover:text-primary-400">Privacy Policy</Link></li>
+                        <li><Link href="/terms-and-conditions/" className="hover:text-primary-400">Terms & Conditions</Link></li>
+                        <li><Link href="/disclaimer/" className="hover:text-primary-400">Disclaimer</Link></li>
                     </ul>
                 </div>
 
@@ -48,7 +48,7 @@ export default function Sitemap() {
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-primary-500 list-disc list-inside">
                         {toolCategories.map(seg => (
                             <li key={seg.slug}>
-                                <Link href={`/category/${seg.slug}`} className="hover:text-primary-400">{seg.name}</Link>
+                                <Link href={`/category/${seg.slug}/`} className="hover:text-primary-400">{seg.name}</Link>
                             </li>
                         ))}
                     </ul>
@@ -59,7 +59,7 @@ export default function Sitemap() {
                     <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-primary-500 list-disc list-inside">
                         {promptCategories.map(category => (
                             <li key={category.slug}>
-                                <Link href={`/prompts/category/${category.slug}`} className="hover:text-primary-400">{category.name}</Link>
+                                <Link href={`/prompts/category/${category.slug}/`} className="hover:text-primary-400">{category.name}</Link>
                             </li>
                         ))}
                     </ul>

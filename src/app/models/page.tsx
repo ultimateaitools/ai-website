@@ -52,7 +52,7 @@ export default function ModelsComparisonPage() {
                                 <th scope="col" className="px-6 py-4 text-left text-xs font-bold text-gray-400 uppercase tracking-wider">Feature</th>
                                 {models.map(model => (
                                     <th key={model.id} scope="col" className="px-6 py-4 text-left text-sm font-bold text-foreground">
-                                        <Link href={`/models/${model.slug}`} className="hover:text-primary-400 transition-colors">
+                                        <Link href={`/models/${model.slug}/`} className="hover:text-primary-400 transition-colors">
                                             {model.name}
                                         </Link>
                                     </th>
@@ -87,7 +87,7 @@ export default function ModelsComparisonPage() {
                                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-foreground"></td>
                                 {models.map(model => (
                                     <td key={model.id} className="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
-                                        <Link href={`/models/${model.slug}`} className="text-primary-400 font-bold hover:text-primary-300 text-sm">
+                                        <Link href={`/models/${model.slug}/`} className="text-primary-400 font-bold hover:text-primary-300 text-sm">
                                             View Details &rarr;
                                         </Link>
                                     </td>
@@ -103,16 +103,16 @@ export default function ModelsComparisonPage() {
                         Compare models first, then move into tools, prompts, and tutorials that fit your workflow.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                        <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Browse AI tools directory &rarr;
                         </Link>
-                        <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Open prompt categories &rarr;
                         </Link>
-                        <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Read AI blog guides &rarr;
                         </Link>
-                        <Link href="/sitemap" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/sitemap/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             View full sitemap &rarr;
                         </Link>
                     </div>

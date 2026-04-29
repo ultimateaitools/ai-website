@@ -113,7 +113,7 @@ export default function PromptDetailPage({ params }: Props) {
                 {/* Header */}
                 <div className="mb-10 text-center">
                     <div className="mb-6">
-                        <Link href={`/prompts/category/${prompt.category}`} className="inline-flex items-center text-sm font-semibold text-primary-400 hover:text-primary-300 transition-colors">
+                        <Link href={`/prompts/category/${prompt.category}/`} className="inline-flex items-center text-sm font-semibold text-primary-400 hover:text-primary-300 transition-colors">
                             &larr; Back to {prompt.category.replace('-', ' ')} prompts
                         </Link>
                     </div>
@@ -184,22 +184,22 @@ export default function PromptDetailPage({ params }: Props) {
                             Pair this prompt with supporting pages across the site to get better output and compare alternatives.
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 not-prose">
-                            <Link href={`/prompts/category/${prompt.category}`} className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href={`/prompts/category/${prompt.category}/`} className="text-primary-400 hover:text-primary-300 font-semibold">
                                 More {prompt.category.replace('-', ' ')} prompts &rarr;
                             </Link>
-                            <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Browse AI tools directory &rarr;
                             </Link>
                             {relatedToolCategorySlug ? (
-                                <Link href={`/category/${relatedToolCategorySlug}`} className="text-primary-400 hover:text-primary-300 font-semibold">
+                                <Link href={`/category/${relatedToolCategorySlug}/`} className="text-primary-400 hover:text-primary-300 font-semibold">
                                     Explore {prompt.category.replace('-', ' ')} tools &rarr;
                                 </Link>
                             ) : (
-                                <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                     Read AI workflow guides &rarr;
                                 </Link>
                             )}
-                            <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/models/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Compare AI models &rarr;
                             </Link>
                         </div>
@@ -214,7 +214,7 @@ export default function PromptDetailPage({ params }: Props) {
                 {relatedPrompts.length > 0 ? (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {relatedPrompts.map(related => (
-                            <Link key={related.id} href={`/prompts/${related.slug}`} className="saas-card p-5 group flex flex-col h-full hover:border-primary-300">
+                            <Link key={related.id} href={`/prompts/${related.slug}/`} className="saas-card p-5 group flex flex-col h-full hover:border-primary-300">
                                 <h3 className="font-bold text-foreground group-hover:text-primary-600 transition-colors mb-2 line-clamp-2">{related.title}</h3>
                                 <p className="text-sm text-gray-500 line-clamp-3 text-ellipsis block overflow-hidden mb-4">{related.description}</p>
                                 <span className="text-sm font-semibold text-primary-600 mt-auto flex-shrink-0">View Prompt &rarr;</span>
@@ -232,7 +232,7 @@ export default function PromptDetailPage({ params }: Props) {
                     {relatedCategories.map((category) => (
                         <Link
                             key={category.slug}
-                            href={`/prompts/category/${category.slug}`}
+                            href={`/prompts/category/${category.slug}/`}
                             className="rounded-2xl border border-surface-border bg-surface-card p-5 text-gray-300 hover:text-primary-300 hover:border-primary-500/40 transition-colors"
                         >
                             {category.name} ({category.promptCount})

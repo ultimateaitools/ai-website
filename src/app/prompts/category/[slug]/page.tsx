@@ -61,7 +61,7 @@ export default function PromptCategoryPage({ params }: Props) {
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <Link href="/prompts" className="inline-flex items-center text-sm font-semibold text-primary-400 hover:text-primary-300 transition-colors mb-6">
+                    <Link href="/prompts/" className="inline-flex items-center text-sm font-semibold text-primary-400 hover:text-primary-300 transition-colors mb-6">
                         &larr; Back to Prompt Categories
                     </Link>
                     <div className="max-w-3xl">
@@ -96,7 +96,7 @@ export default function PromptCategoryPage({ params }: Props) {
                             </p>
                             <div className="mt-auto space-y-3">
                                 <Link
-                                    href={`/prompts/${prompt.slug}`}
+                                    href={`/prompts/${prompt.slug}/`}
                                     className="block w-full text-center py-3 rounded-lg bg-surface-hover text-gray-300 hover:bg-surface-border border border-surface-border transition-colors font-bold text-sm"
                                 >
                                     View Prompt Details
@@ -113,22 +113,22 @@ export default function PromptCategoryPage({ params }: Props) {
                             Move from prompts to tools, model research, and practical guides to build a stronger workflow.
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Browse all prompt categories &rarr;
                             </Link>
-                            <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Explore AI tools directory &rarr;
                             </Link>
                             {relatedToolCategorySlug ? (
-                                <Link href={`/category/${relatedToolCategorySlug}`} className="text-primary-400 hover:text-primary-300 font-semibold">
+                                <Link href={`/category/${relatedToolCategorySlug}/`} className="text-primary-400 hover:text-primary-300 font-semibold">
                                     View related {category.name.toLowerCase()} tools &rarr;
                                 </Link>
                             ) : (
-                                <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                <Link href="/models/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                     Compare AI models &rarr;
                                 </Link>
                             )}
-                            <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Read AI blog guides &rarr;
                             </Link>
                         </div>
@@ -143,7 +143,7 @@ export default function PromptCategoryPage({ params }: Props) {
                             {relatedCategories.map((item) => (
                                 <Link
                                     key={item.slug}
-                                    href={`/prompts/category/${item.slug}`}
+                                    href={`/prompts/category/${item.slug}/`}
                                     className="rounded-xl border border-surface-border px-4 py-3 text-gray-300 hover:text-primary-300 hover:border-primary-500/40 transition-colors"
                                 >
                                     {item.name} ({item.promptCount})

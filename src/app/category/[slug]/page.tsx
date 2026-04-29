@@ -125,16 +125,16 @@ export default function CategoryPage({ params }: Props) {
                     Explore supporting resources beyond this category listing to compare options and find implementation help.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                    <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                    <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                         Browse all AI tools &rarr;
                     </Link>
-                    <Link href={`/prompts/category/${params.slug}`} className="text-primary-400 hover:text-primary-300 font-semibold">
+                    <Link href={`/prompts/category/${params.slug}/`} className="text-primary-400 hover:text-primary-300 font-semibold">
                         View matching prompts &rarr;
                     </Link>
-                    <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                    <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold">
                         Read AI blog guides &rarr;
                     </Link>
-                    <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                    <Link href="/models/" className="text-primary-400 hover:text-primary-300 font-semibold">
                         Compare AI models &rarr;
                     </Link>
                 </div>

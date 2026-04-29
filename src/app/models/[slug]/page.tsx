@@ -159,7 +159,7 @@ export default function ModelDetailPage({ params }: Props) {
                 <h2 className="text-2xl font-bold text-foreground mb-6 font-sans text-center">Compare With Other Models</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {compareModels.map(related => (
-                        <Link key={related.id} href={`/models/${related.slug}`} className="saas-card p-5 group flex flex-col h-full hover:border-primary-400 shadow-sm border border-surface-border">
+                        <Link key={related.id} href={`/models/${related.slug}/`} className="saas-card p-5 group flex flex-col h-full hover:border-primary-400 shadow-sm border border-surface-border">
                             <span className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">{related.developer}</span>
                             <h3 className="font-bold text-foreground group-hover:text-primary-600 transition-colors text-lg mb-2">{related.name}</h3>
                             <p className="text-sm text-gray-400 line-clamp-2 mb-4 flex-grow">{related.shortSummary}</p>
@@ -175,16 +175,16 @@ export default function ModelDetailPage({ params }: Props) {
                     Use related pages to move from model comparison into tools, prompts, and implementation guides.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                    <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+                    <Link href="/models/" className="text-primary-400 hover:text-primary-300 font-semibold">
                         Compare all AI models &rarr;
                     </Link>
-                    <Link href="/ai-tools" className="text-primary-400 hover:text-primary-300 font-semibold">
+                    <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                         Browse AI tools directory &rarr;
                     </Link>
-                    <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
+                    <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
                         Explore prompt categories &rarr;
                     </Link>
-                    <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+                    <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold">
                         Read AI blog guides &rarr;
                     </Link>
                 </div>

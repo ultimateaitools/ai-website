@@ -180,7 +180,7 @@ export default function ToolDetailPage({ params }: Props) {
                         <p className="text-gray-300 mb-4">
                             Want to discover more tools like {tool.name}? Head over to our dedicated category page to find the best alternatives and compare features.
                         </p>
-                        <a href={`/category/${tool.category}`} className="text-primary-600 font-bold hover:text-primary-700 transition-colors">
+                        <a href={`/category/${tool.category}/`} className="text-primary-600 font-bold hover:text-primary-700 transition-colors">
                             Explore more tools in {tool.category.replace('-', ' ')} &rarr;
                         </a>
                     </div>
@@ -191,16 +191,16 @@ export default function ToolDetailPage({ params }: Props) {
                             Learn how to use {tool.name} better with practical tutorials, prompts, and model comparisons.
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <Link href={`/category/${tool.category}`} className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+                            <Link href={`/category/${tool.category}/`} className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
                                 More {tool.category.replace('-', ' ')} tools &rarr;
                             </Link>
-                            <Link href="/blog" className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+                            <Link href="/blog/" className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
                                 Read AI Blog Guides &rarr;
                             </Link>
-                            <Link href="/prompts" className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+                            <Link href="/prompts/" className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
                                 Try Prompt Library &rarr;
                             </Link>
-                            <Link href="/models" className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+                            <Link href="/models/" className="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
                                 Compare AI Models &rarr;
                             </Link>
                         </div>
@@ -229,7 +229,7 @@ export default function ToolDetailPage({ params }: Props) {
                 {relatedTools.length > 0 ? (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {relatedTools.map(related => (
-                            <Link key={related.id} href={`/tools/${related.slug}`} className="saas-card p-5 group flex flex-col h-full hover:border-primary-500/50">
+                            <Link key={related.id} href={`/tools/${related.slug}/`} className="saas-card p-5 group flex flex-col h-full hover:border-primary-500/50">
                                 <div className="flex-shrink-0 w-12 h-12 bg-primary-900/30 rounded-lg flex items-center justify-center text-primary-400 mb-4">
                                     <span className="font-bold text-xl">{related.name.charAt(0)}</span>
                                 </div>

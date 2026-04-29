@@ -46,7 +46,7 @@ export default function ToolCard({ tool }: Props) {
 
                     <div className="mt-auto space-y-2 relative z-20">
                         <Link
-                            href={`/tools/${tool.slug}`}
+                            href={`/tools/${tool.slug}/`}
                             className="block w-full text-center py-2.5 rounded-lg bg-surface-hover text-foreground hover:bg-surface-border border border-surface-border transition-colors font-semibold text-sm"
                         >
                             View Details

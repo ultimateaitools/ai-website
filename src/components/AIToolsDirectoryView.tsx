@@ -167,7 +167,7 @@ export default function AIToolsDirectoryView({ allToolsSorted, currentPage, tota
 
             <div className="mt-auto space-y-2">
               <Link
-                href={`/tools/${tool.slug}`}
+                href={`/tools/${tool.slug}/`}
                 className="block w-full text-center py-2.5 rounded-lg bg-surface-hover text-foreground hover:bg-surface-border border border-surface-border transition-colors font-semibold text-sm"
               >
                 View Details
@@ -207,16 +207,16 @@ export default function AIToolsDirectoryView({ allToolsSorted, currentPage, tota
           Use these pages to compare tools, find prompts, and move deeper into specific workflows.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <Link href="/prompts/category" className="text-primary-400 hover:text-primary-300 font-semibold">
+          <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
             Browse prompt categories &rarr;
           </Link>
-          <Link href="/blog" className="text-primary-400 hover:text-primary-300 font-semibold">
+          <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold">
             Read AI blog guides &rarr;
           </Link>
-          <Link href="/models" className="text-primary-400 hover:text-primary-300 font-semibold">
+          <Link href="/models/" className="text-primary-400 hover:text-primary-300 font-semibold">
             Compare AI models &rarr;
           </Link>
-          <Link href="/sitemap" className="text-primary-400 hover:text-primary-300 font-semibold">
+          <Link href="/sitemap/" className="text-primary-400 hover:text-primary-300 font-semibold">
             Open site sitemap &rarr;
           </Link>
         </div>
