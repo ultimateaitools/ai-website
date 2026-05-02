@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { getPromptCategories } from '@/lib/data';
 import AdSlot from '@/components/AdSlot';
+import { SITE_URL } from '@/lib/seo';
 
 export const metadata: Metadata = {
     title: 'AI Prompt Categories | Browse Prompt Library by Use Case',
@@ -25,9 +26,27 @@ export const metadata: Metadata = {
 
 export default function PromptsDirectoryPage() {
     const categories = getPromptCategories();
+    const promptHubSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'AI Prompt Library',
+        description: 'Prompt categories for marketing, business, coding, study, productivity, social media, image generation, and more.',
+        url: `${SITE_URL}/prompts/`,
+        mainEntity: {
+            '@type': 'ItemList',
+            numberOfItems: categories.length,
+            itemListElement: categories.map((category, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                name: `${category.name} AI Prompts`,
+                url: `${SITE_URL}/prompts/category/${category.slug}/`,
+            })),
+        },
+    };
 
     return (
         <div className="bg-surface-card">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(promptHubSchema) }} />
             <header className="bg-background py-16 sm:py-24 border-b border-surface-border relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob"></div>
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>

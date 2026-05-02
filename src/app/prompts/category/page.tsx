@@ -25,7 +25,11 @@ export const metadata: Metadata = {
         description: 'Browse category-wise prompt collections for ChatGPT, Gemini, Claude, and Grok.',
     },
     alternates: {
-        canonical: 'https://ultimateaitools.online/prompts/category/',
+        canonical: 'https://ultimateaitools.online/prompts/',
+    },
+    robots: {
+        index: false,
+        follow: true,
     },
 };
 

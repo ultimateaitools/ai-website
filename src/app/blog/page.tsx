@@ -117,7 +117,7 @@ export default function BlogDirectoryPage() {
                         <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Browse AI tools directory &rarr;
                         </Link>
-                        <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/prompts/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Open prompt categories &rarr;
                         </Link>
                         <Link href="/models/" className="text-primary-400 hover:text-primary-300 font-semibold">

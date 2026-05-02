@@ -4623,6 +4623,306 @@
         "Note Taking"
       ],
       "logo": "/logos/mindgrasp-ai.svg"
+    },
+    {
+      "name": "OpenAI Operator",
+      "slug": "openai-operator",
+      "category": "agentic-ai",
+      "freeTier": "Paid",
+      "description": "OpenAI Operator is a browser-capable AI agent that can execute real multi-step tasks like booking, form filling, and workflow operations with human-in-the-loop safety controls.",
+      "websiteURL": "https://openai.com",
+      "tags": [
+        "AI Agent",
+        "Agentic AI",
+        "Automation",
+        "Productivity",
+        "Business",
+        "Trending 2026",
+        "USA"
+      ],
+      "logo": "/logos/chatgpt.svg",
+      "id": "259"
+    },
+    {
+      "name": "Grok 3",
+      "slug": "grok-3",
+      "category": "models-comparison",
+      "freeTier": "Freemium",
+      "description": "Grok 3 by xAI is a high-performance reasoning model optimized for real-time web context, coding support, and long-form analysis with stronger factual grounding than prior Grok releases.",
+      "websiteURL": "https://x.ai",
+      "tags": [
+        "LLM",
+        "Reasoning",
+        "AI Model",
+        "Research",
+        "Developers",
+        "Trending 2026",
+        "USA"
+      ],
+      "logo": "/logos/chatgpt.svg",
+      "id": "260"
+    },
+    {
+      "name": "Google Veo 2",
+      "slug": "google-veo-2",
+      "category": "video-generators",
+      "freeTier": "Paid",
+      "description": "Google Veo 2 is a cinematic text-to-video model designed for high-fidelity scene coherence, realistic motion physics, and advanced controllability for ad creators and filmmakers.",
+      "websiteURL": "https://deepmind.google",
+      "tags": [
+        "Video Generation",
+        "Text to Video",
+        "Creator Economy",
+        "Marketing",
+        "Trending 2026",
+        "USA"
+      ],
+      "logo": "/logos/chatgpt.svg",
+      "id": "261"
+    },
+    {
+      "name": "Perplexity Comet",
+      "slug": "perplexity-comet",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Perplexity Comet is an AI-first browser assistant focused on source-backed research, tab-aware summaries, and faster decision workflows for professionals who live in the browser.",
+      "websiteURL": "https://www.perplexity.ai",
+      "tags": [
+        "AI Browser",
+        "Research",
+        "Productivity",
+        "Knowledge Work",
+        "Students",
+        "Trending 2026",
+        "USA"
+      ],
+      "logo": "/logos/perplexity.svg",
+      "id": "262"
+    },
+    {
+      "name": "OpenAI o3",
+      "slug": "openai-o3",
+      "category": "models-comparison",
+      "freeTier": "Paid",
+      "description": "OpenAI o3 is a frontier reasoning model built for complex chain-of-thought tasks including high-difficulty coding, quantitative analysis, and enterprise-grade decision support.",
+      "websiteURL": "https://openai.com",
+      "tags": [
+        "Reasoning Model",
+        "AI Model",
+        "Coding",
+        "Analytics",
+        "Enterprise",
+        "Trending 2026",
+        "USA"
+      ],
+      "logo": "/logos/chatgpt.svg",
+      "id": "263"
+    },
+    {
+      "name": "OpenAI o4-mini",
+      "slug": "openai-o4-mini",
+      "category": "models-comparison",
+      "freeTier": "Freemium",
+      "description": "OpenAI o4-mini delivers strong reasoning and coding performance at lower latency and cost, making it ideal for high-volume automation, chat support, and API-first products.",
+      "websiteURL": "https://openai.com",
+      "tags": [
+        "Reasoning Model",
+        "AI API",
+        "Automation",
+        "Developers",
+        "Cost Efficient",
+        "Trending 2026",
+        "USA"
+      ],
+      "logo": "/logos/chatgpt.svg",
+      "id": "264"
+    },
+    {
+      "name": "DeepSeek V3",
+      "slug": "deepseek-v3",
+      "category": "models-comparison",
+      "freeTier": "Freemium",
+      "description": "DeepSeek V3 is a high-capability open model known for strong coding output, multilingual reasoning, and significantly lower inference costs for teams scaling AI workloads.",
+      "websiteURL": "https://www.deepseek.com",
+      "tags": [
+        "Open Model",
+        "Coding",
+        "AI API",
+        "Developers",
+        "Cost Optimization",
+        "Trending 2026",
+        "USA"
+      ],
+      "logo": "/logos/chatgpt.svg",
+      "id": "265"
+    },
+    {
+      "name": "Kling 2.0",
+      "slug": "kling-2",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "Kling 2.0 is a next-generation AI video model delivering better motion consistency, prompt adherence, and short-form creative output for social media and brand storytelling.",
+      "websiteURL": "https://klingai.com",
+      "tags": [
+        "Video AI",
+        "Short Form Video",
+        "Creators",
+        "Social Media",
+        "Marketing",
+        "Trending 2026",
+        "USA"
+      ],
+      "logo": "/logos/chatgpt.svg",
+      "id": "266"
+    },
+    {
+      "name": "Runway Gen-4",
+      "slug": "runway-gen-4",
+      "category": "video-generators",
+      "freeTier": "Paid",
+      "description": "Runway Gen-4 is the latest production-grade video generation model built for ad creatives, cinematic consistency, and faster multi-shot storytelling pipelines.",
+      "websiteURL": "https://runwayml.com",
+      "tags": [
+        "AI Video",
+        "Runway",
+        "Creative Studio",
+        "Ad Production",
+        "Video Workflow",
+        "Launch 2026",
+        "US Market"
+      ],
+      "logo": "/logos/runway.svg",
+      "id": "267"
+    },
+    {
+      "name": "Google Gemini 2.5 Flash",
+      "slug": "gemini-2-5-flash",
+      "category": "models-comparison",
+      "freeTier": "Freemium",
+      "description": "Gemini 2.5 Flash is Google's high-speed reasoning model tuned for low-latency enterprise workflows, multimodal support, and cost-efficient API scale.",
+      "websiteURL": "https://ai.google.dev",
+      "tags": [
+        "Gemini",
+        "AI Model",
+        "Low Latency",
+        "API",
+        "Developers",
+        "Launch 2026",
+        "US Market"
+      ],
+      "logo": "/logos/gemini.svg",
+      "id": "268"
+    },
+    {
+      "name": "Claude 4 Sonnet",
+      "slug": "claude-4-sonnet",
+      "category": "models-comparison",
+      "freeTier": "Freemium",
+      "description": "Claude 4 Sonnet offers advanced long-context reasoning, stronger coding reliability, and enterprise-grade writing quality for high-trust professional tasks.",
+      "websiteURL": "https://www.anthropic.com",
+      "tags": [
+        "Claude",
+        "AI Model",
+        "Reasoning",
+        "Coding",
+        "Long Context",
+        "Launch 2026",
+        "US Market"
+      ],
+      "logo": "/logos/claude.svg",
+      "id": "269"
+    },
+    {
+      "name": "OpenAI Deep Research",
+      "slug": "openai-deep-research",
+      "category": "productivity",
+      "freeTier": "Paid",
+      "description": "OpenAI Deep Research is a citation-oriented autonomous research system that compiles multi-source analysis briefs for strategy, policy, and market intelligence teams.",
+      "websiteURL": "https://openai.com",
+      "tags": [
+        "Research AI",
+        "Autonomous Research",
+        "Knowledge Work",
+        "Analyst Tools",
+        "Launch 2026",
+        "US Market"
+      ],
+      "logo": "/logos/chatgpt.svg",
+      "id": "270"
+    },
+    {
+      "name": "Cursor Agents",
+      "slug": "cursor-agents",
+      "category": "developer-tools",
+      "freeTier": "Freemium",
+      "description": "Cursor Agents enables multi-step coding workflows with autonomous task execution, repository-aware context, and integrated review loops for faster software delivery.",
+      "websiteURL": "https://cursor.com",
+      "tags": [
+        "Coding Agent",
+        "Developer Tools",
+        "Code Automation",
+        "Product Engineering",
+        "Launch 2026",
+        "US Market"
+      ],
+      "logo": "/logos/cursor.svg",
+      "id": "271"
+    },
+    {
+      "name": "Notion Mail",
+      "slug": "notion-mail",
+      "category": "productivity",
+      "freeTier": "Freemium",
+      "description": "Notion Mail is an AI-prioritized inbox workflow layer that converts messages into actionable summaries, tasks, and follow-up systems for high-volume teams.",
+      "websiteURL": "https://www.notion.so",
+      "tags": [
+        "Email AI",
+        "Inbox Automation",
+        "Productivity",
+        "Founders",
+        "Operations",
+        "Launch 2026",
+        "US Market"
+      ],
+      "logo": "/logos/notion.svg",
+      "id": "272"
+    },
+    {
+      "name": "LTX Studio",
+      "slug": "ltx-studio",
+      "category": "video-generators",
+      "freeTier": "Freemium",
+      "description": "LTX Studio is an AI-native visual storytelling platform for storyboard-to-video generation, scene control, and creator-first cinematic production planning.",
+      "websiteURL": "https://ltx.studio",
+      "tags": [
+        "AI Video",
+        "Storyboarding",
+        "Creator Tools",
+        "Cinematic AI",
+        "Launch 2026",
+        "US Market"
+      ],
+      "logo": "/logos/chatgpt.svg",
+      "id": "273"
+    },
+    {
+      "name": "Qwen 2.5 Max",
+      "slug": "qwen-2-5-max",
+      "category": "models-comparison",
+      "freeTier": "Freemium",
+      "description": "Qwen 2.5 Max is a high-capability multilingual model focused on reasoning, coding throughput, and enterprise deployment flexibility for global teams.",
+      "websiteURL": "https://qwenlm.github.io",
+      "tags": [
+        "Qwen",
+        "LLM",
+        "Coding",
+        "Multilingual AI",
+        "Enterprise",
+        "Launch 2026",
+        "US Market"
+      ],
+      "logo": "/logos/chatgpt.svg",
+      "id": "274"
     }
   ]
 }

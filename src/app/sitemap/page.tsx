@@ -36,6 +36,9 @@ export default function Sitemap() {
                         <li><Link href="/blog/" className="hover:text-primary-400">AI Blog</Link></li>
                         <li><Link href="/models/" className="hover:text-primary-400">AI Models Comparison</Link></li>
                         <li><Link href="/about/" className="hover:text-primary-400">About Us</Link></li>
+                        <li><Link href="/author/ultimateaitools-editorial-team/" className="hover:text-primary-400">Author Profile</Link></li>
+                        <li><Link href="/editorial-policy/" className="hover:text-primary-400">Editorial Policy</Link></li>
+                        <li><Link href="/review-methodology/" className="hover:text-primary-400">Review Methodology</Link></li>
                         <li><Link href="/contact-us/" className="hover:text-primary-400">Contact</Link></li>
                         <li><Link href="/privacy-policy/" className="hover:text-primary-400">Privacy Policy</Link></li>
                         <li><Link href="/terms-and-conditions/" className="hover:text-primary-400">Terms & Conditions</Link></li>

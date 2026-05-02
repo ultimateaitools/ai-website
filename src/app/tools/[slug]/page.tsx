@@ -3,8 +3,11 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getData } from '@/lib/data';
 import Link from 'next/link';
+import Image from 'next/image';
 import { toolContentData } from '@/lib/contentData';
 import AdSlot from '@/components/AdSlot';
+import { SITE_NAME, SITE_URL, formatSlugLabel, getCategoryIntent, makeToolSeoDescription, makeToolSeoTitle } from '@/lib/seo';
+import { getToolReviewExtra } from '@/lib/toolReviewData';
 
 type Props = {
     params: { slug: string };
@@ -26,19 +29,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     const catName = tool.category.replace(/-/g, ' ');
-    const isFree = tool.freeTier.toLowerCase() === 'free';
-    const tierLabel = isFree ? 'Free' : tool.freeTier;
-    const seoTitle = `${tool.name} - ${tierLabel} AI Tool for ${catName.replace(/\b\w/g, c => c.toUpperCase())} 2026`;
-    const seoDesc = `${tool.description.slice(0, 130)}`.trim() + (tool.description.length > 130 ? '...' : '');
+    const seoTitle = makeToolSeoTitle(tool.name, tool.freeTier, tool.category);
+    const seoDesc = makeToolSeoDescription(tool.name, tool.description, tool.freeTier, tool.category);
     const keywords = [
         `${tool.name.toLowerCase()}`,
         `${tool.name.toLowerCase()} review`,
-        `${tool.name.toLowerCase()} free`,
-        `best ai tools for ${catName}`,
+        `${tool.name.toLowerCase()} pricing`,
+        `${tool.name.toLowerCase()} alternatives`,
         `${catName} ai tool`,
-        `${tool.freeTier.toLowerCase()} ai ${catName} tool`,
-        'ai tools 2026',
-        'ultimate ai tools',
+        `ai tools for ${catName}`,
+        `${tool.freeTier.toLowerCase()} ${catName} ai tool`,
     ];
 
     return {
@@ -48,8 +48,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: seoTitle,
             description: seoDesc,
-            url: `https://ultimateaitools.online/tools/${tool.slug}/`,
-            siteName: 'UltimateAITools',
+            url: `${SITE_URL}/tools/${tool.slug}/`,
+            siteName: SITE_NAME,
             locale: 'en_US',
             type: 'article',
         },
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: seoDesc,
         },
         alternates: {
-            canonical: `https://ultimateaitools.online/tools/${tool.slug}/`,
+            canonical: `${SITE_URL}/tools/${tool.slug}/`,
         },
     };
 }
@@ -72,35 +72,120 @@ export default function ToolDetailPage({ params }: Props) {
         notFound();
     }
 
+    const categoryName = formatSlugLabel(tool.category);
+    const categoryIntent = getCategoryIntent(tool.category);
     const content = toolContentData[tool.slug] || {
-        whatIs: [`${tool.name} is a powerful AI tool for ${tool.category.replace('-', ' ')}.`, "It helps automate processes efficiently.", "Explore its features below."],
-        features: ["AI-powered automation at scale", "High-quality, rapid output generation", `Designed specifically for ${tool.category.replace('-', ' ')}`, "User-friendly, intuitive interface", "Regular model and feature updates"],
-        bestFor: ["Professionals and Enterprises", "Agencies and Freelancers", "Small Business Owners", "Students and Educators"],
-        useCases: ["Accelerating daily workflows and reducing manual data entry.", "Analyzing large datasets to extract actionable insights quickly.", "Scaling operations without the need for proportional increases in headcount.", "Improving communication efficiency and professional output quality."]
+        whatIs: [
+            `${tool.name} is a ${categoryName.toLowerCase()} AI tool built for ${categoryIntent.audience}.`,
+            `It is most useful when you need help with ${categoryIntent.job}.`,
+            `Before choosing it, compare ${categoryIntent.comparisonAngle} against the alternatives in this category.`
+        ],
+        features: [
+            `Workflow support for ${categoryName.toLowerCase()} tasks`,
+            "Fast first drafts, suggestions, or generated outputs",
+            "Beginner-friendly interface for testing the tool quickly",
+            "Useful free or trial access for evaluating real use cases",
+            "Works best when paired with clear prompts and human review"
+        ],
+        bestFor: [
+            categoryIntent.audience,
+            "Teams comparing AI tools before paying for a subscription",
+            "Users who want to test a focused AI workflow",
+            "Creators and operators looking for practical time savings"
+        ],
+        useCases: [
+            `Testing whether ${tool.name} improves a real ${categoryName.toLowerCase()} workflow.`,
+            "Comparing output quality against similar tools before committing to a paid plan.",
+            "Creating a faster first draft, prototype, summary, or workflow step for daily work.",
+            "Reducing repetitive manual tasks while keeping final review under human control."
+        ]
     };
 
     const relatedTools = tools.filter(t => t.category === tool.category && t.slug !== tool.slug).slice(0, 4);
     const isFreeTool = tool.freeTier.toLowerCase() === 'free';
+    const reviewExtra = getToolReviewExtra(tool.slug);
+    const pricingSummary = isFreeTool
+        ? 'Free access is the main reason to test this tool early, especially for light or occasional workflows.'
+        : `${tool.freeTier} access means you should compare the value against alternatives before making it part of a recurring workflow.`;
+    const toolReviewPoints = [
+        `Best workflow fit: ${categoryIntent.job}.`,
+        `Primary comparison criteria: ${categoryIntent.comparisonAngle}.`,
+        pricingSummary,
+    ];
+    const limitations = [
+        'AI output should be reviewed before publishing, submitting, or using in client work.',
+        'Free-plan limits, export rules, watermark policies, and feature access may change over time.',
+        `For serious ${categoryName.toLowerCase()} work, compare at least two alternatives before choosing one tool.`,
+    ];
+    const reviewCriteria = [
+        'Does the free or trial access let a real user test the core workflow?',
+        `Does the output quality hold up for practical ${categoryName.toLowerCase()} tasks?`,
+        'Is the interface simple enough for a new user to reach a useful result quickly?',
+        'Are pricing, export limits, privacy terms, and commercial-use rules clear enough to trust?',
+    ];
+    const whoShouldUse = [
+        `${categoryIntent.audience} who want to improve ${categoryName.toLowerCase()} work without starting from scratch.`,
+        'Users comparing AI tools before committing to a paid workflow.',
+        'Teams that want faster drafts, summaries, prototypes, or operational support with human review.',
+    ];
+    const whoShouldAvoid = [
+        'Users who need guaranteed factual accuracy without checking the output.',
+        'Teams handling sensitive data without reviewing the tool privacy policy first.',
+        'Anyone expecting AI to replace domain expertise, quality control, or final approval.',
+    ];
+    const displayedPros = reviewExtra?.pros || toolReviewPoints;
+    const displayedCons = reviewExtra?.cons || limitations;
 
     const schemaMarkup = {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": tool.name,
         "operatingSystem": "Web",
-        "applicationCategory": "BusinessApplication",
+        "applicationCategory": "SoftwareApplication",
+        "applicationSubCategory": categoryName,
         "isAccessibleForFree": isFreeTool,
         "description": tool.description,
-        "url": `https://ultimateaitools.online/tools/${tool.slug}/`
+        "url": `${SITE_URL}/tools/${tool.slug}/`,
+        "sameAs": tool.websiteURL.startsWith('http') ? tool.websiteURL : undefined,
+        "offers": {
+            "@type": "Offer",
+            "price": isFreeTool ? "0" : undefined,
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/OnlineOnly"
+        }
     };
 
     const breadcrumbSchema = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ultimateaitools.online/" },
-            { "@type": "ListItem", "position": 2, "name": "AI Tools", "item": "https://ultimateaitools.online/ai-tools/" },
-            { "@type": "ListItem", "position": 3, "name": tool.category.replace(/-/g, ' '), "item": `https://ultimateaitools.online/category/${tool.category}/` },
-            { "@type": "ListItem", "position": 4, "name": tool.name, "item": `https://ultimateaitools.online/tools/${tool.slug}/` },
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}/` },
+            { "@type": "ListItem", "position": 2, "name": "AI Tools", "item": `${SITE_URL}/ai-tools/` },
+            { "@type": "ListItem", "position": 3, "name": categoryName, "item": `${SITE_URL}/category/${tool.category}/` },
+            { "@type": "ListItem", "position": 4, "name": tool.name, "item": `${SITE_URL}/tools/${tool.slug}/` },
+        ]
+    };
+
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": `What is ${tool.name} best for?`,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": `${tool.name} is best for users who need help with ${categoryIntent.job}.`
+                }
+            },
+            {
+                "@type": "Question",
+                "name": `Is ${tool.name} free to use?`,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": `${tool.name} is listed with a ${tool.freeTier} pricing model. Check the official site for the latest usage limits, credits, and paid-plan details.`
+                }
+            }
         ]
     };
 
@@ -108,11 +193,16 @@ export default function ToolDetailPage({ params }: Props) {
         <article className="max-w-4xl mx-auto px-4 py-16">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <div className="bg-surface-card border border-surface-border rounded-3xl p-8 md:p-12 shadow-sm mb-12">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-8">
                     <div className="w-20 h-20 bg-primary-50 rounded-2xl flex items-center justify-center p-4 text-primary-600 flex-shrink-0">
-                        <span className="font-bold text-4xl">{tool.name.charAt(0)}</span>
+                        {tool.logo ? (
+                            <Image src={tool.logo} alt={`${tool.name} logo`} width={48} height={48} className="object-contain" priority />
+                        ) : (
+                            <span className="font-bold text-4xl">{tool.name.charAt(0)}</span>
+                        )}
                     </div>
                     <div>
                         <h1 className="text-4xl font-extrabold text-foreground mb-2 tracking-tight">{tool.name}</h1>
@@ -125,6 +215,15 @@ export default function ToolDetailPage({ params }: Props) {
                 <div className="prose prose-primary max-w-none">
                     <h2 className="text-2xl font-bold text-foreground border-b pb-2 mb-4">About {tool.name}</h2>
                     <p className="text-lg text-gray-300 leading-relaxed mb-8">{tool.description}</p>
+
+                    {reviewExtra && (
+                        <section className="mb-10 rounded-2xl border border-primary-900/60 bg-primary-950/20 p-6">
+                            <h2 className="text-2xl font-bold text-foreground mb-3">Expert Verdict</h2>
+                            <p className="text-gray-300 mb-4">{reviewExtra.verdict}</p>
+                            <p className="text-gray-400"><strong className="text-foreground">Best use:</strong> {reviewExtra.bestUse}</p>
+                            <p className="text-gray-400 mt-2"><strong className="text-foreground">Pricing note:</strong> {reviewExtra.pricingNote}</p>
+                        </section>
+                    )}
 
                     <div className="mb-10">
                         <h3 className="text-xl font-bold text-foreground mb-4">What is {tool.name}?</h3>
@@ -160,7 +259,7 @@ export default function ToolDetailPage({ params }: Props) {
                     <div className="mb-10">
                         <h3 className="text-xl font-bold text-foreground mb-4">Free Tier Information</h3>
                         <p className="text-gray-300 leading-relaxed mb-4">
-                            Accessing powerful tools doesn&apos;t always have to break the bank. {tool.name} currently offers a <strong>{tool.freeTier}</strong> pricing model. This allows users to test the core features, evaluate the output quality, and determine if it fits their workflow before committing to a paid subscription. Be sure to check their official pricing page for the most up-to-date limits and quota resets.
+                            {tool.name} is listed with a <strong>{tool.freeTier}</strong> pricing model. Use the free or trial access to test one real {categoryName.toLowerCase()} workflow, compare output quality, and check whether the tool fits your process before upgrading. Pricing and usage limits can change, so verify the latest quota, watermark, export, and team restrictions on the official site.
                         </p>
                     </div>
 
@@ -171,6 +270,78 @@ export default function ToolDetailPage({ params }: Props) {
                                 <li key={i}>{useCase}</li>
                             ))}
                         </ul>
+                    </div>
+
+                    <div className="mb-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h3 className="text-xl font-bold text-foreground mb-4">{tool.name} Pros</h3>
+                            <ul className="space-y-3 text-gray-300">
+                                {displayedPros.map((point) => (
+                                    <li key={point} className="flex gap-3">
+                                        <span className="text-primary-400 font-bold">+</span>
+                                        <span>{point}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h3 className="text-xl font-bold text-foreground mb-4">{tool.name} Cons</h3>
+                            <ul className="space-y-3 text-gray-300">
+                                {displayedCons.map((point) => (
+                                    <li key={point} className="flex gap-3">
+                                        <span className="text-gray-500 font-bold">-</span>
+                                        <span>{point}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    </div>
+
+                    {reviewExtra && (
+                        <section className="mb-10 bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h3 className="text-xl font-bold text-foreground mb-4">Best Alternatives to {tool.name}</h3>
+                            <div className="flex flex-wrap gap-3">
+                                {reviewExtra.alternatives.map((alternative) => (
+                                    <span key={alternative} className="rounded-full border border-surface-border bg-surface-card px-4 py-2 text-sm font-semibold text-gray-300">
+                                        {alternative}
+                                    </span>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
+                    <section className="mb-10 bg-surface-hover border border-surface-border rounded-2xl p-6">
+                        <h3 className="text-xl font-bold text-foreground mb-4">Our Review Method for {tool.name}</h3>
+                        <p className="text-gray-300 mb-5">
+                            We evaluate {tool.name} as a practical {categoryName.toLowerCase()} tool, not just a feature list. The goal is to understand whether it can help a real user finish useful work faster.
+                        </p>
+                        <ul className="list-disc pl-5 text-gray-300 space-y-2">
+                            {reviewCriteria.map((item) => (
+                                <li key={item}>{item}</li>
+                            ))}
+                        </ul>
+                        <p className="text-sm text-gray-500 mt-5">
+                            Pricing and free-plan details change often, so we recommend checking the official website before making a final decision.
+                        </p>
+                    </section>
+
+                    <div className="mb-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h3 className="text-xl font-bold text-foreground mb-4">Who Should Use {tool.name}</h3>
+                            <ul className="list-disc pl-5 text-gray-300 space-y-2">
+                                {whoShouldUse.map((item) => (
+                                    <li key={item}>{item}</li>
+                                ))}
+                            </ul>
+                        </section>
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h3 className="text-xl font-bold text-foreground mb-4">Who Should Avoid It</h3>
+                            <ul className="list-disc pl-5 text-gray-300 space-y-2">
+                                {whoShouldAvoid.map((item) => (
+                                    <li key={item}>{item}</li>
+                                ))}
+                            </ul>
+                        </section>
                     </div>
 
                     <AdSlot adSlot="1000000006" format="horizontal" />
@@ -205,6 +376,20 @@ export default function ToolDetailPage({ params }: Props) {
                             </Link>
                         </div>
                     </div>
+
+                    <section className="mb-10 p-6 bg-surface-hover border border-surface-border rounded-2xl">
+                        <h3 className="text-lg font-bold text-foreground mb-4">{tool.name} FAQ</h3>
+                        <div className="space-y-5">
+                            <div>
+                                <h4 className="font-bold text-foreground mb-2">What is {tool.name} best for?</h4>
+                                <p className="text-gray-300">{tool.name} is best for users who need help with {categoryIntent.job}.</p>
+                            </div>
+                            <div>
+                                <h4 className="font-bold text-foreground mb-2">Is {tool.name} free to use?</h4>
+                                <p className="text-gray-300">{tool.name} is listed with a {tool.freeTier} pricing model. Always check the official site for current limits and pricing.</p>
+                            </div>
+                        </div>
+                    </section>
 
                     <div className="bg-surface-hover p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 border border-surface-border">
                         <div>

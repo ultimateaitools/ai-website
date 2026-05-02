@@ -31,6 +31,9 @@ export default function Footer() {
                             <li><Link href="/terms-and-conditions/" className="text-gray-400 hover:text-primary-400 transition-colors">Terms and Conditions</Link></li>
                             <li><Link href="/disclaimer/" className="text-gray-400 hover:text-primary-400 transition-colors">Disclaimer</Link></li>
                             <li><Link href="/about/" className="text-gray-400 hover:text-primary-400 transition-colors">About Us</Link></li>
+                            <li><Link href="/author/ultimateaitools-editorial-team/" className="text-gray-400 hover:text-primary-400 transition-colors">Author Profile</Link></li>
+                            <li><Link href="/editorial-policy/" className="text-gray-400 hover:text-primary-400 transition-colors">Editorial Policy</Link></li>
+                            <li><Link href="/review-methodology/" className="text-gray-400 hover:text-primary-400 transition-colors">Review Methodology</Link></li>
                             <li><Link href="/contact-us/" className="text-gray-400 hover:text-primary-400 transition-colors">Contact Us</Link></li>
                             <li><Link href="/sitemap/" className="text-gray-400 hover:text-primary-400 transition-colors">Sitemap</Link></li>
                         </ul>

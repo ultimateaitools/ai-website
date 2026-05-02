@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { getModelsData } from '@/lib/data';
 import Link from 'next/link';
 import AdSlot from '@/components/AdSlot';
+import { SITE_NAME, SITE_URL, truncateAtWord } from '@/lib/seo';
 
 type Props = {
     params: { slug: string };
@@ -24,17 +25,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: 'Model Not Found' };
     }
 
-    const seoTitle = `${model.name} Review 2026 - Features, Pricing & Use Cases`;
-    const seoDesc = `Compare ${model.name} by ${model.developer}: capabilities, pricing, free tier, strengths and weaknesses vs other AI models in 2026.`;
+    const seoTitle = truncateAtWord(`${model.name} Review: Features, Pricing and Use Cases`, 60);
+    const seoDesc = truncateAtWord(`Compare ${model.name} by ${model.developer}: capabilities, pricing, free tier, strengths, weaknesses, and best use cases.`, 155);
     const keywords = [
         `${model.name.toLowerCase()}`,
         `${model.name.toLowerCase()} review`,
         `${model.name.toLowerCase()} vs gpt`,
         `${model.name.toLowerCase()} pricing`,
         `${model.name.toLowerCase()} free`,
-        `best ai model 2026`,
+        `best ai model`,
         `${model.developer.toLowerCase()} ai model`,
-        'ai model comparison 2026',
+        'ai model comparison',
         'top ai models',
         'ai language model review',
     ];
@@ -46,8 +47,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: seoTitle,
             description: seoDesc,
-            url: `https://ultimateaitools.online/models/${model.slug}/`,
-            siteName: 'UltimateAITools',
+            url: `${SITE_URL}/models/${model.slug}/`,
+            siteName: SITE_NAME,
             locale: 'en_US',
             type: 'article',
         },
@@ -57,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: seoDesc,
         },
         alternates: {
-            canonical: `https://ultimateaitools.online/models/${model.slug}/`,
+            canonical: `${SITE_URL}/models/${model.slug}/`,
         },
     };
 }
@@ -80,11 +81,16 @@ export default function ModelDetailPage({ params }: Props) {
         operatingSystem: 'All',
         isAccessibleForFree: isFreeModel,
         description: model.overview,
-        softwareVersion: "2026 Edition",
+        url: `${SITE_URL}/models/${model.slug}/`,
         author: {
             '@type': 'Organization',
             name: model.developer
-        }
+        },
+        offers: {
+            '@type': 'Offer',
+            price: isFreeModel ? '0' : undefined,
+            priceCurrency: 'USD',
+        },
     };
 
     const compareModels = models.filter(m => m.slug !== model.slug).slice(0, 4);
@@ -181,7 +187,7 @@ export default function ModelDetailPage({ params }: Props) {
                     <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                         Browse AI tools directory &rarr;
                     </Link>
-                    <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
+                    <Link href="/prompts/" className="text-primary-400 hover:text-primary-300 font-semibold">
                         Explore prompt categories &rarr;
                     </Link>
                     <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold">

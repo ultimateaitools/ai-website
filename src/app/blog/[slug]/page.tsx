@@ -1,105 +1,47 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getBlogsData } from '@/lib/data';
+import { getBlogsData, getData } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import AdSlot from '@/components/AdSlot';
 
-// Tool name → slug map (longest names first to avoid partial matches)
-const TOOL_LINK_MAP: [string, string][] = [
-    ['GitHub Copilot Workspace', 'github-copilot-workspace'],
-    ['ElevenLabs Text-to-Speech', 'elevenlabs-text-to-speech'],
-    ['HubSpot Content Assistant', 'hubspot-content-assistant'],
-    ['Freepik AI Image Generator', 'freepik-ai-image-generator'],
-    ['Semrush ContentShake AI', 'semrush-contentshake-ai'],
-    ['Stable Video Diffusion', 'stable-video-diffusion'],
-    ['Google NotebookLM', 'notebook-lm'],
-    ['NotebookLM', 'notebook-lm'],
-    ['Amazon CodeWhisperer', 'amazon-codewhisperer'],
-    ['Microsoft Copilot', 'microsoft-copilot'],
-    ['Microsoft Designer', 'microsoft-designer'],
-    ['Stable Diffusion', 'stable-diffusion-3'],
-    ['Adobe Firefly', 'adobe-firefly'],
-    ['Adobe Express', 'adobe-express-ai'],
-    ['GitHub Copilot', 'github-copilot'],
-    ['Google AI Studio', 'google-ai-studio'],
-    ['Google Gemini', 'google-gemini'],
-    ['Intercom Fin', 'intercom-fin-ai'],
-    ['Hugging Face', 'hugging-face'],
-    ['Midjourney', 'midjourney-v6'],
-    ['Character AI', 'character-ai'],
-    ['Replit Agent', 'replit-agent'],
-    ['Replit', 'replit-ghostwriter'],
-    ['Claude 3 Opus', 'claude-3-opus'],
-    ['Perplexity', 'perplexity'],
-    ['ElevenLabs', 'elevenlabs-text-to-speech'],
-    ['Playground AI', 'playground-ai'],
-    ['Copy.ai', 'copy-ai'],
-    ['Murf AI', 'murf-ai'],
-    ['Suno AI', 'suno-ai'],
-    ['Krea AI', 'krea-ai'],
-    ['Meta AI', 'meta-ai'],
-    ['Jan AI', 'jan-ai'],
-    ['Miro AI', 'miro-ai'],
-    ['ChatGPT', 'chatgpt'],
-    ['Claude', 'claude'],
-    ['Gemini', 'gemini'],
-    ['Jasper', 'jasper'],
-    ['Runway', 'runway'],
-    ['Cursor', 'cursor'],
-    ['CapCut', 'capcut'],
-    ['Pictory', 'pictory'],
-    ['HeyGen', 'heygen'],
-    ['Descript', 'descript'],
-    ['Synthesia', 'synthesia'],
-    ['AutoGPT', 'autogpt'],
-    ['Taplio', 'taplio'],
-    ['Monica', 'monica'],
-    ['ChatPDF', 'chatpdf'],
-    ['Bardeen', 'bardeen'],
-    ['Tabnine', 'tabnine'],
-    ['Codeium', 'codeium'],
-    ['Lovable', 'lovable'],
-    ['Mistral', 'mistral'],
-    ['Gamma', 'gamma'],
-    ['Sora', 'sora'],
-    ['Pika', 'pika'],
-    ['Rytr', 'rytr'],
-    ['DeepL', 'deepl'],
-    ['Grammarly', 'grammarly'],
-    ['Canva', 'canva'],
-    ['Notion', 'notion'],
-    ['Zapier', 'zapier'],
-    ['Otter', 'otter-ai'],
-    ['Surfer SEO', 'surfer-seo'],
-    ['Fireflies', 'fireflies-ai'],
-    ['Loom', 'loom-ai'],
-    ['n8n', 'n8n'],
-    ['Phind', 'phind'],
-    ['Groq', 'groq'],
-    ['Poe', 'poe'],
-    ['Cohere', 'cohere'],
-    ['Elicit', 'elicit'],
-    ['Frase', 'frase'],
-    ['Anyword', 'anyword'],
-    ['NeuronWriter', 'neuronwriter'],
-    ['Synthesia', 'synthesia'],
-    ['Devin', 'devin'],
-    ['VEED', 'veed-ai'],
-    ['Vizard', 'vizard'],
-];
+function escapeRegExp(value: string): string {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function buildToolLinkMap(tools: { name: string; slug: string }[]): [string, string][] {
+    const entries: [string, string][] = [];
+    const seen = new Set<string>();
+
+    for (const tool of tools) {
+        const primary = tool.name.trim();
+        if (primary && !seen.has(`${primary}|${tool.slug}`)) {
+            entries.push([primary, tool.slug]);
+            seen.add(`${primary}|${tool.slug}`);
+        }
+
+        // Add alias without parenthetical part for better natural matching.
+        const alias = primary.replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s{2,}/g, ' ').trim();
+        if (alias && alias.length >= 4 && alias !== primary && !seen.has(`${alias}|${tool.slug}`)) {
+            entries.push([alias, tool.slug]);
+            seen.add(`${alias}|${tool.slug}`);
+        }
+    }
+
+    return entries.sort((a, b) => b[0].length - a[0].length);
+}
 
 // Renders a text block with tool names auto-linked (first occurrence only per block)
-function renderWithToolLinks(text: string): string {
+function renderWithToolLinks(text: string, toolLinkMap: [string, string][]): string {
     if (!text) return '';
     let result = text;
     const linked = new Set<string>();
 
-    for (const [name, slug] of TOOL_LINK_MAP) {
+    for (const [name, slug] of toolLinkMap) {
         if (linked.has(slug)) continue;
         // Word-boundary safe: match tool name not inside an existing <a> tag
-        const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const escaped = escapeRegExp(name);
         const regex = new RegExp(`(?<!<[^>]*)\\b(${escaped})\\b`, 'g');
         if (regex.test(result)) {
             result = result.replace(
@@ -167,6 +109,50 @@ function makeSeoDesc(desc: string): string {
     return cut > 50 ? desc.slice(0, cut) + '...' : desc.slice(0, MAX - 3) + '...';
 }
 
+function normalizeKeywords(candidates: string[]): string[] {
+    const seen = new Set<string>();
+    const cleaned: string[] = [];
+
+    for (const raw of candidates) {
+        const kw = raw.trim().toLowerCase();
+        if (!kw || kw.length < 4) continue;
+        if (seen.has(kw)) continue;
+        seen.add(kw);
+        cleaned.push(kw);
+    }
+
+    return cleaned.slice(0, 14);
+}
+
+function getBlogToolCategory(category: string): string {
+    const map: Record<string, string> = {
+        coding: 'coding',
+        'developer-tools': 'developer-tools',
+        'writing-tools': 'writing-tools',
+        'image-generators': 'image-generators',
+        'video-generators': 'video-generators',
+        'audio-tools': 'audio-tools',
+        'automation-tools': 'automation-tools',
+        productivity: 'productivity',
+        'marketing-tools': 'marketing-tools',
+        'business-tools': 'business-tools',
+        'social-media-tools': 'social-media-tools',
+        'chrome-extensions': 'chrome-extensions',
+        'resume-tools': 'resume-tools',
+        'study-tools': 'study-tools',
+        'agentic-ai': 'agentic-ai',
+        'content-creation': 'content-creation',
+        reviews: 'productivity',
+        alternatives: 'productivity',
+        tutorials: 'productivity',
+        'beginner-guides': 'productivity',
+        news: 'productivity',
+        'models-comparison': 'productivity',
+    };
+
+    return map[category] || 'productivity';
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { blogs } = getBlogsData();
     const blog = blogs.find((p) => p.slug === params.slug);
@@ -177,14 +163,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     const seoTitle = makeSeoTitle(blog.title);
     const seoDesc = makeSeoDesc(blog.shortDescription);
-    const categoryKws = blogCategoryKeywords[blog.category] || ['ai tools', 'ai guide', 'ai tutorial 2026'];
-    const topicKws = blog.topic ? [blog.topic.toLowerCase(), `${blog.topic.toLowerCase()} 2026`] : [];
-    const keywords = [
+    const categoryKws = blogCategoryKeywords[blog.category] || ['ai workflow strategy 2026', 'ai implementation playbook 2026'];
+    const topicKws = blog.topic ? [
+        blog.topic.toLowerCase(),
+        `${blog.topic.toLowerCase()} 2026`,
+        `${blog.topic.toLowerCase()} use cases`,
+    ] : [];
+    const customKeywords = (blog as { seoKeywords?: string[] }).seoKeywords || [];
+    const titlePhrase = blog.title
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, ' ')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+
+    const keywords = normalizeKeywords([
+        ...customKeywords,
         ...topicKws,
         ...categoryKws,
-        `${blog.category.replace(/-/g, ' ')} guide`,
-        'ultimateaitools',
-    ].slice(0, 10);
+        `${titlePhrase} guide`,
+        `${blog.category.replace(/-/g, ' ')} strategy 2026`,
+        `${blog.category.replace(/-/g, ' ')} tools for professionals`,
+        'ultimateaitools editorial analysis',
+    ]);
 
     return {
         title: seoTitle,
@@ -216,6 +216,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default function BlogDetailPage({ params }: Props) {
     const { blogs } = getBlogsData();
+    const { tools } = getData();
     const blog = blogs.find((p) => p.slug === params.slug);
 
     if (!blog) {
@@ -223,6 +224,11 @@ export default function BlogDetailPage({ params }: Props) {
     }
 
     const relatedBlogs = blogs.filter(p => p.category === blog.category && p.slug !== blog.slug).slice(0, 4);
+    const recommendedCategory = getBlogToolCategory(blog.category);
+    const recommendedTools = tools
+        .filter((tool) => tool.category === recommendedCategory)
+        .slice(0, 4);
+    const toolLinkMap = buildToolLinkMap(tools.map((tool) => ({ name: tool.name, slug: tool.slug })));
     const articleSchema = {
         '@context': 'https://schema.org',
         '@type': 'Article',
@@ -233,6 +239,7 @@ export default function BlogDetailPage({ params }: Props) {
         author: {
             '@type': 'Person',
             name: blog.author,
+            url: 'https://ultimateaitools.online/author/ultimateaitools-editorial-team/',
         },
         mainEntityOfPage: `https://ultimateaitools.online/blog/${blog.slug}`,
         publisher: {
@@ -283,12 +290,17 @@ export default function BlogDetailPage({ params }: Props) {
                             <div className="w-8 h-8 bg-primary-900 rounded-full flex items-center justify-center text-primary-400 font-bold">
                                 {blog.author.charAt(0)}
                             </div>
-                            <span>{blog.author}</span>
+                            <Link href="/author/ultimateaitools-editorial-team/" className="hover:text-primary-400 transition-colors">{blog.author}</Link>
                         </div>
                         <div className="h-4 w-px bg-gray-300"></div>
                         <time>{new Date(blog.publishDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
                         <div className="h-4 w-px bg-gray-300"></div>
                         <span>{blog.readingTime}</span>
+                    </div>
+                    <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-surface-border bg-surface-card px-4 py-2 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                        <span>Human reviewed</span>
+                        <span className="text-gray-600">|</span>
+                        <span>Updated when tools change</span>
                     </div>
                 </div>
             </header>
@@ -336,33 +348,53 @@ export default function BlogDetailPage({ params }: Props) {
 
                     <section id="intro" className="mb-12">
                         <p className="text-xl leading-relaxed text-gray-400 font-medium"
-                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.intro) }} />
+                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.intro, toolLinkMap) }} />
                     </section>
 
                     <section id="what-you-will-learn" className="mb-12">
                         <h2 className="text-3xl font-bold text-foreground mb-6 font-sans">What You Will Learn</h2>
                         <p className="text-gray-300"
-                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.whatYouWillLearn) }} />
+                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.whatYouWillLearn, toolLinkMap) }} />
                     </section>
 
                     <section id="best-tools" className="mb-12 p-8 bg-surface-hover rounded-3xl border border-surface-border">
                         <h2 className="text-3xl font-bold text-foreground mb-6 font-sans mt-0">Best Tools for This Task</h2>
                         <p className="text-gray-300"
-                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.bestTools) }} />
+                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.bestTools, toolLinkMap) }} />
                     </section>
+
+                    {recommendedTools.length > 0 && (
+                        <section className="mb-12 p-8 bg-surface-hover rounded-3xl border border-surface-border">
+                            <h2 className="text-3xl font-bold text-foreground mb-6 font-sans mt-0">Recommended Tools to Try</h2>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+                                {recommendedTools.map((tool) => (
+                                    <Link key={tool.slug} href={`/tools/${tool.slug}/`} className="rounded-xl border border-surface-border bg-surface-card p-5 hover:border-primary-500/50 transition-colors">
+                                        <div className="flex items-center justify-between gap-3 mb-2">
+                                            <h3 className="font-bold text-foreground">{tool.name}</h3>
+                                            <span className="text-[11px] uppercase tracking-wider text-primary-300 bg-primary-900/40 px-2 py-1 rounded-full">{tool.freeTier}</span>
+                                        </div>
+                                        <p className="text-sm text-gray-400 line-clamp-3">{tool.description}</p>
+                                    </Link>
+                                ))}
+                            </div>
+                            <Link href={`/category/${recommendedCategory}/`} className="inline-block mt-5 text-primary-400 hover:text-primary-300 font-semibold not-prose">
+                                Compare more {recommendedCategory.replace(/-/g, ' ')} tools &rarr;
+                            </Link>
+                        </section>
+                    )}
 
                     <AdSlot adSlot="1000000003" format="horizontal" />
 
                     <section id="use-cases" className="mb-12">
                         <h2 className="text-3xl font-bold text-foreground mb-6 font-sans">Real World Use Cases</h2>
                         <p className="text-gray-300"
-                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.useCases) }} />
+                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.useCases, toolLinkMap) }} />
                     </section>
 
                     <section id="conclusion" className="mb-12 border-t border-surface-border pt-10">
                         <h2 className="text-2xl font-bold text-foreground mb-6 font-sans">Conclusion</h2>
                         <p className="text-gray-300"
-                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.conclusion) }} />
+                            dangerouslySetInnerHTML={{ __html: renderWithToolLinks(blog.content.conclusion, toolLinkMap) }} />
                     </section>
 
                     {faqs.length > 0 && (
@@ -385,6 +417,19 @@ export default function BlogDetailPage({ params }: Props) {
                     )}
 
                     <section className="mb-12 p-6 bg-surface-hover border border-surface-border rounded-2xl">
+                        <h2 className="text-2xl font-bold text-foreground mb-4 font-sans">Editorial Note</h2>
+                        <p className="text-gray-300 mb-4">
+                            UltimateAITools reviews AI tools and workflows for practical usefulness, free-plan value, clarity, and real-world fit. We avoid treating AI output as final until it has been checked for accuracy, context, and current tool limits.
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 not-prose mb-6">
+                            <Link href="/review-methodology/" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                Read our review methodology &rarr;
+                            </Link>
+                            <Link href="/editorial-policy/" className="text-primary-400 hover:text-primary-300 font-semibold">
+                                Read our editorial policy &rarr;
+                            </Link>
+                        </div>
+
                         <h2 className="text-2xl font-bold text-foreground mb-4 font-sans">Continue Learning</h2>
                         <p className="text-gray-300 mb-4">
                             Explore related resources to go deeper on this topic and discover practical tools.
@@ -396,7 +441,7 @@ export default function BlogDetailPage({ params }: Props) {
                             <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Browse AI Tools Directory &rarr;
                             </Link>
-                            <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/prompts/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 View Prompt Library &rarr;
                             </Link>
                             <Link href="/models/" className="text-primary-400 hover:text-primary-300 font-semibold">

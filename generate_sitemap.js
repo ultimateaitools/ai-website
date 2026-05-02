@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 
 const domain = 'https://ultimateaitools.online';
-const toolsPerPage = 24;
 const todayLastmod = new Date().toISOString().split('T')[0];
 
 // Static pages with their own priority/changefreq tiers
@@ -11,10 +10,13 @@ const staticPages = [
     { path: '/ai-tools',                 priority: '0.9', changefreq: 'daily'   },
     { path: '/blog',                     priority: '0.9', changefreq: 'daily'   },
     { path: '/models',                   priority: '0.9', changefreq: 'weekly'  },
-    { path: '/prompts/category',         priority: '0.9', changefreq: 'daily'   },
+    { path: '/prompts',                  priority: '0.9', changefreq: 'daily'   },
     { path: '/submit-tool',              priority: '0.8', changefreq: 'monthly' },
     { path: '/sitemap',                  priority: '0.7', changefreq: 'weekly'  },
     { path: '/about',                    priority: '0.6', changefreq: 'monthly' },
+    { path: '/author/ultimateaitools-editorial-team', priority: '0.5', changefreq: 'monthly' },
+    { path: '/editorial-policy',         priority: '0.5', changefreq: 'monthly' },
+    { path: '/review-methodology',       priority: '0.5', changefreq: 'monthly' },
     { path: '/contact-us',              priority: '0.5', changefreq: 'monthly' },
     { path: '/privacy-policy',          priority: '0.4', changefreq: 'monthly' },
     { path: '/terms-and-conditions',    priority: '0.4', changefreq: 'monthly' },
@@ -81,12 +83,6 @@ function generateSitemap() {
     const toolsData = readJsonFile('tools.json');
     const toolsLastmod = getFileLastmod('tools.json');
     if (toolsData && toolsData.tools) {
-        // Paginated /ai-tools/N pages
-        const totalPages = Math.ceil(toolsData.tools.length / toolsPerPage);
-        for (let i = 2; i <= totalPages; i++) {
-            addUrl(`/ai-tools/${i}`, toolsLastmod, '0.7', 'weekly');
-        }
-
         // Individual tool detail pages
         toolsData.tools.forEach(tool =>
             addUrl(`/tools/${tool.slug}`, toolsLastmod, '0.7', 'weekly')

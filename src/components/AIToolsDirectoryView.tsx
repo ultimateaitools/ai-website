@@ -207,7 +207,7 @@ export default function AIToolsDirectoryView({ allToolsSorted, currentPage, tota
           Use these pages to compare tools, find prompts, and move deeper into specific workflows.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
+          <Link href="/prompts/" className="text-primary-400 hover:text-primary-300 font-semibold">
             Browse prompt categories &rarr;
           </Link>
           <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold">

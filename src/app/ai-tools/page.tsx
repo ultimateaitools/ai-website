@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { getData } from '@/lib/data';
 import { AI_TOOLS_PER_PAGE } from '@/lib/constants';
 import AIToolsDirectoryView from '@/components/AIToolsDirectoryView';
+import { SITE_URL } from '@/lib/seo';
 
 export const metadata: Metadata = {
     title: 'AI Tools Directory A-Z (Free + Paid) | UltimateAITools',
@@ -42,14 +43,34 @@ export default function AIToolsDirectory() {
     const pricingOptions = Array.from(new Set(tools.map((tool) => tool.freeTier))).sort((a, b) => a.localeCompare(b));
 
     const totalPages = Math.max(1, Math.ceil(allToolsSorted.length / AI_TOOLS_PER_PAGE));
+    const directorySchema = {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'AI Tools Directory',
+        description: 'A searchable directory of AI tools across writing, coding, design, automation, productivity, study, marketing, and more.',
+        url: `${SITE_URL}/ai-tools/`,
+        mainEntity: {
+            '@type': 'ItemList',
+            numberOfItems: tools.length,
+            itemListElement: allToolsSorted.slice(0, 50).map((tool, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                url: `${SITE_URL}/tools/${tool.slug}/`,
+                name: tool.name,
+            })),
+        },
+    };
 
     return (
-        <AIToolsDirectoryView
-            allToolsSorted={allToolsSorted}
-            currentPage={1}
-            totalPages={totalPages}
-            categories={categories}
-            pricingOptions={pricingOptions}
-        />
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(directorySchema) }} />
+            <AIToolsDirectoryView
+                allToolsSorted={allToolsSorted}
+                currentPage={1}
+                totalPages={totalPages}
+                categories={categories}
+                pricingOptions={pricingOptions}
+            />
+        </>
     );
 }

@@ -5,17 +5,17 @@ import { getModelsData } from '@/lib/data';
 import AdSlot from '@/components/AdSlot';
 
 export const metadata: Metadata = {
-    title: 'Best AI Models Comparison 2026 - GPT vs Claude vs Gemini',
-    description: 'Compare the best AI models like GPT-5, Claude Opus 4.6, Gemini 3, Grok 4 and more. Features, pricing, use cases and performance comparison.',
+    title: 'AI Models Comparison - GPT vs Claude vs Gemini',
+    description: 'Compare leading AI models across features, pricing, context windows, coding ability, multimodal support, use cases and free-tier access.',
     openGraph: {
-        title: 'Best AI Models Comparison 2026 - GPT vs Claude vs Gemini',
+        title: 'AI Models Comparison - GPT vs Claude vs Gemini',
         description: 'Compare top AI models with features, pricing, use cases, and performance benchmarks.',
         url: 'https://ultimateaitools.online/models/',
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Best AI Models Comparison 2026',
+        title: 'AI Models Comparison',
         description: 'Compare GPT, Claude, Gemini, Grok and more in one place.',
     },
     alternates: {
@@ -106,7 +106,7 @@ export default function ModelsComparisonPage() {
                         <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Browse AI tools directory &rarr;
                         </Link>
-                        <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
+                        <Link href="/prompts/" className="text-primary-400 hover:text-primary-300 font-semibold">
                             Open prompt categories &rarr;
                         </Link>
                         <Link href="/blog/" className="text-primary-400 hover:text-primary-300 font-semibold">

@@ -44,6 +44,7 @@ export interface Blog {
     imageUrl?: string;
     imageAlt?: string;
     imagePrompt?: string;
+    seoKeywords?: string[];
     content: {
         intro: string;
         whatYouWillLearn: string;

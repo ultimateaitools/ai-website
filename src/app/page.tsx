@@ -1,13 +1,13 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { getSegments, getBlogsData, getData, Blog } from '@/lib/data';
+import { getSegments, getBlogsData, getData, getPromptsData, getModelsData, Blog } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import AdSlot from '@/components/AdSlot';
 
 export const metadata: Metadata = {
-  title: 'Ultimate AI Tools Directory 2026 - Free + Paid AI Tools, Prompts and Guides',
-  description: 'Discover the best AI tools for writing, coding, design, productivity, automation and research. Browse free and paid AI tools, prompt library, model comparisons and practical guides.',
+  title: 'Ultimate AI Tools Directory - Free Tools, Prompts and Guides',
+  description: 'Find free and paid AI tools, copy-paste prompt templates, model comparisons, and practical AI guides for writing, coding, design, automation, study, and marketing.',
   keywords: [
     'ai tools directory',
     'best ai tools 2026',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     'ai productivity tools',
   ],
   openGraph: {
-    title: 'Ultimate AI Tools Directory 2026 - Free + Paid AI Tools',
-    description: 'Browse top AI tools, prompt templates, model comparisons and actionable AI guides in one place.',
+    title: 'Ultimate AI Tools Directory - Tools, Prompts and Guides',
+    description: 'Browse AI tools, prompt templates, model comparisons and actionable AI guides in one place.',
     url: 'https://ultimateaitools.online',
     siteName: 'UltimateAITools',
     type: 'website',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ultimate AI Tools Directory 2026',
+    title: 'Ultimate AI Tools Directory',
     description: 'Find the best AI tools, prompts, and AI guides for real workflows.',
   },
   alternates: {
@@ -39,6 +39,8 @@ export default function Home() {
   const segments = getSegments();
   const { blogs } = getBlogsData();
   const { tools } = getData();
+  const { prompts } = getPromptsData();
+  const { models } = getModelsData();
   const latestTool = tools[tools.length - 1];
   const homeSchema = {
     '@context': 'https://schema.org',
@@ -93,13 +95,13 @@ export default function Home() {
 
           {/* Clean Typography Title */}
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 max-w-5xl text-foreground leading-[1.1]">
-            The Best AI Tools.<br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary-400 to-accent-blue">Always Free.</span>
+            AI Tools, Prompts<br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary-400 to-accent-blue">and Guides in One Place.</span>
           </h1>
 
           {/* Minimal Subtitle */}
           <p className="text-lg md:text-2xl text-gray-400 max-w-3xl mb-12 font-medium leading-relaxed">
-            Stop paying for AI. Discover the ultimate directory of free tools for coding, writing, design, and research.
+            Discover free and paid AI tools, copy-paste prompts, model comparisons, and practical guides for real workflows.
           </p>
 
           {/* Premium Call to Action Buttons */}
@@ -110,9 +112,23 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </Link>
-            <Link href="/prompts/category/" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 font-bold text-foreground transition-all duration-200 bg-surface-card border border-surface-border rounded-full hover:bg-surface-hover hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-surface-border">
+            <Link href="/prompts/" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 font-bold text-foreground transition-all duration-200 bg-surface-card border border-surface-border rounded-full hover:bg-surface-hover hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-surface-border">
               Get Free Prompts
             </Link>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-3xl mt-12">
+            {[
+              { value: `${tools.length}+`, label: 'AI tools' },
+              { value: `${prompts.length}+`, label: 'prompts' },
+              { value: `${blogs.length}+`, label: 'guides' },
+              { value: `${models.length}`, label: 'model comparisons' },
+            ].map((item) => (
+              <div key={item.label} className="border border-surface-border bg-surface-card/60 rounded-2xl px-4 py-4">
+                <div className="text-2xl md:text-3xl font-black text-foreground">{item.value}</div>
+                <div className="text-xs uppercase tracking-wider text-gray-400 font-semibold mt-1">{item.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -150,7 +166,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {segments.map(segment => (
-            <Link key={segment.slug} href={segment.slug === 'directory' ? '/ai-tools' : segment.slug === 'prompt-library' ? '/prompts/category' : segment.slug === 'blog' ? '/blog' : segment.slug === 'models-comparison' ? '/models' : segment.slug === 'news' ? '/blog' : `/category/${segment.slug}`} className="block group h-full">
+              <Link key={segment.slug} href={segment.slug === 'directory' ? '/ai-tools' : segment.slug === 'prompt-library' ? '/prompts' : segment.slug === 'blog' ? '/blog' : segment.slug === 'models-comparison' ? '/models' : segment.slug === 'news' ? '/blog' : `/category/${segment.slug}`} className="block group h-full">
               <div className="saas-card p-6 h-full flex flex-col items-start relative overflow-hidden transition-all duration-300 hover:border-primary-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:-translate-y-1">
 
                 {/* Watermark Category SVG */}

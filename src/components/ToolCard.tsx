@@ -1,6 +1,7 @@
 import React from 'react';
 import { Tool } from '@/lib/data';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Props {
     tool: Tool;
@@ -34,7 +35,11 @@ export default function ToolCard({ tool }: Props) {
                 <div className="relative z-10 flex flex-col h-full w-full">
                     <div className="flex items-start justify-between mb-4">
                         <div className="w-12 h-12 bg-primary-900/30 rounded-xl flex items-center justify-center p-2 relative text-primary-400 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300 shadow-sm">
-                            <span className="font-bold text-xl">{tool.name.charAt(0).toUpperCase()}</span>
+                            {tool.logo ? (
+                                <Image src={tool.logo} alt={`${tool.name} logo`} width={32} height={32} className="object-contain" />
+                            ) : (
+                                <span className="font-bold text-xl">{tool.name.charAt(0).toUpperCase()}</span>
+                            )}
                         </div>
                         <span className="text-xs font-bold uppercase tracking-wider bg-primary-900/50 text-primary-300 px-2 py-1 rounded-full border border-primary-800/50 shadow-sm">
                             {tool.freeTier}

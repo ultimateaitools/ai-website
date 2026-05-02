@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getPromptCategories, getPromptsByCategory, getToolCategorySlugForPromptCategory } from '@/lib/data';
 import AdSlot from '@/components/AdSlot';
+import { SITE_URL, getCategoryIntent, truncateAtWord } from '@/lib/seo';
 
 type Props = {
     params: { slug: string };
@@ -22,22 +23,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: 'Prompt Category Not Found' };
     }
 
+    const intent = getCategoryIntent(params.slug);
+    const title = truncateAtWord(`${category.name} AI Prompts for Practical Workflows`, 60);
+    const description = truncateAtWord(`Browse ${category.promptCount} ${category.name.toLowerCase()} AI prompts for ${intent.job}. Copy, customize, and use them with ChatGPT, Claude, or Gemini.`, 155);
+
     return {
-        title: `${category.name} AI Prompts | ${category.promptCount} Prompt Templates`,
-        description: `Browse ${category.promptCount} AI prompts for ${category.name.toLowerCase()} workflows. Find copy-paste prompt templates organized by category.`,
+        title,
+        description,
         openGraph: {
-            title: `${category.name} AI Prompts | ${category.promptCount} Prompt Templates`,
-            description: `Browse ${category.promptCount} AI prompts for ${category.name.toLowerCase()} workflows.`,
-            url: `https://ultimateaitools.online/prompts/category/${category.slug}/`,
+            title,
+            description,
+            url: `${SITE_URL}/prompts/category/${category.slug}/`,
             type: 'website',
         },
         twitter: {
             card: 'summary_large_image',
-            title: `${category.name} AI Prompts`,
-            description: `Category-wise prompt collection for ${category.name.toLowerCase()} workflows.`,
+            title,
+            description,
         },
         alternates: {
-            canonical: `https://ultimateaitools.online/prompts/category/${category.slug}/`,
+            canonical: `${SITE_URL}/prompts/category/${category.slug}/`,
         },
     };
 }
@@ -53,9 +58,34 @@ export default function PromptCategoryPage({ params }: Props) {
     const prompts = getPromptsByCategory(category.slug);
     const relatedCategories = allCategories.filter((item) => item.slug !== category.slug).slice(0, 4);
     const relatedToolCategorySlug = getToolCategorySlugForPromptCategory(category.slug);
+    const intent = getCategoryIntent(category.slug);
+
+    const faqSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+            {
+                '@type': 'Question',
+                name: `How should I use ${category.name} AI prompts?`,
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `Use these prompts for ${intent.job}. Replace placeholders with your real context, then ask follow-up questions to refine the answer.`,
+                },
+            },
+            {
+                '@type': 'Question',
+                name: `Which AI tools work with ${category.name} prompts?`,
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'These prompts can be used with ChatGPT, Claude, Gemini, Grok, and most AI chat tools that support long-form instructions.',
+                },
+            },
+        ],
+    };
 
     return (
         <div className="bg-surface-card">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <header className="bg-background py-16 sm:py-24 border-b border-surface-border relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob"></div>
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
@@ -73,6 +103,9 @@ export default function PromptCategoryPage({ params }: Props) {
                         </h1>
                         <p className="max-w-2xl text-xl text-gray-400 leading-relaxed font-medium">
                             {category.description}
+                        </p>
+                        <p className="max-w-2xl text-base text-gray-500 leading-relaxed mt-4">
+                            Use this collection when you need help with {intent.job}. Start with a prompt, add your real context, and refine the output for your final use case.
                         </p>
                     </div>
                 </div>
@@ -106,6 +139,24 @@ export default function PromptCategoryPage({ params }: Props) {
                     ))}
                 </div>
 
+                <section className="mt-16 rounded-2xl border border-surface-border bg-surface-hover p-8">
+                    <h2 className="text-2xl font-bold text-foreground mb-4">How to Use {category.name} Prompts</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-300">
+                        <div>
+                            <h3 className="font-bold text-foreground mb-2">Add Context</h3>
+                            <p>Include your goal, audience, constraints, examples, and preferred tone before running the prompt.</p>
+                        </div>
+                        <div>
+                            <h3 className="font-bold text-foreground mb-2">Iterate</h3>
+                            <p>Ask the AI to revise for clarity, length, accuracy, formatting, or platform-specific requirements.</p>
+                        </div>
+                        <div>
+                            <h3 className="font-bold text-foreground mb-2">Review</h3>
+                            <p>Check facts, remove generic wording, and adapt the final answer to your own workflow.</p>
+                        </div>
+                    </div>
+                </section>
+
                 <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className="rounded-2xl border border-surface-border bg-surface-hover p-6">
                         <h2 className="text-2xl font-bold text-foreground mb-3">Keep Exploring AI Resources</h2>
@@ -113,7 +164,7 @@ export default function PromptCategoryPage({ params }: Props) {
                             Move from prompts to tools, model research, and practical guides to build a stronger workflow.
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <Link href="/prompts/category/" className="text-primary-400 hover:text-primary-300 font-semibold">
+                            <Link href="/prompts/" className="text-primary-400 hover:text-primary-300 font-semibold">
                                 Browse all prompt categories &rarr;
                             </Link>
                             <Link href="/ai-tools/" className="text-primary-400 hover:text-primary-300 font-semibold">

@@ -40,6 +40,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://ultimateaitools.online/ai-tools/${pageNumber}/`,
     },
+    robots: {
+      index: false,
+      follow: true,
+    },
   };
 }
 

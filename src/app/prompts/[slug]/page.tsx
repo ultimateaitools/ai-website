@@ -5,6 +5,7 @@ import { getPromptCategories, getPromptsData, getToolCategorySlugForPromptCatego
 import Link from 'next/link';
 import { promptContentData } from '@/lib/promptContentData';
 import AdSlot from '@/components/AdSlot';
+import { SITE_NAME, SITE_URL, formatSlugLabel, getCategoryIntent, makePromptSeoDescription, makePromptSeoTitle } from '@/lib/seo';
 
 type Props = {
     params: { slug: string };
@@ -32,19 +33,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: 'Prompt Not Found' };
     }
 
-    const shortTitle = truncatePromptTitle(prompt.title);
-    const seoTitle = `${shortTitle} - Free AI Prompt`;
-    const seoDesc = `Free AI prompt template: ${prompt.description}`.slice(0, 155);
+    const seoTitle = makePromptSeoTitle(truncatePromptTitle(prompt.title), prompt.category);
+    const seoDesc = makePromptSeoDescription(prompt.title, prompt.description, prompt.category);
     const catName = prompt.category.replace(/-/g, ' ');
     const keywords = [
         `${prompt.title.toLowerCase()} prompt`,
-        `free ai prompt for ${catName}`,
+        `${catName} prompt template`,
         `chatgpt ${catName} prompt`,
-        `${catName} ai prompt template`,
+        `claude ${catName} prompt`,
+        `gemini ${catName} prompt`,
         `${prompt.outputType.toLowerCase()} ai prompt`,
-        `ai prompt ${catName} 2026`,
-        'free ai prompts',
-        'chatgpt prompts',
         `${prompt.bestFor.toLowerCase()} ai prompt`,
     ].slice(0, 9);
 
@@ -55,8 +53,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: seoTitle,
             description: seoDesc,
-            url: `https://ultimateaitools.online/prompts/${prompt.slug}/`,
-            siteName: 'UltimateAITools',
+            url: `${SITE_URL}/prompts/${prompt.slug}/`,
+            siteName: SITE_NAME,
             locale: 'en_US',
             type: 'article',
         },
@@ -66,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: seoDesc,
         },
         alternates: {
-            canonical: `https://ultimateaitools.online/prompts/${prompt.slug}/`,
+            canonical: `${SITE_URL}/prompts/${prompt.slug}/`,
         },
     };
 }
@@ -80,34 +78,109 @@ export default function PromptDetailPage({ params }: Props) {
     }
 
     const staticContent = promptContentData[prompt.slug] || {
-        description: `Use this production-ready prompt to generate ${prompt.outputType.toLowerCase()} with high consistency.`,
+        description: `Use this prompt to generate ${prompt.outputType.toLowerCase()} for ${prompt.bestFor.toLowerCase()} with clearer context, constraints, and output structure.`,
         whatItDoes: [
-            `This prompt is structured to help AI models deliver better ${prompt.outputType.toLowerCase()} output with fewer revisions.`,
-            'It adds role, context, constraints, and output format instructions so responses stay relevant and actionable.',
-            'The template is compatible with ChatGPT, Claude, Gemini, and Grok with minor wording adjustments if needed.'
+            `This prompt guides an AI model toward a specific ${prompt.outputType.toLowerCase()} output instead of a broad generic answer.`,
+            `It is written for ${prompt.bestFor.toLowerCase()} who need a faster first draft, clearer structure, and fewer follow-up corrections.`,
+            'The template works with ChatGPT, Claude, Gemini, and Grok when you replace the bracketed inputs with real details.'
         ],
         whenToUse: [
-            `Use this prompt when you need reliable ${prompt.outputType.toLowerCase()} output quickly.`,
-            'Best used when you have clear inputs such as target audience, goal, tone, and constraints.',
-            'Ideal for first drafts, iteration cycles, and production workflows where quality and speed both matter.'
+            `Use it when you need a reliable ${prompt.outputType.toLowerCase()} draft without starting from a blank chat.`,
+            `It works best when your goal, audience, tone, examples, and constraints are specific.`,
+            'Use the first answer as a draft, then ask the model to refine, shorten, expand, or adapt it for your final channel.'
         ]
     };
     const relatedPrompts = prompts.filter(p => p.category === prompt.category && p.slug !== prompt.slug).slice(0, 4);
     const relatedCategories = getPromptCategories().filter((item) => item.slug !== prompt.category).slice(0, 3);
     const relatedToolCategorySlug = getToolCategorySlugForPromptCategory(prompt.category);
+    const categoryLabel = formatSlugLabel(prompt.category);
+    const categoryIntent = getCategoryIntent(prompt.category);
+    const exampleInput = `Goal: create a ${prompt.outputType.toLowerCase()} for ${prompt.bestFor.toLowerCase()}\nAudience: [describe who will read or use it]\nTone: [clear, practical, persuasive, friendly, formal]\nConstraints: [word count, format, platform, examples, must-include points]`;
+    const sampleOutput = prompt.category === 'ipl-2026'
+        ? `Sample output:\n- Match context: venue, team form, pitch behavior, toss impact, and likely playing XI changes\n- Key factors: top-order stability, death bowling, spin matchups, and impact-player options\n- Prediction: cautious forecast with confidence level, risk notes, and what could change the result`
+        : prompt.category === 'coding'
+            ? `Sample output:\n- Problem summary: restate the bug or build goal in plain language\n- Recommended approach: list the safest implementation steps\n- Code or checklist: provide the draft solution with edge cases and testing notes`
+            : prompt.category === 'image-generation'
+                ? `Sample output:\n- Main subject: clear description of the object, person, scene, or product\n- Style direction: lighting, camera angle, color palette, mood, and composition\n- Negative guidance: what to avoid so the image model stays controlled`
+                : prompt.category === 'study' || prompt.category === 'upsc-ssc-prep'
+                    ? `Sample output:\n- Concept explanation: simple definition with one example\n- Revision bullets: important facts, traps, and formulas\n- Practice: 5 questions with answers and a short review plan`
+                    : `Sample output:\n- Objective: define the goal and audience clearly\n- Draft: produce a structured first version with headings or bullets\n- Refinement checklist: improve clarity, tone, examples, and final formatting`;
+    const modelRecommendation = prompt.category === 'coding'
+        ? 'Use Claude, ChatGPT, or Gemini with a clear code context and expected output format.'
+        : prompt.category === 'image-generation'
+            ? 'Use an image model or a chat model that can refine visual direction before sending it to your image generator.'
+            : prompt.category === 'study' || prompt.category === 'upsc-ssc-prep'
+                ? 'Use ChatGPT, Claude, or Gemini and ask for step-by-step explanation plus self-testing questions.'
+                : 'Use ChatGPT, Claude, Gemini, or Grok, then refine the first answer with follow-up instructions.';
+    const exampleOutputShape = [
+        `A structured ${prompt.outputType.toLowerCase()} tailored to ${prompt.bestFor.toLowerCase()}.`,
+        'Clear sections, bullets, or steps that are easy to edit.',
+        'A final answer that can be shortened, expanded, reformatted, or adapted for a specific platform.',
+    ];
+    const promptVariations = [
+        `Make the output shorter and more actionable for ${prompt.bestFor.toLowerCase()}.`,
+        `Rewrite the answer for a beginner audience and include concrete examples.`,
+        `Turn the result into a checklist, table, or step-by-step workflow.`,
+    ];
+    const commonMistakes = [
+        'Running the prompt without replacing placeholders with real context.',
+        'Asking for a final answer before defining audience, goal, tone, and constraints.',
+        'Publishing the output without checking facts, examples, links, claims, or brand voice.',
+    ];
     const promptSchema = {
         '@context': 'https://schema.org',
         '@type': 'CreativeWork',
         name: prompt.title,
         description: prompt.description,
-        keywords: [prompt.category, prompt.outputType, prompt.bestFor],
+        keywords: [prompt.category, prompt.outputType, prompt.bestFor, 'AI prompt template'],
         text: prompt.promptText,
-        url: `https://ultimateaitools.online/prompts/${prompt.slug}/`,
+        url: `${SITE_URL}/prompts/${prompt.slug}/`,
+        about: categoryLabel,
+        audience: {
+            '@type': 'Audience',
+            audienceType: prompt.bestFor,
+        },
+    };
+
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+            { '@type': 'ListItem', position: 2, name: 'Prompts', item: `${SITE_URL}/prompts/` },
+            { '@type': 'ListItem', position: 3, name: categoryLabel, item: `${SITE_URL}/prompts/category/${prompt.category}/` },
+            { '@type': 'ListItem', position: 4, name: prompt.title, item: `${SITE_URL}/prompts/${prompt.slug}/` },
+        ],
+    };
+
+    const faqSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+            {
+                '@type': 'Question',
+                name: `Who should use this ${categoryLabel} prompt?`,
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `This prompt is best for ${prompt.bestFor.toLowerCase()} who need help with ${categoryIntent.job}.`,
+                },
+            },
+            {
+                '@type': 'Question',
+                name: 'Which AI models can use this prompt?',
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'You can use this prompt with ChatGPT, Claude, Gemini, Grok, and most modern AI chat tools. Replace the placeholders with your own context for better results.',
+                },
+            },
+        ],
     };
 
     return (
         <article className="max-w-4xl mx-auto px-4 py-16">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(promptSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <div className="bg-surface-card border border-surface-border rounded-3xl p-8 md:p-12 shadow-sm mb-12">
 
                 {/* Header */}
@@ -123,6 +196,9 @@ export default function PromptDetailPage({ params }: Props) {
                     <h1 className="text-4xl md:text-5xl font-extrabold text-foreground tracking-tight leading-tight">
                         {prompt.title}
                     </h1>
+                    <p className="mt-5 text-lg text-gray-400 max-w-2xl mx-auto">
+                        {staticContent.description}
+                    </p>
                 </div>
 
                 <div className="prose prose-primary max-w-none">
@@ -153,6 +229,59 @@ export default function PromptDetailPage({ params }: Props) {
                         <span className="text-black font-medium">{prompt.bestFor}</span>
                     </div>
 
+                    <div className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h2 className="text-2xl font-bold text-foreground mb-4">Example Input</h2>
+                            <pre className="whitespace-pre-wrap text-sm leading-relaxed text-gray-300 bg-gray-900 rounded-xl p-4 overflow-x-auto">{exampleInput}</pre>
+                        </section>
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h2 className="text-2xl font-bold text-foreground mb-4">Example Output</h2>
+                            <pre className="whitespace-pre-wrap text-sm leading-relaxed text-gray-300 bg-gray-900 rounded-xl p-4 overflow-x-auto">{sampleOutput}</pre>
+                        </section>
+                    </div>
+
+                    <div className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h2 className="text-2xl font-bold text-foreground mb-4">Useful Variations</h2>
+                            <ul className="list-disc pl-6 text-gray-300 space-y-3">
+                                {promptVariations.map((variation) => (
+                                    <li key={variation}>{variation}</li>
+                                ))}
+                            </ul>
+                        </section>
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h2 className="text-2xl font-bold text-foreground mb-4">Customization Tips</h2>
+                            <ul className="list-disc pl-6 text-gray-300 space-y-3">
+                                <li>Add real names, examples, target platform, and desired length before running the prompt.</li>
+                                <li>Tell the model what a bad answer looks like so it avoids generic output.</li>
+                                <li>Ask for one revision focused only on accuracy, clarity, or conversion depending on your goal.</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h2 className="text-xl font-bold text-foreground mb-3">Best Model to Use</h2>
+                            <p className="text-gray-300">{modelRecommendation}</p>
+                        </section>
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h2 className="text-xl font-bold text-foreground mb-3">Expected Output</h2>
+                            <ul className="list-disc pl-5 text-gray-300 space-y-2">
+                                {exampleOutputShape.map((item) => (
+                                    <li key={item}>{item}</li>
+                                ))}
+                            </ul>
+                        </section>
+                        <section className="bg-surface-hover border border-surface-border rounded-2xl p-6">
+                            <h2 className="text-xl font-bold text-foreground mb-3">Common Mistakes</h2>
+                            <ul className="list-disc pl-5 text-gray-300 space-y-2">
+                                {commonMistakes.map((item) => (
+                                    <li key={item}>{item}</li>
+                                ))}
+                            </ul>
+                        </section>
+                    </div>
+
                     {/* The Prompt Box */}
                     <div className="mb-12">
                         <div className="flex items-center justify-between mb-4">
@@ -177,6 +306,16 @@ export default function PromptDetailPage({ params }: Props) {
                     </div>
 
                     <AdSlot adSlot="1000000005" format="horizontal" />
+
+                    <section className="mb-12 rounded-2xl border border-surface-border bg-surface-hover p-8">
+                        <h2 className="text-2xl font-bold text-foreground mb-4">How to Get Better Results</h2>
+                        <ul className="list-disc pl-6 text-gray-300 space-y-3">
+                            <li>Replace generic placeholders with real audience, goal, product, topic, tone, and constraints.</li>
+                            <li>Ask the model to create one draft first, then request revisions for clarity, length, examples, or formatting.</li>
+                            <li>For important work, verify facts and adapt the final output to your own voice before publishing.</li>
+                            <li>For {categoryLabel.toLowerCase()} workflows, compare the output against your actual task instead of judging only the first response.</li>
+                        </ul>
+                    </section>
 
                     <div className="mb-10 p-6 bg-surface-hover border border-surface-border rounded-2xl">
                         <h2 className="text-2xl font-bold text-foreground mb-3">Related AI Resources</h2>

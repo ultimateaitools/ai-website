@@ -11,8 +11,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: 'sw
 const gaMeasurementId = "G-1X8T9144E9";
 
 export const metadata: Metadata = {
-  title: "Ultimate Free AI Tools Directory",
-  description: "Discover the best free AI tools for productivity, coding, writing, automation, design and research.",
+  title: "UltimateAITools - AI Tools, Prompts and Guides",
+  description: "Discover AI tools, prompt templates, model comparisons and practical guides for writing, coding, automation, design, study and marketing.",
   metadataBase: new URL("https://ultimateaitools.online"),
   verification: {
     google: "eZyYvI55hVrixu9QK8hJPM2EXphtRxlXPgHBHTZfIJw",
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Ultimate Free AI Tools Directory",
-    description: "Discover the best free AI tools for productivity, coding, writing, automation, design and research.",
+    title: "UltimateAITools - AI Tools, Prompts and Guides",
+    description: "Discover AI tools, prompt templates, model comparisons and practical AI guides.",
     url: "https://ultimateaitools.online",
     siteName: "UltimateAITools",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
